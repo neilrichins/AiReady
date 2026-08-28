@@ -38,6 +38,14 @@ Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefe
 - [Architecture and operational-quality addendum](product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md)
 - [Brand and messaging brief](product/BRAND_AND_MESSAGING_TEMPLATE.md)
 
+## Optional accessibility checklists
+
+- [Accessibility checklist index](accessibility/README.md)
+- [Website accessibility checklist](accessibility/WEBSITE_ACCESSIBILITY_CHECKLIST.md)
+- [Mobile application accessibility checklist](accessibility/MOBILE_APPLICATION_ACCESSIBILITY_CHECKLIST.md)
+- [WCAG 2.2 Level A and AA results matrix](accessibility/WCAG_2_2_AA_SUCCESS_CRITERIA.md)
+- [Jurisdiction accessibility checklist](accessibility/JURISDICTION_ACCESSIBILITY_CHECKLIST.md)
+
 ## Release evidence
 
 - [Release evidence index](releases/README.md)

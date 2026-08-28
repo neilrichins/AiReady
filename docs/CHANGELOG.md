@@ -6,6 +6,9 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added optional W3C-based website and mobile application accessibility verification checklists with explicit AI, automation, sampling, assistive-technology, disabled-user, evidence, and conformance-claim boundaries.
+- Added a complete WCAG 2.2 Level A and AA success-criterion results matrix and WCAG conformance-requirement record.
+- Added a jurisdiction accessibility checklist with applicability, authoritative-source, technical-standard, statement, exception, monitoring, and approval controls plus a non-exhaustive official-source starter register.
 - Added optional delivery-checkpoint evidence for phases, milestones, migration steps, and architectural baselines without implying release approval.
 - Added explicit authoritative reading order, source-precedence, active-scope, non-goal, governing-decision, and stable-component-boundary controls for AI instructions and tasks.
 - Added compatibility-contract fields for component ownership, discovery, supported combinations, failure behaviour, migration, and verification.

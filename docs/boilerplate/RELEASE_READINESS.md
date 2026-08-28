@@ -47,6 +47,7 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | Security and authorisation | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Privacy and data | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Website/mobile accessibility standard and jurisdiction obligations | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Performance, reliability, capacity, and cost | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Compatibility, upgrade, and migration | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Multi-repository/component coordination | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |

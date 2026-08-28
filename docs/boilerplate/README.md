@@ -35,6 +35,10 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 
 ## Verification and release
 
+Surface-specific optional accessibility records are indexed separately under
+[accessibility checklists](../accessibility/README.md). Use them only when
+applicable and map them to existing product, legal, test, and release sources.
+
 | Boilerplate | Purpose |
 | --- | --- |
 | [`TRACEABILITY.md`](TRACEABILITY.md) | Requirements-to-feature-to-change-to-test-to-release evidence chain. |

@@ -118,6 +118,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | [Guidance](docs/README.md#guidance) | Explains adoption, legacy discovery, responsibilities, evidence, lifecycle, and assessment methodology. |
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture, verification, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
+| [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
 | [Release evidence](docs/releases/README.md) | Records exact candidates, approvals, execution, effective results, failures, rollback, and closure. |
 
 Template names and locations are examples within this repository. An adopting project may use existing issues, wikis, documents, service-management systems, pipelines, or release platforms as its authoritative records.
@@ -144,6 +145,7 @@ The [methodology](docs/guidance/methodology.md) defines scoring and evidence rul
 - [`docs/guidance/`](docs/guidance/adoption.md): adoption and operating guidance.
 - [`docs/boilerplate/`](docs/boilerplate/README.md): project-neutral working records.
 - [`docs/product/`](docs/product/README.md): product, experience, design, and quality records.
+- [`docs/accessibility/`](docs/accessibility/README.md): optional website, mobile application, WCAG, and jurisdiction accessibility checklists.
 - [`docs/releases/`](docs/releases/README.md): immutable release-evidence records.
 - [`.github/`](.github): issue forms, pull-request template, ownership, dependency updates, and documentation checks for AI Ready itself.
 

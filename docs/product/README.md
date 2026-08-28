@@ -11,6 +11,7 @@ Use the [adoption map](../boilerplate/ADOPTION_MAP.md) before creating new recor
 - [Experience and design specification](EXPERIENCE_AND_DESIGN_TEMPLATE.md): research evidence, journeys, interaction and content states, accessibility, design decisions, evaluation, and implementation hand-off.
 - [Brand and messaging brief](BRAND_AND_MESSAGING_TEMPLATE.md): identity, voice, messages, substantiation, information architecture, content strategy, and prohibited claims.
 - [Accessibility and inclusive-design addendum](ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md): product accessibility requirements, evidence boundaries, and test expectations.
+- [Optional accessibility checklists](../accessibility/README.md): W3C-based web, mobile, success-criterion, and jurisdiction verification records to use when applicable.
 - [Architecture and operational-quality addendum](ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md): security, reliability, performance, cost, sustainability, operations, compatibility, recovery, and responsibility boundaries.
 
 ## Use rules

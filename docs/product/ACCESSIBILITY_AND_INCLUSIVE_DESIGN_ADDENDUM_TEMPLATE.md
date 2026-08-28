@@ -23,6 +23,11 @@ Claim owner and approval authority: `{{OWNER}}`.
 
 An accessibility target is a requirement, not evidence of conformance. A conformance claim must identify the tested scope, standard and version, methods, environments, dates, limitations, unresolved defects, and accountable approval.
 
+Use the optional [website, mobile application, WCAG, and jurisdiction
+checklists](../accessibility/README.md) when they fit the product. They add
+surface-specific verification but do not replace this requirements record,
+specialist review, disabled-user evaluation, or applicable law.
+
 ## People, contexts, and barriers
 
 | Person/use context | Goal | Potential barrier | Required support | Evidence source |

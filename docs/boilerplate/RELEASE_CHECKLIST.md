@@ -35,6 +35,8 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Security, authorisation, and vulnerability checks passed.
 - [ ] Privacy and data-handling checks passed.
 - [ ] Accessibility and assistive-technology checks passed where applicable.
+- [ ] Website/mobile accessibility evidence identifies the exact standard, version, scope, sample, platforms, methods, assistive technologies, failures, limitations, and accountable specialist decision.
+- [ ] Applicable country, regional, sector, procurement, statement, feedback, reporting, and exception requirements have current authoritative evidence and legal/compliance ownership.
 - [ ] Performance, capacity, reliability, and cost checks passed where applicable.
 - [ ] Compatibility, installation, upgrade, migration, and idempotency checks passed.
 - [ ] Backup, rollback, restore, and disaster-recovery evidence is current.
