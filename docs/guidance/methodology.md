@@ -4,6 +4,8 @@
 
 AI Ready assesses whether a repository provides enough context, deterministic controls, authority boundaries, and evidence for controlled artificial intelligence (AI)-assisted coding. It evaluates the development system around an AI agent, not the intelligence or reliability of a particular model.
 
+For an unfamiliar or legacy system, complete discovery and baseline work before scoring controls as effective. Use the evidence labels and safety boundary in the [legacy-project playbook](legacy-project-playbook.md); do not award points from inference or unverified documentation.
+
 ## Evidence hierarchy
 
 Prefer evidence in this order:
@@ -34,12 +36,14 @@ Hard blockers represent conditions where numerical averaging is unsafe. For exam
 
 | Level | Numerical range | Maximum permitted operating model |
 | --- | ---: | --- |
-| Not ready | 0–39 | Do not use AI coding on the project. |
+| Not ready | 0–39 | Limit AI to explicitly authorised read-only discovery or human-applied blocker remediation. |
 | Assisted only | 40–59 | AI proposes; a human inspects and applies. |
 | Supervised | 60–79 | AI may edit an isolated branch or worktree; humans review every change. |
 | Controlled automation | 80–100 | AI may complete bounded tasks and open pull requests, subject to zero blockers and explicit authority. |
 
 The score selects an upper bound, not an automatic entitlement. Owners may impose a more restrictive level.
+
+`Not ready` does not prohibit an owner from authorising narrowly bounded, read-only AI discovery or human-applied remediation suggestions under explicit data, execution, and review controls. It prohibits treating the project as ready for normal AI coding, autonomous integration, or release activity.
 
 ## Reassessment triggers
 
@@ -57,6 +61,16 @@ Reassess after:
 ## Claims boundary
 
 AI Ready does not establish security, privacy, legal compliance, software quality, accessibility conformance, model accuracy, or production readiness. It establishes that named controls and evidence have been assessed against a consistent framework.
+
+## Relationship to other practices
+
+AI Ready is designed to complement, not replace or attest conformity with:
+
+- the [National Institute of Standards and Technology Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf) for secure software-development practices;
+- the [Open Source Project Security Baseline](https://baseline.openssf.org/) and [OpenSSF Scorecard](https://www.scorecard.dev/) for open-source security controls and machine-checkable repository signals; and
+- the adopting project's applicable product, design, accessibility, privacy, reliability, safety, quality, legal, contractual, and operational standards.
+
+Map overlapping controls to one authoritative source and retain the stronger applicable requirement. A passing external badge, score, or automated check remains evidence only for the controls and version it actually assessed.
 
 ## Multi-repository systems
 

@@ -41,3 +41,13 @@ Do not include private prompts, credentials, personal data, restricted source, o
 - [ ] Rollback/recovery impact reviewed
 
 Evidence and unresolved limitations: `{{EVIDENCE}}`
+
+## Responsibility decisions
+
+| Responsibility | Reviewer/owner | Decision or evidence | Status/conditions |
+| --- | --- | --- | --- |
+| Product and design | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |
+| Engineering and architecture | `{{OWNER}}` | `{{DECISION}}` | `{{STATUS}}` |
+| Security, privacy, and data | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |
+| Quality and verification | `{{OWNER}}` | `{{DECISION}}` | `{{STATUS}}` |
+| Operations, support, and release | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |

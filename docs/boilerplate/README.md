@@ -9,6 +9,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | Boilerplate | Purpose |
 | --- | --- |
 | [`ADOPTION_MAP.md`](ADOPTION_MAP.md) | Map concerns to existing project records and decide what to reuse, improve, merge, or create. |
+| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled current state, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
 | [`PROJECT_README.md`](PROJECT_README.md) | Project landing-page boilerplate that links to existing authoritative records. |
 | [`PROJECT_DEFINITION.md`](PROJECT_DEFINITION.md) | Purpose, scope, ownership, outcomes, constraints, environments, and unknowns. |
 | [`REQUIREMENTS.md`](REQUIREMENTS.md) | Testable requirements, acceptance evidence, status, and change control. |
@@ -44,6 +45,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | [`RELEASE_READINESS.md`](RELEASE_READINESS.md) | Working evidence and decision for one exact release candidate. |
 | [Release evidence record](../releases/RELEASE_EVIDENCE_TEMPLATE.md) | Immutable historical record for approved, failed, cancelled, or rolled-back releases. |
 | [Hotfix release evidence record](../releases/HOTFIX_RELEASE_EVIDENCE_TEMPLATE.md) | Constrained evidence, risk decisions, compensating controls, and follow-up for an urgent release. |
+| [Release notes](../releases/RELEASE_NOTES_TEMPLATE.md) | Audience-appropriate verified changes, compatibility, migration, limitations, and support information. |
 
 ## Adaptation rules
 

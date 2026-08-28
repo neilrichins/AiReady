@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This process applies to any project language, packaging model, hosting platform, or repository layout. Project-specific commands and evidence belong in `RELEASE_CHECKLIST.md`, `VERIFICATION.md`, and the versioned release record.
+This process applies to any project language, packaging model, hosting platform, or repository layout. Project-specific commands and evidence belong in the [release checklist](RELEASE_CHECKLIST.md), [verification plan](VERIFICATION_PLAN.md), and the project's versioned [release record](../releases/RELEASE_EVIDENCE_TEMPLATE.md).
 
 ## Release states
 
@@ -38,7 +38,7 @@ This process applies to any project language, packaging model, hosting platform,
 
 ### 4. Verify the candidate
 
-- Run the complete automated gate and all release-scoped checks in `VERIFICATION.md`.
+- Run the complete automated gate and all release-scoped checks in the [verification plan](VERIFICATION_PLAN.md).
 - Complete required manual, security, privacy, accessibility, performance, compatibility, migration, recovery, operational, and documentation checks.
 - Record actual evidence, failures, reruns, environment, assessor, date, and limitations.
 

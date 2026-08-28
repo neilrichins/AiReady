@@ -10,8 +10,11 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 
 | Framework concern | Existing authoritative source | Current adequacy | Action | Resulting authoritative source | Owner | Due/review trigger |
 | --- | --- | --- | --- | --- | --- | --- |
+| Discovery baseline and observed-versus-intended behaviour | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | AI authority and agent instructions | `{{LINK_LOCATION_OR_MISSING}}` | `{{ADEQUATE_PARTIAL_MISSING_NOT_APPLICABLE}}` | `{{REUSE_IMPROVE_MERGE_CREATE_NOT_APPLICABLE}}` | `{{LINK_OR_LOCATION}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` |
 | Project purpose, scope, ownership, constraints | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Product evidence, users, outcomes, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Experience, design, content, accessibility, and evaluation | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Requirements and acceptance criteria | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Feature inventory and independent implementation/verification/release states | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Roadmap and dependencies | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
@@ -24,6 +27,7 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 | Current release readiness | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Historical release evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Decisions and change traceability | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Roles, decision rights, hand-offs, and separation of duties | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 
 ## Duplication decisions
 

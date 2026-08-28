@@ -1,120 +1,159 @@
 # AI Ready
 
-AI Ready is a documentation-first, language-neutral framework for preparing software projects for controlled artificial intelligence (AI)-assisted development and evidence-based release decisions.
+[![Documentation quality](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml/badge.svg)](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml)
+[![Licence: Apache 2.0](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg)](LICENSE)
 
-Its primary deliverables are reusable Markdown documents. They help developers and AI agents understand what a project is, what it must do, which features exist, what has actually been implemented and verified, what remains risky or unknown, and what evidence is required before a release can proceed.
+AI Ready is a documentation-first, language-neutral framework for turning software repositories into controlled environments for artificial intelligence (AI)-assisted development and evidence-based release decisions.
 
-The framework does not prescribe a programming language, build system, hosting model, test tool, or release platform. Each adopting project records its own commands and evidence in the Markdown templates.
+It gives people and AI agents a shared operating model for discovering an unfamiliar or legacy system, reconstructing product intent, defining safe authority, planning changes, validating implementation, and proving that an exact release candidate is ready. The framework is reusable Markdown, not an executable tool or a prescribed repository layout.
 
-## What the document framework manages
+## Why it exists
+
+AI can inspect and change code quickly, but speed is not assurance. Reliable delivery also requires product intent, user and design context, architecture boundaries, reproducible environments, traceability, testing, security, operations, release authority, and durable evidence.
+
+AI Ready connects those responsibilities without pretending that a document, checklist, model, or passing build can replace accountable review.
+
+Use it to answer:
+
+- What is this system meant to do, for whom, and under which constraints?
+- Which behaviour is intended, observed, assumed, missing, or unsafe?
+- What may an AI agent read, change, execute, or operate?
+- Which source, generated, data, infrastructure, and repository boundaries must be preserved?
+- How does each requirement trace to a feature, implementation, verification result, and release?
+- What evidence proves that the exact candidate works in the relevant environments?
+- Who can accept risk, approve a release, execute it, and respond if it fails?
+
+## Start here
+
+Choose the path that matches the current project state. They may converge on the same records; they do not require copying the entire framework.
+
+### Unfamiliar or legacy project
+
+1. Follow the [legacy-project playbook](docs/guidance/legacy-project-playbook.md).
+2. Record facts, evidence, unknowns, and unsafe assumptions in the [discovery and baseline record](docs/boilerplate/DISCOVERY_AND_BASELINE.md).
+3. Complete the [adoption map](docs/boilerplate/ADOPTION_MAP.md) before creating or moving documents.
+4. Assess permitted AI use with the [AI coding-readiness assessment](docs/AiReady.md).
+5. Remediate blockers through small, supervised, reversible changes before expanding AI authority.
+
+### Project with established delivery controls
+
+1. Map existing authoritative records with the [adoption map](docs/boilerplate/ADOPTION_MAP.md).
+2. Use the [assessment](docs/AiReady.md) to test whether those controls are effective for the intended AI operating level.
+3. Adapt only the templates needed to close evidenced gaps.
+4. Preserve existing tools and locations where they remain authoritative.
+
+### Feature or release already in progress
+
+1. Define the bounded change with the [AI-assisted task record](docs/boilerplate/AI_TASK.md).
+2. Connect requirements, design, implementation, tests, risks, and release scope through [traceability](docs/boilerplate/TRACEABILITY.md).
+3. Qualify the exact candidate through the [release process](docs/boilerplate/RELEASE_PROCESS.md) and [readiness record](docs/boilerplate/RELEASE_READINESS.md).
+4. Preserve the decision and actual result in an immutable [release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md).
+
+## Operating model
 
 ```mermaid
 flowchart LR
-    A["Project definition"] --> B["Requirements"]
-    B --> C["Feature records"]
-    C --> D["Implementation"]
-    D --> E["Verification evidence"]
-    E --> F["Release readiness decision"]
-    F --> G["Release execution"]
-    G --> H["Versioned release evidence"]
-    H --> A
-    I["Risks and decisions"] --> C
-    I --> E
-    I --> F
+    A["Discover current reality"] --> B["Define product intent"]
+    B --> C["Design outcomes and states"]
+    C --> D["Plan bounded change"]
+    D --> E["Implement"]
+    E --> F["Verify exact candidate"]
+    F --> G["Approve release"]
+    G --> H["Release under authority"]
+    H --> I["Verify effective outcome"]
+    I --> J["Record evidence and learn"]
+    J --> B
+    K["Architecture, risk, security, data, and operations"] --> D
+    K --> F
+    K --> G
 ```
 
 The framework deliberately keeps these states separate:
 
+- **intended:** approved product or operational behaviour;
 - **implemented:** code or configuration exists;
-- **verified:** the defined evidence passed against named commits, artefacts, and environments; and
-- **released:** the approved artefacts were distributed or deployed and post-release checks passed.
+- **verified:** defined evidence passed for named commits, artefacts, data, and environments;
+- **approved:** an authorised person accepted the exact candidate and residual risk; and
+- **released:** approved artefacts were distributed or deployed and effective-environment checks passed.
 
-Implemented does not mean verified. Verified does not mean released.
+One state never implies another.
 
-## Core Markdown documents
+## Responsibility coverage
 
-| Document | Question answered | When updated |
+AI Ready treats delivery as a set of accountable responsibilities rather than job titles. One person may cover several responsibilities, and an AI agent may perform authorised work within them, but the agent cannot approve its own output or accept risk.
+
+| Responsibility | Required outcome | Primary records |
 | --- | --- | --- |
-| [AI readiness assessment](docs/AiReady.md) | Is the repository controlled enough for the intended level of AI coding? | AI tool, authority, data, architecture, or control change |
-| [Project definition](docs/boilerplate/PROJECT_DEFINITION.md) | What is the project, who owns it, and what constraints apply? | Scope, owner, environment, or obligation change |
-| [Requirements register](docs/boilerplate/REQUIREMENTS.md) | What must the project demonstrably do? | Requirement or acceptance change |
-| [Feature register](docs/boilerplate/FEATURE_REGISTER.md) | Which features exist and what are their implementation, verification, and release states? | Every feature-state change |
-| [Feature record](docs/boilerplate/FEATURE_RECORD.md) | What outcome, boundaries, acceptance criteria, and evidence apply to one feature? | Throughout the feature lifecycle |
-| [Roadmap](docs/boilerplate/ROADMAP.md) | Which outcomes are planned, in what order, and on which assumptions? | Planning or dependency change |
-| [Traceability](docs/boilerplate/TRACEABILITY.md) | How do requirements connect to features, changes, tests, evidence, and releases? | Every material delivery change |
-| [Verification plan](docs/boilerplate/VERIFICATION_PLAN.md) | What must be verified, how, where, by whom, and with what evidence? | Requirement, risk, test, or environment change |
-| [Risk register](docs/boilerplate/RISK_REGISTER.md) | What could prevent the required outcome and who owns the response? | New risk, control failure, treatment, or review |
-| [Project status](docs/boilerplate/PROJECT_STATUS.md) | What is the current evidence-based delivery position? | Agreed reporting interval |
-| [Release process](docs/boilerplate/RELEASE_PROCESS.md) | How does a change progress from planned scope to a closed release? | Release-governance change |
-| [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md) | Which checks and conditions must be completed for a release? | Release method or obligation change |
-| [Release readiness](docs/boilerplate/RELEASE_READINESS.md) | Is this exact release candidate ready, and what evidence supports the decision? | Every release candidate |
-| [Release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) | What immutable evidence and result are retained for a release? | Once per candidate/release decision |
+| Product and service ownership | Evidence-based problem, users, outcomes, scope, priorities, and claims | [Product brief](docs/product/PRODUCT_BRIEF_TEMPLATE.md), [requirements](docs/product/PRODUCT_REQUIREMENTS_TEMPLATE.md), [roadmap](docs/boilerplate/ROADMAP.md) |
+| Research, experience, content, and design | Usable journeys, states, content, accessibility, design decisions, and evaluation | [Experience and design](docs/product/EXPERIENCE_AND_DESIGN_TEMPLATE.md), [accessibility](docs/product/ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md), [brand and messaging](docs/product/BRAND_AND_MESSAGING_TEMPLATE.md) |
+| Engineering and architecture | Maintainable implementation, controlled boundaries, decisions, compatibility, and traceability | [Architecture](docs/boilerplate/ARCHITECTURE.md), [feature record](docs/boilerplate/FEATURE_RECORD.md), [decision record](docs/boilerplate/DECISION_RECORD.md) |
+| Security, privacy, and data | Known threats and obligations, least privilege, safe data use, and verified controls | [Security policy](docs/boilerplate/SECURITY_POLICY.md), [risk register](docs/boilerplate/RISK_REGISTER.md), [readiness assessment](docs/AiReady.md) |
+| Quality assurance | Risk-based coverage, reproducible checks, manual evaluation, defects, and evidence | [Testing contract](docs/boilerplate/TESTING.md), [verification plan](docs/boilerplate/VERIFICATION_PLAN.md), [traceability](docs/boilerplate/TRACEABILITY.md) |
+| Operations and reliability | Deployability, observability, capacity, support, backup, recovery, and effective verification | [Operations and recovery](docs/boilerplate/OPERATIONS_AND_RECOVERY.md), [operational quality](docs/product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md) |
+| Release authority | Candidate integrity, gate decisions, residual-risk acceptance, execution, and closure | [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md), [release readiness](docs/boilerplate/RELEASE_READINESS.md), [release evidence](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) |
 
-Supporting boilerplate covers AI-agent instructions, contribution rules, security, architecture, multi-repository coordination, testing, operations, decisions, task definition, change review, and ownership.
+See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for the complete responsibility and approval model.
 
-## Recommended adoption
+## Core principles
 
-### Start with the existing project
+- **Evidence over assertion:** file presence, a completed checkbox, generated output, or a passing unit test is not proof beyond its actual scope.
+- **Current reality before redesign:** preserve observed legacy behaviour and uncertainty until owners decide what should change.
+- **One source of truth:** map existing authoritative systems before adding documentation.
+- **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
+- **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
+- **Exact candidate identity:** evidence and approval bind to immutable commits and artefacts, not moving branches or intended builds.
+- **System-level verification:** interconnected repositories are ready only when supported combinations, contracts, sequencing, and partial-failure recovery are verified.
+- **Human accountability:** named people own requirements, exceptions, risk acceptance, release approval, and production authority.
+- **Effective-environment proof:** source and pipeline success do not prove deployed, rendered, distributed, or user-observed behaviour.
+- **Learning closes the loop:** incidents, deviations, feedback, and stale evidence update requirements and controls.
 
-Complete the [adoption map](docs/boilerplate/ADOPTION_MAP.md) first. For each framework concern, identify the project's current authoritative document, system, or process. Reuse or improve it where practical. Create a new document only when the concern is genuinely missing.
+## Framework records
 
-The suggested minimum concerns are:
+| Record group | Purpose |
+| --- | --- |
+| [Assessment](docs/AiReady.md) | Determines the maximum permitted AI operating level from current control evidence and hard blockers. |
+| [Guidance](docs/README.md#guidance) | Explains adoption, legacy discovery, responsibilities, evidence, lifecycle, and assessment methodology. |
+| [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture, verification, risk, operations, and readiness. |
+| [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
+| [Release evidence](docs/releases/README.md) | Records exact candidates, approvals, execution, effective results, failures, rollback, and closure. |
 
-1. AI authority and repository instructions;
-2. project purpose and ownership;
-3. feature status;
-4. verification coverage;
-5. release process and checklist;
-6. current release-candidate readiness; and
-7. retained release evidence.
+Template names and locations are examples within this repository. An adopting project may use existing issues, wikis, documents, service-management systems, pipelines, or release platforms as its authoritative records.
 
-### Complete governed set
+## What completion means
 
-Use the full [boilerplate catalogue](docs/boilerplate/README.md) for projects with multiple teams or repositories, production operations, sensitive data, contractual obligations, migrations, accessibility requirements, or material security and recovery risks.
+A project is not AI-ready because it copied these files. It is ready for a stated operating level only when:
 
-Review each placeholder. Delete genuinely irrelevant boilerplate or mark it `NOT APPLICABLE` with evidence. Do not keep statements that are not true.
+- every applicable concern has an authoritative owner and source;
+- hard blockers are resolved for the authorised activity;
+- instructions and permissions match the intended AI use;
+- build and verification are reproducible from a clean environment;
+- requirements, design decisions, changes, risks, tests, and releases are traceable;
+- manual and effective-environment evaluation covers what automation cannot;
+- multi-repository dependencies are verified as an effective system;
+- recovery and incident responses are tested to the required level; and
+- accountable people approve current evidence and residual risk.
 
-## Release rule
+The [methodology](docs/guidance/methodology.md) defines scoring and evidence rules. AI Ready is not a security certification, accessibility-conformance claim, regulatory approval, or guarantee of software quality.
 
-A release is not ready merely because the build passes. Release approval requires:
+## Repository map
 
-- exact candidate commits and immutable artefacts;
-- approved and traceable scope;
-- current verification evidence for included features and applicable quality areas;
-- resolved blockers and authorised, time-bounded accepted risks;
-- compatible multi-repository/component versions where applicable;
-- backup, migration, rollback, restore, monitoring, and support readiness;
-- named human approval; and
-- effective-environment verification after release.
+- [`docs/`](docs/README.md): framework index and governance documents.
+- [`docs/guidance/`](docs/guidance/adoption.md): adoption and operating guidance.
+- [`docs/boilerplate/`](docs/boilerplate/README.md): project-neutral working records.
+- [`docs/product/`](docs/product/README.md): product, experience, design, and quality records.
+- [`docs/releases/`](docs/releases/README.md): immutable release-evidence records.
+- [`.github/`](.github): issue forms, pull-request template, ownership, dependency updates, and documentation checks for AI Ready itself.
 
-## Manual adoption
+## Project health and participation
 
-Clone or download the repository and review the relevant boilerplate with the accountable project owners. Merge it into the project's existing documentation and work-management system, or store adapted copies wherever that project already keeps authoritative records.
+- [Contributing](docs/CONTRIBUTING.md)
+- [Support](docs/SUPPORT.md)
+- [Security policy](docs/SECURITY.md)
+- [Governance](docs/GOVERNANCE.md)
+- [Code of Conduct](docs/CODE_OF_CONDUCT.md)
+- [Changelog](docs/CHANGELOG.md)
 
-Template file names and this repository's catalogue directories are suggestions only. They do not prescribe where an adopting project stores source code, tests, documentation, features, decisions, or release evidence.
-
-The documents are deliberately manual to adopt: an owner must decide what applies, replace every placeholder, remove false assumptions, and identify missing evidence. Copying files is not readiness.
-
-## Framework documentation
-
-- [Documentation index](docs/README.md)
-- [Adoption](docs/guidance/adoption.md)
-- [Document lifecycle](docs/guidance/document-lifecycle.md)
-- [AI coding-readiness methodology](docs/guidance/methodology.md)
-- [Control catalogue](docs/guidance/control-catalogue.md)
-
-See the complete [Markdown boilerplate catalogue](docs/boilerplate/README.md).
-
-## Product and release examples
-
-- [Product document examples](docs/product/README.md) cover product intent, requirements, brand and messaging, accessibility and inclusive design, architecture, and operational quality.
-- [Release evidence examples](docs/releases/README.md) cover standard and hotfix release decisions, exact candidates, verification, execution, and closure.
-
-These directories show coherent document groupings within AI Ready. Adopting projects may copy individual sections into their existing authoritative documents and systems; the directory names and locations are not requirements.
-
-## Repository validation
-
-GitHub Actions checks Markdown formatting and internal links. These checks protect document quality only. They do not determine whether an adopting project is AI-ready or whether a release is ready.
+GitHub Actions checks Markdown formatting and internal links. Those structural checks protect this repository's documentation quality; they do not assess an adopting project's readiness.
 
 ## Licence
 

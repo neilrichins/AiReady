@@ -74,6 +74,7 @@ Decision: `{{APPROVE_REJECT_DEFER}}` candidate `{{EXACT_IDENTIFIER}}`.
 | --- | --- | --- | --- | --- |
 | Incident owner | `{{NAME}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 | Release/technical owner | `{{NAME}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
+| Quality/verification owner | `{{NAME}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 | Risk/specialist owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 
 ## Execution and post-release result

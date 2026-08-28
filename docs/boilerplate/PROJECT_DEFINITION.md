@@ -9,6 +9,8 @@
 | Accountable owner | `{{NAME_OR_TEAM}}` |
 | Technical owner | `{{NAME_OR_TEAM}}` |
 | Product/service owner | `{{NAME_OR_TEAM}}` |
+| Experience/design owner | `{{NAME_OR_TEAM_OR_NOT_APPLICABLE}}` |
+| Quality/verification owner | `{{NAME_OR_TEAM}}` |
 | Security/data owner | `{{NAME_OR_TEAM_OR_NOT_APPLICABLE}}` |
 | Operations/release owner | `{{NAME_OR_TEAM_OR_NOT_APPLICABLE}}` |
 | Repository model | `{{STANDALONE_OR_MULTI_REPOSITORY}}` |

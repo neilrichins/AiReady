@@ -1,37 +1,101 @@
 # Operations and recovery
 
-## Authority
+## Service and document control
 
-| Operation | Command or procedure | Environment | Required approver | Confirmation | External effect |
+| Field | Value |
+| --- | --- |
+| Service/system | `{{NAME_AND_SCOPE}}` |
+| Accountable operations owner | `{{OWNER}}` |
+| Technical and incident owners | `{{OWNERS}}` |
+| Supported environments | `{{ENVIRONMENTS}}` |
+| Criticality/service commitments | `{{CLASSIFICATION_AND_COMMITMENTS}}` |
+| Assessed version/date | `{{VERSION_AND_DATE}}` |
+| Review/exercise trigger | `{{DATE_OR_EVENT}}` |
+
+## Authority and safety
+
+| Operation | Command or procedure | Environment | Required approver | Operator role | Confirmation | External/destructive/cost effect |
+| --- | --- | --- | --- | --- | --- | --- |
+| Build/package | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Deploy/publish | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Migrate/change state | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Disable/roll back | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Restore/recover | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Delete/retire | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+
+Separate read-only preflight, build, deployment, migration, publication, deletion, and recovery unless an intentionally atomic procedure has been reviewed and verified. AI agents receive only the authority explicitly recorded for the operation.
+
+## Environment and dependency readiness
+
+| Environment/dependency | Expected identity/version/state | Configuration/secrets source | Capacity/availability requirement | Verification | Owner |
 | --- | --- | --- | --- | --- | --- |
-| Build | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{CONTROL}}` | `{{EFFECT}}` |
-| Deploy | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{CONTROL}}` | `{{EFFECT}}` |
-| Migrate | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{CONTROL}}` | `{{EFFECT}}` |
-| Roll back | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| `{{ITEM}}` | `{{EXPECTED}}` | `{{SOURCE}}` | `{{REQUIREMENT}}` | `{{METHOD_AND_EVIDENCE}}` | `{{OWNER}}` |
 
 ## Preflight
 
-1. Confirm identity, environment, version, authority, maintenance window, and expected cost.
-2. Run `{{READ_ONLY_PREFLIGHT_COMMAND}}`.
-3. Record backups and recovery identifiers without exposing secrets.
-4. Review the proposed change and affected resources.
+1. Confirm operator identity, environment, account/tenant/region/channel, approved candidate, digest, authority, maintenance window, expected cost, and current effective version.
+2. Run `{{READ_ONLY_PREFLIGHT_COMMAND}}` and retain safe evidence.
+3. Confirm dependencies, compatible component versions, quotas, capacity, feature flags, certificates, integrations, monitoring, support, and incident routes.
+4. Record required backups, snapshots, exports, restore access, and recovery identifiers without exposing secrets.
+5. Review the exact proposed change, data/migration effects, stop conditions, rollback triggers, point of no return, and communications.
+6. Stop if actual state differs materially from the approved plan.
 
-## Deployment and verification
+## Observability and operational acceptance
 
-`{{ORDERED_PROCEDURE_WITH_STOP_CONDITIONS}}`
+| Signal/service-level indicator | Expected baseline/threshold | Source | Alert/response | Owner | Evidence/retention |
+| --- | --- | --- | --- | --- | --- |
+| `{{SIGNAL}}` | `{{EXPECTED}}` | `{{SOURCE}}` | `{{RESPONSE}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 
-Verify effective behaviour, logs, metrics, data counts, external delivery, and security boundaries. Source and CI evidence alone do not prove deployment success.
+Include user-visible availability, correctness, latency, error rates, saturation, queues/background work, dependency health, security signals, data integrity, cost, and support volume where applicable. Verify that alerts reach an available owner and contain enough safe context to act.
 
-## Migration
+## Deployment or publication procedure
 
-Document dry run, complete-snapshot validation, compatibility, write confirmation, idempotency, and post-migration comparison.
+| Order | Action | Preconditions | Expected result | Verification | Stop/rollback trigger | Owner |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 1 | `{{ACTION}}` | `{{PRECONDITIONS}}` | `{{EXPECTED}}` | `{{METHOD}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 
-## Rollback and restore
+Record actual timestamps, operators, versions, results, deviations, and evidence. Verify effective behaviour, configuration, logs, metrics, data, external delivery, security boundaries, and representative journeys. Source and Continuous Integration (CI) evidence alone do not prove deployment success.
 
-`{{ROLLBACK_TRIGGER_PROCEDURE_RECOVERY_POINT_OBJECTIVES_AND_VERIFICATION}}`
+## Migration and data preservation
 
-Last successful restore test: `{{DATE_AND_EVIDENCE}}`.
+| Stage | Requirement | Procedure | Evidence | Failure response | Owner |
+| --- | --- | --- | --- | --- | --- |
+| Dry run/rehearsal | `{{REQUIREMENT}}` | `{{PROCEDURE}}` | `{{EVIDENCE}}` | `{{RESPONSE}}` | `{{OWNER}}` |
+| Backup/snapshot validation | `{{REQUIREMENT}}` | `{{PROCEDURE}}` | `{{EVIDENCE}}` | `{{RESPONSE}}` | `{{OWNER}}` |
+| Compatibility/dual operation | `{{REQUIREMENT}}` | `{{PROCEDURE}}` | `{{EVIDENCE}}` | `{{RESPONSE}}` | `{{OWNER}}` |
+| Migration/idempotency | `{{REQUIREMENT}}` | `{{PROCEDURE}}` | `{{EVIDENCE}}` | `{{RESPONSE}}` | `{{OWNER}}` |
+| Reconciliation | `{{REQUIREMENT}}` | `{{PROCEDURE}}` | `{{EVIDENCE}}` | `{{RESPONSE}}` | `{{OWNER}}` |
 
-## Multi-repository sequence
+Document write controls, schema/application compatibility, expected counts/invariants, partial completion, retries, reverse migration or forward recovery, and the point after which rollback is unsafe.
 
-Reference the project's authoritative repository/component ecosystem record and document compatible intermediate states, deployment order, migration order, verification gates, stop conditions, partial-failure ownership, and reverse rollback order. If the project is standalone, record `NOT APPLICABLE` and the evidence supporting that classification.
+## Recovery objectives and procedures
+
+| Scenario/data set | Recovery Time Objective (RTO) | Recovery Point Objective (RPO) | Recovery method | Dependencies/access | Verification | Owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{SCENARIO}}` | `{{RTO}}` | `{{RPO}}` | `{{METHOD}}` | `{{REQUIREMENTS}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+
+Last successful backup restore or recovery exercise: `{{DATE_SCOPE_RESULT_AND_EVIDENCE}}`.
+
+Written recovery instructions without a successful exercise are partial evidence. Record untested assumptions, unavailable environments, data-loss boundaries, and manual dependencies.
+
+## Incident and support response
+
+| Severity/condition | Detection/reporting route | Incident authority | Initial response | Communication owner | Escalation target |
+| --- | --- | --- | --- | --- | --- |
+| `{{CONDITION}}` | `{{ROUTE}}` | `{{OWNER}}` | `{{RESPONSE}}` | `{{OWNER}}` | `{{TARGET}}` |
+
+Preserve diagnostics and a timeline without exposing restricted data. Feed incidents, near misses, support patterns, and recovery exercises back into risks, requirements, architecture, tests, runbooks, and release controls.
+
+## Multi-repository and component sequence
+
+| Order | Repository/component/version | Required compatible state | Action | Verification | Partial-failure owner/response | Reverse order |
+| ---: | --- | --- | --- | --- | --- | --- |
+| `{{NUMBER}}` | `{{TARGET}}` | `{{PRECONDITION}}` | `{{ACTION}}` | `{{EVIDENCE}}` | `{{OWNER_AND_RESPONSE}}` | `{{NUMBER}}` |
+
+Reference the authoritative repository ecosystem record. For a standalone project, record `NOT APPLICABLE`, the owner, and evidence that external packages, infrastructure, schemas, configuration, and deployment repositories were considered.
+
+## Operational gaps and exercises
+
+| ID | Gap or exercise | Risk/required outcome | Owner | Due/frequency | Result/evidence | Release effect |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ID}}` | `{{ITEM}}` | `{{RISK_OR_OUTCOME}}` | `{{OWNER}}` | `{{DATE}}` | `{{RESULT}}` | `{{BLOCK_CONDITION_ALLOW}}` |

@@ -14,6 +14,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 
 - [ ] Included and excluded requirements, features, fixes, migrations, dependencies, and known limitations are listed.
 - [ ] Every included feature is implemented and traceable to current verification evidence.
+- [ ] Approved journeys, states, content, accessibility, and design requirements are represented and verified where applicable.
 - [ ] Deferred scope and behavioural changes are documented.
 - [ ] Cross-repository contracts, supported combinations, and release order are current.
 - [ ] User, operator, support, migration, and documentation effects are covered.

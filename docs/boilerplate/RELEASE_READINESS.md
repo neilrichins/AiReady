@@ -46,7 +46,7 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | Functional and end-to-end | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security and authorisation | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Privacy and data | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
-| Accessibility and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Product intent, design, content, accessibility, and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Performance, reliability, capacity, and cost | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Compatibility, upgrade, and migration | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Multi-repository/component coordination | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -87,7 +87,9 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 | Role | Name | Decision | Candidate/version | Date |
 | --- | --- | --- | --- | --- |
 | Product/service owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
+| Experience/design/accessibility owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
+| Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Security/data owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Operations/release owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 

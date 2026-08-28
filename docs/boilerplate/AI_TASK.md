@@ -37,6 +37,20 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 | --- | --- | --- |
 | `{{LINK_OR_LOCATION}}` | `{{RATIONALE}}` | `{{SCOPE}}` |
 
+## Responsibility review
+
+| Responsibility | Applicability | Required input/decision | Owner/reviewer | Status |
+| --- | --- | --- | --- | --- |
+| Product/service | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Research/experience/design/accessibility | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Engineering/architecture | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Security/privacy/data | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Quality/verification | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Operations/reliability/support | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Release/communication | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+
+`NOT APPLICABLE` requires a reason and owner. The AI agent cannot supply reserved approval or risk-acceptance decisions.
+
 ## Verification and evidence
 
 | Criterion/risk | Method | Environment | Expected result | Evidence | Owner |

@@ -52,7 +52,9 @@ Record the project's actual authoritative locations; do not reorganise it to mat
 
 | Concern | Authoritative source |
 | --- | --- |
+| Discovery/current-state baseline | `{{LINK_OR_LOCATION}}` |
 | Project ownership and scope | `{{LINK_OR_LOCATION}}` |
+| Product intent, research, experience, and design | `{{LINK_OR_LOCATION}}` |
 | Requirements and feature status | `{{LINK_OR_LOCATION}}` |
 | Architecture and repository/component relationships | `{{LINK_OR_LOCATION}}` |
 | Testing and verification evidence | `{{LINK_OR_LOCATION}}` |
@@ -60,6 +62,7 @@ Record the project's actual authoritative locations; do not reorganise it to mat
 | Operations, deployment, and recovery | `{{LINK_OR_LOCATION}}` |
 | Release process, readiness, and historical evidence | `{{LINK_OR_LOCATION}}` |
 | AI-agent instructions and authority | `{{LINK_OR_LOCATION}}` |
+| Roles, decision rights, and support/escalation | `{{LINK_OR_LOCATION}}` |
 
 ## Contributing
 

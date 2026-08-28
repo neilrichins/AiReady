@@ -62,7 +62,7 @@ Record how the approved candidate was proven identical to the released artefact.
 | Build and artefact integrity | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Functional verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Regression verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
-| Accessibility and inclusive use | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Product intent, design, content, accessibility, and inclusive use | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security, privacy, and data | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Performance, capacity, and cost | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Reliability and recovery | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -123,7 +123,9 @@ Conditions: `{{CONDITIONS_OR_NONE}}`.
 | --- | --- | --- | --- | --- |
 | Release owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 | Product owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
+| Experience/design/accessibility owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 | Technical/operations owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
+| Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 | Specialist owner(s) | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 
 A materially changed candidate requires a new decision and updated evidence.

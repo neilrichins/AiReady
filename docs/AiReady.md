@@ -11,8 +11,9 @@
 | Assessed commit | `{{FULL_COMMIT_SHA}}` |
 | Assessment date | `{{YYYY-MM-DD}}` |
 | Assessor | `{{NAME_OR_TEAM}}` |
+| Accountable project/AI authority owner | `{{ACCOUNTABLE_OWNER}}` |
 | Technical owner | `{{ACCOUNTABLE_OWNER}}` |
-| Intended AI use | `{{ASSISTED_CODING_SUPERVISED_AUTOMATION_OR_OTHER}}` |
+| Intended AI use | `{{READ_ONLY_DISCOVERY_HUMAN_APPLIED_REMEDIATION_ASSISTED_CODING_SUPERVISED_AUTOMATION_OR_OTHER}}` |
 | Approved AI tools/models | `{{APPROVED_TOOLS_OR_NONE}}` |
 | Data classification | `{{PUBLIC_INTERNAL_CONFIDENTIAL_RESTRICTED}}` |
 | Repository model | `{{STANDALONE_OR_MULTI_REPOSITORY}}` |
@@ -23,7 +24,7 @@
 
 Choose exactly one:
 
-- [ ] **Not ready** — AI coding must not be used on this project.
+- [ ] **Not ready for AI coding** — only explicitly authorised read-only discovery or human-applied remediation suggestions may proceed.
 - [ ] **Assisted only** — AI may propose changes, but a human must inspect and apply them.
 - [ ] **Supervised** — AI may edit an isolated branch or worktree; every change requires human review.
 - [ ] **Controlled automation** — AI may complete bounded tasks and open pull requests; protected operations remain human-controlled.
@@ -65,6 +66,7 @@ Use `N/A` only when the control genuinely cannot apply. Explain it and remove it
 | Control | Score | Evidence / limitation |
 | --- | ---: | --- |
 | The intended AI use and prohibited uses are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Product, design, technical, quality, operations, risk, and release decision rights are assigned to accountable people | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Human owners, reviewers, escalation routes, and approval authority are named | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Agent permissions follow least privilege and distinguish read, write, external, and production actions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Stop conditions and actions requiring fresh approval are explicit | `{{0_1_2}}` | `{{EVIDENCE}}` |
@@ -99,6 +101,7 @@ Area score: `{{X_OF_10}}`
 | Control | Score | Evidence / limitation |
 | --- | ---: | --- |
 | Work begins with a problem, outcome, acceptance criteria, and constraints | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Approved product and design intent is separated from observed legacy behaviour, assumptions, defects, and unknowns | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Changes link to an issue or decision record and remain reviewable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Pull requests require risk, verification, documentation, and limitation evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | AI involvement and material human decisions can be recorded without exposing private prompts or data | `{{0_1_2}}` | `{{EVIDENCE}}` |
@@ -125,6 +128,7 @@ Area score: `{{X_OF_10}}`
 | CI runs the same gate from a clean environment and blocks merging on failure | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Tests cover normal behaviour, failure paths, security boundaries, migrations, and regressions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Manual, browser, accessibility, performance, or production checks are identified where automation is insufficient | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Critical journeys, alternate states, usability, content, and experience outcomes have defined evaluation and evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Contract and integration tests verify supported combinations across repository boundaries | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`
@@ -169,6 +173,7 @@ Area score: `{{X_OF_10}}`
 | --- | ---: | --- |
 | Code ownership and required reviewers match project risk | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Documentation changes accompany behavioural and operational changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Review covers applicable product, design, engineering, quality, security/data, operations, and release responsibilities | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Release evidence separates automated results, manual checks, production checks, unknowns, and accepted risks | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | The assessment is reviewed after material architecture, tooling, data, dependency, or authority changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
@@ -220,6 +225,9 @@ Record commands and results without secrets, private prompts, personal data, or 
 
 | Role | Name | Decision | Date |
 | --- | --- | --- | --- |
+| Project/AI authority owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
+| Product/design owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |
 | Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
+| Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
 | Security/data owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |
 | Release/operations owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |

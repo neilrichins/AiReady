@@ -2,6 +2,26 @@
 
 All notable changes are documented here. The format follows Keep a Changelog, and releases use Semantic Versioning.
 
+## [1.3.0] - 2026-08-28
+
+### Added
+
+- Added a safe legacy-project playbook and discovery/baseline record with evidence labels, current-versus-intended behaviour, reproducibility results, risk containment, and bounded remediation authority.
+- Added a responsibility and decision-rights model covering product, design, engineering, security/data, quality assurance, operations, and release ownership.
+- Added an experience and design specification covering research provenance, journeys, all relevant states, interaction, content, accessibility, design systems, evaluation, and implementation hand-off.
+- Added release-notes boilerplate that separates audience communication from internal evidence while preserving compatibility, migration, limitation, and claims boundaries.
+- Added open-source governance and support documents.
+
+### Changed
+
+- Rebuilt the root README as the authoritative project landing page with adoption routes, operating model, responsibility coverage, principles, completion criteria, and repository navigation.
+- Expanded adoption, lifecycle, assessment, and control guidance to connect legacy discovery through product intent, design, implementation, verification, operations, and release evidence.
+- Corrected stale references to removed tooling and the verification-plan filename.
+
+### Removed
+
+- Removed `.github/README.md` because GitHub selected it instead of the intended root project README.
+
 ## [1.2.0] - 2026-08-28
 
 ### Added
@@ -35,4 +55,4 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 - Evidence-based AI coding readiness assessment with hard blockers and a 100-point scoring model.
 - Project-neutral repository, architecture, testing, operations, security, task, review, and decision-record templates.
 - Dependency-free `init`, `audit`, and framework-validation commands.
-- Automated tests and CI quality workflow.
+- Automated tests and Continuous Integration (CI) quality workflow.

@@ -8,6 +8,7 @@ Use the [adoption map](../boilerplate/ADOPTION_MAP.md) before creating new recor
 
 - [Product brief](PRODUCT_BRIEF_TEMPLATE.md): problem, audience, value, principles, positioning, capabilities, measures, constraints, claims, and approvals.
 - [Product requirements](PRODUCT_REQUIREMENTS_TEMPLATE.md): testable outcomes, user journeys, functional and quality requirements, dependencies, acceptance evidence, and traceability.
+- [Experience and design specification](EXPERIENCE_AND_DESIGN_TEMPLATE.md): research evidence, journeys, interaction and content states, accessibility, design decisions, evaluation, and implementation hand-off.
 - [Brand and messaging brief](BRAND_AND_MESSAGING_TEMPLATE.md): identity, voice, messages, substantiation, information architecture, content strategy, and prohibited claims.
 - [Accessibility and inclusive-design addendum](ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md): product accessibility requirements, evidence boundaries, and test expectations.
 - [Architecture and operational-quality addendum](ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md): security, reliability, performance, cost, sustainability, operations, compatibility, recovery, and responsibility boundaries.
@@ -15,6 +16,7 @@ Use the [adoption map](../boilerplate/ADOPTION_MAP.md) before creating new recor
 ## Use rules
 
 - Product requirements guide implementation; their presence does not prove implementation or verification.
+- Design artefacts express intent; static views and prototypes do not prove responsive behaviour, accessibility, usability, implementation, or release status.
 - Every material requirement has an owner, priority, acceptance criteria, verification method, and evidence location.
 - Marketing and product claims must remain within verified evidence.
 - Accessibility, security, privacy, reliability, and recovery requirements are product requirements, not optional technical notes.

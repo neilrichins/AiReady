@@ -27,6 +27,7 @@
 | Area | Applicability | Minimum evidence | Current coverage | Gap owner |
 | --- | --- | --- | --- | --- |
 | Functional behaviour | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
+| User journeys, states, design, content, and usability | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Failure and recovery paths | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Security and authorisation | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Privacy and data handling | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |

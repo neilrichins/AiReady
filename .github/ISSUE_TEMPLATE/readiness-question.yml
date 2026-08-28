@@ -11,6 +11,9 @@ body:
     attributes:
       label: Control area
       options:
+        - Legacy discovery and baseline
+        - Product, experience, and design intent
+        - Roles and decision rights
         - Ownership and authority
         - Repository context
         - Architecture and source ownership

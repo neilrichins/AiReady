@@ -6,6 +6,7 @@
 | --- | --- |
 | Owner | `{{OWNER}}` |
 | Requirements | `{{REQ_IDS}}` |
+| Experience/design reference | `{{LINK_OR_NOT_APPLICABLE}}` |
 | Decision record | `{{LINK_OR_NOT_APPLICABLE}}` |
 | Affected repositories/components | `{{LIST}}` |
 | Implementation status | `{{STATUS}}` |

@@ -4,6 +4,8 @@
 
 Adopt concerns, not a directory structure. Begin with the project's existing repositories, documentation, work-management tools, quality controls, and release records. Do not move or duplicate effective material merely to match AI Ready.
 
+If the current system cannot be trusted or reproduced, begin with the [legacy-project playbook](legacy-project-playbook.md) and [discovery baseline](../boilerplate/DISCOVERY_AND_BASELINE.md). Do not fill templates from assumptions.
+
 ## Stage 1: Map what exists
 
 Complete the [adoption map](../boilerplate/ADOPTION_MAP.md). For each concern:
@@ -19,7 +21,15 @@ Name the accountable owner, approved AI tools, intended use, prohibited actions,
 
 Do not enable write-capable agents before authority and stop conditions exist.
 
-## Stage 3: Separate delivery states
+Map accountable responsibilities and reserved human decisions using [roles and decision rights](roles-and-decision-rights.md). An AI agent may perform authorised activities but cannot approve its own work, accept risk, or grant itself authority.
+
+## Stage 3: Confirm product and design intent
+
+Separate approved intent, observed current behaviour, owner-confirmed compatibility, defects, inferences, and unknowns. Record the problem, users, outcomes, requirements, journeys, states, content, accessibility, constraints, and acceptance evidence needed for the planned work.
+
+Do not infer a requirement solely because the existing implementation behaves that way. Do not treat a design, prototype, plan, or generated description as implemented behaviour.
+
+## Stage 4: Separate delivery states
 
 Ensure the project can distinguish:
 
@@ -33,25 +43,25 @@ Ensure the project can distinguish:
 
 These may live in an existing issue tracker, product system, documentation set, or release platform. The [feature register](../boilerplate/FEATURE_REGISTER.md) is boilerplate, not a required file.
 
-## Stage 4: Make verification reproducible
+## Stage 5: Make verification reproducible
 
 Record the project's complete quality commands and all additional manual or effective-environment checks. The verification plan must state what is checked, how, where, by whom, against which exact artefacts, and where evidence is retained.
 
 Continuous Integration (CI) should run the appropriate project-defined gate, but no language or CI platform is mandated.
 
-## Stage 5: Bound authority and untrusted output
+## Stage 6: Bound authority and untrusted output
 
 Separate read-only analysis, source edits, external communication, deployment, migration, publishing, deletion, and cost-bearing operations. Give AI agents the least authority required for the approved use and require fresh human approval for material external effects.
 
 Treat generated code, commands, configuration, structured data, database queries, markup, URLs, dependency suggestions, and infrastructure changes as untrusted. Apply controls appropriate to the project's technology and risk.
 
-## Stage 6: Make release readiness evidence-based
+## Stage 7: Make release readiness evidence-based
 
 Adapt the release-process, checklist, readiness, and evidence boilerplate to the project's existing release mechanism. A readiness decision must name exact candidate artefacts and distinguish passing evidence from planned, failed, blocked, stale, skipped, or not-applicable checks.
 
 For stateful systems, verify backups, preflight checks, migrations, rollback, restore, and post-change checks. Written recovery steps without a tested restore are partial evidence.
 
-## Stage 7: Increase automation gradually
+## Stage 8: Increase automation gradually
 
 Start with read-only analysis, then human-applied suggestions, isolated edits, reviewed changes, and only then bounded automation. Expand authority only after evidence shows the preceding level is reliable.
 

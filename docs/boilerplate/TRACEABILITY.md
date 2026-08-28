@@ -4,9 +4,9 @@
 
 This matrix connects approved intent to released evidence. Every release-scoped requirement and feature must be traceable through implementation, verification, and release records.
 
-| Requirement | Feature | Issue/change set | Repositories/components | Implementation | Tests/checks | Evidence | Release | Status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `REQ-001` | `FEAT-001` | `{{LINK_OR_ID}}` | `{{LIST}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{TEST_IDS}}` | `{{EVIDENCE}}` | `{{VERSION}}` | `{{STATUS}}` |
+| Requirement | Experience/design | Feature | Issue/change set | Repositories/components | Implementation | Tests/checks | Evidence | Release | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `REQ-001` | `{{DESIGN_STATE_OR_REFERENCE}}` | `FEAT-001` | `{{LINK_OR_ID}}` | `{{LIST}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{TEST_IDS}}` | `{{EVIDENCE}}` | `{{VERSION}}` | `{{STATUS}}` |
 
 ## Traceability rules
 
@@ -14,6 +14,7 @@ This matrix connects approved intent to released evidence. Every release-scoped 
 - Record exact commits, immutable artefact identifiers, or signed release identifiers.
 - Generated clients, schemas, packages, and documentation must trace to their authoritative source.
 - When a requirement changes, review every linked feature, test, risk, operation, and release claim.
+- When a journey, state, content rule, or design decision changes, review linked requirements, implementation, accessibility, tests, support, and release scope.
 - When a test is removed or weakened, identify every requirement and release that loses evidence.
 
 ## Untraced items

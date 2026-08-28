@@ -69,9 +69,9 @@ Generated output is untrusted until it passes the project-defined deterministic 
 
 ## Feature and verification traceability
 
-| Requirement | Feature/capability | Issue/change | Implementation artefacts | Verification IDs | Release |
-| --- | --- | --- | --- | --- | --- |
-| `{{REQ_ID}}` | `{{FEATURE_ID}}` | `{{LINK_OR_ID}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{VERIFICATION_IDS}}` | `{{RELEASE_OR_BACKLOG}}` |
+| Requirement | Experience/design state | Feature/capability | Issue/change | Implementation artefacts | Verification IDs | Release |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{REQ_ID}}` | `{{REFERENCE_OR_NOT_APPLICABLE}}` | `{{FEATURE_ID}}` | `{{LINK_OR_ID}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{VERIFICATION_IDS}}` | `{{RELEASE_OR_BACKLOG}}` |
 
 ## Gaps, changes, and decisions
 
@@ -86,5 +86,6 @@ Requirements are approved only when owners, acceptance criteria, verification me
 | Role | Name | Decision | Date | Conditions |
 | --- | --- | --- | --- | --- |
 | Product owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
+| Experience/design owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
 | Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
 | Specialist owner(s) | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |

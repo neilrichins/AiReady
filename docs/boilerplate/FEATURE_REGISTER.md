@@ -23,6 +23,7 @@ Release: `UNSCHEDULED`, `TARGETED`, `CANDIDATE`, `RELEASED`, `WITHDRAWN`.
 A feature may enter a release candidate only when:
 
 - its requirements and acceptance criteria are approved;
+- applicable experience, content, accessibility, and design states are approved and implementable;
 - implementation is complete on every affected repository/component;
 - required tests and manual checks have named owners and environments;
 - its verification row links to current evidence from the candidate artefacts;

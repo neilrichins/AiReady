@@ -8,8 +8,11 @@ Use the project's existing authoritative release system where one exists. Adapt 
 
 - [Release evidence record](RELEASE_EVIDENCE_TEMPLATE.md): complete evidence, approval, execution, result, and closure for an exact candidate.
 - [Hotfix release evidence record](HOTFIX_RELEASE_EVIDENCE_TEMPLATE.md): explicitly constrained evidence and risk control for an urgent release.
+- [Release notes](RELEASE_NOTES_TEMPLATE.md): audience-appropriate verified change, compatibility, migration, known limitations, support, and claims boundaries.
 
 The working [release-readiness record](../boilerplate/RELEASE_READINESS.md), [release checklist](../boilerplate/RELEASE_CHECKLIST.md), and [release process](../boilerplate/RELEASE_PROCESS.md) support the decision. This directory records what actually happened.
+
+Release evidence and release notes serve different audiences. The evidence record preserves detailed internal assurance and actual execution. Release notes communicate relevant verified outcomes and adoption action without exposing sensitive material.
 
 ## Record rules
 
