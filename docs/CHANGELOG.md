@@ -2,6 +2,20 @@
 
 All notable changes are documented here. The format follows Keep a Changelog, and releases use Semantic Versioning.
 
+## [Unreleased]
+
+### Added
+
+- Added optional delivery-checkpoint evidence for phases, milestones, migration steps, and architectural baselines without implying release approval.
+- Added explicit authoritative reading order, source-precedence, active-scope, non-goal, governing-decision, and stable-component-boundary controls for AI instructions and tasks.
+- Added compatibility-contract fields for component ownership, discovery, supported combinations, failure behaviour, migration, and verification.
+- Added distinct verification boundaries for simulated, component, packaged, integrated, representative, physical or specialist, and effective-environment evidence.
+- Added reusable execution-result tables for exact commands, working scope, environment, exit results, failures, skips, reruns, and limitations.
+
+### Changed
+
+- Expanded adoption, document lifecycle, readiness assessment, project status, architecture, testing, verification, repository-ecosystem, and release guidance to incorporate the new controls without prescribing tools or repository layout.
+
 ## [1.3.0] - 2026-08-28
 
 ### Added

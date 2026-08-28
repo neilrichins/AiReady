@@ -15,6 +15,10 @@ Complete the [adoption map](../boilerplate/ADOPTION_MAP.md). For each concern:
 3. decide to reuse, improve, merge, create, or explicitly exclude; and
 4. record the resulting authoritative source and review trigger.
 
+Also record the reading order, precedence rule, and lifecycle state for sources
+that can direct AI-assisted work. Do not assume that the newest or most detailed
+record is authoritative.
+
 ## Stage 2: Establish AI authority
 
 Name the accountable owner, approved AI tools, intended use, prohibited actions, data classification, review authority, permission boundary, and escalation path. Use the [agent-instruction boilerplate](../boilerplate/AGENT_INSTRUCTIONS.md) only to fill gaps in the instruction mechanism supported by the project's AI tools.
@@ -46,6 +50,12 @@ These may live in an existing issue tracker, product system, documentation set, 
 ## Stage 5: Make verification reproducible
 
 Record the project's complete quality commands and all additional manual or effective-environment checks. The verification plan must state what is checked, how, where, by whom, against which exact artefacts, and where evidence is retained.
+
+Separate simulated, component, installed or packaged, integrated,
+representative-environment, physical-device, specialist, and effective
+production evidence where applicable. Define what each level can and cannot
+prove. Preserve exact commands, execution scope, environment, exit results,
+failures, skips, reruns, and limitations.
 
 Continuous Integration (CI) should run the appropriate project-defined gate, but no language or CI platform is mandated.
 

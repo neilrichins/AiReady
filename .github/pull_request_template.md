@@ -24,6 +24,9 @@ Describe the problem solved, intended user or operational outcome, and linked is
 - [ ] Markdown formatting check passed
 - [ ] Internal links passed
 - [ ] Status definitions and cross-document references remain consistent
+- [ ] Reading order, source precedence, active scope, non-goals, and governing decisions remain coherent
+- [ ] Verification levels are explicit and evidence from one level is not promoted into another
+- [ ] Delivery checkpoints are not presented as release candidates or approvals
 - [ ] Documentation and templates were updated together
 - [ ] Product, design, engineering, quality, security/data, operations, and release hand-offs remain complete where applicable
 - [ ] Complete diff and all placeholders were reviewed

@@ -6,15 +6,19 @@
 | Legacy discovery | Preserved baseline, evidence labels, observed-versus-intended behaviour, bounded execution | Agent edits before understanding hidden state or turns inference into fact |
 | Product and design intent | Research provenance, approved outcomes, complete journeys/states, evaluated design decisions | Current implementation or generated personas treated as requirements |
 | Repository context | Current AI-tool instruction source, scoped context, glossary, project map | Long generic instructions detached from actual commands |
+| Context precedence | Task-relevant reading order, lifecycle state, precedence rule, conflict owner | Agent follows the newest or most detailed record despite superseded intent |
 | Architecture | Data-flow and trust-boundary record, source ownership, decision records | Generated files or production data mistaken for source |
+| Component boundaries | Stable ownership, forbidden responsibilities, compatibility range, discovery, failure behaviour, change authority | A routine change silently moves responsibility or assumes compatibility |
 | Repository ecosystem | Owned dependency graph, contract versions, supported combinations, coordinated release and rollback | Each repository passes independently while the combined system is incompatible |
 | Task traceability | Structured issue, acceptance criteria, linked pull request, decision log | Prompt-only work with no durable acceptance criteria |
 | Reproducibility | Locked dependencies, clean build, documented runtime, validated configuration | Works only on one workstation |
-| Quality | Single local gate mirrored by required CI, negative and migration tests | Unit tests alone presented as complete readiness |
+| Quality | Single local gate mirrored by required CI, risk coverage, and distinct verification levels | Simulated, component, or source tests presented as package, physical, user, or production proof |
+| Execution evidence | Exact command, scope, environment, exit result, failures, skips, reruns, and limitations | “Tests passed” without reproducible context or with hidden exclusions |
 | Security and supply chain | Threat model, secret and code scanning, reviewed pinned dependencies | Credentials in prompts, fixtures, logs, or shell history |
 | AI trust boundaries | Closed schemas, allowlists, escaping, sandboxing, verification | Generated output directly executed or published |
 | Operations and recovery | Separate commands, dry runs, confirmation, backup, rollback, effective verification | Deployment doubles as a destructive smoke test |
 | Human evidence | Code ownership, review record, current documentation, accepted-risk expiry | Checkboxes completed without evidence |
+| Delivery checkpoints | Exact baseline, bounded criteria, decisions, evidence, limitations, and handoff | Completed milestone or tag presented as release approval |
 
 ## Structural-validation boundary
 

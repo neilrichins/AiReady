@@ -39,6 +39,26 @@ Document people, external systems, deployable units, networks, environments, reg
 
 For interconnected repositories, link the [repository ecosystem](REPOSITORY_ECOSYSTEM.md) and identify supported version combinations and authoritative shared interfaces.
 
+### Stable responsibility boundaries
+
+Use this section for responsibilities that must remain stable through routine
+changes. A boundary change requires the named decision and migration process;
+it must not emerge accidentally from implementation.
+
+| Component/repository | Owns | Must not own | Allowed dependencies | Boundary enforcement | Change authority |
+| --- | --- | --- | --- | --- | --- |
+| `{{NAME}}` | `{{RESPONSIBILITIES}}` | `{{EXCLUSIONS}}` | `{{DEPENDENCIES}}` | `{{CONTROL}}` | `{{OWNER_OR_DECISION_PROCESS}}` |
+
+### Compatibility and discovery contracts
+
+| Contract/interface | Authoritative definition | Current version | Supported range/combinations | Discovery or negotiation | Failure behaviour | Compatibility verification | Migration rule |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{CONTRACT}}` | `{{SOURCE}}` | `{{VERSION}}` | `{{COMPATIBILITY}}` | `{{MECHANISM}}` | `{{BEHAVIOUR}}` | `{{CHECK}}` | `{{RULE}}` |
+
+Document unavailable, incompatible, duplicate, partially upgraded, and unknown
+component states where applicable. A declared version range is not evidence of
+compatibility without the required contract or integration result.
+
 ## Data flow and lifecycle
 
 Describe entry points, validation, processing, storage, transfer, output, authentication, authorisation, retention, deletion, backup, and recovery. Identify every point where data crosses a trust, organisation, region, or classification boundary.

@@ -9,6 +9,7 @@
 | AI tool/model | `{{APPROVED_TOOL_OR_NONE}}` |
 | Repositories/components affected | `{{LIST}}` |
 | Required reviewers | `{{OWNERS}}` |
+| Active phase/milestone/checkpoint | `{{IDENTIFIER_OR_NOT_APPLICABLE}}` |
 
 ## Problem and required outcome
 
@@ -37,6 +38,18 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 | --- | --- | --- |
 | `{{LINK_OR_LOCATION}}` | `{{RATIONALE}}` | `{{SCOPE}}` |
 
+Required reading order: `{{ORDER_OR_LINK_TO_AUTHORITATIVE_INSTRUCTIONS}}`.
+
+Source precedence when records conflict: `{{RULE_OR_LINK}}`.
+
+Governing decision records: `{{IDENTIFIERS_OR_NONE}}`.
+
+## Invariants and compatibility
+
+| Invariant, boundary, or contract | Required unchanged behaviour | Affected component/repository | Verification | Change authority |
+| --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{BEHAVIOUR}}` | `{{SCOPE}}` | `{{CHECK}}` | `{{OWNER_OR_DECISION}}` |
+
 ## Responsibility review
 
 | Responsibility | Applicability | Required input/decision | Owner/reviewer | Status |
@@ -57,11 +70,22 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 | --- | --- | --- | --- | --- | --- |
 | `{{ITEM}}` | `{{TEST_REVIEW_INSPECTION_ANALYSIS_OR_DEMONSTRATION}}` | `{{ENVIRONMENT}}` | `{{EXPECTED}}` | `{{REQUIRED_EVIDENCE}}` | `{{OWNER}}` |
 
+Verification levels required: `{{SIMULATED_COMPONENT_PACKAGED_INTEGRATION_REPRESENTATIVE_PHYSICAL_SPECIALIST_EFFECTIVE_OR_OTHER}}`.
+
+Evidence at one level does not establish a claim assigned to another level.
+
+## Execution results
+
+| Command/procedure | Working scope | Environment/tool versions | Exit/result | Failures/skips/reruns | Evidence/limitations |
+| --- | --- | --- | --- | --- | --- |
+| `{{EXACT_COMMAND_OR_PROCEDURE}}` | `{{DIRECTORY_COMPONENT_OR_SYSTEM}}` | `{{ENVIRONMENT}}` | `{{EXIT_CODE_AND_RESULT}}` | `{{DETAILS}}` | `{{LINKS_OR_LIMITATIONS}}` |
+
 ## Completion record
 
 - Exact changes/artefacts: `{{COMMITS_LINKS_OR_IDENTIFIERS}}`.
 - AI contribution: `{{ANALYSIS_CODE_DOCUMENTATION_TESTS_OR_OTHER}}`.
 - Material human decisions: `{{DECISIONS}}`.
 - Verification result: `{{PASS_FAIL_PARTIAL_BLOCKED}}`.
+- Verification levels completed and not completed: `{{LEVELS_AND_LIMITATIONS}}`.
 - Known limitations/follow-up: `{{ITEMS_AND_OWNERS}}`.
 - Reviewer decision/date: `{{DECISION}}`.

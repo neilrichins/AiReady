@@ -17,6 +17,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | [`FEATURE_RECORD.md`](FEATURE_RECORD.md) | Detailed outcome, acceptance, boundaries, verification, and recovery for one feature. |
 | [`ROADMAP.md`](ROADMAP.md) | Outcomes, sequencing, dependencies, capacity, assumptions, and confidence. |
 | [`PROJECT_STATUS.md`](PROJECT_STATUS.md) | Evidence-based current status, blockers, decisions, and next outcomes. |
+| [`DELIVERY_CHECKPOINT.md`](DELIVERY_CHECKPOINT.md) | Optional evidence for a phase, milestone, migration step, or architectural baseline without implying release approval. |
 
 ## Context, governance, and risk
 
@@ -55,4 +56,5 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 - Mark a concern `NOT APPLICABLE` only with evidence and an owner.
 - Link to exact evidence instead of copying volatile results into multiple documents.
 - Keep implemented, verified, approved, released, failed, and rolled-back states distinct.
+- Keep delivery checkpoints, release candidates, approved releases, and published or deployed releases distinct.
 - Adapt terminology to the project without weakening the underlying control or evidence boundary.

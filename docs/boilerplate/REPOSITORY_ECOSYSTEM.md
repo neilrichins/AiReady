@@ -17,11 +17,20 @@ For a standalone repository, explain how that was verified and identify any exte
 | --- | --- | --- | --- | --- | --- |
 | `{{REPOSITORY}}` | `{{RESPONSIBILITY}}` | `{{OWNER}}` | `{{ARTEFACTS}}` | `{{DEPENDENCIES}}` | `{{AUTHORITY}}` |
 
+## Component and package inventory
+
+Use this section for independently versioned or discoverable components within
+one repository as well as components spread across repositories.
+
+| Component/package | Repository/source | Owns | Must not own | Version source | Discovery/loading mechanism | Release unit |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{COMPONENT}}` | `{{SOURCE}}` | `{{RESPONSIBILITIES}}` | `{{EXCLUSIONS}}` | `{{SOURCE}}` | `{{MECHANISM}}` | `{{INDEPENDENT_COORDINATED_EMBEDDED}}` |
+
 ## Dependency and interface contracts
 
-| Producer | Consumer | Interface/schema/package | Version policy | Compatibility window | Contract test |
-| --- | --- | --- | --- | --- | --- |
-| `{{REPOSITORY}}` | `{{REPOSITORY}}` | `{{CONTRACT}}` | `{{POLICY}}` | `{{SUPPORTED_COMBINATIONS}}` | `{{TEST}}` |
+| Producer | Consumer | Interface/schema/package | Authoritative definition | Version policy | Compatibility window | Discovery/negotiation | Failure behaviour | Contract test |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{REPOSITORY}}` | `{{REPOSITORY}}` | `{{CONTRACT}}` | `{{SOURCE}}` | `{{POLICY}}` | `{{SUPPORTED_COMBINATIONS}}` | `{{MECHANISM}}` | `{{BEHAVIOUR}}` | `{{TEST}}` |
 
 Identify the authoritative definition. Generated clients, copied schemas, vendored files, and duplicated documentation must name their source and regeneration procedure.
 
@@ -47,3 +56,7 @@ Identify the authoritative definition. Generated clients, copied schemas, vendor
 ```
 
 Repository-local success is not system-level success. Record the environment, exact commits or artefact versions, supported combinations, results, and unresolved gaps.
+
+Test unavailable, incompatible, duplicate, partially upgraded, and unknown
+component states where they are credible. A successful discovery or load does
+not by itself prove behavioural compatibility.

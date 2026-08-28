@@ -32,16 +32,45 @@ Continuous Integration (CI) equivalence and merge protection: `{{PIPELINE_AND_EN
 
 ## Test levels and ownership
 
+Use the levels that apply to the project, rename them where necessary, and
+record why an omitted level cannot affect the claim. Keep these evidence
+boundaries explicit:
+
+- simulated or unit evidence proves behaviour only within the substituted boundary;
+- component evidence proves the named component, not its packaging or integrations;
+- installed or packaged-artefact evidence proves the distributable form in the tested environment;
+- integration evidence proves only the exact component and contract combination tested;
+- representative-environment evidence proves only the recorded configuration and differences;
+- physical-device, specialist, or human evaluation proves the observed scenarios and equipment; and
+- effective-environment evidence proves bounded deployed behaviour at the recorded time.
+
+No lower or adjacent level substitutes for a required higher or different
+level. Automation does not turn simulation into physical, specialist, user, or
+production evidence.
+
 | Level | Purpose | Scope/boundary | Required for | Environment | Owner | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | Static/policy | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Unit | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Component | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Installed/package artefact | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Contract | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Integration | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | End-to-end/journey | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Representative/staging environment | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Physical-device/domain system | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Manual/specialist/user | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Effective-environment | `{{PURPOSE}}` | `{{SCOPE}}` | `{{CHANGES}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+
+## Command and procedure evidence
+
+| Command/procedure | Working scope | Environment/tool versions | Exit/result | Passed/failed/skipped | Rerun/retry | Evidence and claim boundary |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{EXACT_COMMAND_OR_PROCEDURE}}` | `{{DIRECTORY_COMPONENT_OR_SYSTEM}}` | `{{ENVIRONMENT}}` | `{{EXIT_CODE_AND_RESULT}}` | `{{DETAILS}}` | `{{NONE_OR_REASON}}` | `{{EVIDENCE_AND_LIMIT}}` |
+
+Preserve material first failures and distinguish prerequisite or environment
+failures from product failures. Document hidden setup, platform assumptions,
+network access, external services, unavailable hardware, and excluded tests.
 
 ## Risk and coverage matrix
 

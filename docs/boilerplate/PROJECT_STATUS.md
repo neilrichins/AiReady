@@ -6,6 +6,13 @@ Overall status: `{{GREEN_AMBER_RED}}`
 
 Owner: `{{NAME_OR_TEAM}}`
 
+Current phase/milestone/checkpoint: `{{IDENTIFIER_STATUS_AND_EVIDENCE}}`
+
+Release state: `{{NO_CANDIDATE_CANDIDATE_READY_APPROVED_RELEASED_OR_OTHER}}`
+
+A completed delivery checkpoint does not imply that a release candidate exists
+or that release approval has been granted.
+
 ## Outcome summary
 
 `{{ANSWER_FIRST_SUMMARY_OF_PROGRESS_DECISIONS_AND_IMPACT}}`
@@ -17,6 +24,8 @@ Owner: `{{NAME_OR_TEAM}}`
 | Approved features | `{{NUMBER}}` | `{{NUMBER}}` | `{{NUMBER}}` | `{{LINK}}` |
 | Implemented features | `{{NUMBER}}` | `{{NUMBER}}` | `{{NUMBER}}` | `{{LINK}}` |
 | Verified features | `{{NUMBER}}` | `{{NUMBER}}` | `{{NUMBER}}` | `{{LINK}}` |
+| Delivery checkpoints met | `{{NUMBER}}` | `{{NUMBER}}` | `{{NUMBER}}` | `{{LINK}}` |
+| Qualified release candidates | `{{NUMBER}}` | `{{NUMBER}}` | `{{NUMBER}}` | `{{LINK}}` |
 | Release blockers | `{{NUMBER}}` | `{{NUMBER}}` | `0` | `{{LINK}}` |
 | Open high/critical risks | `{{NUMBER}}` | `{{NUMBER}}` | `0` | `{{LINK}}` |
 

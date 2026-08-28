@@ -6,6 +6,13 @@ This process applies to any project language, packaging model, hosting platform,
 
 ## Release states
 
+A delivery checkpoint may establish that a phase, milestone, migration step, or
+architectural baseline met its criteria. It remains delivery evidence only. It
+does not create an immutable release candidate, approve release risk, authorise
+an operation, or prove effective released behaviour. Use the optional
+[delivery checkpoint record](DELIVERY_CHECKPOINT.md) where that distinction is
+useful.
+
 1. **Planned:** target outcome and provisional feature scope exist.
 2. **Development:** approved scope is being implemented.
 3. **Feature complete:** scoped implementation is complete; verification may remain.
@@ -27,6 +34,7 @@ This process applies to any project language, packaging model, hosting platform,
 ### 2. Confirm feature and traceability state
 
 - Every included feature is `IMPLEMENTED` and links to its requirements, implementation, tests, risks, and release.
+- Review applicable checkpoint evidence, then revalidate every claim affected by the release candidate, environment, dependencies, or elapsed time.
 - Deferred or removed scope has an explicit decision and user/data effect.
 - Multi-repository changes identify compatible version combinations and merge/release order.
 

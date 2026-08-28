@@ -24,6 +24,7 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 - `product/` owns project-neutral product-intent, experience, design, and quality-requirement examples.
 - `boilerplate/PROJECT_DEFINITION.md`, `REQUIREMENTS.md`, `FEATURE_REGISTER.md`, and `ROADMAP.md` own project intent and planned scope.
 - `boilerplate/TRACEABILITY.md`, `VERIFICATION_PLAN.md`, and `RISK_REGISTER.md` own evidence coverage and uncertainty.
+- `boilerplate/DELIVERY_CHECKPOINT.md` owns optional evidence for bounded delivery states that do not imply release approval.
 - `boilerplate/RELEASE_PROCESS.md`, `RELEASE_CHECKLIST.md`, and `RELEASE_READINESS.md` own release governance and the working candidate decision.
 - `releases/` owns project-neutral immutable release-evidence examples.
 - `boilerplate/ARCHITECTURE.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context.
@@ -36,8 +37,9 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 3. Identify every document affected by a terminology, state, evidence, or process change.
 4. Keep placeholders explicit and instructions testable.
 5. Verify internal links, tables, headings, acronyms, and status definitions.
-6. Review `git diff --check`, repository status, and the complete diff before pushing.
-7. Confirm that no source-project or private information is present.
+6. Keep source precedence, reading order, delivery checkpoints, verification levels, and command-result evidence consistent across affected records.
+7. Review `git diff --check`, repository status, and the complete diff before pushing.
+8. Confirm that no source-project or private information is present.
 
 ## Validation
 

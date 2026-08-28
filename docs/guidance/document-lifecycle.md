@@ -14,6 +14,7 @@ AI Ready defines information concerns, not mandatory files or directories. Each 
 | Project definition | User need, ownership, constraints, obligations | Requirements, architecture, roadmap, AI authority | Scope, owner, environment, or obligation change |
 | Requirements | Project outcomes, policy, contracts, risks | Features, acceptance criteria, verification | Requirement or acceptance change |
 | Feature state | Requirements, implementation, decisions | Status, traceability, release scope | Implementation, verification, or release-state change |
+| Delivery checkpoint | Bounded outcome, exact change set, decisions, verification, and limitations | Phase or milestone handoff, planning, later release qualification | Material change to the assessed baseline or checkpoint decision |
 | Verification coverage | Requirements, features, risks, architecture | Release readiness and evidence | Code, configuration, dependency, environment, test, or risk change |
 | Risk state | Threats, defects, unknowns, control evidence | Prioritisation and release decisions | New risk, treatment, control failure, or review date |
 | Release readiness | Candidate artefacts, scope, evidence, risks, recovery | Approval and execution | Every candidate change or gate result |
@@ -29,6 +30,28 @@ The [product document examples](../product/README.md) provide boilerplate for ap
 - Volatile results are referenced by immutable evidence rather than copied repeatedly.
 - Historical release decisions are preserved, including failed and rolled-back candidates.
 - A template is removed or merged when it duplicates an effective existing record.
+
+## Status and precedence rules
+
+Classify records using the project's own equivalent of these states:
+
+| State | Meaning | Default AI use |
+| --- | --- | --- |
+| Authoritative | Approved current source for the stated scope | Use as controlling context |
+| Active planning | Current but not approved intent or implementation | Use within its stated decision boundary |
+| Evidence | Preserved observation or result for exact identifiers and conditions | Use only for the claims and currency recorded |
+| Historical | Retained context that no longer controls current work | Consult only when history is relevant |
+| Superseded | Replaced by an identified authoritative source | Do not use as current direction |
+| Template | Uncompleted example or boilerplate | Never treat placeholders or checkboxes as project evidence |
+
+Record an authoritative reading order and precedence rule in the project's
+existing index, instructions, or governance source. File recency, proximity to
+code, detail, or an AI-generated summary must not silently override approved
+product intent, current decisions, contracts, or candidate-specific evidence.
+
+When two sources conflict, record the conflict, affected scope, interim safety
+boundary, decision owner, and resolution. Stop affected work when choosing a
+source could change safety, compatibility, authority, acceptance, or release.
 
 ## Review rules
 

@@ -11,6 +11,7 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 | Framework concern | Existing authoritative source | Current adequacy | Action | Resulting authoritative source | Owner | Due/review trigger |
 | --- | --- | --- | --- | --- | --- | --- |
 | Discovery baseline and observed-versus-intended behaviour | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Authoritative reading order, source precedence, and document lifecycle state | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | AI authority and agent instructions | `{{LINK_LOCATION_OR_MISSING}}` | `{{ADEQUATE_PARTIAL_MISSING_NOT_APPLICABLE}}` | `{{REUSE_IMPROVE_MERGE_CREATE_NOT_APPLICABLE}}` | `{{LINK_OR_LOCATION}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` |
 | Project purpose, scope, ownership, constraints | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Product evidence, users, outcomes, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
@@ -18,6 +19,7 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 | Requirements and acceptance criteria | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Feature inventory and independent implementation/verification/release states | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Roadmap and dependencies | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Phase, milestone, or delivery-checkpoint evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Architecture, trust boundaries, and source ownership | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Multi-repository/component contracts and coordination | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Verification plan, coverage, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

@@ -46,6 +46,7 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | Stateful changes have a tested backup, rollback, and recovery path | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Untrusted AI output is deterministically validated before it can become executable code, commands, queries, markup, URLs, configuration, or infrastructure | `{{STATUS}}` | `{{EVIDENCE}}` |
 | The repository has a defined source-of-truth and generated-file boundary | `{{STATUS}}` | `{{EVIDENCE}}` |
+| Authoritative instructions define reading order, source precedence, active scope, non-goals, and escalation for material conflicts | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Applicable legal, regulatory, contractual, licensing, and accessibility obligations are known and owned | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Multi-repository changes have coordinated compatibility validation, release sequencing, partial-failure handling, and rollback | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
@@ -81,6 +82,7 @@ Area score: `{{X_OF_10}}`
 | Specialised parts of the project provide scoped context where global instructions are insufficient | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Terminology, business rules, and non-obvious constraints are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Instructions identify authoritative sources and warn against stale/generated artefacts | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Instructions define a task-relevant reading order, precedence rule, current delivery boundary, explicit non-goals, and governing decisions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -93,6 +95,7 @@ Area score: `{{X_OF_10}}`
 | Shared validation and rendering boundaries prevent duplicated safety logic | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Architecture changes require an explicit decision record and migration assessment | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Interconnected repositories have an owned dependency map, version/contract policy, and authoritative source for each shared interface | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
+| Stable component responsibilities, forbidden ownership, discovery, compatibility ranges, failure behaviour, and change authority are documented where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -130,6 +133,8 @@ Area score: `{{X_OF_10}}`
 | Manual, browser, accessibility, performance, or production checks are identified where automation is insufficient | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Critical journeys, alternate states, usability, content, and experience outcomes have defined evaluation and evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Contract and integration tests verify supported combinations across repository boundaries | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
+| Simulated, component, packaged, integrated, representative, physical/specialist, and effective-environment evidence are kept distinct where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Material command records preserve exact execution scope, environment, exit result, failures, skips, reruns, and limitations | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -175,6 +180,7 @@ Area score: `{{X_OF_10}}`
 | Documentation changes accompany behavioural and operational changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Review covers applicable product, design, engineering, quality, security/data, operations, and release responsibilities | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Release evidence separates automated results, manual checks, production checks, unknowns, and accepted risks | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Delivery checkpoints are distinguished from immutable release candidates, approvals, and released outcomes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | The assessment is reviewed after material architecture, tooling, data, dependency, or authority changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`

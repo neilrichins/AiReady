@@ -8,15 +8,21 @@ For an unfamiliar or legacy system, complete discovery and baseline work before 
 
 ## Evidence hierarchy
 
-Prefer evidence in this order:
+Evidence strength is claim-dependent. Prefer:
 
-1. reproducible test or policy-enforcement output from the assessed commit;
-2. verified behaviour in the effective runtime environment;
-3. reviewed configuration, source, and immutable records;
-4. current operational documentation;
+1. direct, current, reproducible evidence from the exact assessed commit or artefact in the environment required by the claim;
+2. independently reproduced test, inspection, analysis, demonstration, or policy-enforcement output within the relevant boundary;
+3. reviewed configuration, source, immutable records, and observed effective state that directly support the claim;
+4. current operational documentation supported by identifiable implementation or practice; and
 5. an owner statement with a dated remediation commitment.
 
 File presence alone is weak evidence. A repository can contain an excellent policy that nobody follows or a workflow that never runs.
+
+There is no universal promotion path between verification levels. A simulated
+test may be stronger than an anecdotal production observation for an isolated
+algorithmic claim, while only effective-environment evidence can prove an
+effective-environment claim. Record substitutions, real boundaries, omitted
+levels, environment differences, and what the result cannot establish.
 
 ## Scoring
 

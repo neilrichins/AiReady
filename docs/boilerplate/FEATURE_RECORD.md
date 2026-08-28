@@ -12,6 +12,7 @@
 | Implementation status | `{{STATUS}}` |
 | Verification status | `{{STATUS}}` |
 | Target release | `{{RELEASE_OR_BACKLOG}}` |
+| Delivery checkpoint | `{{IDENTIFIER_OR_NOT_APPLICABLE}}` |
 
 ## Outcome and scope
 
@@ -34,7 +35,7 @@
 
 | Criterion/risk | Method | Level | Environment | Automated/manual | Evidence required | Owner |
 | --- | --- | --- | --- | --- | --- | --- |
-| `{{CRITERION}}` | `{{TEST_REVIEW_INSPECTION_ANALYSIS_OR_DEMONSTRATION}}` | `{{UNIT_COMPONENT_CONTRACT_INTEGRATION_END_TO_END_MANUAL_PRODUCTION}}` | `{{ENVIRONMENT}}` | `{{TYPE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+| `{{CRITERION}}` | `{{TEST_REVIEW_INSPECTION_ANALYSIS_OR_DEMONSTRATION}}` | `{{SIMULATED_UNIT_COMPONENT_PACKAGED_CONTRACT_INTEGRATION_REPRESENTATIVE_PHYSICAL_SPECIALIST_EFFECTIVE}}` | `{{ENVIRONMENT}}` | `{{TYPE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 
 ## Release and recovery
 

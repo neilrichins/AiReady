@@ -46,8 +46,9 @@ Choose the path that matches the current project state. They may converge on the
 
 1. Define the bounded change with the [AI-assisted task record](docs/boilerplate/AI_TASK.md).
 2. Connect requirements, design, implementation, tests, risks, and release scope through [traceability](docs/boilerplate/TRACEABILITY.md).
-3. Qualify the exact candidate through the [release process](docs/boilerplate/RELEASE_PROCESS.md) and [readiness record](docs/boilerplate/RELEASE_READINESS.md).
-4. Preserve the decision and actual result in an immutable [release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md).
+3. Preserve phase or milestone evidence in an optional [delivery checkpoint](docs/boilerplate/DELIVERY_CHECKPOINT.md) when useful; it does not grant release authority.
+4. Qualify the exact candidate through the [release process](docs/boilerplate/RELEASE_PROCESS.md) and [readiness record](docs/boilerplate/RELEASE_READINESS.md).
+5. Preserve the decision and actual result in an immutable [release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md).
 
 ## Operating model
 
@@ -99,12 +100,14 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **Evidence over assertion:** file presence, a completed checkbox, generated output, or a passing unit test is not proof beyond its actual scope.
 - **Current reality before redesign:** preserve observed legacy behaviour and uncertainty until owners decide what should change.
 - **One source of truth:** map existing authoritative systems before adding documentation.
+- **Ordered authoritative context:** tell people and AI what to read, which source prevails, and when a conflict requires escalation.
 - **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
 - **Exact candidate identity:** evidence and approval bind to immutable commits and artefacts, not moving branches or intended builds.
 - **System-level verification:** interconnected repositories are ready only when supported combinations, contracts, sequencing, and partial-failure recovery are verified.
 - **Human accountability:** named people own requirements, exceptions, risk acceptance, release approval, and production authority.
 - **Effective-environment proof:** source and pipeline success do not prove deployed, rendered, distributed, or user-observed behaviour.
+- **No evidence-level substitution:** simulated, component, packaged, integrated, representative, physical, specialist, and effective-environment results establish different claims.
 - **Learning closes the loop:** incidents, deviations, feedback, and stale evidence update requirements and controls.
 
 ## Framework records

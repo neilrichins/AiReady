@@ -16,6 +16,22 @@
 - **Demonstration:** observed behaviour in a representative environment.
 - **Production verification:** bounded confirmation of effective deployed behaviour.
 
+## Verification environments and claim boundaries
+
+| Level/environment | Real and substituted boundaries | Claims this level may establish | Claims it cannot establish | Entry/preconditions | Evidence owner |
+| --- | --- | --- | --- | --- | --- |
+| Simulated/unit | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Component | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Installed/packaged artefact | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Integrated system | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Representative environment | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Physical device/domain system | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Manual/specialist/user evaluation | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+| Effective production/distribution | `{{BOUNDARIES}}` | `{{CLAIMS}}` | `{{EXCLUSIONS}}` | `{{PRECONDITIONS}}` | `{{OWNER}}` |
+
+Delete or rename levels that genuinely do not apply, but preserve the rule that
+evidence from one level cannot be promoted into a claim assigned to another.
+
 ## Coverage matrix
 
 | ID | Requirement/feature/risk | Method and level | Environment | Automated/manual | Command/procedure | Expected result | Evidence location | Owner | Status |

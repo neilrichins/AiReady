@@ -9,6 +9,7 @@ This is the complete framework index. The directories organise AI Ready itself; 
 | Unfamiliar, undocumented, or legacy system | [Legacy-project playbook](guidance/legacy-project-playbook.md) and [discovery baseline](boilerplate/DISCOVERY_AND_BASELINE.md) | Evidence-labelled current-state map, bounded authority, risks, and remediation backlog |
 | Existing project adding AI-assisted development | [Adoption guide](guidance/adoption.md), [adoption map](boilerplate/ADOPTION_MAP.md), then [assessment](AiReady.md) | Existing controls reused, gaps owned, maximum AI operating level approved |
 | Planned feature or change | [AI task](boilerplate/AI_TASK.md), [feature record](boilerplate/FEATURE_RECORD.md), and [traceability](boilerplate/TRACEABILITY.md) | Bounded work with acceptance, design, implementation, verification, and review evidence |
+| Phase, milestone, or delivery boundary | [Delivery checkpoint](boilerplate/DELIVERY_CHECKPOINT.md) | Durable evidence of a bounded delivery state without implying release approval |
 | Release candidate | [Release process](boilerplate/RELEASE_PROCESS.md), [checklist](boilerplate/RELEASE_CHECKLIST.md), and [readiness](boilerplate/RELEASE_READINESS.md) | Exact candidate approved, rejected, or deferred from current evidence |
 | Completed, failed, cancelled, or rolled-back release | [Release evidence](releases/README.md) | Immutable decision, execution, effective result, and follow-up history |
 
@@ -23,7 +24,7 @@ This is the complete framework index. The directories organise AI Ready itself; 
 
 ## Working boilerplate
 
-The [boilerplate catalogue](boilerplate/README.md) covers discovery, project definition, AI authority, architecture, interconnected repositories, requirements, features, roadmap, status, tasks, decisions, change review, risk, security, testing, verification, operations, recovery, and release readiness.
+The [boilerplate catalogue](boilerplate/README.md) covers discovery, project definition, AI authority, architecture, interconnected repositories, requirements, features, roadmap, status, tasks, delivery checkpoints, decisions, change review, risk, security, testing, verification, operations, recovery, and release readiness.
 
 Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefer the project's current authoritative system when it is effective.
 
