@@ -52,6 +52,11 @@ Authoritative architecture and data-flow diagrams: `{{LINKS_OR_LOCATIONS}}`.
 
 Document identity, authentication, authorisation, least privilege, secrets, encryption, retention, deletion, auditability, dependency integrity, incident response, and third-party processing where applicable.
 
+Use the [optional compliance-readiness checklists](../compliance/README.md) only
+when the approved applicability decision selects them. They add obligation,
+control, evidence, audit, and claim records; they do not create a certification,
+legal conclusion, or universal product requirement.
+
 ## Reliability, continuity, and recovery
 
 | Scenario | Required service behaviour | Detection | Recovery objective | Backup/restore/rollback method | Exercise evidence | Owner |

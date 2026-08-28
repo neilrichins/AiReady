@@ -23,6 +23,7 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 - `guidance/roles-and-decision-rights.md` owns cross-functional accountability and reserved human decisions.
 - `product/` owns project-neutral product-intent, experience, design, and quality-requirement examples.
 - `accessibility/` owns optional website, mobile application, WCAG result, and jurisdiction accessibility checklists and their claims boundaries.
+- `compliance/` owns optional applicability, obligation, control, audit-evidence, framework-readiness, sector, and compliance-claim records. It must not present readiness as certification, assurance, legal advice, regulatory approval, or a universal project requirement.
 - `boilerplate/PROJECT_DEFINITION.md`, `REQUIREMENTS.md`, `FEATURE_REGISTER.md`, and `ROADMAP.md` own project intent and planned scope.
 - `boilerplate/TRACEABILITY.md`, `VERIFICATION_PLAN.md`, and `RISK_REGISTER.md` own evidence coverage and uncertainty.
 - `boilerplate/DELIVERY_CHECKPOINT.md` owns optional evidence for bounded delivery states that do not imply release approval.

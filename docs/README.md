@@ -46,6 +46,24 @@ Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefe
 - [WCAG 2.2 Level A and AA results matrix](accessibility/WCAG_2_2_AA_SUCCESS_CRITERIA.md)
 - [Jurisdiction accessibility checklist](accessibility/JURISDICTION_ACCESSIBILITY_CHECKLIST.md)
 
+## Optional compliance-readiness checklists
+
+- [Compliance checklist index](compliance/README.md)
+- [Compliance applicability checklist](compliance/COMPLIANCE_APPLICABILITY_CHECKLIST.md)
+- [Obligations register](compliance/OBLIGATIONS_REGISTER.md)
+- [Control and evidence register](compliance/CONTROL_AND_EVIDENCE_REGISTER.md)
+- [Audit evidence index](compliance/AUDIT_EVIDENCE_INDEX.md)
+- [Compliance claims and approvals](compliance/COMPLIANCE_CLAIMS_AND_APPROVALS.md)
+- [ISO/IEC 27001 readiness](compliance/ISO_IEC_27001_READINESS_CHECKLIST.md)
+- [SOC 2 readiness](compliance/SOC_2_READINESS_CHECKLIST.md)
+- [GDPR and privacy](compliance/GDPR_AND_PRIVACY_CHECKLIST.md)
+- [Secure software development](compliance/SECURE_SOFTWARE_DEVELOPMENT_CHECKLIST.md)
+- [Software supply chain](compliance/SOFTWARE_SUPPLY_CHAIN_CHECKLIST.md)
+- [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md)
+- [AML/CTF applicability and readiness](compliance/AML_CTF_APPLICABILITY_CHECKLIST.md)
+- [Modern slavery and forced-labour due diligence](compliance/MODERN_SLAVERY_CHECKLIST.md)
+- [Sector and jurisdiction discovery](compliance/SECTOR_AND_JURISDICTION_CHECKLIST.md)
+
 ## Release evidence
 
 - [Release evidence index](releases/README.md)

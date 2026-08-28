@@ -39,6 +39,11 @@ Surface-specific optional accessibility records are indexed separately under
 [accessibility checklists](../accessibility/README.md). Use them only when
 applicable and map them to existing product, legal, test, and release sources.
 
+Applicability-first security, privacy, assurance, AI, financial-crime,
+supply-chain, and sector records are indexed under [optional compliance
+checklists](../compliance/README.md). Select only the relevant packs and preserve
+the difference between readiness evidence and an authorised external decision.
+
 | Boilerplate | Purpose |
 | --- | --- |
 | [`TRACEABILITY.md`](TRACEABILITY.md) | Requirements-to-feature-to-change-to-test-to-release evidence chain. |

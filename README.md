@@ -88,7 +88,7 @@ AI Ready treats delivery as a set of accountable responsibilities rather than jo
 | Product and service ownership | Evidence-based problem, users, outcomes, scope, priorities, and claims | [Product brief](docs/product/PRODUCT_BRIEF_TEMPLATE.md), [requirements](docs/product/PRODUCT_REQUIREMENTS_TEMPLATE.md), [roadmap](docs/boilerplate/ROADMAP.md) |
 | Research, experience, content, and design | Usable journeys, states, content, accessibility, design decisions, and evaluation | [Experience and design](docs/product/EXPERIENCE_AND_DESIGN_TEMPLATE.md), [accessibility](docs/product/ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md), [brand and messaging](docs/product/BRAND_AND_MESSAGING_TEMPLATE.md) |
 | Engineering and architecture | Maintainable implementation, controlled boundaries, decisions, compatibility, and traceability | [Architecture](docs/boilerplate/ARCHITECTURE.md), [feature record](docs/boilerplate/FEATURE_RECORD.md), [decision record](docs/boilerplate/DECISION_RECORD.md) |
-| Security, privacy, and data | Known threats and obligations, least privilege, safe data use, and verified controls | [Security policy](docs/boilerplate/SECURITY_POLICY.md), [risk register](docs/boilerplate/RISK_REGISTER.md), [readiness assessment](docs/AiReady.md) |
+| Security, privacy, compliance, and data | Known threats and obligations, least privilege, safe data use, verified controls, and bounded claims | [Security policy](docs/boilerplate/SECURITY_POLICY.md), [risk register](docs/boilerplate/RISK_REGISTER.md), [optional compliance records](docs/compliance/README.md), [readiness assessment](docs/AiReady.md) |
 | Quality assurance | Risk-based coverage, reproducible checks, manual evaluation, defects, and evidence | [Testing contract](docs/boilerplate/TESTING.md), [verification plan](docs/boilerplate/VERIFICATION_PLAN.md), [traceability](docs/boilerplate/TRACEABILITY.md) |
 | Operations and reliability | Deployability, observability, capacity, support, backup, recovery, and effective verification | [Operations and recovery](docs/boilerplate/OPERATIONS_AND_RECOVERY.md), [operational quality](docs/product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md) |
 | Release authority | Candidate integrity, gate decisions, residual-risk acceptance, execution, and closure | [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md), [release readiness](docs/boilerplate/RELEASE_READINESS.md), [release evidence](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) |
@@ -100,6 +100,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **Evidence over assertion:** file presence, a completed checkbox, generated output, or a passing unit test is not proof beyond its actual scope.
 - **Current reality before redesign:** preserve observed legacy behaviour and uncertainty until owners decide what should change.
 - **One source of truth:** map existing authoritative systems before adding documentation.
+- **Applicability before compliance work:** do not assume a law, standard, audit, certification, or policy applies; select it from current evidence and accountable review.
 - **Ordered authoritative context:** tell people and AI what to read, which source prevails, and when a conflict requires escalation.
 - **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
@@ -119,6 +120,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture, verification, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
 | [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
+| [Compliance-readiness checklists](docs/compliance/README.md) | Optional applicability-first security, privacy, assurance, AI, financial-crime, supply-chain, and jurisdiction records without implying certification or legal approval. |
 | [Release evidence](docs/releases/README.md) | Records exact candidates, approvals, execution, effective results, failures, rollback, and closure. |
 
 Template names and locations are examples within this repository. An adopting project may use existing issues, wikis, documents, service-management systems, pipelines, or release platforms as its authoritative records.
@@ -146,6 +148,7 @@ The [methodology](docs/guidance/methodology.md) defines scoring and evidence rul
 - [`docs/boilerplate/`](docs/boilerplate/README.md): project-neutral working records.
 - [`docs/product/`](docs/product/README.md): product, experience, design, and quality records.
 - [`docs/accessibility/`](docs/accessibility/README.md): optional website, mobile application, WCAG, and jurisdiction accessibility checklists.
+- [`docs/compliance/`](docs/compliance/README.md): optional applicability, obligation, control, evidence, framework-readiness, and claims checklists.
 - [`docs/releases/`](docs/releases/README.md): immutable release-evidence records.
 - [`.github/`](.github): issue forms, pull-request template, ownership, dependency updates, and documentation checks for AI Ready itself.
 

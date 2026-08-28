@@ -30,6 +30,7 @@ Describe the problem solved, intended user or operational outcome, and linked is
 - [ ] Documentation and templates were updated together
 - [ ] Product, design, engineering, quality, security/data, operations, and release hand-offs remain complete where applicable
 - [ ] Accessibility standards, versions, jurisdictions, evaluation methods, and claims remain evidence-bounded where applicable
+- [ ] Compliance packs remain optional, applicability-first, source-controlled, licensing-aware, and bounded from certification, assurance, legal, or regulatory claims
 - [ ] Complete diff and all placeholders were reviewed
 
 List evidence and unresolved limitations.

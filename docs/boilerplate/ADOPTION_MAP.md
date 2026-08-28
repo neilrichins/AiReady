@@ -17,6 +17,7 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 | Product evidence, users, outcomes, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Experience, design, content, accessibility, and evaluation | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Website/mobile accessibility standards, evaluation, jurisdiction, statements, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Optional compliance applicability, obligations, controls, audit evidence, framework packs, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Requirements and acceptance criteria | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Feature inventory and independent implementation/verification/release states | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Roadmap and dependencies | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

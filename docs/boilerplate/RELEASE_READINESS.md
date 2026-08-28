@@ -48,6 +48,7 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | Privacy and data | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Website/mobile accessibility standard and jurisdiction obligations | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Selected compliance obligations, controls, evidence, exceptions, and claims | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Performance, reliability, capacity, and cost | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Compatibility, upgrade, and migration | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Multi-repository/component coordination | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -92,6 +93,7 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 | Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Security/data owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
+| Legal/compliance/assurance owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Operations/release owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 
 ## Release result

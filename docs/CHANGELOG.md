@@ -6,6 +6,9 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an optional applicability-first compliance-readiness framework with obligation, control, evidence, audit, exception, multi-repository, and bounded-claim records.
+- Added optional readiness packs for ISO/IEC 27001, SOC 2, GDPR/privacy, secure software development, software supply chains, and AI governance without reproducing controlled standards or implying certification, assurance, or legal approval.
+- Added optional AML/CTF, sanctions, modern-slavery, forced-labour, sector, jurisdiction, procurement, and contractual discovery records with explicit specialist, regulator, auditor, governing-body, and legal decision boundaries.
 - Added optional W3C-based website and mobile application accessibility verification checklists with explicit AI, automation, sampling, assistive-technology, disabled-user, evidence, and conformance-claim boundaries.
 - Added a complete WCAG 2.2 Level A and AA success-criterion results matrix and WCAG conformance-requirement record.
 - Added a jurisdiction accessibility checklist with applicability, authoritative-source, technical-standard, statement, exception, monitoring, and approval controls plus a non-exhaustive official-source starter register.

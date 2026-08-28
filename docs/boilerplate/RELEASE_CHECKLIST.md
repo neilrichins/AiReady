@@ -37,6 +37,9 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Accessibility and assistive-technology checks passed where applicable.
 - [ ] Website/mobile accessibility evidence identifies the exact standard, version, scope, sample, platforms, methods, assistive technologies, failures, limitations, and accountable specialist decision.
 - [ ] Applicable country, regional, sector, procurement, statement, feedback, reporting, and exception requirements have current authoritative evidence and legal/compliance ownership.
+- [ ] Optional compliance packs were selected from an approved applicability decision rather than assumed for or excluded from the project.
+- [ ] Every release-affecting compliance obligation has a current authoritative source, owner, control, candidate-specific evidence, exception or uncertainty, and required approval.
+- [ ] Certification, assurance, legal, regulatory, privacy, security, AI, financial-crime, ethical-supply-chain, and procurement claims remain within the exact evidence and decision authority.
 - [ ] Performance, capacity, reliability, and cost checks passed where applicable.
 - [ ] Compatibility, installation, upgrade, migration, and idempotency checks passed.
 - [ ] Backup, rollback, restore, and disaster-recovery evidence is current.
@@ -51,6 +54,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Accepted risks have rationale, alternatives, contingency, owner, and expiry.
 - [ ] Release readiness record names the exact approved candidate.
 - [ ] Technical, security/data, product, and operations approvals are recorded as applicable.
+- [ ] Required legal, compliance, privacy, audit, certification, financial-crime, procurement, or governing-body decisions are recorded where an applicable obligation requires them.
 
 ## Pre-release recovery point
 
