@@ -42,7 +42,8 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md) | Lifecycle from planned scope through immutable candidate, approval, release, and closure. |
 | [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) | Reusable conditions and checks for a release operation. |
 | [`RELEASE_READINESS.md`](RELEASE_READINESS.md) | Working evidence and decision for one exact release candidate. |
-| [`RELEASE_EVIDENCE.md`](RELEASE_EVIDENCE.md) | Immutable historical record for approved, failed, cancelled, or rolled-back releases. |
+| [Release evidence record](../releases/RELEASE_EVIDENCE_TEMPLATE.md) | Immutable historical record for approved, failed, cancelled, or rolled-back releases. |
+| [Hotfix release evidence record](../releases/HOTFIX_RELEASE_EVIDENCE_TEMPLATE.md) | Constrained evidence, risk decisions, compensating controls, and follow-up for an urgent release. |
 
 ## Adaptation rules
 

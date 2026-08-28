@@ -8,6 +8,7 @@ AI Ready defines information concerns, not mandatory files or directories. Each 
 
 | Information | Inputs | Downstream use | Update trigger |
 | --- | --- | --- | --- |
+| Product intent | User research, strategy, obligations, evidence | Requirements, messages, roadmap, quality constraints | Problem, audience, evidence, product claim, or strategy change |
 | Project definition | User need, ownership, constraints, obligations | Requirements, architecture, roadmap, AI authority | Scope, owner, environment, or obligation change |
 | Requirements | Project outcomes, policy, contracts, risks | Features, acceptance criteria, verification | Requirement or acceptance change |
 | Feature state | Requirements, implementation, decisions | Status, traceability, release scope | Implementation, verification, or release-state change |
@@ -15,6 +16,8 @@ AI Ready defines information concerns, not mandatory files or directories. Each 
 | Risk state | Threats, defects, unknowns, control evidence | Prioritisation and release decisions | New risk, treatment, control failure, or review date |
 | Release readiness | Candidate artefacts, scope, evidence, risks, recovery | Approval and execution | Every candidate change or gate result |
 | Release evidence | Approved candidate and actual operation | Audit history, support, future planning | Release, failure, cancellation, or rollback |
+
+The [product document examples](../product/README.md) provide boilerplate for approved intent and testable quality boundaries. The [release evidence examples](../releases/README.md) provide immutable records of exact candidates, decisions, execution, and outcomes. A project may map these concerns to existing authoritative systems instead of adopting the example file structure.
 
 ## Ownership rules
 

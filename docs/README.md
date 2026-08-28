@@ -26,6 +26,23 @@ This directory contains the complete documentation framework. Its structure is a
 - release process, checklist, readiness, evidence, operations, and recovery; and
 - security and change review.
 
+## Product documents
+
+- [Product document examples](product/README.md)
+- [Product brief](product/PRODUCT_BRIEF_TEMPLATE.md)
+- [Product requirements](product/PRODUCT_REQUIREMENTS_TEMPLATE.md)
+- [Brand and messaging brief](product/BRAND_AND_MESSAGING_TEMPLATE.md)
+- [Accessibility and inclusive-design addendum](product/ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md)
+- [Architecture and operational-quality addendum](product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md)
+
+## Release evidence
+
+- [Release evidence examples](releases/README.md)
+- [Release evidence record](releases/RELEASE_EVIDENCE_TEMPLATE.md)
+- [Hotfix release evidence record](releases/HOTFIX_RELEASE_EVIDENCE_TEMPLATE.md)
+
+These are example groupings, not mandatory directories for an adopting project.
+
 ## AiReady repository governance
 
 - [Contributing](CONTRIBUTING.md)

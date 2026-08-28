@@ -48,7 +48,7 @@ Implemented does not mean verified. Verified does not mean released.
 | [Release process](docs/boilerplate/RELEASE_PROCESS.md) | How does a change progress from planned scope to a closed release? | Release-governance change |
 | [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md) | Which checks and conditions must be completed for a release? | Release method or obligation change |
 | [Release readiness](docs/boilerplate/RELEASE_READINESS.md) | Is this exact release candidate ready, and what evidence supports the decision? | Every release candidate |
-| [Release evidence record](docs/boilerplate/RELEASE_EVIDENCE.md) | What immutable evidence and result are retained for a release? | Once per candidate/release decision |
+| [Release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) | What immutable evidence and result are retained for a release? | Once per candidate/release decision |
 
 Supporting boilerplate covers AI-agent instructions, contribution rules, security, architecture, multi-repository coordination, testing, operations, decisions, task definition, change review, and ownership.
 
@@ -104,6 +104,13 @@ The documents are deliberately manual to adopt: an owner must decide what applie
 - [Control catalogue](docs/guidance/control-catalogue.md)
 
 See the complete [Markdown boilerplate catalogue](docs/boilerplate/README.md).
+
+## Product and release examples
+
+- [Product document examples](docs/product/README.md) cover product intent, requirements, brand and messaging, accessibility and inclusive design, architecture, and operational quality.
+- [Release evidence examples](docs/releases/README.md) cover standard and hotfix release decisions, exact candidates, verification, execution, and closure.
+
+These directories show coherent document groupings within AI Ready. Adopting projects may copy individual sections into their existing authoritative documents and systems; the directory names and locations are not requirements.
 
 ## Repository validation
 

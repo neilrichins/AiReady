@@ -2,6 +2,19 @@
 
 All notable changes are documented here. The format follows Keep a Changelog, and releases use Semantic Versioning.
 
+## [1.2.0] - 2026-08-28
+
+### Added
+
+- Added project-neutral product brief, product requirements, brand and messaging, accessibility and inclusive-design, and architecture and operational-quality templates under `docs/product/`.
+- Added standard and hotfix release-evidence templates under `docs/releases/`.
+- Added detailed release controls for immutable candidate identity, feature qualification, gate evidence, interconnected repositories and components, migration, effective-environment verification, accepted risks, execution, and closure.
+
+### Changed
+
+- Linked product intent, implementation evidence, release readiness, and immutable release history without prescribing where an adopting project stores those records.
+- Expanded the documentation indexes and lifecycle guidance for the new example document groupings.
+
 ## [1.1.0] - 2026-08-28
 
 ### Changed

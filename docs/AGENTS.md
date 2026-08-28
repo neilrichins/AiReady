@@ -19,9 +19,11 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 ## Document ownership
 
 - `AiReady.md` owns AI coding-readiness assessment.
+- `product/` owns project-neutral product-intent and quality-requirement examples.
 - `boilerplate/PROJECT_DEFINITION.md`, `REQUIREMENTS.md`, `FEATURE_REGISTER.md`, and `ROADMAP.md` own project intent and planned scope.
 - `boilerplate/TRACEABILITY.md`, `VERIFICATION_PLAN.md`, and `RISK_REGISTER.md` own evidence coverage and uncertainty.
-- `boilerplate/RELEASE_PROCESS.md`, `RELEASE_CHECKLIST.md`, `RELEASE_READINESS.md`, and `RELEASE_EVIDENCE.md` own release governance and evidence.
+- `boilerplate/RELEASE_PROCESS.md`, `RELEASE_CHECKLIST.md`, and `RELEASE_READINESS.md` own release governance and the working candidate decision.
+- `releases/` owns project-neutral immutable release-evidence examples.
 - `boilerplate/ARCHITECTURE.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context.
 - `.github/` owns this repository's contribution and document-quality checks.
 
