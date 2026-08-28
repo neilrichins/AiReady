@@ -1,0 +1,44 @@
+name: AI-assisted development task
+description: Define a bounded, reviewable task for human and AI collaboration.
+title: "Task: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the user or operational problem without prescribing a solution first.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: repositories
+    attributes:
+      label: Repositories and change-set identifier
+      description: List every affected repository, authoritative tracker, dependency, owner, and required merge/release order. State standalone when verified.
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Architecture, data, security, and authority boundaries
+      description: Include prohibited actions, sensitive data, external effects, production access, cost, and fresh approvals required.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Required evidence
+      description: Include local/CI gates, contract combinations, manual checks, deployment verification, and recovery evidence as applicable.
+    validations:
+      required: true

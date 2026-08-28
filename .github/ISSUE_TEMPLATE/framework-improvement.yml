@@ -1,0 +1,38 @@
+name: Framework improvement
+description: Propose a control, template, validation, or methodology improvement.
+title: "Improvement: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the readiness failure or ambiguity without prescribing a solution first.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Required outcome
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and examples
+      description: Use project-neutral, non-sensitive examples only.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility and adoption impact
+      description: Address scoring, existing assessments, automation, templates, and multi-repository systems.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true

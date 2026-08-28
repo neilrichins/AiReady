@@ -1,0 +1,33 @@
+name: Readiness question
+description: Ask how to apply or interpret an AI Ready control.
+title: "Question: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include private repository content, credentials, personal data, customer information, or private prompts.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Control area
+      options:
+        - Ownership and authority
+        - Repository context
+        - Architecture and source ownership
+        - Multi-repository coordination
+        - Task traceability
+        - Reproducibility
+        - Tests and quality gates
+        - Security and supply chain
+        - AI trust boundaries
+        - Operations and recovery
+        - Human review and evidence
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Use a sanitised, project-neutral description.
+    validations:
+      required: true
