@@ -1,82 +1,113 @@
 # AI Ready
 
-AI Ready is an open framework for determining whether a software repository is prepared for controlled artificial intelligence (AI)-assisted coding.
+AI Ready is a documentation-first, language-neutral framework for preparing software projects for controlled artificial intelligence (AI)-assisted development and evidence-based release decisions.
 
-It provides:
+Its primary deliverables are reusable Markdown documents. They help developers and AI agents understand what a project is, what it must do, which features exist, what has actually been implemented and verified, what remains risky or unknown, and what evidence is required before a release can proceed.
 
-- an evidence-based readiness assessment in [`AiReady.md`](AiReady.md);
-- reusable repository instructions and governance documents in [`templates/`](templates/README.md);
-- a dependency-free Node.js command-line audit for structural checks;
-- a Continuous Integration (CI) workflow and structured issue and pull-request templates; and
-- explicit boundaries between automated evidence, human review, and claims that automation cannot prove.
+The framework does not prescribe a programming language, build system, hosting model, test tool, or release platform. Each adopting project records its own commands and evidence in the Markdown templates.
 
-AI Ready is not a security certification, a compliance standard, or permission for an AI agent to operate production systems. It is a repeatable way to expose missing controls before AI is allowed to change code.
+## What the document framework manages
 
-## Quick start
-
-Requirements: Node.js 22 or later.
-
-```bash
-git clone https://github.com/neilrichins/AiReady.git
-cd AiReady
-node bin/aiready.js init ../your-project
-node bin/aiready.js audit ../your-project
+```mermaid
+flowchart LR
+    A["Project definition"] --> B["Requirements"]
+    B --> C["Feature records"]
+    C --> D["Implementation"]
+    D --> E["Verification evidence"]
+    E --> F["Release readiness decision"]
+    F --> G["Release execution"]
+    G --> H["Versioned release evidence"]
+    H --> A
+    I["Risks and decisions"] --> C
+    I --> E
+    I --> F
 ```
 
-`init` copies only files that do not already exist. It never overwrites a project file. Review every copied document and replace all `{{PLACEHOLDER}}` values before treating the project as assessed.
+The framework deliberately keeps these states separate:
 
-The first audit is expected to fail until the copied controls have been reviewed and completed.
+- **implemented:** code or configuration exists;
+- **verified:** the defined evidence passed against named commits, artefacts, and environments; and
+- **released:** the approved artefacts were distributed or deployed and post-release checks passed.
 
-To produce machine-readable output:
+Implemented does not mean verified. Verified does not mean released.
 
-```bash
-node bin/aiready.js audit ../your-project --json
-```
+## Core Markdown documents
 
-The audit returns a non-zero exit code when required structural controls are missing or unresolved placeholders remain. It cannot determine whether the controls are accurate, effective, or followed.
+| Document | Question answered | When updated |
+| --- | --- | --- |
+| [AI readiness assessment](docs/AiReady.md) | Is the repository controlled enough for the intended level of AI coding? | AI tool, authority, data, architecture, or control change |
+| [Project definition](docs/boilerplate/PROJECT_DEFINITION.md) | What is the project, who owns it, and what constraints apply? | Scope, owner, environment, or obligation change |
+| [Requirements register](docs/boilerplate/REQUIREMENTS.md) | What must the project demonstrably do? | Requirement or acceptance change |
+| [Feature register](docs/boilerplate/FEATURE_REGISTER.md) | Which features exist and what are their implementation, verification, and release states? | Every feature-state change |
+| [Feature record](docs/boilerplate/FEATURE_RECORD.md) | What outcome, boundaries, acceptance criteria, and evidence apply to one feature? | Throughout the feature lifecycle |
+| [Roadmap](docs/boilerplate/ROADMAP.md) | Which outcomes are planned, in what order, and on which assumptions? | Planning or dependency change |
+| [Traceability](docs/boilerplate/TRACEABILITY.md) | How do requirements connect to features, changes, tests, evidence, and releases? | Every material delivery change |
+| [Verification plan](docs/boilerplate/VERIFICATION_PLAN.md) | What must be verified, how, where, by whom, and with what evidence? | Requirement, risk, test, or environment change |
+| [Risk register](docs/boilerplate/RISK_REGISTER.md) | What could prevent the required outcome and who owns the response? | New risk, control failure, treatment, or review |
+| [Project status](docs/boilerplate/PROJECT_STATUS.md) | What is the current evidence-based delivery position? | Agreed reporting interval |
+| [Release process](docs/boilerplate/RELEASE_PROCESS.md) | How does a change progress from planned scope to a closed release? | Release-governance change |
+| [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md) | Which checks and conditions must be completed for a release? | Release method or obligation change |
+| [Release readiness](docs/boilerplate/RELEASE_READINESS.md) | Is this exact release candidate ready, and what evidence supports the decision? | Every release candidate |
+| [Release evidence record](docs/boilerplate/RELEASE_EVIDENCE.md) | What immutable evidence and result are retained for a release? | Once per candidate/release decision |
 
-## Readiness model
+Supporting boilerplate covers AI-agent instructions, contribution rules, security, architecture, multi-repository coordination, testing, operations, decisions, task definition, change review, and ownership.
 
-The assessment covers ten control areas:
+## Recommended adoption
 
-1. purpose, ownership, and authority;
-2. repository instructions and context;
-3. architecture and source ownership;
-4. task definition and traceability;
-5. reproducible development environment;
-6. tests and deterministic quality gates;
-7. security, privacy, and supply-chain controls;
-8. AI-output and data trust boundaries;
-9. deployment, migration, rollback, and recovery; and
-10. human review, documentation, and evidence.
+### Start with the existing project
 
-These controls apply to standalone repositories and systems split across multiple interconnected repositories. Multi-repository projects must also document repository ownership, dependency direction, interface contracts, compatibility, coordinated testing, release order, and recovery order.
+Complete the [adoption map](docs/boilerplate/ADOPTION_MAP.md) first. For each framework concern, identify the project's current authoritative document, system, or process. Reuse or improve it where practical. Create a new document only when the concern is genuinely missing.
 
-Scores are useful for prioritisation, but hard blockers take precedence. A high score with an unresolved hard blocker is not AI-ready.
+The suggested minimum concerns are:
 
-See [`docs/methodology.md`](docs/methodology.md) for the scoring rules and [`docs/adoption.md`](docs/adoption.md) for a staged implementation approach.
+1. AI authority and repository instructions;
+2. project purpose and ownership;
+3. feature status;
+4. verification coverage;
+5. release process and checklist;
+6. current release-candidate readiness; and
+7. retained release evidence.
 
-## Repository contents
+### Complete governed set
 
-| Path | Purpose |
-| --- | --- |
-| [`AiReady.md`](AiReady.md) | Canonical assessment template. |
-| [`templates/AGENTS.md`](templates/AGENTS.md) | Repository-wide instructions for AI coding agents. |
-| [`templates/docs/`](templates/docs/README.md) | Architecture, testing, operations, and decision-record templates. |
-| [`templates/.github/`](templates/.github/pull_request_template.md) | Task, review, ownership, and CI boilerplate. |
-| [`bin/`](bin/README.md) | Safe `init`, `audit`, and framework-validation command-line interface. |
-| [`lib/`](lib/README.md) | Dependency-free audit and template-copy implementation. |
-| [`test/`](test/README.md) | Automated tests and fixtures generated at runtime. |
-| [`.github/`](.github/README.md) | Ownership, issue, review, dependency, and CI governance. |
+Use the full [boilerplate catalogue](docs/boilerplate/README.md) for projects with multiple teams or repositories, production operations, sensitive data, contractual obligations, migrations, accessibility requirements, or material security and recovery risks.
 
-## Development
+Review each placeholder. Delete genuinely irrelevant boilerplate or mark it `NOT APPLICABLE` with evidence. Do not keep statements that are not true.
 
-```bash
-npm test
-npm run check
-```
+## Release rule
 
-`npm run check` runs tests, audits this framework repository, verifies internal Markdown links, checks required boilerplate, and scans for unresolved template defects or prohibited source-project references.
+A release is not ready merely because the build passes. Release approval requires:
+
+- exact candidate commits and immutable artefacts;
+- approved and traceable scope;
+- current verification evidence for included features and applicable quality areas;
+- resolved blockers and authorised, time-bounded accepted risks;
+- compatible multi-repository/component versions where applicable;
+- backup, migration, rollback, restore, monitoring, and support readiness;
+- named human approval; and
+- effective-environment verification after release.
+
+## Manual adoption
+
+Clone or download the repository and review the relevant boilerplate with the accountable project owners. Merge it into the project's existing documentation and work-management system, or store adapted copies wherever that project already keeps authoritative records.
+
+Template file names and this repository's catalogue directories are suggestions only. They do not prescribe where an adopting project stores source code, tests, documentation, features, decisions, or release evidence.
+
+The documents are deliberately manual to adopt: an owner must decide what applies, replace every placeholder, remove false assumptions, and identify missing evidence. Copying files is not readiness.
+
+## Framework documentation
+
+- [Documentation index](docs/README.md)
+- [Adoption](docs/guidance/adoption.md)
+- [Document lifecycle](docs/guidance/document-lifecycle.md)
+- [AI coding-readiness methodology](docs/guidance/methodology.md)
+- [Control catalogue](docs/guidance/control-catalogue.md)
+
+See the complete [Markdown boilerplate catalogue](docs/boilerplate/README.md).
+
+## Repository validation
+
+GitHub Actions checks Markdown formatting and internal links. These checks protect document quality only. They do not determine whether an adopting project is AI-ready or whether a release is ready.
 
 ## Licence
 

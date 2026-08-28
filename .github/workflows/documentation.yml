@@ -1,0 +1,26 @@
+name: Documentation quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v24.2.0
+        with:
+          globs: "**/*.md"
+      - name: Check internal links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: "--offline --no-progress './**/*.md'"
+          fail: true

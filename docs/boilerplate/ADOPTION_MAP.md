@@ -1,0 +1,39 @@
+# AI Ready adoption map
+
+## Purpose
+
+Use this record before copying boilerplate. Map each concern to the project's existing authoritative document, work-management system, quality control, or release process. Prefer improving an existing source over creating a competing document.
+
+Suggested file names in AI Ready are not required. Storage location, tooling, and ownership remain project decisions.
+
+## Project mapping
+
+| Framework concern | Existing authoritative source | Current adequacy | Action | Resulting authoritative source | Owner | Due/review trigger |
+| --- | --- | --- | --- | --- | --- | --- |
+| AI authority and agent instructions | `{{LINK_LOCATION_OR_MISSING}}` | `{{ADEQUATE_PARTIAL_MISSING_NOT_APPLICABLE}}` | `{{REUSE_IMPROVE_MERGE_CREATE_NOT_APPLICABLE}}` | `{{LINK_OR_LOCATION}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` |
+| Project purpose, scope, ownership, constraints | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Requirements and acceptance criteria | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Feature inventory and independent implementation/verification/release states | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Roadmap and dependencies | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Architecture, trust boundaries, and source ownership | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Multi-repository/component contracts and coordination | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Verification plan, coverage, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Risks and accepted risks | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Operations, migration, rollback, and recovery | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Release process and checklist | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Current release readiness | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Historical release evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Decisions and change traceability | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+
+## Duplication decisions
+
+| Potential duplicate | Authoritative source retained | Other source removed, redirected, or generated | Owner | Date |
+| --- | --- | --- | --- | --- |
+| `{{SOURCES}}` | `{{AUTHORITATIVE_SOURCE}}` | `{{ACTION}}` | `{{OWNER}}` | `{{DATE}}` |
+
+## Adoption decision
+
+- Approved scope: `{{CONCERNS_BEING_ADOPTED}}`.
+- Explicit exclusions and evidence: `{{NOT_APPLICABLE_CONCERNS_AND_REASON}}`.
+- Accountable approver: `{{OWNER}}`.
+- Review date or trigger: `{{DATE_OR_TRIGGER}}`.
