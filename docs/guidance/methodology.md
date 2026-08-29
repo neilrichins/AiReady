@@ -82,6 +82,7 @@ Map overlapping controls to one authoritative source and retain the stronger app
 
 Assess the system boundary, not only the repository containing the assessment. Every interconnected repository must have a named owner and an explicit role. Evidence must identify:
 
+- the approved dependency baseline, its scope, currency, evidence, and review triggers;
 - the authoritative source for shared schemas, interfaces, generated clients, infrastructure, and documentation;
 - dependency direction and supported version combinations;
 - how one logical change is traced across issues, branches, commits, and pull requests;
@@ -92,3 +93,6 @@ Assess the system boundary, not only the repository containing the assessment. E
 - which repositories the AI agent may read, modify, or operate.
 
 A green result from one repository is insufficient when the effective system depends on unverified changes elsewhere.
+After establishing an approved baseline, later changes may use a recorded delta
+review. Reuse is valid only while the baseline remains current and the system
+boundary is unchanged; it does not replace candidate-specific verification.

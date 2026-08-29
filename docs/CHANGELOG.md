@@ -20,6 +20,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Expanded the repository-ecosystem record with a reusable dependency baseline, currency and evidence controls, and a change-only review for later changes and releases.
 - Expanded adoption, document lifecycle, readiness assessment, project status, architecture, testing, verification, repository-ecosystem, and release guidance to incorporate the new controls without prescribing tools or repository layout.
 
 ## [1.3.0] - 2026-08-28

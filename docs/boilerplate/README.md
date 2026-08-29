@@ -25,7 +25,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | --- | --- |
 | [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Objectives, invariants, authority, stop conditions, existing project map, and workflow for AI tools. |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, data flow, trust boundaries, source ownership, and AI boundaries. |
-| [`REPOSITORY_ECOSYSTEM.md`](REPOSITORY_ECOSYSTEM.md) | Interconnected repositories/components, contracts, compatibility, coordination, and recovery. |
+| [`REPOSITORY_ECOSYSTEM.md`](REPOSITORY_ECOSYSTEM.md) | Reusable dependency baseline, interconnected repositories/components, contracts, compatibility, change-only review, coordination, and recovery. |
 | [`DECISION_RECORD.md`](DECISION_RECORD.md) | Significant architecture, product, governance, or operational decision. |
 | [`RISK_REGISTER.md`](RISK_REGISTER.md) | Active risks, verified controls, treatments, and time-bounded acceptance. |
 | [`SECURITY_POLICY.md`](SECURITY_POLICY.md) | Reporting, AI data boundaries, permissions, incidents, and supply chain. |

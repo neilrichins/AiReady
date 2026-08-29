@@ -16,6 +16,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Every included feature is implemented and traceable to current verification evidence.
 - [ ] Approved journeys, states, content, accessibility, and design requirements are represented and verified where applicable.
 - [ ] Deferred scope and behavioural changes are documented.
+- [ ] The approved dependency baseline is current and the candidate's change-only dependency review is complete.
 - [ ] Cross-repository contracts, supported combinations, and release order are current.
 - [ ] User, operator, support, migration, and documentation effects are covered.
 
