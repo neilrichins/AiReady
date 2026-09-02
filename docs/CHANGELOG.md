@@ -6,6 +6,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an optional AI-system evaluation record covering exact system identity, ground truth and rubrics, representative and adversarial cases, grader and human-review controls, staged evaluation, regression, drift, limitations, and accountable decisions.
 - Added an optional applicability-first compliance-readiness framework with obligation, control, evidence, audit, exception, multi-repository, and bounded-claim records.
 - Added optional readiness packs for ISO/IEC 27001, SOC 2, GDPR/privacy, secure software development, software supply chains, and AI governance without reproducing controlled standards or implying certification, assurance, or legal approval.
 - Added optional AML/CTF, sanctions, modern-slavery, forced-labour, sector, jurisdiction, procurement, and contractual discovery records with explicit specialist, regulator, auditor, governing-body, and legal decision boundaries.
@@ -20,6 +21,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Expanded agent instructions, dependency records, operations, and standard and hotfix release controls with proportionate checks for review capacity, material prompts, provider-controlled change, substitutability, AI release bundles, behavioural monitoring, fallback, and rollback.
 - Added core principles that measure AI-assisted progress by verified outcomes rather than generated volume and govern material prompts, evaluations, tools, models, and configurations as controlled inputs.
 - Expanded the repository-ecosystem record with a reusable dependency baseline, currency and evidence controls, and a change-only review for later changes and releases.
 - Expanded adoption, document lifecycle, readiness assessment, project status, architecture, testing, verification, repository-ecosystem, and release guidance to incorporate the new controls without prescribing tools or repository layout.

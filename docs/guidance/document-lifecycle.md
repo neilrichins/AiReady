@@ -16,6 +16,7 @@ AI Ready defines information concerns, not mandatory files or directories. Each 
 | Feature state | Requirements, implementation, decisions | Status, traceability, release scope | Implementation, verification, or release-state change |
 | Delivery checkpoint | Bounded outcome, exact change set, decisions, verification, and limitations | Phase or milestone handoff, planning, later release qualification | Material change to the assessed baseline or checkpoint decision |
 | Verification coverage | Requirements, features, risks, architecture | Release readiness and evidence | Code, configuration, dependency, environment, test, or risk change |
+| AI-system evaluation | Intended behaviour, risks, exact AI system, evaluation suite, and operating context | Change, release, monitoring, fallback, and retirement decisions | Material model, provider, prompt, retrieval, tool, policy, user, environment, incident, or drift change |
 | Risk state | Threats, defects, unknowns, control evidence | Prioritisation and release decisions | New risk, treatment, control failure, or review date |
 | Release readiness | Candidate artefacts, scope, evidence, risks, recovery | Approval and execution | Every candidate change or gate result |
 | Release evidence | Approved candidate and actual operation | Audit history, support, future planning | Release, failure, cancellation, or rollback |

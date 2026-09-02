@@ -29,7 +29,7 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 - `boilerplate/DELIVERY_CHECKPOINT.md` owns optional evidence for bounded delivery states that do not imply release approval.
 - `boilerplate/RELEASE_PROCESS.md`, `RELEASE_CHECKLIST.md`, and `RELEASE_READINESS.md` own release governance and the working candidate decision.
 - `releases/` owns project-neutral immutable release-evidence examples.
-- `boilerplate/ARCHITECTURE.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context.
+- `boilerplate/ARCHITECTURE.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `AI_SYSTEM_EVALUATION.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context. `AI_SYSTEM_EVALUATION.md` applies only when AI materially affects system behaviour or a development control.
 - `.github/` owns this repository's contribution and document-quality checks.
 
 ## Required workflow

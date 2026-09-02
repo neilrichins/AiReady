@@ -119,6 +119,11 @@ registration, certification, safety, fairness, or fitness for purpose.
 
 ## 7. Verification and validation
 
+Use the project's existing evaluation system or adapt the optional
+[AI system evaluation](../boilerplate/AI_SYSTEM_EVALUATION.md) when a reusable,
+candidate-specific evaluation record is needed. Do not duplicate authoritative
+results between the two records.
+
 | Evaluation | Population/environment | Method/version | Acceptance | Actual/result | Affected groups/limitations | Evidence/reviewer |
 | --- | --- | --- | --- | --- | --- | --- |
 | Intended-task quality and failure modes | `{{SCOPE}}` | `{{METHOD}}` | `{{CRITERIA}}` | `{{RESULT}}` | `{{LIMITS}}` | `{{EVIDENCE}}` |

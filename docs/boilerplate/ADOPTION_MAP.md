@@ -25,6 +25,7 @@ Suggested file names in AI Ready are not required. Storage location, tooling, an
 | Architecture, trust boundaries, and source ownership | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Multi-repository/component contracts and coordination | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Verification plan, coverage, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Evaluation of material AI-system behaviour and drift | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Risks and accepted risks | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Operations, migration, rollback, and recovery | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Release process and checklist | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

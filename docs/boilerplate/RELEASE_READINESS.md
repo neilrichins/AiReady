@@ -22,6 +22,25 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | --- | --- | --- | --- | --- | --- |
 | `{{REPOSITORY_OR_COMPONENT}}` | `{{IDENTIFIER}}` | `{{ARTEFACT}}` | `{{DIGEST}}` | `{{VERSION}}` | `{{EVIDENCE}}` |
 
+### Optional AI system release bundle
+
+Complete this when product or operational behaviour materially depends on AI.
+Otherwise record `NOT APPLICABLE`, the reason, owner, and assessed date. Link
+the candidate-specific [AI system evaluation](AI_SYSTEM_EVALUATION.md).
+
+| Element | Exact identity/version/configuration | Integrity or effective-state evidence | Rollback/recovery unit |
+| --- | --- | --- | --- |
+| Bundle identifier | `{{IMMUTABLE_OR_CONTROLLED_IDENTIFIER}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Models/providers | `{{IDENTIFIERS_ALIASES_AND_CONFIGURATION}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Instructions/prompts/templates | `{{IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Retrieval data/indexes | `{{IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Tools/integrations/permissions | `{{IDENTIFIERS_AND_AUTHORITY}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Parameters/thresholds/policies/guardrails | `{{IDENTIFIERS_AND_VALUES}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Evaluation suite and result | `{{SUITE_AND_RESULT_IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+
+Record elements that are mutable outside project control and how that affects
+candidate identity, approval validity, monitoring, and rollback.
+
 ## Scope
 
 ### Included
@@ -43,6 +62,7 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | Traceability and scope | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Reproducible build and artefact integrity | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Automated quality gate | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| AI-system evaluation and behavioural assurance | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Functional and end-to-end | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security and authorisation | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Privacy and data | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -78,6 +98,7 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 - Restore/rollback procedure: `{{LINK}}`.
 - Post-release user/system journeys: `{{CHECKS}}`.
 - Monitoring and observation period: `{{SIGNALS_AND_DURATION}}`.
+- AI behavioural baseline, drift trigger, safe-stop/fallback, and bundle rollback: `{{PLAN_OR_NOT_APPLICABLE}}`.
 - Communication and support owner: `{{OWNER}}`.
 
 ## Decision rationale

@@ -48,6 +48,26 @@ Separate read-only preflight, build, deployment, migration, publication, deletio
 
 Include user-visible availability, correctness, latency, error rates, saturation, queues/background work, dependency health, security signals, data integrity, cost, and support volume where applicable. Verify that alerts reach an available owner and contain enough safe context to act.
 
+### AI service operation when applicable
+
+Complete this section when model, prompt, retrieval, tool, policy, or
+provider-controlled behaviour materially affects the operated service. Link the
+applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md).
+
+| Concern | Required state/control | Verification | Stop/fallback/rollback trigger | Owner |
+| --- | --- | --- | --- | --- |
+| Exact AI release-bundle identity | `{{CODE_MODEL_PROMPT_DATA_TOOL_POLICY_AND_CONFIGURATION_IDENTIFIERS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Behavioural baseline and tolerances | `{{APPROVED_QUALITY_AND_SEVERE_FAILURE_LIMITS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Provider/model change detection | `{{VERSION_ALIAS_NOTICE_PROBE_OR_COMPARISON_CONTROL}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Shadow/canary/limited rollout | `{{PLAN_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Safe stop, fallback, and degraded mode | `{{CONTROL_AND_USER_SYSTEM_EFFECT}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Whole-bundle rollback or forward recovery | `{{ATOMIC_BOUNDARY_SEQUENCE_AND_LIMITS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+
+Monitor material behavioural quality and affected-user outcomes where
+applicable, not only availability, latency, cost, token use, or provider error
+rates. Record provider-side changes and unexpected drift even when no project
+commit changed.
+
 ## Deployment or publication procedure
 
 | Order | Action | Preconditions | Expected result | Verification | Stop/rollback trigger | Owner |

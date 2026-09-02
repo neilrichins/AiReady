@@ -30,6 +30,14 @@ Explicitly excluded or deferred changes:
 | --- | --- | --- | --- | --- |
 | `{{COMPONENT}}` | `{{IDENTIFIER}}` | `{{ARTEFACT_AND_DIGEST}}` | `{{VERSION}}` | `{{OWNER}}` |
 
+When AI materially affects system behaviour, record the exact release-bundle
+identifier, model, prompts, retrieval, tools, permissions, parameters, policies,
+evaluation-suite result, provider-controlled elements, and rollback boundary:
+`{{AI_RELEASE_BUNDLE_OR_NOT_APPLICABLE_WITH_REASON_OWNER_AND_DATE}}`. Link the
+applicable
+[AI system evaluation](../boilerplate/AI_SYSTEM_EVALUATION.md). Urgency does
+not make unknown or changed AI behaviour equivalent to a verified result.
+
 ## Impact and risk assessment
 
 | Affected area/journey | Expected effect | Failure mode | Severity/likelihood | Control or workaround | Owner |
@@ -63,6 +71,7 @@ If not applicable, record the reason and owner: `{{NOT_APPLICABLE_REASON_OR_DETA
 | Backup/snapshot | `{{RESULT}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Rollback or forward recovery | `{{RESULT}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Data reconciliation | `{{RESULT}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| AI safe stop, fallback, and bundle recovery | `{{RESULT_OR_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 
 Point of no return: `{{CONDITION_OR_NONE}}`.
 
@@ -85,6 +94,7 @@ Decision: `{{APPROVE_REJECT_DEFER}}` candidate `{{EXACT_IDENTIFIER}}`.
 | Effective version/configuration | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Critical journey/problem resolution | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Monitoring/error signals | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
+| AI behavioural baseline/provider drift | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Data and dependent components | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 
 Final result: `{{RELEASED_FAILED_CANCELLED_ROLLED_BACK}}`.

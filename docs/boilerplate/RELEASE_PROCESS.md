@@ -29,6 +29,7 @@ useful.
 - Assign version/release identifier, owner, target window, intended outcome, and change-set identifier.
 - List included and explicitly excluded requirements, features, fixes, repositories, packages, migrations, and infrastructure changes.
 - Define immutable candidate artefacts and supported upgrade/compatibility paths.
+- When AI materially affects system behaviour, define the release bundle across code, models, prompts, retrieval, tools, permissions, parameters, policies, evaluation results, and provider-controlled state.
 - Create or reserve a versioned release-evidence record in the project's existing authoritative release system.
 
 ### 2. Confirm feature and traceability state
@@ -48,13 +49,14 @@ useful.
 
 - Run the complete automated gate and all release-scoped checks in the [verification plan](VERIFICATION_PLAN.md).
 - Complete required manual, security, privacy, accessibility, performance, compatibility, migration, recovery, operational, and documentation checks.
+- Complete the applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md) against the exact candidate and approved evaluation-suite version.
 - Record actual evidence, failures, reruns, environment, assessor, date, and limitations.
 
 ### 5. Make the readiness decision
 
 - Classify every failed, blocked, stale, or not-run check.
 - Resolve release blockers or obtain time-bounded accepted-risk approval from the correct authority.
-- Confirm backup, rollback, restore, monitoring, support, communication, and incident ownership.
+- Confirm backup, rollback, restore, monitoring, support, communication, and incident ownership, including AI behavioural baselines, safe stop, fallback, and coupled-bundle recovery where applicable.
 - Approvers decide against the named candidate artefacts—not a moving branch.
 
 ### 6. Release under explicit authority

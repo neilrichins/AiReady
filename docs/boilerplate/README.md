@@ -48,6 +48,7 @@ the difference between readiness evidence and an authorised external decision.
 | --- | --- |
 | [`TRACEABILITY.md`](TRACEABILITY.md) | Requirements-to-feature-to-change-to-test-to-release evidence chain. |
 | [`TESTING.md`](TESTING.md) | Project-specific complete quality gate, coverage, and manual checks. |
+| [`AI_SYSTEM_EVALUATION.md`](AI_SYSTEM_EVALUATION.md) | Optional evaluation contract, suite, graders, results, drift, and decision record for material AI-system behaviour. |
 | [`VERIFICATION_PLAN.md`](VERIFICATION_PLAN.md) | What must be verified, how, where, by whom, and with what evidence. |
 | [`OPERATIONS_AND_RECOVERY.md`](OPERATIONS_AND_RECOVERY.md) | Authority, preflight, deployment, migration, rollback, restore, and effective verification. |
 | [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md) | Lifecycle from planned scope through immutable candidate, approval, release, and closure. |

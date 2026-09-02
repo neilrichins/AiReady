@@ -40,6 +40,26 @@ Candidate integrity result: `{{PASS_FAIL_AND_EVIDENCE}}`.
 
 Record how the approved candidate was proven identical to the released artefact. A branch name, moving tag, environment label, or successful build alone is insufficient.
 
+### Optional AI system release bundle
+
+Complete this when product or operational behaviour materially depends on AI.
+Otherwise record `NOT APPLICABLE`, the reason, owner, and assessed date. Link
+the candidate-specific
+[AI system evaluation](../boilerplate/AI_SYSTEM_EVALUATION.md).
+
+| Element | Approved identity/version/configuration | Released effective state | Evidence | Rollback/recovery boundary |
+| --- | --- | --- | --- | --- |
+| Bundle identifier | `{{IDENTIFIER}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Models/providers | `{{IDENTIFIERS_ALIASES_AND_CONFIGURATION}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Instructions/prompts/templates | `{{IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Retrieval data/indexes | `{{IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Tools/integrations/permissions | `{{IDENTIFIERS_AND_AUTHORITY}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Parameters/thresholds/policies/guardrails | `{{IDENTIFIERS_AND_VALUES}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Evaluation suite and result | `{{SUITE_AND_RESULT_IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+
+Record provider-controlled or otherwise mutable elements, observed deviations,
+and whether the approved bundle can be restored as a unit.
+
 ## Scope and feature qualification
 
 ### Included scope
@@ -62,6 +82,7 @@ Record how the approved candidate was proven identical to the released artefact.
 | Build and artefact integrity | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Functional verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Regression verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| AI-system evaluation and behavioural assurance | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and inclusive use | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security, privacy, and data | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Performance, capacity, and cost | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |

@@ -61,6 +61,22 @@ licence compliance, availability, behavioural compatibility, or release
 readiness beyond that evidence. Unknown, unowned, unsupported, or stale
 dependencies remain visible and receive an explicit release effect.
 
+### Concentration, substitutability, and behavioural change
+
+Complete this for load-bearing or otherwise material dependencies. Proportion
+the detail to the dependency's failure effect and replacement difficulty.
+
+| Dependency ID | Maintainer/provider concentration | Audit/source/operational access | Fork, substitute, or internal-operation feasibility | Change/version/notice control | Actual-use-case compatibility evidence | Risk decision/owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| `DEP-001` | `{{CONCENTRATION_AND_CONTINUITY_RISK}}` | `{{ACCESS_AND_LIMITS}}` | `{{FEASIBILITY_TIME_COST_AND_CONSTRAINTS}}` | `{{CONTROL_AND_NOTICE}}` | `{{EVIDENCE_AND_DATE}}` | `{{DECISION_AND_OWNER}}` |
+
+For services, models, datasets, platforms, and other provider-controlled
+dependencies, assess whether behaviour can change without a visible version
+change. Verify replacements against the project's actual contracts, journeys,
+evaluation cases, data, and environments rather than relying only on declared
+compatibility. Link an applicable
+[AI system evaluation](AI_SYSTEM_EVALUATION.md).
+
 ## Component and package inventory
 
 Use this section for independently versioned or discoverable components within
@@ -102,6 +118,7 @@ security, licence, availability, or effective-environment evidence.
 | Data access, permissions, network path, trust boundary, supplier, licence, cost, or legal obligation changed? | `{{YES_NO_UNKNOWN}}` | `{{IDS_OR_NONE}}` | `{{ACTION_OR_NONE}}` | `{{OWNER}}` |
 | Failure behaviour, observability, degraded operation, recovery, deployment order, or rollback changed? | `{{YES_NO_UNKNOWN}}` | `{{IDS_OR_NONE}}` | `{{ACTION_OR_NONE}}` | `{{OWNER}}` |
 | Existing evidence, approval, exception, or end-of-support information became stale? | `{{YES_NO_UNKNOWN}}` | `{{IDS_OR_NONE}}` | `{{ACTION_OR_NONE}}` | `{{OWNER}}` |
+| Maintainer/provider concentration, viability, terms, change notice, auditability, substitutability, or internal-operation feasibility changed? | `{{YES_NO_UNKNOWN}}` | `{{IDS_OR_NONE}}` | `{{ACTION_OR_NONE}}` | `{{OWNER}}` |
 
 An `UNKNOWN` result is unresolved, not equivalent to `NO`. If every result is
 `NO`, retain this review as evidence of the assessed delta and link the reused

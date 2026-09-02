@@ -24,6 +24,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 
 - [ ] Clean, reproducible build completed using the documented locked toolchain and dependencies.
 - [ ] Candidate artefacts are immutable and match the recorded source/configuration.
+- [ ] When AI materially affects system behaviour, the exact model, prompt, retrieval, tool, permission, parameter, policy, evaluation, and provider-controlled elements are identified as one approved release bundle or as explicit rollback units.
 - [ ] Dependency, licence, provenance, and Software Bill of Materials checks completed where applicable.
 - [ ] No secrets, private data, development configuration, or unreviewed generated output is present.
 - [ ] Candidate has not changed since verification; otherwise a new candidate was created.
@@ -31,6 +32,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 ## Verification evidence
 
 - [ ] Complete project quality gate passed: `{{COMMAND}}`.
+- [ ] Applicable AI-system evaluation passed for the exact candidate and evaluation-suite version, with severe failures, uncertainty, exclusions, grader limitations, and human decisions recorded.
 - [ ] Unit/component tests passed or are not applicable.
 - [ ] Contract/integration/end-to-end tests passed or are not applicable.
 - [ ] Security, authorisation, and vulnerability checks passed.
@@ -63,6 +65,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Restore access and recovery procedure were verified within the required period.
 - [ ] Rollback version/artefacts/configuration and reverse migration are available.
 - [ ] Multi-component partial-failure and rollback order is confirmed.
+- [ ] Applicable AI capability safe-stop, fallback, behavioural baseline, and whole-bundle rollback or forward-recovery controls are confirmed.
 
 ## Release execution
 
@@ -78,6 +81,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Representative user/system journeys pass in the effective environment.
 - [ ] Data counts, integrity, migrations, and scheduled/background processing are correct.
 - [ ] Logs, alerts, metrics, performance, cost, and security signals are acceptable.
+- [ ] Applicable AI behavioural signals remain within the approved baseline and no provider-side change or drift has invalidated the evidence.
 - [ ] Public/distributed artefacts, documentation, support routes, and release notes are correct.
 - [ ] Cross-repository/component versions form a supported combination.
 - [ ] Release is marked successful, rolled back, or open with an owned incident—not assumed complete.

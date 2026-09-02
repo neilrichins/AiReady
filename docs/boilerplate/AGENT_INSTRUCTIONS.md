@@ -22,6 +22,22 @@ When sources conflict, apply this precedence: `{{PRECEDENCE_RULE}}`. Do not
 silently choose the newest, nearest, or most convenient document. Record the
 conflict and obtain the decision required by its impact.
 
+### Material AI instruction and prompt governance
+
+Use this only for instructions, prompts, examples, policies, or context that can
+materially affect implementation, verification, operation, or product behaviour.
+
+| Instruction/prompt/context | Purpose and scope | Authoritative source/version | Owner/change authority | Precedence/conflict rule | Review/evaluation trigger |
+| --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{PURPOSE}}` | `{{SOURCE_AND_VERSION}}` | `{{OWNER_AND_AUTHORITY}}` | `{{RULE}}` | `{{TRIGGER}}` |
+
+Record the rationale for material instructions and include approved positive,
+negative, boundary, and prohibited examples where they improve consistency.
+Review accumulated instructions for duplication, contradiction, obsolete
+exceptions, hidden authority, and case-specific patches. A material change
+requires the defined review and, for an AI system, the applicable
+[AI system evaluation](AI_SYSTEM_EVALUATION.md).
+
 ## Current delivery boundary
 
 - Active phase, milestone, checkpoint, or release: `{{IDENTIFIER_AND_STATUS}}`.
@@ -100,6 +116,21 @@ Governing decision records: `{{DECISION_IDENTIFIERS_OR_NONE}}`.
 10. Do not perform external or production actions without explicit authority and immediate confirmation.
 11. For interconnected repositories, confirm every affected repository, contract, supported combination, sequence, and partial-failure response.
 12. Hand off exact changes, results, failures, limitations, follow-up owners, and actions not performed.
+
+## Reviewability and comprehension
+
+- Keep change size and work in progress within the available human review,
+  testing, integration, and architectural-assurance capacity.
+- Divide large generated changes into coherent, traceable, and reversible units
+  when that can be done without hiding a system-level effect.
+- An accountable reviewer must be able to explain the purpose, material logic,
+  boundaries, dependencies, failure modes, and evidence for a critical change.
+- An AI-generated explanation, summary, confidence statement, or test is
+  supporting material; it does not prove that a reviewer understands the change.
+- Insufficient understanding is a valid blocker. Record the knowledge gap,
+  affected risk, required review or investigation, owner, and release effect.
+- Do not increase generated output merely to keep an agent busy when review or
+  verification capacity is already constrained.
 
 ## Commands
 
