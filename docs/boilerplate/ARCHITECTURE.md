@@ -49,6 +49,24 @@ it must not emerge accidentally from implementation.
 | --- | --- | --- | --- | --- | --- |
 | `{{NAME}}` | `{{RESPONSIBILITIES}}` | `{{EXCLUSIONS}}` | `{{DEPENDENCIES}}` | `{{CONTROL}}` | `{{OWNER_OR_DECISION_PROCESS}}` |
 
+### Context locality and change amplification
+
+Use current project evidence to identify where the context needed for a safe
+change is fragmented, ambiguous, duplicated, or spread across high-impact
+relationships. File counts, directory depth, dependency fan-in/fan-out, graph
+centrality, and context size may be useful signals; none is a universal defect,
+repository-layout requirement, or sufficient reason to refactor.
+
+| Component/domain/change surface | Minimum authoritative context and entry point | Cross-cutting sources/dependencies | Known ambiguity, duplication, or missing context | Blast-radius or coupling evidence | Safe change boundary | Additional review and verification | Owner/stale trigger |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{SURFACE}}` | `{{SOURCES_AND_READING_ORDER}}` | `{{RELATIONSHIPS}}` | `{{FINDING_OR_NONE}}` | `{{EVIDENCE_OR_UNKNOWN}}` | `{{BOUNDARY}}` | `{{CONTROLS}}` | `{{OWNER_AND_TRIGGER}}` |
+
+The minimum context must be sufficient to preserve applicable intent,
+invariants, contracts, data and trust boundaries, failure behaviour, and
+verification requirements. It is not a target to minimise documentation or
+hide system-level effects. A high-impact component may be intentionally shared;
+record its enhanced change controls rather than assuming it must be split.
+
 ### Compatibility and discovery contracts
 
 | Contract/interface | Authoritative definition | Current version | Supported range/combinations | Discovery or negotiation | Failure behaviour | Compatibility verification | Migration rule |
@@ -58,6 +76,23 @@ it must not emerge accidentally from implementation.
 Document unavailable, incompatible, duplicate, partially upgraded, and unknown
 component states where applicable. A declared version range is not evidence of
 compatibility without the required contract or integration result.
+
+### Canonical concepts, operations, and failure behaviour
+
+| Concept, operation, interface, or failure | Authoritative term and intent source | Canonical implementation or contract | Intentional variants and rationale | Input/boundary validation | Error, fallback, and diagnostic behaviour | Consumers/migration | Owner/change authority |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{TERM_AND_SOURCE}}` | `{{SOURCE_OR_CONTRACT}}` | `{{VARIANTS_OR_NONE}}` | `{{VALIDATION}}` | `{{BEHAVIOUR}}` | `{{IMPACT_AND_PLAN}}` | `{{OWNER_AND_AUTHORITY}}` |
+
+Do not treat similar names or implementations as proof of accidental
+duplication. Confirm product intent, data shape, trust boundary, compatibility,
+and failure semantics before consolidating them. Where multiple approaches are
+intentional, document how a contributor selects the correct one.
+
+Boundary validation, failure states, fallback rules, and material errors must
+be explicit and observable enough for the relevant verification and operations.
+Silent error suppression, undocumented defaults, or defensive fallback that
+hides an invalid upstream state requires an owned decision and evidence; a
+specific type system, exception model, or validation library is not prescribed.
 
 ## Data flow and lifecycle
 

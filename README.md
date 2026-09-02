@@ -19,7 +19,9 @@ Use it to answer:
 - Which behaviour is intended, observed, assumed, missing, or unsafe?
 - What may an AI agent read, change, execute, or operate?
 - Which source, generated, data, infrastructure, and repository boundaries must be preserved?
+- What is the minimum sufficient authoritative context for this change, and where could ambiguity or high-impact relationships expand its scope?
 - How does each requirement trace to a feature, implementation, verification result, and release?
+- Which focused check provides fast, deterministic feedback, and what higher-level verification must still follow?
 - What evidence proves that the exact candidate works in the relevant environments?
 - Who can accept risk, approve a release, execute it, and respond if it fails?
 
@@ -103,6 +105,8 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **One source of truth:** map existing authoritative systems before adding documentation.
 - **Applicability before compliance work:** do not assume a law, standard, audit, certification, or policy applies; select it from current evidence and accountable review.
 - **Ordered authoritative context:** tell people and AI what to read, which source prevails, and when a conflict requires escalation.
+- **Bounded context without prescribed layout:** identify the minimum sufficient context, canonical patterns, ambiguity, and high-impact relationships for a change without imposing universal directories, file sizes, or dependency-depth limits.
+- **Fast feedback without evidence substitution:** provide focused, deterministic checks with actionable diagnostics, then complete every required higher-level and effective-environment verification.
 - **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
 - **Govern material AI inputs:** control prompts, evaluations, tools, model versions, and configurations that affect behaviour with proportionate traceability, testing, data protection, review, and change management.
@@ -112,6 +116,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **Effective-environment proof:** source and pipeline success do not prove deployed, rendered, distributed, or user-observed behaviour.
 - **No evidence-level substitution:** simulated, component, packaged, integrated, representative, physical, specialist, and effective-environment results establish different claims.
 - **Learning closes the loop:** incidents, deviations, feedback, and stale evidence update requirements and controls.
+- **Control-level readiness history:** compare evidence, blockers, and individual controls over time; an aggregate score is a summary, not an automatic approval or release gate.
 
 ## Framework records
 

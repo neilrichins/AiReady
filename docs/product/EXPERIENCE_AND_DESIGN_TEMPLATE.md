@@ -102,7 +102,7 @@ Measurement must not silently introduce new personal-data, consent, performance,
 ## Evaluation and implementation hand-off
 
 | Outcome/state/risk | Evaluation method | Participants/environment | Expected result | Evidence | Status | Implementation/test reference |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | `{{ITEM}}` | `{{REVIEW_USABILITY_TEST_ACCESSIBILITY_EVALUATION_OR_OTHER}}` | `{{CONTEXT}}` | `{{EXPECTED}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{REFERENCE}}` |
 
 The hand-off is complete only when required journeys, states, content, assets, acceptance criteria, dependencies, gaps, and evaluation responsibilities are explicit. Implementation still requires candidate-specific verification.

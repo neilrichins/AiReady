@@ -16,6 +16,7 @@ AI Ready defines information concerns, not mandatory files or directories. Each 
 | Feature state | Requirements, implementation, decisions | Status, traceability, release scope | Implementation, verification, or release-state change |
 | Delivery checkpoint | Bounded outcome, exact change set, decisions, verification, and limitations | Phase or milestone handoff, planning, later release qualification | Material change to the assessed baseline or checkpoint decision |
 | Verification coverage | Requirements, features, risks, architecture | Release readiness and evidence | Code, configuration, dependency, environment, test, or risk change |
+| AI coding-readiness assessment | Intended AI use, authority, architecture, context, development environment, verification, risk, and current evidence | Permitted AI operating level, remediation, project status, and later comparison | Material control, evidence, system-boundary, AI-use, authority, tooling, data, or risk change; or next review |
 | AI-system evaluation | Intended behaviour, risks, exact AI system, evaluation suite, and operating context | Change, release, monitoring, fallback, and retirement decisions | Material model, provider, prompt, retrieval, tool, policy, user, environment, incident, or drift change |
 | Risk state | Threats, defects, unknowns, control evidence | Prioritisation and release decisions | New risk, treatment, control failure, or review date |
 | Release readiness | Candidate artefacts, scope, evidence, risks, recovery | Approval and execution | Every candidate change or gate result |
@@ -29,6 +30,7 @@ The [product document examples](../product/README.md) provide boilerplate for ap
 - Every concern has one authoritative source and owner.
 - Other documents link to that source or clearly identify generated snapshots.
 - Volatile results are referenced by immutable evidence rather than copied repeatedly.
+- Historical AI coding-readiness assessments are preserved with their exact scope, method, evidence, decision, and limitations so later comparisons do not rewrite the baseline.
 - Historical release decisions are preserved, including failed and rolled-back candidates.
 - A template is removed or merged when it duplicates an effective existing record.
 

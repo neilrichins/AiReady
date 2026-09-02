@@ -9,7 +9,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | Boilerplate | Purpose |
 | --- | --- |
 | [`ADOPTION_MAP.md`](ADOPTION_MAP.md) | Map concerns to existing project records and decide what to reuse, improve, merge, or create. |
-| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, current state, instruction currency, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
+| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, current state, instruction currency, context locality, changeability, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
 | [`PROJECT_README.md`](PROJECT_README.md) | Project landing-page boilerplate that links to existing authoritative records. |
 | [`PROJECT_DEFINITION.md`](PROJECT_DEFINITION.md) | Purpose, scope, ownership, outcomes, constraints, environments, and unknowns. |
 | [`REQUIREMENTS.md`](REQUIREMENTS.md) | Testable requirements, acceptance evidence, status, and change control. |
@@ -23,15 +23,15 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 
 | Boilerplate | Purpose |
 | --- | --- |
-| [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Layered context, objectives, invariants, authority, instruction currency, governed convention improvement, change impacts, stop conditions, and workflow for AI tools. |
-| [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, data flow, trust boundaries, source ownership, and AI boundaries. |
+| [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Layered and task-bounded context, canonical patterns, objectives, invariants, authority, instruction currency, governed convention improvement, change impacts, stop conditions, and workflow for AI tools. |
+| [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, context locality, change-amplification hotspots, canonical concepts, contracts, failure behaviour, data flow, trust boundaries, source ownership, and AI boundaries. |
 | [`REPOSITORY_ECOSYSTEM.md`](REPOSITORY_ECOSYSTEM.md) | Repository topology, delivery units, reusable dependency baseline, interconnected components, contracts, compatibility, change-only review, coordination, and recovery. |
 | [`DECISION_RECORD.md`](DECISION_RECORD.md) | Significant architecture, product, governance, or operational decision. |
 | [`RISK_REGISTER.md`](RISK_REGISTER.md) | Active risks, verified controls, treatments, and time-bounded acceptance. |
 | [`SECURITY_POLICY.md`](SECURITY_POLICY.md) | Reporting, AI data boundaries, permissions, incidents, and supply chain. |
 | [`CONTRIBUTION_GUIDE.md`](CONTRIBUTION_GUIDE.md) | Contribution, quality, review, and documentation expectations. |
 | [`AI_TASK.md`](AI_TASK.md) | Bounded AI-assisted task definition independent of issue-tracker platform. |
-| [`CHANGE_REVIEW.md`](CHANGE_REVIEW.md) | Outcome, scope, change-impact coverage, risk, AI involvement, and verification review. |
+| [`CHANGE_REVIEW.md`](CHANGE_REVIEW.md) | Outcome, scope, change-impact and high-blast-radius coverage, canonical-pattern and contract review, risk, AI involvement, and verification. |
 
 ## Verification and release
 
@@ -47,7 +47,7 @@ the difference between readiness evidence and an authorised external decision.
 | Boilerplate | Purpose |
 | --- | --- |
 | [`TRACEABILITY.md`](TRACEABILITY.md) | Requirements-to-feature-to-change-to-test-to-release evidence chain. |
-| [`TESTING.md`](TESTING.md) | Project-specific complete quality gate, coverage, and manual checks. |
+| [`TESTING.md`](TESTING.md) | Project-specific focused feedback loops, complete quality gate, coverage, evidence boundaries, and manual checks. |
 | [`AI_SYSTEM_EVALUATION.md`](AI_SYSTEM_EVALUATION.md) | Optional evaluation contract, suite, graders, results, drift, and decision record for material AI-system behaviour. |
 | [`VERIFICATION_PLAN.md`](VERIFICATION_PLAN.md) | What must be verified, how, where, by whom, and with what evidence. |
 | [`OPERATIONS_AND_RECOVERY.md`](OPERATIONS_AND_RECOVERY.md) | Authority, preflight, deployment, migration, rollback, restore, and effective verification. |

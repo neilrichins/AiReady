@@ -30,6 +30,30 @@ Expected result, duration class, required services, allowed data, outputs, and e
 
 Continuous Integration (CI) equivalence and merge protection: `{{PIPELINE_AND_ENFORCEMENT}}`.
 
+## Focused feedback loops
+
+Define the smallest reliable check that can return actionable evidence while a
+change is being developed. Measure feedback time from starting the check until
+the contributor receives a result that can distinguish a product failure from
+a setup, environment, data, or dependency failure.
+
+| Change type/surface | Focused command or procedure | Scope and claim boundary | Prerequisites, services, and isolation | Expected duration class | Actionable result/diagnostics | Complete-gate or higher-level trigger | Owner |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{CHANGE_CLASS}}` | `{{COMMAND_OR_PROCEDURE}}` | `{{SCOPE_AND_LIMIT}}` | `{{REQUIREMENTS_AND_CONTROLS}}` | `{{SECONDS_MINUTES_HOURS_OR_VARIABLE}}` | `{{EXPECTED_OUTPUT_AND_FAILURE_LOCATION}}` | `{{WHEN_THE_FULL_OR_DIFFERENT_GATE_IS_REQUIRED}}` | `{{OWNER}}` |
+
+Record hidden global state, persistent storage, network calls, external
+services, clocks, randomness, concurrency, device dependencies, and other side
+effects that can make a focused check non-deterministic or non-repeatable.
+Where practical, provide controlled inputs, reset procedures, observable
+outputs, and test boundaries. Do not require a particular design pattern or
+mocking approach when the project's existing architecture provides equivalent
+control.
+
+A fast check does not replace the complete gate, integration evidence, manual
+evaluation, or effective-environment verification. A slow check is not made
+reliable by labelling it focused; record the friction, risk, and improvement
+owner instead.
+
 ## Test levels and ownership
 
 Use the levels that apply to the project, rename them where necessary, and

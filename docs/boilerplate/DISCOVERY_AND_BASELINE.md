@@ -76,6 +76,23 @@ configuration, repository structure, interfaces, CI, executable commands, and
 effective behaviour as applicable. Do not upgrade `DOCUMENTED` instructions to
 `OBSERVED` or `CONFIRMED` merely because an AI repeated or summarised them.
 
+## Context locality, consistency, and changeability baseline
+
+Record the current state before proposing structural remediation. This baseline
+does not prescribe directories, file sizes, naming styles, dependency depth,
+design patterns, or a target context size.
+
+| Component/domain/change surface | Authoritative context entry point | Scattered, duplicated, conflicting, or missing context | Canonical terminology/implementation state | High-impact relationships or blast radius | Focused verification and friction | Evidence label/source | Owner/action |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{SURFACE}}` | `{{SOURCE_OR_UNKNOWN}}` | `{{FINDING_OR_NONE}}` | `{{CURRENT_AMBIGUOUS_DUPLICATED_UNKNOWN}}` | `{{RELATIONSHIPS_AND_EVIDENCE}}` | `{{CHECK_DURATION_DIAGNOSTICS_AND_GAPS}}` | `{{LABEL_AND_SOURCE}}` | `{{OWNER_AND_ACTION}}` |
+
+Counts, static-analysis findings, dependency graphs, and AI-generated summaries
+are investigation signals. Validate them against project intent, current
+contracts, runtime behaviour, history, and accountable owner knowledge before
+classifying a defect or recommending consolidation. A high fan-in/fan-out
+component, repeated implementation, or long-running check may be justified;
+record the reason and its controls rather than assuming a remediation.
+
 ## Product intent versus observed behaviour
 
 | Journey/capability | Documented or confirmed intent | Observed behaviour | Evidence | Difference/unknown | Owner decision required |

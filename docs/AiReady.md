@@ -18,6 +18,7 @@
 | Data classification | `{{PUBLIC_INTERNAL_CONFIDENTIAL_RESTRICTED}}` |
 | Repository model | `{{STANDALONE_OR_MULTI_REPOSITORY}}` |
 | Ecosystem/change-set identifier | `{{IDENTIFIER_OR_NOT_APPLICABLE}}` |
+| Previous comparable assessment | `{{ASSESSMENT_IDENTIFIER_OR_NONE}}` |
 | Next review | `{{YYYY-MM-DD_OR_RELEASE_TRIGGER}}` |
 
 ## Decision
@@ -85,6 +86,7 @@ Area score: `{{X_OF_10}}`
 | Instructions define a task-relevant reading order, precedence rule, current delivery boundary, explicit non-goals, and governing decisions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Global, scoped, task-specific, and on-demand context has explicit activation, inheritance, ownership, and conflict rules where applicable | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Material instruction claims, paths, commands, versions, and conventions are checked against current authoritative source or runtime evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| A contributor can locate the minimum sufficient authoritative context for a bounded change, including cross-cutting sources, known ambiguity, and stop conditions, without relying on a prescribed repository layout | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -99,6 +101,8 @@ Area score: `{{X_OF_10}}`
 | Interconnected repositories have an owned dependency map, version/contract policy, and authoritative source for each shared interface | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Stable component responsibilities, forbidden ownership, discovery, compatibility ranges, failure behaviour, and change authority are documented where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Repository and delivery units are evidence-classified without confusing a shared dependency graph, independent collection, embedded component, or multi-repository system | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| High-blast-radius components and change-amplification relationships are identified with safe change boundaries, additional review, and verification requirements | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
+| Canonical domain concepts, business operations, interfaces, validation boundaries, and failure patterns are distinguishable from intentional variants and accidental duplication | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -139,6 +143,7 @@ Area score: `{{X_OF_10}}`
 | Contract and integration tests verify supported combinations across repository boundaries | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Simulated, component, packaged, integrated, representative, physical/specialist, and effective-environment evidence are kept distinct where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Material command records preserve exact execution scope, environment, exit result, failures, skips, reruns, and limitations | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Common change types have a focused, deterministic feedback loop with known prerequisites, expected duration, actionable diagnostics, and a defined trigger for the complete gate | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -188,6 +193,7 @@ Area score: `{{X_OF_10}}`
 | The assessment is reviewed after material architecture, tooling, data, dependency, or authority changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Repeated review feedback, failed changes, incidents, support patterns, and manual corrections can propose guidance improvements without bypassing owner approval or source precedence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Assessment findings and projected improvements remain separate from authority to modify the project or claim readiness | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Comparable assessments record control-level improvements, regressions, changed evidence, and new or resolved blockers without treating an aggregate score as an automatic approval gate | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -207,6 +213,31 @@ Interpretation:
 - **40–59:** Assisted only.
 - **60–79:** Supervised.
 - **80–100:** Eligible for controlled automation only when there are no unresolved hard blockers and the authorised scope is explicit.
+
+## Comparison with the previous assessment
+
+Complete this section only when an earlier assessment has a sufficiently
+comparable system boundary, intended AI use, scoring method, and evidence
+standard. Otherwise record why comparison would be misleading and establish
+this assessment as the new baseline.
+
+| Area/control | Previous result and evidence | Current result and evidence | Improved/regressed/unchanged/unknown | Explanation and risk effect | Owner/action |
+| --- | --- | --- | --- | --- | --- |
+| `{{AREA_OR_CONTROL}}` | `{{RESULT_AND_EVIDENCE}}` | `{{RESULT_AND_EVIDENCE}}` | `{{CLASSIFICATION}}` | `{{CAUSE_AND_EFFECT}}` | `{{OWNER_AND_ACTION}}` |
+
+| Comparison summary | Result |
+| --- | --- |
+| Previous assessment identifier and exact scope | `{{IDENTIFIER_AND_SCOPE_OR_NONE}}` |
+| New blockers | `{{NUMBER_AND_IDENTIFIERS}}` |
+| Resolved blockers | `{{NUMBER_AND_IDENTIFIERS}}` |
+| Controls improved | `{{NUMBER_AND_IDENTIFIERS}}` |
+| Controls regressed | `{{NUMBER_AND_IDENTIFIERS}}` |
+| Evidence invalidated, stale, or no longer comparable | `{{DETAILS_OR_NONE}}` |
+
+An aggregate-score increase does not cure a hard blocker, prove that a
+particular risk was reduced, or authorise broader AI use. An aggregate-score
+decrease is a review signal, not an automatic release failure, unless an
+accountable owner has approved a specific evidence-based control as a gate.
 
 ## Required remediation
 

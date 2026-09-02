@@ -21,6 +21,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Added project-neutral controls for focused verification feedback loops, context locality, change-amplification hotspots, canonical concepts and implementations, explicit contract and failure behaviour, and control-level readiness comparisons without imposing structural metrics or aggregate-score release gates.
 - Added project-specific change-impact mapping, layered context, AI-instruction currency checks, governed review-feedback improvement, evidence-based repository and delivery-unit classification, and an explicit assessment-versus-remediation authority boundary.
 - Expanded agent instructions, dependency records, operations, and standard and hotfix release controls with proportionate checks for review capacity, material prompts, provider-controlled change, substitutability, AI release bundles, behavioural monitoring, fallback, and rollback.
 - Added core principles that measure AI-assisted progress by verified outcomes rather than generated volume and govern material prompts, evaluations, tools, models, and configurations as controlled inputs.

@@ -14,6 +14,8 @@ Linked issue/change set: `{{LINK}}`
 - External or production effects: `{{DESCRIBE_OR_NONE}}`
 - Required merge/release order: `{{ORDER_OR_NOT_APPLICABLE}}`
 - Applicable change-impact matrix/source: `{{LINK_LOCATION_OR_NOT_APPLICABLE_WITH_REASON}}`
+- High-blast-radius components or relationships: `{{LIST_OR_NONE_WITH_EVIDENCE}}`
+- Canonical concept, implementation, or contract affected: `{{SOURCE_OR_NOT_APPLICABLE}}`
 
 ## Change-impact review
 
@@ -28,6 +30,10 @@ Linked issue/change set: `{{LINK}}`
   source or retained as an owned, time-bounded exception.
 - [ ] A missing related change is classified as not applicable, deferred,
   blocked, or accepted risk with evidence and the required authority.
+- [ ] High-impact relationships were assessed using current evidence, and any
+  enhanced review, sequencing, verification, or recovery requirement was met.
+- [ ] Similar or duplicated implementations were checked against approved
+  intent before reuse, consolidation, or creation of a new variant.
 
 ## AI involvement
 
@@ -44,10 +50,14 @@ Do not include private prompts, credentials, personal data, restricted source, o
 - [ ] Generated output remains validated before executable or production use.
 - [ ] Authentication, authorisation, privacy, security, accessibility, and recovery controls are not weakened.
 - [ ] Cross-repository compatibility and partial-rollout states are tested where applicable.
+- [ ] Inputs and trust boundaries remain validated, failure states and material
+  errors remain observable, and fallback behaviour does not hide an invalid or
+  unknown state without an approved decision.
 - [ ] Destructive, external, production, and cost-bearing actions remain explicitly authorised.
 
 ## Verification
 
+- [ ] Focused feedback loop completed: `{{COMMAND_OR_PROCEDURE_RESULT_AND_DURATION_CLASS}}`
 - [ ] Complete local quality gate: `{{COMMAND}}`
 - [ ] Required CI passed
 - [ ] Contract/integration combinations passed or are not applicable

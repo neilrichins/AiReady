@@ -34,6 +34,21 @@ area score = earned control points / applicable control points * 10
 
 Round only the final score to the nearest whole number. Preserve the underlying calculation in the assessment.
 
+### Comparison and readiness trends
+
+Compare assessments only when the system boundary, intended AI use, control
+definitions, scoring method, and evidence standard are sufficiently consistent.
+Record control-level changes, new and resolved hard blockers, changed evidence,
+and the reason for each material improvement or regression. If those conditions
+are not comparable, explain the break and establish a new baseline instead of
+presenting a misleading trend.
+
+An aggregate score is a navigational summary. It does not show which risk
+changed, compensate for a blocker, prove causal improvement, or become a merge
+or release gate without a separately approved, evidence-based control and named
+decision owner. Automated measurements and static-analysis results may support
+a control assessment only within their demonstrated scope.
+
 ## Hard blockers
 
 Hard blockers represent conditions where numerical averaging is unsafe. For example, excellent documentation cannot compensate for an AI agent holding unrestricted production credentials. An assessment with any unresolved blocker cannot approve controlled automation.
