@@ -98,12 +98,14 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 ## Core principles
 
 - **Evidence over assertion:** file presence, a completed checkbox, generated output, or a passing unit test is not proof beyond its actual scope.
+- **Outcomes over generated volume:** measure progress through approved outcomes, understandable and maintainable changes, verified features, safe operations, and released value—not tokens, lines of code, or agent activity.
 - **Current reality before redesign:** preserve observed legacy behaviour and uncertainty until owners decide what should change.
 - **One source of truth:** map existing authoritative systems before adding documentation.
 - **Applicability before compliance work:** do not assume a law, standard, audit, certification, or policy applies; select it from current evidence and accountable review.
 - **Ordered authoritative context:** tell people and AI what to read, which source prevails, and when a conflict requires escalation.
 - **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
+- **Govern material AI inputs:** control prompts, evaluations, tools, model versions, and configurations that affect behaviour with proportionate traceability, testing, data protection, review, and change management.
 - **Exact candidate identity:** evidence and approval bind to immutable commits and artefacts, not moving branches or intended builds.
 - **System-level verification:** interconnected repositories are ready only when supported combinations, contracts, sequencing, and partial-failure recovery are verified.
 - **Human accountability:** named people own requirements, exceptions, risk acceptance, release approval, and production authority.
