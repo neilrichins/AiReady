@@ -21,6 +21,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Expanded the root README with practical guidance and reusable prompts for AI-assisted discovery, assessment, bounded implementation, verification, multi-repository scope, and human approval.
 - Added project-neutral controls for focused verification feedback loops, context locality, change-amplification hotspots, canonical concepts and implementations, explicit contract and failure behaviour, and control-level readiness comparisons without imposing structural metrics or aggregate-score release gates.
 - Added project-specific change-impact mapping, layered context, AI-instruction currency checks, governed review-feedback improvement, evidence-based repository and delivery-unit classification, and an explicit assessment-versus-remediation authority boundary.
 - Expanded agent instructions, dependency records, operations, and standard and hotfix release controls with proportionate checks for review capacity, material prompts, provider-controlled change, substitutability, AI release bundles, behavioural monitoring, fallback, and rollback.
