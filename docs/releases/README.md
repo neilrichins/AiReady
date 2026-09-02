@@ -18,6 +18,10 @@ Release evidence and release notes serve different audiences. The evidence recor
 
 - Create one record for every candidate that reaches a release decision.
 - Identify exact commits, component versions, configuration/schema versions, artefacts, and immutable digests where applicable.
+- When provenance, attestations, signatures, verifiable manifests, Software
+  Bills of Materials, or source/build framework claims apply, record the exact
+  producer, builder or issuer, trust root, policy, subject digest, consumer
+  verification result, failure behaviour, and limitations.
 - Record candidate-specific evidence, its environment and date, limitations, and accountable owner.
 - Keep feature qualification, known defects, accepted risks, approval, execution, and post-release results distinct.
 - Preserve rejected, failed, cancelled, and rolled-back records; they are part of the evidence history.

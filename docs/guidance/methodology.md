@@ -90,10 +90,14 @@ AiReady does not establish security, privacy, legal compliance, software quality
 AiReady is designed to complement, not replace or attest conformity with:
 
 - the [National Institute of Standards and Technology Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf) for secure software-development practices;
+- the [Supply-chain Levels for Software Artifacts (SLSA) specification](https://slsa.dev/spec/) for versioned Source and Build assurance tracks, attestations, and consumer verification;
 - the [NIST Cybersecurity Framework 2.0](https://doi.org/10.6028/NIST.CSWP.29) for organisation-wide cybersecurity outcomes, profiles, and improvement;
-- the [Open Source Project Security Baseline](https://baseline.openssf.org/) and [OpenSSF Scorecard](https://www.scorecard.dev/) for open-source security controls and machine-checkable repository signals; and
+- the [Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline](https://baseline.openssf.org/) and [OpenSSF Scorecard](https://www.scorecard.dev/) for open-source security controls and machine-checkable repository signals;
 - the [Amazon Web Services Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework), and [Google Cloud Well-Architected Framework](https://docs.cloud.google.com/architecture/framework) for provider-specific or provider-informed architecture review;
 - [The Open Group Architecture Framework](https://www.opengroup.org/togaf) for enterprise-architecture method and governance when the organisation has selected it;
+- [Markdown Architectural Decision Records (MADR)](https://adr.github.io/madr/) for lightweight, versioned decision context, drivers, options, outcomes, consequences, confirmation, and lifecycle;
+- the [National Aeronautics and Space Administration (NASA) Systems Engineering Handbook](https://www.nasa.gov/reference/system-engineering-handbook-appendix/) for requirements, verification, validation, and bidirectional traceability practices where that degree of systems-engineering formality is useful;
+- the [International Software Testing Qualifications Board (ISTQB) Certified Tester Foundation Level syllabus](https://istqb.org/wp-content/uploads/2024/11/ISTQB_CTFL_Syllabus_v4.0.1.pdf) for conventional test process, traceability, coverage, completion, and reporting concepts;
 - the [FinOps Framework](https://www.finops.org/framework/) for collaborative technology-value and cost-management practices; and
 - the adopting project's applicable product, design, accessibility, privacy, reliability, safety, quality, legal, contractual, and operational standards.
 
@@ -105,6 +109,14 @@ controlled or provider-native material rather than copying it without rights.
 A framework mapping or provider assessment is an input to accountable review,
 not proof of conformity, certification, complete architecture quality, or
 release readiness.
+
+For SLSA, keep Source and Build track results separate and identify the exact
+track, level, version, scope, producer, platform, consumer policy, and evidence.
+For the Open Source Project Security Baseline, identify the exact version,
+selected maturity level, project boundary, conditional controls, and unmet or
+unassessed requirements. Do not translate either result into the AiReady score
+or infer it from a badge, signature, software bill of materials, provenance
+file, repository setting, or another framework's crosswalk.
 
 ## Multi-repository systems
 

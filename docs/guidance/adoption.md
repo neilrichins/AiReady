@@ -55,7 +55,7 @@ Map accountable responsibilities and reserved human decisions using [roles and d
 
 ## Stage 3: Confirm product and design intent
 
-Separate approved intent, observed current behaviour, owner-confirmed compatibility, defects, inferences, and unknowns. Record the problem, users, outcomes, requirements, journeys, states, content, accessibility, constraints, and acceptance evidence needed for the planned work.
+Separate approved intent, observed current behaviour, owner-confirmed compatibility, defects, inferences, and unknowns. Record the problem, users, outcomes, requirements, journeys, states, content, accessibility, constraints, and acceptance evidence needed for the planned work. Preserve requirement sources, versions, parent or derived relationships, and supersession. Define verification against the specification separately from validation of the intended need.
 
 Do not infer a requirement solely because the existing implementation behaves that way. Do not treat a design, prototype, plan, or generated description as implemented behaviour.
 
@@ -76,6 +76,11 @@ These may live in an existing issue tracker, product system, documentation set, 
 ## Stage 5: Make verification reproducible
 
 Record the project's complete quality commands and all additional manual or effective-environment checks. The verification plan must state what is checked, how, where, by whom, against which exact artefacts, and where evidence is retained.
+
+Identify the exact requirement, design, interface, risk, or other test-basis
+versions. Define entry and exit criteria and preserve a completion summary of
+planned, executed, passed, failed, blocked, skipped, or quarantined scope,
+variance, and residual risk without duplicating authoritative test-system data.
 
 Separate simulated, component, installed or packaged, integrated,
 representative-environment, physical-device, specialist, and effective
@@ -104,6 +109,11 @@ Treat generated code, commands, configuration, structured data, database queries
 ## Stage 7: Make release readiness evidence-based
 
 Adapt the release-process, checklist, readiness, and evidence boilerplate to the project's existing release mechanism. A readiness decision must name exact candidate artefacts and distinguish passing evidence from planned, failed, blocked, stale, skipped, or not-applicable checks.
+
+Where provenance, attestations, signatures, verifiable manifests, or framework
+claims apply, bind them to the candidate digest and verify them from the
+consumer side against the approved identity, trust root, schema, and policy.
+Generated or signed metadata is not a passing result by existence alone.
 
 For stateful systems, verify backups, preflight checks, migrations, rollback, restore, and post-change checks. Written recovery steps without a tested restore are partial evidence.
 

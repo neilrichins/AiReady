@@ -8,7 +8,9 @@ The [National Institute of Standards and Technology Secure Software Development
 Framework, Special Publication 800-218](https://csrc.nist.gov/pubs/sp/800/218/final)
 is a public starting point. Select the exact authoritative or adopted sources in
 the [obligations register](OBLIGATIONS_REGISTER.md); this checklist does not
-claim conformance with them.
+claim conformance with them. When the Secure Software Development Framework
+(SSDF) is selected, use its exact versioned practice and task text rather than
+this checklist's headings as the assessment basis.
 
 ## Assessment identity
 
@@ -19,9 +21,44 @@ claim conformance with them.
 | Candidate/build/environment | `{{IMMUTABLE_IDENTIFIERS}}` |
 | Threat and data classifications | `{{CLASSIFICATIONS}}` |
 | Adopted sources and versions | `{{SOURCES}}` |
+| Exact SSDF version/retrieval date or not selected | `{{VERSION_DATE_OR_NOT_SELECTED}}` |
 | Assessment owner and reviewers | `{{NAMES_AND_ROLES}}` |
 | Evidence index | `{{LOCATION}}` |
 | Assessment date/review trigger | `{{DATE_AND_TRIGGER}}` |
+
+## SSDF task cross-reference
+
+Complete this section only when SSDF is an adopted source. Map every applicable
+task from the selected version. The identifiers and summaries below support
+navigation for SSDF version 1.1; the official publication remains authoritative.
+
+| SSDF task | Outcome to map | Applicability/scope | Authoritative implementation | Design evidence | Operating evidence/period | State/gap | Owner |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| PO.1 | Define software-security requirements | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PO.2 | Establish roles and responsibilities | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PO.3 | Implement supporting toolchains | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PO.4 | Define and use security-check criteria | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PO.5 | Maintain secure development environments | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PS.1 | Protect code from unauthorised access and tampering | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PS.2 | Enable verification of release integrity | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PS.3 | Archive and protect software releases | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.1 | Design for security requirements and risk | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.2 | Review design against security requirements and risk | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.4 | Select well-secured reusable components where feasible | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.5 | Apply secure coding practices | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.6 | Configure compilation and build for security | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.7 | Review or analyse human-readable code | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.8 | Test executable code for vulnerabilities | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| PW.9 | Configure secure settings by default | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| RV.1 | Identify and confirm vulnerabilities continuously | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| RV.2 | Assess, prioritise, and remediate vulnerabilities | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+| RV.3 | Analyse root causes and prevent recurrence | `{{SCOPE}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{EVIDENCE_AND_PERIOD}}` | `{{STATE}}` | `{{OWNER}}` |
+
+Use the individual implementation examples from the selected SSDF version only
+where appropriate to the project. A mapped task, policy, configured tool, or
+passing point-in-time check does not prove design or operating effectiveness.
+Preserve unmapped tasks, partial scope, conflicting evidence, and inherited
+controls as gaps rather than collapsing them into an overall pass.
 
 ## 1. Prepare the organisation and development environment
 

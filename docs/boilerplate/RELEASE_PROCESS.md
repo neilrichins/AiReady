@@ -31,6 +31,9 @@ useful.
 - Define immutable candidate artefacts and supported upgrade/compatibility paths.
 - Identify applicable architecture principles or external review lenses, material cross-quality trade-offs, and unresolved improvement actions.
 - Define separate reliability, performance/capacity, technology cost/value, and sustainability/resource-lifecycle acceptance boundaries where applicable.
+- Select any source, build, provenance, attestation, signing, Software Bill of
+  Materials, or consumer-verification requirements and their exact framework,
+  schema, identity, trust, and policy versions.
 - When AI materially affects system behaviour, define the release bundle across code, models, prompts, retrieval, tools, permissions, parameters, policies, evaluation results, and provider-controlled state.
 - Create or reserve a versioned release-evidence record in the project's existing authoritative release system.
 
@@ -45,15 +48,27 @@ useful.
 
 - Use the documented clean environment and locked dependencies.
 - Record exact commits, configuration, toolchain, dependency lock, artefact digests, provenance, and build result.
+- Bind provenance, attestations, signatures, manifests, and Software Bills of
+  Materials to the immutable candidate digests and preserve the producer,
+  builder, build definition, inputs, issuer, time, and distribution path.
 - Do not rebuild or substitute artefacts after verification without creating a new candidate.
 
 ### 4. Verify the candidate
 
 - Run the complete automated gate and all release-scoped checks in the [verification plan](VERIFICATION_PLAN.md).
+- Complete required validation of intended user, business, operational, and
+  stakeholder outcomes against the exact requirement and evaluation versions.
 - Complete required manual, security, privacy, accessibility, reliability and recovery, performance and capacity, technology cost and value, sustainability, compatibility, migration, operational, and documentation checks.
 - Run proportionate failure, recovery, or incident exercises required by the risk model and preserve actual outcomes and limitations.
 - Complete the applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md) against the exact candidate and approved evaluation-suite version.
+- Where supply-chain attestations are selected, verify the subject digest,
+  source revision, builder or issuer identity, signature or authenticity,
+  trusted root, schema, asserted properties, freshness, and consumer policy.
+- Exercise the required response to missing, malformed, expired, revoked,
+  inconsistent, untrusted, or policy-nonconforming evidence without bypassing the gate.
 - Record actual evidence, failures, reruns, environment, assessor, date, and limitations.
+- Record the test basis, entry and exit criteria, planned and actual scope,
+  failed, blocked, skipped, quarantined or stale checks, variance, and residual risk.
 
 ### 5. Make the readiness decision
 
@@ -65,12 +80,17 @@ useful.
 ### 6. Release under explicit authority
 
 - Reconfirm identity, environment, candidate digest/version, approvals, maintenance window, dependencies, resource and spending limits, expiry/cleanup ownership, and stop conditions.
+- Reconfirm that the approved consumer-verification policy and trust material
+  remain current and that the exact candidate still passes them.
 - Follow the ordered checklist. Do not combine build, migration, deployment, publication, or destructive operations unless the project has deliberately designed and verified an atomic process.
 - For multiple repositories/components, maintain compatible intermediate states and stop on unexpected partial failure.
 
 ### 7. Verify and close
 
-- Verify effective deployed/distributed behaviour, versions, data, configuration, logs, monitoring, security boundaries, user-visible and business outcomes, cost/usage signals, and resource cleanup.
+- Verify effective deployed/distributed behaviour, versions, artefact digests,
+  provenance association and policy result, data, configuration, logs,
+  monitoring, security boundaries, user-visible and business outcomes,
+  cost/usage signals, and resource cleanup.
 - Roll back or stop when a release criterion fails; do not rewrite the record to turn a failure into a pass.
 - Record the final decision, release identifiers, deviations, incidents, rollback status, known limitations, and follow-up owners.
 

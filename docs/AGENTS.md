@@ -31,6 +31,8 @@ Maintain AiReady as a project-neutral, documentation-first framework for control
 - `releases/` owns project-neutral immutable release-evidence examples.
 - `boilerplate/ARCHITECTURE.md`, `ARCHITECTURE_REVIEW.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `AI_SYSTEM_EVALUATION.md`, `TECHNOLOGY_COST_AND_VALUE.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context. The review and cost/value records are optional. `AI_SYSTEM_EVALUATION.md` applies only when AI materially affects system behaviour or a development control.
 - `compliance/NIST_CSF_2_0_READINESS_CHECKLIST.md` owns the optional outcome-based National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) profile and improvement record; it does not establish NIST CSF conformity, certification, or a release decision.
+- `compliance/SLSA_READINESS_CHECKLIST.md` owns optional Supply-chain Levels for Software Artifacts (SLSA) Source/Build readiness and producer-consumer attestation verification; it does not establish a SLSA level, certification, or release decision.
+- `compliance/OPENSSF_OSPS_BASELINE_CHECKLIST.md` owns the optional Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline crosswalk; it does not establish OpenSSF endorsement, OSPS compliance, or complete project security.
 - `.github/` owns this repository's contribution and document-quality checks.
 
 ## Required workflow

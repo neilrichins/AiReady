@@ -12,6 +12,7 @@ This is the complete framework index. The directories organise AiReady itself; t
 | Product or operation with material AI behaviour | [AI system evaluation](boilerplate/AI_SYSTEM_EVALUATION.md) and, when applicable, [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md) | Versioned evaluation contract, exact candidate, bounded results, drift controls, and accountable decision |
 | Material architecture change or external architecture review | [Architecture review](boilerplate/ARCHITECTURE_REVIEW.md) | Stakeholder views, baseline, target, transition, cross-quality trade-offs, findings, and owned improvements |
 | Material technology cost, usage, value, or resource-lifecycle concern | [Technology cost and value](boilerplate/TECHNOLOGY_COST_AND_VALUE.md) | Explicit authority, allocation, budget, forecast, unit value, optimisation, sustainability, and cleanup evidence |
+| Selected source/build provenance or open-source project security objective | [Supply-chain Levels for Software Artifacts (SLSA) readiness](compliance/SLSA_READINESS_CHECKLIST.md) or [Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline readiness](compliance/OPENSSF_OSPS_BASELINE_CHECKLIST.md) | Versioned, scoped control crosswalk, consumer-verification evidence, gaps, and bounded claims |
 | Phase, milestone, or delivery boundary | [Delivery checkpoint](boilerplate/DELIVERY_CHECKPOINT.md) | Durable evidence of a bounded delivery state without implying release approval |
 | Release candidate | [Release process](boilerplate/RELEASE_PROCESS.md), [checklist](boilerplate/RELEASE_CHECKLIST.md), and [readiness](boilerplate/RELEASE_READINESS.md) | Exact candidate approved, rejected, or deferred from current evidence |
 | Completed, failed, cancelled, or rolled-back release | [Release evidence](releases/README.md) | Immutable decision, execution, effective result, and follow-up history |
@@ -63,6 +64,8 @@ Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefe
 - [GDPR and privacy](compliance/GDPR_AND_PRIVACY_CHECKLIST.md)
 - [Secure software development](compliance/SECURE_SOFTWARE_DEVELOPMENT_CHECKLIST.md)
 - [Software supply chain](compliance/SOFTWARE_SUPPLY_CHAIN_CHECKLIST.md)
+- [Supply-chain Levels for Software Artifacts (SLSA) readiness](compliance/SLSA_READINESS_CHECKLIST.md)
+- [OpenSSF Open Source Project Security (OSPS) Baseline readiness](compliance/OPENSSF_OSPS_BASELINE_CHECKLIST.md)
 - [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md)
 - [AML/CTF applicability and readiness](compliance/AML_CTF_APPLICABILITY_CHECKLIST.md)
 - [Modern slavery and forced-labour due diligence](compliance/MODERN_SLAVERY_CHECKLIST.md)

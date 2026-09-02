@@ -40,6 +40,31 @@ Candidate integrity result: `{{PASS_FAIL_AND_EVIDENCE}}`.
 
 Record how the approved candidate was proven identical to the released artefact. A branch name, moving tag, environment label, or successful build alone is insufficient.
 
+### Optional supply-chain attestation and consumer verification
+
+Complete this when the release requires provenance, attestations, signatures,
+verifiable manifests, Software Bills of Materials (SBOMs), or a source/build
+framework claim. Otherwise record `NOT APPLICABLE`, the reason, owner, and assessed date.
+
+| Field | Approved expectation | Actual candidate value | Consumer verification result/evidence | Failure/revocation behaviour |
+| --- | --- | --- | --- | --- |
+| Subject artefact and digest | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Source repository, revision, and reference | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Builder/issuer identity and build definition | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Inputs, parameters, and dependency completeness | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Attestation/manifest/SBOM type, schema, and version | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Signature, certificate, keyless identity, or equivalent | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Trust root, identity constraints, validity, and rotation | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Distribution, discovery, transparency, and retention | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+| Consumer policy, policy version, verifier, and tool version | `{{EXPECTATION}}` | `{{VALUE}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` |
+
+Selected framework result, exact version, track, level, scope, and limitations:
+`{{RESULT_OR_NOT_APPLICABLE}}`.
+
+The verification evidence must identify the exact subject digest, policy,
+trusted identities, verifier, time, result, and limitations. Do not present the
+existence of signed metadata as successful consumer verification.
+
 ### Optional AI system release bundle
 
 Complete this when product or operational behaviour materially depends on AI.
@@ -64,9 +89,9 @@ and whether the approved bundle can be restored as a unit.
 
 ### Included scope
 
-| Feature/change ID | Required outcome | Implementation state | Verification state | Candidate-specific evidence | Release qualification |
-| --- | --- | --- | --- | --- | --- |
-| `{{ID}}` | `{{OUTCOME}}` | `{{STATE}}` | `{{STATE}}` | `{{EVIDENCE}}` | `{{INCLUDED_CONDITIONALLY_INCLUDED_REJECTED}}` |
+| Feature/change and requirement version | Required outcome | Implementation state | Verification state | Validation state | Candidate-specific evidence | Release qualification |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ID_AND_VERSION}}` | `{{OUTCOME}}` | `{{STATE}}` | `{{STATE}}` | `{{STATE}}` | `{{EVIDENCE}}` | `{{INCLUDED_CONDITIONALLY_INCLUDED_REJECTED}}` |
 
 ### Explicitly excluded or deferred scope
 
@@ -80,8 +105,11 @@ and whether the approved bundle can be restored as a unit.
 | --- | --- | --- | --- | --- | --- |
 | Scope and traceability | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Build and artefact integrity | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Provenance, attestation, and consumer-policy verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Functional verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Regression verification | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Test basis, completion criteria, variance, and residual quality risk | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Validation of intended user, business, operational, and stakeholder outcomes | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | AI-system evaluation and behavioural assurance | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and inclusive use | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security, privacy, and data | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -172,6 +200,7 @@ Final result: `{{RELEASED_FAILED_CANCELLED_ROLLED_BACK}}`.
 | Check | Expected result | Actual result | Timestamp | Evidence | Owner | Follow-up |
 | --- | --- | --- | --- | --- | --- | --- |
 | Effective version/configuration | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
+| Effective artefact digest and consumer-policy verification | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Critical journeys/contracts | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Monitoring/error/health signals | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Cost/usage, resource-efficiency, and sustainability signals | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |

@@ -20,7 +20,8 @@ Use it to answer:
 - What may an AI agent read, change, execute, or operate?
 - Which source, generated, data, infrastructure, and repository boundaries must be preserved?
 - What is the minimum sufficient authoritative context for this change, and where could ambiguity or high-impact relationships expand its scope?
-- How does each requirement trace to a feature, implementation, verification result, and release?
+- How does each requirement trace from its source through design, risk,
+  implementation, verification, validation, and release?
 - Which focused check provides fast, deterministic feedback, and what higher-level verification must still follow?
 - What evidence proves that the exact candidate works in the relevant environments?
 - Who can accept risk, approve a release, execute it, and respond if it fails?
@@ -183,7 +184,7 @@ AiReady treats delivery as a set of accountable responsibilities rather than job
 | Research, experience, content, and design | Usable journeys, states, content, accessibility, design decisions, and evaluation | [Experience and design](docs/product/EXPERIENCE_AND_DESIGN_TEMPLATE.md), [accessibility](docs/product/ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md), [brand and messaging](docs/product/BRAND_AND_MESSAGING_TEMPLATE.md) |
 | Engineering and architecture | Maintainable implementation, controlled boundaries, stakeholder views, trade-offs, decisions, compatibility, and traceability | [Architecture](docs/boilerplate/ARCHITECTURE.md), [optional architecture review](docs/boilerplate/ARCHITECTURE_REVIEW.md), [feature record](docs/boilerplate/FEATURE_RECORD.md), [decision record](docs/boilerplate/DECISION_RECORD.md) |
 | Security, privacy, compliance, and data | Known threats and obligations, least privilege, safe data use, verified controls, and bounded claims | [Security policy](docs/boilerplate/SECURITY_POLICY.md), [risk register](docs/boilerplate/RISK_REGISTER.md), [optional compliance records](docs/compliance/README.md), [readiness assessment](docs/AiReady.md) |
-| Quality assurance | Risk-based coverage, reproducible checks, manual evaluation, defects, and evidence | [Testing contract](docs/boilerplate/TESTING.md), [optional AI-system evaluation](docs/boilerplate/AI_SYSTEM_EVALUATION.md), [verification plan](docs/boilerplate/VERIFICATION_PLAN.md), [traceability](docs/boilerplate/TRACEABILITY.md) |
+| Quality assurance | Risk-based verification and validation, reproducible checks, manual evaluation, defects, completion criteria, and evidence | [Testing contract](docs/boilerplate/TESTING.md), [optional AI-system evaluation](docs/boilerplate/AI_SYSTEM_EVALUATION.md), [verification plan](docs/boilerplate/VERIFICATION_PLAN.md), [traceability](docs/boilerplate/TRACEABILITY.md) |
 | Operations, reliability, and technology value | Deployability, observability, failure exercises, capacity, cost/value, resource efficiency, sustainability, support, backup, recovery, and effective verification | [Operations and recovery](docs/boilerplate/OPERATIONS_AND_RECOVERY.md), [technology cost and value](docs/boilerplate/TECHNOLOGY_COST_AND_VALUE.md), [operational quality](docs/product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md) |
 | Release authority | Candidate integrity, gate decisions, residual-risk acceptance, execution, and closure | [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md), [release readiness](docs/boilerplate/RELEASE_READINESS.md), [release evidence](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) |
 
@@ -205,6 +206,10 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
 - **Govern material AI inputs:** control prompts, evaluations, tools, model versions, and configurations that affect behaviour with proportionate traceability, testing, data protection, review, and change management.
 - **Exact candidate identity:** evidence and approval bind to immutable commits and artefacts, not moving branches or intended builds.
+- **Producer evidence requires consumer verification:** provenance,
+  attestations, signatures, manifests, and software bills of materials establish
+  only their supported claims after the exact subject and asserted properties
+  pass an approved trust and verification policy.
 - **System-level verification:** interconnected repositories are ready only when supported combinations, contracts, sequencing, and partial-failure recovery are verified.
 - **Human accountability:** named people own requirements, exceptions, risk acceptance, release approval, and production authority.
 - **Effective-environment proof:** source and pipeline success do not prove deployed, rendered, distributed, or user-observed behaviour.
@@ -221,7 +226,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture and optional review, verification, optional AI-system evaluation, technology cost/value, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
 | [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
-| [Compliance-readiness checklists](docs/compliance/README.md) | Optional applicability-first security, National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), privacy, assurance, AI, financial-crime, supply-chain, and jurisdiction records without implying certification or legal approval. |
+| [Compliance-readiness checklists](docs/compliance/README.md) | Optional applicability-first security, National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), privacy, assurance, AI, financial-crime, software supply-chain, Supply-chain Levels for Software Artifacts (SLSA), open-source security, and jurisdiction records without implying certification or legal approval. |
 | [Release evidence](docs/releases/README.md) | Records exact candidates, approvals, execution, effective results, failures, rollback, and closure. |
 
 Template names and locations are examples within this repository. An adopting project may use existing issues, wikis, documents, service-management systems, pipelines, or release platforms as its authoritative records.
@@ -234,7 +239,7 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - hard blockers are resolved for the authorised activity;
 - instructions and permissions match the intended AI use;
 - build and verification are reproducible from a clean environment;
-- requirements, design decisions, changes, risks, tests, and releases are traceable;
+- requirements, design decisions, changes, risks, tests, validation, and releases are traceable;
 - manual and effective-environment evaluation covers what automation cannot;
 - multi-repository dependencies are verified as an effective system;
 - recovery and incident responses are tested to the required level;

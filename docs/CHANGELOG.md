@@ -6,6 +6,14 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an optional Supply-chain Levels for Software Artifacts (SLSA) readiness
+  pack that keeps Source and Build tracks separate and records exact versions,
+  target levels, roles, attestations, trust, consumer verification,
+  multi-repository edges, gaps, and bounded claims.
+- Added an optional Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline
+  readiness pack with exact-version and maturity selection, control-by-control
+  mapping, effective-control checks, multi-repository scope, evidence,
+  improvement planning, and claims boundaries.
 - Added an optional architecture review and improvement record with selected framework/version, stakeholder views, baseline/target/transition states, cross-quality trade-offs, decision reversibility, findings, improvements, and bounded claims.
 - Added an optional technology cost and value record with authority limits, allocation, budgets, forecasts, anomalies, unit economics, resource efficiency, commitments, optimisation outcomes, sustainability, and multi-repository ownership.
 - Added an optional National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) 2.0 readiness pack with six-function outcome mapping, current and target profiles, implementation-tier separation, supply-chain coverage, exercises, gaps, and claims boundaries.
@@ -24,6 +32,17 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Added an SSDF version 1.1 task cross-reference to the secure software
+  development checklist without treating a mapping as conformity or control effectiveness.
+- Expanded software supply-chain, standard and hotfix release, readiness, and
+  release-evidence records with subject-bound attestations, producer and builder
+  identity, trust roots, versioned consumer policies, failure and revocation
+  behaviour, and effective-channel verification.
+- Expanded decision, requirement, testing, verification, validation, and
+  traceability records with stable identities, decision drivers and lifecycle,
+  requirement derivation and supersession, separate verification and
+  validation, test-basis versions, completion criteria, variance, residual
+  risk, and bidirectional reconciliation.
 - Expanded architecture, adoption, assessment, task, agent-instruction, testing, operations, decision, product, release, responsibility, and lifecycle records with architecture-review, controlled failure-exercise, technology-value, resource-authority, sustainability, and separate quality-gate controls.
 - Standardised the project and framework brand as `AiReady` across documentation and repository issue guidance.
 - Expanded the root README with practical guidance and reusable prompts for AI-assisted discovery, assessment, bounded implementation, verification, multi-repository scope, and human approval.

@@ -30,6 +30,16 @@ Explicitly excluded or deferred changes:
 | --- | --- | --- | --- | --- |
 | `{{COMPONENT}}` | `{{IDENTIFIER}}` | `{{ARTEFACT_AND_DIGEST}}` | `{{VERSION}}` | `{{OWNER}}` |
 
+Applicable source/build framework version, provenance or attestation identity,
+builder/issuer, signature/trust root, consumer-policy version, exact subject
+digest, and verification result:
+`{{SUPPLY_CHAIN_VERIFICATION_OR_NOT_APPLICABLE_WITH_REASON_OWNER_AND_DATE}}`.
+
+Urgency does not permit a signed or generated record to substitute for
+consumer-side verification. Missing, malformed, expired, revoked, inconsistent,
+untrusted, or policy-nonconforming evidence must be retained as a failed or
+explicitly deferred gate with an authorised compensating control and deadline.
+
 When AI materially affects system behaviour, record the exact release-bundle
 identifier, model, prompts, retrieval, tools, permissions, parameters, policies,
 evaluation-suite result, provider-controlled elements, and rollback boundary:
@@ -95,6 +105,7 @@ Decision: `{{APPROVE_REJECT_DEFER}}` candidate `{{EXACT_IDENTIFIER}}`.
 | --- | --- | --- | --- | --- | --- | --- |
 | Release action | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Effective version/configuration | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
+| Effective artefact digest and consumer-policy verification | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Critical journey/problem resolution | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Monitoring/error signals | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Cost/usage, resource-efficiency, and sustainability signals | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |

@@ -11,11 +11,12 @@
 | Architecture review | Exact lens/source version, stakeholder views, baseline/target/transition, trade-offs, findings, improvement owners | Framework name or checklist treated as proof of sound architecture or conformity |
 | Component boundaries | Stable ownership, forbidden responsibilities, compatibility range, discovery, failure behaviour, change authority | A routine change silently moves responsibility or assumes compatibility |
 | Repository ecosystem | Owned dependency graph, contract versions, supported combinations, coordinated release and rollback | Each repository passes independently while the combined system is incompatible |
-| Task traceability | Structured issue, acceptance criteria, linked pull request, decision log | Prompt-only work with no durable acceptance criteria |
+| Requirements and traceability | Stable requirement identity/version, source and derivation, bidirectional design/implementation/risk/test/release links, separate verification and validation | Prompt-only work, silent requirement rewrites, or orphan implementation with no durable approved intent |
+| Decisions | Stable decision identity, explicit drivers, alternatives, accountable roles, consequences, confirmation evidence, and supersession history | Accepted status treated as implementation proof or an old decision silently rewritten |
 | Reproducibility | Locked dependencies, clean build, documented runtime, validated configuration | Works only on one workstation |
 | Quality | Single local gate mirrored by required CI, risk coverage, and distinct verification levels | Simulated, component, or source tests presented as package, physical, user, or production proof |
 | Execution evidence | Exact command, scope, environment, exit result, failures, skips, reruns, and limitations | “Tests passed” without reproducible context or with hidden exclusions |
-| Security and supply chain | Threat model, secret and code scanning, reviewed pinned dependencies | Credentials in prompts, fixtures, logs, or shell history |
+| Security and supply chain | Threat model, secret and code scanning, reviewed pinned dependencies, exact subject digests, trusted producer/builder identities, and consumer-policy verification | Credentials leak, generated metadata is accepted without verification, or one valid component is treated as whole-system assurance |
 | AI trust boundaries | Closed schemas, allowlists, escaping, sandboxing, verification | Generated output directly executed or published |
 | Operations and recovery | Separate commands, dry runs, confirmation, backup, rollback, effective verification | Deployment doubles as a destructive smoke test |
 | Failure and recovery exercises | Risk-based tabletop, simulation, failover, restore, or controlled fault evidence with actual outcomes and corrective actions | A runbook or scheduled exercise presented as proof that recovery works |

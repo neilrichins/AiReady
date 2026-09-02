@@ -116,6 +116,7 @@ Area score: `{{X_OF_10}}`
 | --- | ---: | --- |
 | Work begins with a problem, outcome, acceptance criteria, and constraints | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Approved product and design intent is separated from observed legacy behaviour, assumptions, defects, and unknowns | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Requirements use stable identities and versions, preserve source and derivation, and distinguish implementation, verification, validation, and release evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Changes link to an issue or decision record and remain reviewable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | A current change-impact source identifies related implementation, contracts, generated artefacts, tests, documentation, operations, support, release, and recovery work | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Pull requests require risk, verification, documentation, and limitation evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
@@ -161,6 +162,7 @@ Area score: `{{X_OF_10}}`
 | Secret scanning, static analysis, dependency review, and licence review are enabled or explicitly risk-accepted | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Logs, fixtures, prompts, issue text, and generated artefacts exclude sensitive data | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Third-party actions, packages, models, plugins, and tools are pinned and reviewed | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Applicable source/build integrity, provenance, attestation, signing, and open-source security objectives identify exact framework versions and are verified by the intended consumer against an approved policy | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`
 

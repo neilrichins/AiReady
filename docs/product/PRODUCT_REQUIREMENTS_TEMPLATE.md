@@ -37,23 +37,28 @@ Out of scope:
 
 ## Functional requirements
 
-| ID | Requirement | Priority | Owner | Acceptance criteria | Verification method | Evidence location | Status |
+| ID/version | Source, parent, or derivation | Requirement | Priority/owner | Acceptance criteria | Verification method/evidence | Validation method/evidence | Lifecycle/delivery states |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `REQ-F-001` | `{{TESTABLE_SHALL_STATEMENT}}` | `{{MUST_SHOULD_COULD}}` | `{{OWNER}}` | `{{OBSERVABLE_CRITERIA}}` | `{{TEST_INSPECTION_ANALYSIS_OR_DEMONSTRATION}}` | `{{LOCATION}}` | `{{STATUS}}` |
+| `REQ-F-001/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | `{{TESTABLE_SHALL_STATEMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{OBSERVABLE_CRITERIA}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{APPROVAL_IMPLEMENTATION_VERIFICATION_VALIDATION_STATES}}` |
 
 ## Quality and constraint requirements
 
-| ID | Area | Testable requirement | Priority | Owner | Verification/evidence | Status |
-| --- | --- | --- | --- | --- | --- | --- |
-| `REQ-Q-001` | Accessibility | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-002` | Security/privacy | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-003` | Reliability/recovery | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-004` | Performance/capacity/resource efficiency | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-005` | Technology cost/delivered value | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-006` | Sustainability/resource lifecycle | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-007` | Compatibility/migration | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-008` | Operations/support | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-009` | Legal/licensing | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| ID/version | Source/derivation | Area | Testable requirement | Priority/owner | Verification/evidence | Validation/evidence | States |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `REQ-Q-001/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Accessibility | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-002/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Security/privacy | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-003/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Reliability/recovery | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-004/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Performance/capacity/resource efficiency | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-005/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Technology cost/delivered value | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-006/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Sustainability/resource lifecycle | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-007/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Compatibility/migration | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-008/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Operations/support | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+| `REQ-Q-009/{{VERSION}}` | `{{SOURCE_AND_RELATED_REQUIREMENTS}}` | Legal/licensing | `{{REQUIREMENT}}` | `{{PRIORITY_AND_OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATES}}` |
+
+For every material requirement, review whether it is necessary, singular,
+unambiguous, feasible, implementation-neutral where appropriate, verifiable,
+validatable, and traceable. Record unresolved quality defects rather than
+interpreting them silently during implementation.
 
 ## Data and artificial intelligence boundaries
 
@@ -69,11 +74,11 @@ Generated output is untrusted until it passes the project-defined deterministic 
 | --- | --- | --- | --- | --- | --- | --- |
 | `{{COMPONENT_OR_SERVICE}}` | `{{CONSUMER}}` | `{{CONTRACT}}` | `{{COMBINATIONS}}` | `{{BEHAVIOUR}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 
-## Feature and verification traceability
+## Feature, verification, and validation traceability
 
-| Requirement | Experience/design state | Feature/capability | Issue/change | Implementation artefacts | Verification IDs | Release |
-| --- | --- | --- | --- | --- | --- | --- |
-| `{{REQ_ID}}` | `{{REFERENCE_OR_NOT_APPLICABLE}}` | `{{FEATURE_ID}}` | `{{LINK_OR_ID}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{VERIFICATION_IDS}}` | `{{RELEASE_OR_BACKLOG}}` |
+| Requirement/version | Experience/design state | Feature/capability | Risk | Issue/change | Implementation artefacts | Verification IDs | Validation IDs | Release |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{REQ_ID_AND_VERSION}}` | `{{REFERENCE_OR_NOT_APPLICABLE}}` | `{{FEATURE_ID}}` | `{{RISK_IDS}}` | `{{LINK_OR_ID}}` | `{{COMMITS_OR_ARTEFACTS}}` | `{{VERIFICATION_IDS}}` | `{{VALIDATION_IDS}}` | `{{RELEASE_OR_BACKLOG}}` |
 
 ## Gaps, changes, and decisions
 
@@ -81,9 +86,21 @@ Generated output is untrusted until it passes the project-defined deterministic 
 | --- | --- | --- | --- | --- | --- | --- |
 | `{{ITEM}}` | `{{GAP}}` | `{{IMPACT}}` | `{{OWNER}}` | `{{ACTION}}` | `{{DATE}}` | `{{BLOCK_CONDITION_ALLOW}}` |
 
+## Requirement change and supersession
+
+| Date/version | Requirement | Change and reason | Supersedes/superseded by | Affected traces/evidence | Approver |
+| --- | --- | --- | --- | --- | --- |
+| `{{DATE_AND_VERSION}}` | `{{REQUIREMENT_ID}}` | `{{CHANGE_AND_RATIONALE}}` | `{{REQUIREMENT_IDS_OR_NONE}}` | `{{IMPACT}}` | `{{OWNER}}` |
+
+Preserve stable identifiers and prior evidence. Verification shows compliance
+with the stated specification; validation shows that the resulting outcome
+meets the intended need in its recorded context. Neither state implies release.
+
 ## Approval
 
-Requirements are approved only when owners, acceptance criteria, verification methods, dependencies, and unresolved gaps are explicit.
+Requirements are approved only when sources, derivation, owners, acceptance
+criteria, verification and validation methods, dependencies, and unresolved
+gaps are explicit.
 
 | Role | Name | Decision | Date | Conditions |
 | --- | --- | --- | --- | --- |

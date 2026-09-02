@@ -1,8 +1,15 @@
-# Verification plan and coverage
+# Verification and validation plan
+
+Verification asks whether the implementation satisfies its stated
+requirements. Validation asks whether the resulting system meets the intended
+user, business, operational, or stakeholder need in its real context. Define
+and evidence them separately; one result does not imply the other.
 
 ## Evidence rules
 
 - Evidence must identify the exact code commits, build artefacts, configuration, environment, data set, tool version, date, and result where applicable.
+- Evidence must identify the exact requirement, design, interface, risk, or
+  other test-basis version against which the result was obtained.
 - Passing source-level tests does not prove deployed or rendered behaviour.
 - Automated checks do not replace required manual, accessibility, security, usability, operational, legal, or user evaluation.
 - A planned or running check is not a pass.
@@ -15,6 +22,14 @@
 - **Analysis:** reasoned evaluation using defined inputs and method.
 - **Demonstration:** observed behaviour in a representative environment.
 - **Production verification:** bounded confirmation of effective deployed behaviour.
+
+## Validation methods
+
+Select methods appropriate to the intended need and affected people. Examples
+include representative user evaluation, stakeholder acceptance, operational
+exercise, field observation, measured outcome review, accessibility evaluation,
+and domain-specialist assessment. Record participant or stakeholder selection,
+context, scenarios, data, success criteria, limitations, and approval authority.
 
 ## Verification environments and claim boundaries
 
@@ -37,6 +52,16 @@ evidence from one level cannot be promoted into a claim assigned to another.
 | ID | Requirement/feature/risk | Method and level | Environment | Automated/manual | Command/procedure | Expected result | Evidence location | Owner | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `VER-001` | `{{REQ_FEATURE_OR_RISK_ID}}` | `{{METHOD_AND_LEVEL}}` | `{{ENVIRONMENT}}` | `{{TYPE}}` | `{{COMMAND_OR_PROCEDURE}}` | `{{EXPECTED}}` | `{{LINK_OR_ARTEFACT}}` | `{{OWNER}}` | `{{PLANNED_PASS_FAIL_BLOCKED_STALE}}` |
+
+## Validation coverage matrix
+
+| ID | Intended need and requirement/version | Representative users/stakeholders/context | Method/scenarios | Success boundary | Actual result | Evidence/limitations | Owner | Status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `VAL-001` | `{{NEED_REQUIREMENT_AND_VERSION}}` | `{{PEOPLE_ROLES_AND_CONTEXT}}` | `{{METHOD_AND_SCENARIOS}}` | `{{EXPECTED_OUTCOME}}` | `{{RESULT}}` | `{{EVIDENCE_AND_LIMITS}}` | `{{OWNER}}` | `{{PLANNED_PASS_FAIL_BLOCKED_STALE}}` |
+
+A stakeholder approval without an observed result is not validation evidence.
+A sample or representative environment establishes only the recorded scope;
+preserve excluded people, contexts, journeys, devices, and operating conditions.
 
 ## Quality areas
 

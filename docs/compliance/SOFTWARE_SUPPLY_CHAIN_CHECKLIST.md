@@ -78,7 +78,40 @@ requirements that apply; an SBOM alone is not supply-chain assurance.
   environment leakage, and unauthorised build substitution where required.
 - [ ] Record builder, source commit, dependencies, parameters, environment,
   outputs, digests, signing, provenance, time, and verification result.
-- [ ] Verify that the distributed or deployed artefact matches the approved build.
+- [ ] Define which producer, build platform, distributor, consumer, and verifier
+  owns each supply-chain assertion and decision.
+- [ ] Verify that the distributed or deployed artefact matches the approved build
+  and that its provenance satisfies a versioned consumer policy before use.
+
+### Artefact attestation and consumer-verification record
+
+Complete this table when provenance, attestations, signatures, or verifiable
+release manifests are selected. A generated or signed record is not assurance
+until the consumer verifies the exact subject and claimed properties against an
+approved policy. Use the optional
+[SLSA readiness checklist](SLSA_READINESS_CHECKLIST.md) when a Supply-chain
+Levels for Software Artifacts (SLSA) track or level is an explicit objective.
+
+| Element | Approved expectation | Actual identity/value | Verification method and policy version | Result/evidence | Failure/revocation behaviour | Owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| Subject artefact and immutable digest | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Source repository, revision, and reference | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Builder identity and build-platform boundary | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Build definition, entry point, parameters, and inputs | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Statement, predicate, or manifest type/schema/version | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Signer or attestation issuer identity | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Signature, certificate, keyless identity, or equivalent | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Trust root, identity constraints, validity, and rotation | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Distribution, discovery, transparency, retention, and correction | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+| Consumer-side policy decision before release, deployment, or use | `{{EXPECTATION}}` | `{{VALUE}}` | `{{METHOD_AND_POLICY}}` | `{{RESULT}}` | `{{BEHAVIOUR}}` | `{{OWNER}}` |
+
+- [ ] Reject, quarantine, or explicitly escalate missing, malformed, expired,
+  revoked, inconsistent, untrusted, or policy-nonconforming evidence.
+- [ ] Test verification failure and trust-root rotation without bypassing the gate.
+- [ ] Preserve the verification policy, trusted identities, result, time, tool
+  version, and subject digest—not merely the command that generated the attestation.
+- [ ] Verify every producer-consumer edge across interconnected repositories;
+  one valid attestation does not establish the integrity of the assembled system.
 
 ## 5. SBOM generation and verification
 

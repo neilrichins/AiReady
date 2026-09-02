@@ -7,6 +7,9 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Release/version, candidate number, change-set identifier, owner, and window are recorded.
 - [ ] Exact commits and immutable artefact identifiers/digests are recorded for every repository/component.
 - [ ] Target environment, account/tenant/region/channel, and current deployed version are confirmed.
+- [ ] Selected source, build, supply-chain, provenance, signing, or open-source
+  security framework claims identify their exact version, track, level, scope,
+  evidence, and decision authority.
 - [ ] Required approvers and operator authority are confirmed.
 - [ ] Stop, rollback, cancellation, communication, and incident owners are available.
 
@@ -27,12 +30,30 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Candidate artefacts are immutable and match the recorded source/configuration.
 - [ ] When AI materially affects system behaviour, the exact model, prompt, retrieval, tool, permission, parameter, policy, evaluation, and provider-controlled elements are identified as one approved release bundle or as explicit rollback units.
 - [ ] Dependency, licence, provenance, and Software Bill of Materials checks completed where applicable.
+- [ ] Each required attestation, signature, manifest, provenance statement, and
+  Software Bill of Materials is bound to the exact candidate artefact digest.
+- [ ] Producer, source revision, builder, build definition, inputs, issuer,
+  schema, signing identity, trust root, distribution, and retention evidence is
+  complete to the selected policy's required level.
+- [ ] Consumer-side verification passed using the approved policy and trust
+  configuration; the result, policy version, verifier, tool version, time, and
+  subject digest are retained.
+- [ ] Missing, malformed, expired, revoked, inconsistent, untrusted, or
+  policy-nonconforming supply-chain evidence blocks or follows an explicitly
+  authorised exception path without being reported as a successful verification.
 - [ ] No secrets, private data, development configuration, or unreviewed generated output is present.
 - [ ] Candidate has not changed since verification; otherwise a new candidate was created.
 
 ## Verification evidence
 
 - [ ] Complete project quality gate passed: `{{COMMAND}}`.
+- [ ] Test basis and exact requirement, design, interface, risk, standard, and
+  evaluation versions are recorded.
+- [ ] Test-completion evidence records entry and exit criteria, planned and
+  executed scope, passed, failed, blocked, skipped, quarantined and stale
+  results, variance, limitations, and residual quality risk.
+- [ ] Required validation of intended user, business, operational, and
+  stakeholder outcomes passed for the stated people, context, scenarios, and limitations.
 - [ ] Applicable AI-system evaluation passed for the exact candidate and evaluation-suite version, with severe failures, uncertainty, exclusions, grader limitations, and human decisions recorded.
 - [ ] Unit/component tests passed or are not applicable.
 - [ ] Contract/integration/end-to-end tests passed or are not applicable.
@@ -88,6 +109,8 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Applicable AI behavioural signals remain within the approved baseline and no provider-side change or drift has invalidated the evidence.
 - [ ] Public/distributed artefacts, documentation, support routes, and release notes are correct.
 - [ ] Cross-repository/component versions form a supported combination.
+- [ ] Distributed or deployed artefacts retain the approved digest and pass the
+  required consumer-side supply-chain verification in the effective channel.
 - [ ] Release is marked successful, rolled back, or open with an owned incident—not assumed complete.
 
 ## Closure

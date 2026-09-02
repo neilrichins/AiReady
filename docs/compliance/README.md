@@ -40,6 +40,8 @@ risk, audit, security, privacy, procurement, quality, and release systems.
 | Personal data, tracking, profiling, international transfers, or data-subject rights | [European Union General Data Protection Regulation (GDPR) and privacy](GDPR_AND_PRIVACY_CHECKLIST.md) |
 | Software is designed, built, acquired, maintained, or released | [Secure software development](SECURE_SOFTWARE_DEVELOPMENT_CHECKLIST.md) |
 | Third-party components, build services, packages, containers, models, datasets, vendors, or open-source licences | [Software supply chain](SOFTWARE_SUPPLY_CHAIN_CHECKLIST.md) |
+| A producer, build platform, consumer, customer, contract, or procurement process requires versioned source/build provenance or a supply-chain assurance level | [Supply-chain Levels for Software Artifacts (SLSA) readiness](SLSA_READINESS_CHECKLIST.md) |
+| An open-source project or consumer selects a maturity-based repository and project security baseline | [Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline readiness](OPENSSF_OSPS_BASELINE_CHECKLIST.md) |
 | The organisation develops, provides, deploys, imports, distributes, or uses artificial intelligence (AI) systems | [AI governance](AI_GOVERNANCE_CHECKLIST.md) |
 | A regulated activity may involve money laundering, terrorist financing, proliferation financing, sanctions, or customer due diligence | [Anti-Money Laundering and Counter-Terrorist Financing (AML/CTF) applicability and readiness](AML_CTF_APPLICABILITY_CHECKLIST.md) |
 | Supply-chain transparency, forced labour, human trafficking, procurement, or reporting duties may apply | [Modern slavery and forced-labour due diligence](MODERN_SLAVERY_CHECKLIST.md) |
@@ -68,6 +70,10 @@ These records do not establish or imply:
 - ISO/IEC certification;
 - a System and Organization Controls (SOC) audit opinion;
 - NIST CSF implementation, alignment, conformity, certification, or a particular implementation tier;
+- a SLSA Source or Build level, conformance statement, certification, or
+  third-party assurance result;
+- OpenSSF endorsement, OSPS Baseline compliance, project maturity, or complete
+  open-source security;
 - Payment Card Industry Data Security Standard validation;
 - regulatory approval, registration, filing, or authorisation;
 - absence of money laundering, sanctions exposure, forced labour, security
@@ -147,3 +153,6 @@ Use explicit states rather than a checked box alone.
    entities, architecture, data, suppliers, personnel, incidents, or releases.
 8. Bind compliance-sensitive release decisions and claims to accountable human
    review and the exact evidence supporting them.
+9. For a source, build, or open-source security framework, record the exact
+   version, track, level, maturity scope, conditional controls, consumer policy,
+   evidence, and limitations. Never infer one framework's result from another.

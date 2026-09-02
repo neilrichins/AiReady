@@ -7,6 +7,8 @@
 | Accountable quality owner | `{{OWNER}}` |
 | Applies to | `{{SYSTEM_REPOSITORIES_AND_ENVIRONMENTS}}` |
 | Assessed version/date | `{{VERSION_AND_DATE}}` |
+| Test basis and exact versions | `{{REQUIREMENTS_DESIGNS_INTERFACES_RISKS_STANDARDS_AND_VERSIONS}}` |
+| Authoritative test-management/evidence system | `{{LOCATION_OR_RECORD}}` |
 | Risk/criticality basis | `{{BASIS}}` |
 | Review trigger | `{{CODE_REQUIREMENT_RISK_ENVIRONMENT_OR_DATE}}` |
 
@@ -98,9 +100,9 @@ network access, external services, unavailable hardware, and excluded tests.
 
 ## Risk and coverage matrix
 
-| Requirement/journey/risk | Failure to prevent or detect | Test levels/methods | Positive/negative/boundary cases | Required environment/data | Pass criterion | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| `{{ITEM}}` | `{{FAILURE}}` | `{{METHODS}}` | `{{CASES}}` | `{{CONTEXT}}` | `{{CRITERION}}` | `{{EVIDENCE}}` |
+| Requirement/journey/risk and basis version | Failure to prevent or detect | Test condition/case/procedure IDs | Test levels/methods | Positive/negative/boundary cases | Required environment/data | Pass criterion | Result/evidence IDs |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM_AND_VERSION}}` | `{{FAILURE}}` | `{{STABLE_IDS_OR_EXISTING_SYSTEM_LINKS}}` | `{{METHODS}}` | `{{CASES}}` | `{{CONTEXT}}` | `{{CRITERION}}` | `{{RESULT_AND_EVIDENCE}}` |
 
 Cover normal behaviour, alternate and recovery states, malformed and adversarial
 input, permissions, injection, concurrency, retries, idempotency, migration,
@@ -165,6 +167,35 @@ Retries must not convert an unexplained failure into a pass. Quarantine requires
 | `{{CLASS}}` | `{{OWNER_AND_TARGET}}` | `{{EVIDENCE}}` | `{{RULE}}` | `{{ROUTE}}` |
 
 Preserve the first failure, environment, candidate identifier, inputs, and relevant diagnostics. Remove secrets and sensitive data before sharing evidence.
+
+## Test completion and variance
+
+Use the project's existing test-management or release system as the
+authoritative source where available. This summary should link to it rather
+than duplicate volatile case-level results.
+
+| Completion field | Planned/required | Actual | Variance or limitation | Evidence/owner |
+| --- | --- | --- | --- | --- |
+| Entry criteria | `{{CRITERIA}}` | `{{RESULT}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Exit criteria | `{{CRITERIA}}` | `{{RESULT}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Test conditions/cases/procedures | `{{COUNT_OR_SCOPE}}` | `{{COUNT_OR_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Executed | `{{COUNT_OR_SCOPE}}` | `{{COUNT_OR_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Passed | `{{ACCEPTANCE}}` | `{{COUNT_AND_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Failed | `{{ACCEPTANCE}}` | `{{COUNT_AND_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Blocked | `{{ACCEPTANCE}}` | `{{COUNT_AND_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Skipped/quarantined/not run | `{{ACCEPTANCE}}` | `{{COUNT_AND_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Defects by release-relevant severity | `{{THRESHOLDS}}` | `{{COUNT_AND_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+| Required environments, devices, users, and specialists | `{{SCOPE}}` | `{{ACTUAL_SCOPE}}` | `{{VARIANCE}}` | `{{EVIDENCE_AND_OWNER}}` |
+
+Completion decision: `{{COMPLETE_NOT_COMPLETE_CONDITIONALLY_COMPLETE}}` for
+`{{EXACT_CANDIDATE_TEST_BASIS_AND_ENVIRONMENTS}}`.
+
+Residual quality risks, unvalidated needs, lost coverage, accepted variances,
+approvers, and expiry: `{{DETAILS_AND_LINKS}}`.
+
+Test completion is a quality recommendation, not release approval. Unmet exit
+criteria require resolution or an explicit decision by the authorised risk and
+release owners; AI may report the evidence but cannot accept the variance.
 
 ## Evidence and claims boundary
 

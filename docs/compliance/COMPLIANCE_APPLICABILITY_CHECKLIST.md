@@ -57,6 +57,8 @@ Footprint evidence and known omissions: `{{LINKS_LIMITATIONS_AND_OWNER}}`.
 | Employees, contractors, outsourced labour, hardware, hosting, content moderation, or global suppliers | `{{FINDING}}` | Modern slavery, employment, procurement, or supply-chain duties | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Children, health, biometrics, location, communications, finance, education, employment, or other sensitive context | `{{FINDING}}` | Privacy and sector overlays | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Open-source, commercial, source-available, model, data, media, or content licences | `{{FINDING}}` | Software supply chain and intellectual-property review | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+| Open-source project maturity, repository controls, public releases, or consumer security expectations | `{{FINDING}}` | Open Source Project Security Baseline or other selected open-source security source | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+| Source or build provenance, attestations, release integrity, software-consumer verification, or a supply-chain level claim | `{{FINDING}}` | Supply-chain Levels for Software Artifacts (SLSA) or other selected provenance framework | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Public procurement, government funding, critical infrastructure, export, sanctions, or national-security concern | `{{FINDING}}` | Procurement, sector, export, or sanctions sources | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Public environmental, ethical, security, privacy, accessibility, or compliance claim | `{{FINDING}}` | Claims and approvals record | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 
@@ -92,6 +94,8 @@ assessments are discovery aids. They are not authoritative applicability evidenc
 | GDPR or other privacy/data protection | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Secure software development | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Software supply chain and licences | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| SLSA Source/Build readiness and consumer verification | `{{STATE}}` | `{{SCOPE_TRACK_LEVEL_VERSION_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Open Source Security Foundation (OpenSSF) Open Source Project Security (OSPS) Baseline readiness | `{{STATE}}` | `{{PROJECT_SCOPE_MATURITY_LEVEL_VERSION_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | AI governance | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | AML/CTF, sanctions, or regulated financial activity | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Modern slavery or forced-labour due diligence | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |

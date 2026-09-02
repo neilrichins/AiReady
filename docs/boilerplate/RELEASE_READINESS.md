@@ -22,6 +22,20 @@ This is boilerplate for the working readiness view of a current candidate. On re
 | --- | --- | --- | --- | --- | --- |
 | `{{REPOSITORY_OR_COMPONENT}}` | `{{IDENTIFIER}}` | `{{ARTEFACT}}` | `{{DIGEST}}` | `{{VERSION}}` | `{{EVIDENCE}}` |
 
+### Optional supply-chain attestation and verification
+
+Complete this when a release requires provenance, an attestation, a signature,
+a verifiable manifest, or a framework claim. Otherwise record `NOT APPLICABLE`,
+the reason, owner, and date.
+
+| Subject/digest | Source revision | Builder/issuer and build definition | Attestation/schema and signature | Trust root and consumer policy/version | Verification result/evidence | Failure/revocation response |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{SUBJECT_AND_DIGEST}}` | `{{SOURCE}}` | `{{IDENTITY_AND_DEFINITION}}` | `{{ATTESTATION_AND_AUTHENTICITY}}` | `{{TRUST_AND_POLICY}}` | `{{RESULT}}` | `{{RESPONSE}}` |
+
+The result must come from consumer-side verification of the exact subject. An
+attestation's existence or signature alone does not establish that its issuer,
+asserted properties, trust root, or policy are acceptable.
+
 ### Optional AI system release bundle
 
 Complete this when product or operational behaviour materially depends on AI.
@@ -45,9 +59,9 @@ candidate identity, approval validity, monitoring, and rollback.
 
 ### Included
 
-| Requirement/feature/fix | User/operational outcome | Verification status | Evidence | Owner |
-| --- | --- | --- | --- | --- |
-| `{{ID}}` | `{{OUTCOME}}` | `{{PASS_FAIL_PARTIAL_BLOCKED}}` | `{{LINK}}` | `{{OWNER}}` |
+| Requirement/feature/fix and version | User/operational outcome | Verification status | Validation status | Evidence | Owner |
+| --- | --- | --- | --- | --- | --- |
+| `{{ID_AND_VERSION}}` | `{{OUTCOME}}` | `{{PASS_FAIL_PARTIAL_BLOCKED}}` | `{{PASS_FAIL_PARTIAL_BLOCKED}}` | `{{LINK}}` | `{{OWNER}}` |
 
 ### Explicitly excluded or deferred
 
@@ -61,9 +75,12 @@ candidate identity, approval validity, monitoring, and rollback.
 | --- | --- | --- | --- | --- | --- |
 | Traceability and scope | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Reproducible build and artefact integrity | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Provenance, attestation, and consumer-policy verification | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Automated quality gate | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Test basis, completion criteria, variance, and residual quality risk | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | AI-system evaluation and behavioural assurance | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Functional and end-to-end | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Validation of intended user, business, operational, and stakeholder outcomes | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security and authorisation | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Privacy and data | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -103,6 +120,7 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 - Monitoring and observation period: `{{SIGNALS_AND_DURATION}}`.
 - Cost/usage anomaly, resource-efficiency, sustainability, expiry, and cleanup checks: `{{PLAN_OR_NOT_APPLICABLE}}`.
 - AI behavioural baseline, drift trigger, safe-stop/fallback, and bundle rollback: `{{PLAN_OR_NOT_APPLICABLE}}`.
+- Supply-chain trust-root, policy, attestation, revocation, and effective-channel verification: `{{PLAN_OR_NOT_APPLICABLE}}`.
 - Communication and support owner: `{{OWNER}}`.
 
 ## Decision rationale
