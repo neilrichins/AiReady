@@ -2,7 +2,7 @@
 
 ## Principle
 
-AI Ready defines information concerns, not mandatory files or directories. Each project chooses where those concerns live and records that choice in the adoption map.
+AiReady defines information concerns, not mandatory files or directories. Each project chooses where those concerns live and records that choice in the adoption map.
 
 ## Information flow
 

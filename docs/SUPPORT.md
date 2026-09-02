@@ -2,7 +2,7 @@
 
 ## Framework questions
 
-Use the repository's **Readiness question** issue form for help interpreting or applying an AI Ready control. Describe the situation using sanitised, project-neutral information and identify the control area involved.
+Use the repository's **Readiness question** issue form for help interpreting or applying an AiReady control. Describe the situation using sanitised, project-neutral information and identify the control area involved.
 
 Before opening a question:
 
@@ -20,4 +20,4 @@ Do not use public issues for vulnerabilities, credentials, personal data, privat
 
 ## Project-specific support boundary
 
-AI Ready is a reusable documentation framework. Its maintainers cannot approve an adopting project's AI use, validate private evidence, accept project risk, or decide whether that project's release is ready. Those decisions remain with the project's authorised owners.
+AiReady is a reusable documentation framework. Its maintainers cannot approve an adopting project's AI use, validate private evidence, accept project risk, or decide whether that project's release is ready. Those decisions remain with the project's authorised owners.

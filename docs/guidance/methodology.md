@@ -2,7 +2,7 @@
 
 ## Purpose
 
-AI Ready assesses whether a repository provides enough context, deterministic controls, authority boundaries, and evidence for controlled artificial intelligence (AI)-assisted coding. It evaluates the development system around an AI agent, not the intelligence or reliability of a particular model.
+AiReady assesses whether a repository provides enough context, deterministic controls, authority boundaries, and evidence for controlled artificial intelligence (AI)-assisted coding. It evaluates the development system around an AI agent, not the intelligence or reliability of a particular model.
 
 For an unfamiliar or legacy system, complete discovery and baseline work before scoring controls as effective. Use the evidence labels and safety boundary in the [legacy-project playbook](legacy-project-playbook.md); do not award points from inference or unverified documentation.
 
@@ -81,11 +81,11 @@ Reassess after:
 
 ## Claims boundary
 
-AI Ready does not establish security, privacy, legal compliance, software quality, accessibility conformance, model accuracy, or production readiness. It establishes that named controls and evidence have been assessed against a consistent framework.
+AiReady does not establish security, privacy, legal compliance, software quality, accessibility conformance, model accuracy, or production readiness. It establishes that named controls and evidence have been assessed against a consistent framework.
 
 ## Relationship to other practices
 
-AI Ready is designed to complement, not replace or attest conformity with:
+AiReady is designed to complement, not replace or attest conformity with:
 
 - the [National Institute of Standards and Technology Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf) for secure software-development practices;
 - the [Open Source Project Security Baseline](https://baseline.openssf.org/) and [OpenSSF Scorecard](https://www.scorecard.dev/) for open-source security controls and machine-checkable repository signals; and

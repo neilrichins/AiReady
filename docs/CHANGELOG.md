@@ -21,6 +21,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Standardised the project and framework brand as `AiReady` across documentation and repository issue guidance.
 - Expanded the root README with practical guidance and reusable prompts for AI-assisted discovery, assessment, bounded implementation, verification, multi-repository scope, and human approval.
 - Added project-neutral controls for focused verification feedback loops, context locality, change-amplification hotspots, canonical concepts and implementations, explicit contract and failure behaviour, and control-level readiness comparisons without imposing structural metrics or aggregate-score release gates.
 - Added project-specific change-impact mapping, layered context, AI-instruction currency checks, governed review-feedback improvement, evidence-based repository and delivery-unit classification, and an explicit assessment-versus-remediation authority boundary.
@@ -66,7 +67,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
-- Reframed AI Ready as a Markdown-only, language-neutral documentation and release-assurance framework.
+- Reframed AiReady as a Markdown-only, language-neutral documentation and release-assurance framework.
 - Added project, requirements, feature, roadmap, status, traceability, verification, risk, release-process, release-checklist, release-readiness, and release-evidence boilerplate.
 - Added explicit support for existing projects through a location-neutral adoption map.
 - Consolidated all framework and boilerplate documents under `docs/` without prescribing an adopting project's directory structure.

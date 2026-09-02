@@ -1,5 +1,5 @@
 name: Readiness question
-description: Ask how to apply or interpret an AI Ready control.
+description: Ask how to apply or interpret an AiReady control.
 title: "Question: "
 labels: [question]
 body:

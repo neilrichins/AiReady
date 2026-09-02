@@ -2,7 +2,7 @@
 
 ## Objective
 
-Maintain AI Ready as a project-neutral, documentation-first framework for controlled AI-assisted development, feature traceability, verification planning, and release assurance.
+Maintain AiReady as a project-neutral, documentation-first framework for controlled AI-assisted development, feature traceability, verification planning, and release assurance.
 
 ## Non-negotiable rules
 
@@ -12,7 +12,7 @@ Maintain AI Ready as a project-neutral, documentation-first framework for contro
 - Do not include customer names, source-project names, private domains, credentials, account identifiers, private prompts, or production data.
 - Never describe document presence, a completed checkbox, or an automated formatting check as proof that a control is effective.
 - Keep implementation, verification, release-candidate, approval, and released states distinct.
-- Do not describe an AI Ready result as security certification, regulatory compliance, accessibility conformance, or permission to operate production.
+- Do not describe an AiReady result as security certification, regulatory compliance, accessibility conformance, or permission to operate production.
 - Every release claim must identify exact candidate artefacts and current evidence.
 - Update related templates together when a status, control, evidence rule, or release gate changes.
 

@@ -1,6 +1,6 @@
 # Release evidence examples
 
-This directory contains project-neutral Markdown boilerplate for release evidence. Its location is an example within AI Ready, not a required structure for adopting projects.
+This directory contains project-neutral Markdown boilerplate for release evidence. Its location is an example within AiReady, not a required structure for adopting projects.
 
 Use the project's existing authoritative release system where one exists. Adapt these sections into that system or keep completed records wherever the project already controls release history.
 

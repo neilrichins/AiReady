@@ -12,4 +12,4 @@ Include the affected version, impact, safe reproduction steps, and suggested mit
 
 ## Scope boundary
 
-AI Ready identifies expected controls and performs structural checks. It does not certify the security of an adopting project. Each project remains responsible for threat modelling, secure configuration, code review, testing, incident response, and effective production controls.
+AiReady identifies expected controls and performs structural checks. It does not certify the security of an adopting project. Each project remains responsible for threat modelling, secure configuration, code review, testing, incident response, and effective production controls.

@@ -1,9 +1,9 @@
-# AI Ready
+# AiReady
 
 [![Documentation quality](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml/badge.svg)](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml)
 [![Licence: Apache 2.0](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg)](LICENSE)
 
-AI Ready is a documentation-first, language-neutral framework for turning software repositories into controlled environments for artificial intelligence (AI)-assisted development and evidence-based release decisions.
+AiReady is a documentation-first, language-neutral framework for turning software repositories into controlled environments for artificial intelligence (AI)-assisted development and evidence-based release decisions.
 
 It gives people and AI agents a shared operating model for discovering an unfamiliar or legacy system, reconstructing product intent, defining safe authority, planning changes, validating implementation, and proving that an exact release candidate is ready. The framework is reusable Markdown, not an executable tool or a prescribed repository layout.
 
@@ -11,7 +11,7 @@ It gives people and AI agents a shared operating model for discovering an unfami
 
 AI can inspect and change code quickly, but speed is not assurance. Reliable delivery also requires product intent, user and design context, architecture boundaries, reproducible environments, traceability, testing, security, operations, release authority, and durable evidence.
 
-AI Ready connects those responsibilities without pretending that a document, checklist, model, or passing build can replace accountable review.
+AiReady connects those responsibilities without pretending that a document, checklist, model, or passing build can replace accountable review.
 
 Use it to answer:
 
@@ -54,7 +54,7 @@ Choose the path that matches the current project state. They may converge on the
 
 ## Use an AI assistant to implement the framework
 
-An AI assistant can accelerate adoption by inspecting the current project, locating existing authoritative records, gathering evidence, identifying gaps, drafting updates, and running permitted checks. It should help implement AI Ready around the way the project already works—not copy every template, reorganise the repository, or invent process for its own sake.
+An AI assistant can accelerate adoption by inspecting the current project, locating existing authoritative records, gathering evidence, identifying gaps, drafting updates, and running permitted checks. It should help implement AiReady around the way the project already works—not copy every template, reorganise the repository, or invent process for its own sake.
 
 Start with read-only discovery against an exact repository state. Define the system boundary, included repositories and versions, permitted data sources, prohibited actions, accountable owner, and reviewer before granting edit or execution authority. For an interconnected system, include every participating repository, shared contract, supported version combination, release sequence, and recovery dependency that affects the result.
 
@@ -62,18 +62,18 @@ Start with read-only discovery against an exact repository state. Define the sys
 | --- | --- |
 | Locate likely sources of truth and conflicting instructions | Which source is authoritative and what the intended behaviour should be |
 | Record observed facts, evidence, assumptions, and unknowns | Whether evidence is sufficient and an assumption may be accepted |
-| Map existing controls to AI Ready concerns and identify gaps | Which gaps must be remediated and which risks may be accepted |
+| Map existing controls to AiReady concerns and identify gaps | Which gaps must be remediated and which risks may be accepted |
 | Draft or update authorised records in their existing locations | Requirements, priorities, policy, compliance applicability, and approval |
 | Run authorised checks and report exact results and limitations | Whether the candidate is verified, approved, releasable, or compliant |
 | Propose small, reversible changes and verification steps | Whether changes may be made, committed, published, deployed, or operated |
 
 ### Start with discovery and assessment
 
-Give the assistant access to an immutable version of AI Ready and adapt this prompt. Replace every bracketed field before use.
+Give the assistant access to an immutable version of AiReady and adapt this prompt. Replace every bracketed field before use.
 
 ```text
-Help me assess [PROJECT OR SYSTEM] using the AI Ready framework at
-[IMMUTABLE AI READY RELEASE OR COMMIT].
+Help me assess [PROJECT OR SYSTEM] using the AiReady framework at
+[IMMUTABLE FRAMEWORK RELEASE OR COMMIT].
 
 Authority and boundaries:
 - Accountable owner: [NAME OR ROLE]
@@ -84,7 +84,7 @@ Authority and boundaries:
 - Prohibited sources and actions: [LIST]
 - Sensitive-data restrictions: [LIST]
 
-Begin read-only. Read the project instructions, then follow the AI Ready
+Begin read-only. Read the project instructions, then follow the AiReady
 legacy-project playbook, adoption map, discovery and baseline record, and
 readiness assessment. Preserve existing authoritative tools, records, and
 locations. Do not create duplicate sources of truth or assume a preferred
@@ -116,7 +116,7 @@ Review the result before expanding authority. Correct the system boundary, sourc
 Once the discovery result and remediation scope are approved, give the assistant a new, explicit task. The [AI-assisted task record](docs/boilerplate/AI_TASK.md) can hold the same boundaries and acceptance criteria.
 
 ```text
-Implement only the approved AI Ready remediation items [ITEM IDENTIFIERS] for
+Implement only the approved AiReady remediation items [ITEM IDENTIFIERS] for
 [PROJECT OR SYSTEM], based on [APPROVED ASSESSMENT VERSION OR LOCATION].
 
 You may change: [EXACT FILES, RECORDS, OR BOUNDED AREAS]
@@ -125,7 +125,7 @@ You must not: [EXCLUDED ACTIONS AND SYSTEMS]
 Human owner and reviewer: [NAMES OR ROLES]
 
 Use existing authoritative records and locations where they are effective.
-Adapt only the minimum necessary AI Ready material. Keep changes small,
+Adapt only the minimum necessary AiReady material. Keep changes small,
 reviewable, reversible, project-neutral where reused, and traceable to the
 approved items. Do not conceal unresolved gaps or convert assumptions into
 facts.
@@ -171,7 +171,7 @@ One state never implies another.
 
 ## Responsibility coverage
 
-AI Ready treats delivery as a set of accountable responsibilities rather than job titles. One person may cover several responsibilities, and an AI agent may perform authorised work within them, but the agent cannot approve its own output or accept risk.
+AiReady treats delivery as a set of accountable responsibilities rather than job titles. One person may cover several responsibilities, and an AI agent may perform authorised work within them, but the agent cannot approve its own output or accept risk.
 
 | Responsibility | Required outcome | Primary records |
 | --- | --- | --- |
@@ -234,7 +234,7 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - recovery and incident responses are tested to the required level; and
 - accountable people approve current evidence and residual risk.
 
-The [methodology](docs/guidance/methodology.md) defines scoring and evidence rules. AI Ready is not a security certification, accessibility-conformance claim, regulatory approval, or guarantee of software quality.
+The [methodology](docs/guidance/methodology.md) defines scoring and evidence rules. AiReady is not a security certification, accessibility-conformance claim, regulatory approval, or guarantee of software quality.
 
 ## Repository map
 
@@ -245,7 +245,7 @@ The [methodology](docs/guidance/methodology.md) defines scoring and evidence rul
 - [`docs/accessibility/`](docs/accessibility/README.md): optional website, mobile application, WCAG, and jurisdiction accessibility checklists.
 - [`docs/compliance/`](docs/compliance/README.md): optional applicability, obligation, control, evidence, framework-readiness, and claims checklists.
 - [`docs/releases/`](docs/releases/README.md): immutable release-evidence records.
-- [`.github/`](.github): issue forms, pull-request template, ownership, dependency updates, and documentation checks for AI Ready itself.
+- [`.github/`](.github): issue forms, pull-request template, ownership, dependency updates, and documentation checks for AiReady itself.
 
 ## Project health and participation
 

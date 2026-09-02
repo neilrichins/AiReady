@@ -2,7 +2,7 @@
 
 ## Scope
 
-This document governs the AI Ready open-source documentation framework. Adopting projects retain responsibility for their own policies, decisions, controls, evidence, and releases.
+This document governs the AiReady open-source documentation framework. Adopting projects retain responsibility for their own policies, decisions, controls, evidence, and releases.
 
 ## Maintainer responsibility
 
@@ -42,7 +42,7 @@ Maintainers may reject changes that are technically valid for one project but pr
 
 ## Versions and compatibility
 
-AI Ready uses Semantic Versioning for the framework:
+AiReady uses Semantic Versioning for the framework:
 
 - patch versions correct defects without changing intended assessment outcomes;
 - minor versions add compatible guidance or boilerplate; and

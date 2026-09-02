@@ -1,10 +1,10 @@
-# AI Ready adoption map
+# AiReady adoption map
 
 ## Purpose
 
 Use this record before copying boilerplate. Map each concern to the project's existing authoritative document, work-management system, quality control, or release process. Prefer improving an existing source over creating a competing document.
 
-Suggested file names in AI Ready are not required. Storage location, tooling, and ownership remain project decisions.
+Suggested file names in AiReady are not required. Storage location, tooling, and ownership remain project decisions.
 
 ## Project mapping
 

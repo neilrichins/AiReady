@@ -2,7 +2,7 @@
 
 ## Principle
 
-AI Ready assigns responsibilities and decisions, not mandatory job titles or team structures. One person may hold several roles, and work may be distributed across teams, suppliers, or repositories. Every material outcome still needs an accountable human owner.
+AiReady assigns responsibilities and decisions, not mandatory job titles or team structures. One person may hold several roles, and work may be distributed across teams, suppliers, or repositories. Every material outcome still needs an accountable human owner.
 
 An AI agent may research, analyse, draft, implement, test, and assemble evidence within its authority. It cannot be accountable for a business decision, approve its own output, accept residual risk, grant itself permissions, or authorise a production release.
 

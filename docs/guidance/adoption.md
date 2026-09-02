@@ -2,7 +2,7 @@
 
 ## Principle
 
-Adopt concerns, not a directory structure. Begin with the project's existing repositories, documentation, work-management tools, quality controls, and release records. Do not move or duplicate effective material merely to match AI Ready.
+Adopt concerns, not a directory structure. Begin with the project's existing repositories, documentation, work-management tools, quality controls, and release records. Do not move or duplicate effective material merely to match AiReady.
 
 If the current system cannot be trusted or reproduced, begin with the [legacy-project playbook](legacy-project-playbook.md) and [discovery baseline](../boilerplate/DISCOVERY_AND_BASELINE.md). Do not fill templates from assumptions.
 

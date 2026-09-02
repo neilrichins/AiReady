@@ -1,6 +1,6 @@
-# AI Ready documentation
+# AiReady documentation
 
-This is the complete framework index. The directories organise AI Ready itself; they do not prescribe where an adopting project stores information.
+This is the complete framework index. The directories organise AiReady itself; they do not prescribe where an adopting project stores information.
 
 ## Choose a route
 
@@ -72,7 +72,7 @@ Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefe
 - [Hotfix release evidence record](releases/HOTFIX_RELEASE_EVIDENCE_TEMPLATE.md)
 - [Release notes](releases/RELEASE_NOTES_TEMPLATE.md)
 
-## AI Ready project governance
+## AiReady project governance
 
 - [Contributing](CONTRIBUTING.md)
 - [Support](SUPPORT.md)
