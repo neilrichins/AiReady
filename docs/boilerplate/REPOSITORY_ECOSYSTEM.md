@@ -5,11 +5,15 @@ This record defines the repositories and shared controls that bound artificial i
 ## Repository model
 
 - Model: `{{STANDALONE_OR_MULTI_REPOSITORY}}`
+- Repository topology: `{{SINGLE_UNIT_MONOREPOSITORY_MULTI_APPLICATION_COLLECTION_DOCUMENTATION_DATA_INFRASTRUCTURE_OR_OTHER}}`
+- Delivery/release units and relationship: `{{INDEPENDENT_COORDINATED_EMBEDDED_OR_UNKNOWN}}`
+- Shared dependency graph/workspace: `{{YES_NO_UNKNOWN_AND_AUTHORITATIVE_SOURCE}}`
+- Conditional/platform-specific units: `{{UNITS_CONDITIONS_OR_NONE}}`
 - Ecosystem/system name: `{{NAME_OR_NOT_APPLICABLE}}`
 - Accountable system owner: `{{OWNER}}`
 - Authoritative change-set tracker: `{{ISSUE_PROJECT_OR_OTHER_SYSTEM}}`
 
-For a standalone repository, explain how that was verified and identify any external generated artefacts, packages, infrastructure, schemas, or deployment repositories that were considered.
+For a standalone repository, explain how that was verified and identify any external generated artefacts, packages, infrastructure, schemas, or deployment repositories that were considered. Distinguish a monorepository with shared dependency and release relationships from a collection of independent projects that happen to share a repository.
 
 ## Repository inventory and authority
 
@@ -82,9 +86,9 @@ compatibility. Link an applicable
 Use this section for independently versioned or discoverable components within
 one repository as well as components spread across repositories.
 
-| Component/package | Repository/source | Owns | Must not own | Version source | Discovery/loading mechanism | Release unit |
-| --- | --- | --- | --- | --- | --- | --- |
-| `{{COMPONENT}}` | `{{SOURCE}}` | `{{RESPONSIBILITIES}}` | `{{EXCLUSIONS}}` | `{{SOURCE}}` | `{{MECHANISM}}` | `{{INDEPENDENT_COORDINATED_EMBEDDED}}` |
+| Component/package | Repository/source | Owns | Must not own | Version source | Discovery/loading mechanism | Release unit | Conditions/platform variants |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{COMPONENT}}` | `{{SOURCE}}` | `{{RESPONSIBILITIES}}` | `{{EXCLUSIONS}}` | `{{SOURCE}}` | `{{MECHANISM}}` | `{{INDEPENDENT_COORDINATED_EMBEDDED}}` | `{{CONDITIONS_OR_NONE}}` |
 
 ## Dependency and interface contracts
 

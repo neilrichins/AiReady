@@ -13,6 +13,21 @@ Linked issue/change set: `{{LINK}}`
 - Data or migration impact: `{{DESCRIBE_OR_NONE}}`
 - External or production effects: `{{DESCRIBE_OR_NONE}}`
 - Required merge/release order: `{{ORDER_OR_NOT_APPLICABLE}}`
+- Applicable change-impact matrix/source: `{{LINK_LOCATION_OR_NOT_APPLICABLE_WITH_REASON}}`
+
+## Change-impact review
+
+| Triggered relationship | Expected related change or assessment | Actual result/evidence | Exception or newly discovered impact | Owner/status |
+| --- | --- | --- | --- | --- |
+| `{{MATRIX_ENTRY_OR_CHANGE_SURFACE}}` | `{{EXPECTED_WORK}}` | `{{RESULT_AND_EVIDENCE}}` | `{{NONE_OR_DETAILS}}` | `{{OWNER_AND_STATUS}}` |
+
+- [ ] Every applicable impact entry was assessed across affected repositories,
+  components, contracts, generated artefacts, tests, documentation, operations,
+  support, release, and recovery.
+- [ ] Newly discovered relationships were added to the authoritative impact
+  source or retained as an owned, time-bounded exception.
+- [ ] A missing related change is classified as not applicable, deferred,
+  blocked, or accepted risk with evidence and the required authority.
 
 ## AI involvement
 
@@ -38,6 +53,7 @@ Do not include private prompts, credentials, personal data, restricted source, o
 - [ ] Contract/integration combinations passed or are not applicable
 - [ ] Manual/effective-environment checks completed or recorded as limitations
 - [ ] Documentation and decision records updated
+- [ ] Applicable change-impact and AI-instruction currency records updated
 - [ ] Rollback/recovery impact reviewed
 
 Evidence and unresolved limitations: `{{EVIDENCE}}`

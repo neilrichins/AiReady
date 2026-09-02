@@ -83,6 +83,8 @@ Area score: `{{X_OF_10}}`
 | Terminology, business rules, and non-obvious constraints are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Instructions identify authoritative sources and warn against stale/generated artefacts | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Instructions define a task-relevant reading order, precedence rule, current delivery boundary, explicit non-goals, and governing decisions | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Global, scoped, task-specific, and on-demand context has explicit activation, inheritance, ownership, and conflict rules where applicable | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
+| Material instruction claims, paths, commands, versions, and conventions are checked against current authoritative source or runtime evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -96,6 +98,7 @@ Area score: `{{X_OF_10}}`
 | Architecture changes require an explicit decision record and migration assessment | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Interconnected repositories have an owned dependency map, version/contract policy, and authoritative source for each shared interface | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Stable component responsibilities, forbidden ownership, discovery, compatibility ranges, failure behaviour, and change authority are documented where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Repository and delivery units are evidence-classified without confusing a shared dependency graph, independent collection, embedded component, or multi-repository system | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -106,6 +109,7 @@ Area score: `{{X_OF_10}}`
 | Work begins with a problem, outcome, acceptance criteria, and constraints | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Approved product and design intent is separated from observed legacy behaviour, assumptions, defects, and unknowns | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Changes link to an issue or decision record and remain reviewable | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| A current change-impact source identifies related implementation, contracts, generated artefacts, tests, documentation, operations, support, release, and recovery work | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Pull requests require risk, verification, documentation, and limitation evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | AI involvement and material human decisions can be recorded without exposing private prompts or data | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Cross-repository work uses one change-set identifier, names every affected repository, and defines merge/release order | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
@@ -182,6 +186,8 @@ Area score: `{{X_OF_10}}`
 | Release evidence separates automated results, manual checks, production checks, unknowns, and accepted risks | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Delivery checkpoints are distinguished from immutable release candidates, approvals, and released outcomes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | The assessment is reviewed after material architecture, tooling, data, dependency, or authority changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Repeated review feedback, failed changes, incidents, support patterns, and manual corrections can propose guidance improvements without bypassing owner approval or source precedence | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Assessment findings and projected improvements remain separate from authority to modify the project or claim readiness | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 

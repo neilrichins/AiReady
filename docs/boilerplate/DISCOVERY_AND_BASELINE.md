@@ -30,6 +30,21 @@ Use one label for every material statement:
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `{{ITEM}}` | `{{PURPOSE}}` | `{{OWNER_OR_UNKNOWN}}` | `{{IDENTIFIER}}` | `{{TECHNOLOGY}}` | `{{ARTEFACTS}}` | `{{DEPENDENCIES}}` | `{{LABEL_AND_SOURCE}}` |
 
+## System, repository, and delivery classification
+
+Classify what the evidence shows before selecting controls. Do not assume that
+a repository is a deployable application, that colocated projects share a
+dependency graph, or that one repository is the complete system.
+
+| Repository/component/system | Type and purpose | Build/publish/deploy/operate model | Delivery or release unit | Relationship to other units | Conditional/platform variants | Evidence label/source |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{APPLICATION_SERVICE_LIBRARY_PACKAGE_MOBILE_DESKTOP_INFRASTRUCTURE_DATA_NOTEBOOK_DOCUMENTATION_CONTENT_COURSE_COLLECTION_OR_OTHER}}` | `{{MODEL_OR_NOT_APPLICABLE}}` | `{{INDEPENDENT_COORDINATED_EMBEDDED_OR_NONE}}` | `{{SHARED_GRAPH_LOOSE_COLLECTION_EXTERNAL_SYSTEM_OR_OTHER}}` | `{{VARIANTS_OR_NONE}}` | `{{LABEL_AND_EVIDENCE}}` |
+
+Record authoritative manifests, workspace or project definitions, generated
+artefacts, release tooling, deployed units, and observed dependency edges.
+Unknown classification or delivery boundaries remain visible because they can
+change which instructions, tests, compatibility checks, and release controls apply.
+
 ## Source, generated, configuration, and data boundaries
 
 | Item/location | Classification | Authoritative source | Writers/regeneration | Sensitive content | Safe handling | Confidence/evidence |
@@ -50,6 +65,17 @@ Use one label for every material statement:
 | Release history/process | `{{SOURCE_OR_MISSING}}` | `{{OWNER}}` | `{{STATUS}}` | `{{QUALITY}}` | `{{FINDING}}` | `{{ACTION}}` |
 | AI instructions/authority | `{{SOURCE_OR_MISSING}}` | `{{OWNER}}` | `{{STATUS}}` | `{{QUALITY}}` | `{{FINDING}}` | `{{ACTION}}` |
 
+## AI instruction and context currency
+
+| Instruction source/scope | Material claim, command, path, or rule checked | Current authoritative evidence | Assessed commit/version/date | Result | Risk or work affected | Owner/action |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{SOURCE_AND_SCOPE}}` | `{{ITEM}}` | `{{EVIDENCE}}` | `{{IDENTIFIER_AND_DATE}}` | `{{CURRENT_STALE_CONFLICTING_UNKNOWN}}` | `{{EFFECT}}` | `{{OWNER_AND_ACTION}}` |
+
+Check material instructions against current source, manifests, lockfiles,
+configuration, repository structure, interfaces, CI, executable commands, and
+effective behaviour as applicable. Do not upgrade `DOCUMENTED` instructions to
+`OBSERVED` or `CONFIRMED` merely because an AI repeated or summarised them.
+
 ## Product intent versus observed behaviour
 
 | Journey/capability | Documented or confirmed intent | Observed behaviour | Evidence | Difference/unknown | Owner decision required |
@@ -68,7 +94,9 @@ Current behaviour is not automatically correct. Documented intent is not automat
 | Local or isolated runtime | `{{COMMAND_OR_PROCESS}}` | `{{ENVIRONMENT}}` | `{{RESULT}}` | `{{EVIDENCE}}` | `{{GAP}}` | `{{OWNER}}` |
 | Deployment/recovery preflight | `{{COMMAND_OR_PROCESS}}` | `{{ENVIRONMENT}}` | `{{RESULT}}` | `{{EVIDENCE}}` | `{{GAP}}` | `{{OWNER}}` |
 
-Do not repair the baseline while recording it. Track remediation as separate reviewed changes.
+Do not repair the baseline while recording it. An assessment, score, finding,
+or proposed remediation does not grant change authority. Track remediation as
+separate authorised and reviewed changes.
 
 ## Verification baseline
 

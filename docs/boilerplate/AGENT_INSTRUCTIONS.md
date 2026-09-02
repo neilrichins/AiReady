@@ -22,6 +22,22 @@ When sources conflict, apply this precedence: `{{PRECEDENCE_RULE}}`. Do not
 silently choose the newest, nearest, or most convenient document. Record the
 conflict and obtain the decision required by its impact.
 
+### Context layers and activation
+
+Use the project's existing instruction mechanisms. The entries below describe
+information scope and precedence; they do not prescribe file names or tools.
+
+| Context layer | Applies when | Authoritative source/version | Inherited constraints | Owner | Currency/review trigger |
+| --- | --- | --- | --- | --- | --- |
+| Project/system-wide | `{{EVERY_AUTHORISED_TASK}}` | `{{SOURCE_AND_VERSION}}` | `{{NON_NEGOTIABLE_AUTHORITY_DATA_AND_SAFETY_RULES}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Repository/component/technology | `{{SCOPE_OR_MATCH_RULE}}` | `{{SOURCE_AND_VERSION}}` | `{{INHERITED_RULES}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Task/change | `{{TASK_OR_CHANGE_IDENTIFIER}}` | `{{SOURCE_AND_VERSION}}` | `{{INHERITED_RULES}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| On-demand procedure/runbook | `{{EXPLICIT_TRIGGER_AND_SCOPE}}` | `{{SOURCE_AND_VERSION}}` | `{{INHERITED_RULES}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+
+Scoped context may refine a rule only within its authority. It must not silently
+weaken an inherited safety, data, compatibility, evidence, or approval boundary.
+Record which layer prevails when two applicable sources disagree.
+
 ### Material AI instruction and prompt governance
 
 Use this only for instructions, prompts, examples, policies, or context that can
@@ -37,6 +53,30 @@ Review accumulated instructions for duplication, contradiction, obsolete
 exceptions, hidden authority, and case-specific patches. A material change
 requires the defined review and, for an AI system, the applicable
 [AI system evaluation](AI_SYSTEM_EVALUATION.md).
+
+### Instruction currency and improvement
+
+| Material claim, command, path, convention, or rule | Verification against current source/runtime | Assessed version/date | Status | Conflict or stale effect | Owner/action |
+| --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{METHOD_AND_EVIDENCE}}` | `{{IDENTIFIER_AND_DATE}}` | `{{CURRENT_STALE_CONFLICTING_UNKNOWN}}` | `{{EFFECT}}` | `{{OWNER_AND_ACTION}}` |
+
+Compare instructions with current authoritative manifests, lockfiles,
+configuration, repository structure, interfaces, Continuous Integration (CI),
+successful commands, and effective behaviour as applicable. File presence is
+not evidence that its instructions remain correct.
+
+Repeated review comments, failed changes, incidents, support patterns, and
+manual corrections may identify a candidate convention. They do not create an
+authoritative rule by repetition alone.
+
+| Candidate convention | Sources and representative evidence | Frequency/time window | Existing decision/rule and conflict check | Proposed outcome | Owner decision | Review trigger |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{CANDIDATE}}` | `{{EVIDENCE}}` | `{{PATTERN}}` | `{{CHECK_AND_RESULT}}` | `{{PROPOSAL}}` | `{{APPROVE_REJECT_DEFER_AND_OWNER}}` | `{{TRIGGER}}` |
+
+Before approval, assess whether the proposed convention is current, generalisable,
+within authority, and consistent with product, architecture, security, privacy,
+accessibility, testing, operations, and release decisions. Preserve the reason
+for rejecting a recurring convention where that prevents it being proposed again.
 
 ## Current delivery boundary
 
@@ -102,11 +142,27 @@ Read the authoritative scoped instructions for a specialised part of the project
 
 Governing decision records: `{{DECISION_IDENTIFIERS_OR_NONE}}`.
 
+## Change-impact matrix
+
+Record real project relationships rather than generic reminders. Link to an
+existing dependency, traceability, architecture, or change-control source when
+it already owns this information.
+
+| Change trigger/surface | Also assess or update | Repositories/components/owners | Required verification | Evidence/source | Stale or review trigger |
+| --- | --- | --- | --- | --- | --- |
+| `{{API_SCHEMA_MODEL_CONFIGURATION_DEPENDENCY_UI_CONTENT_OR_OTHER}}` | `{{IMPLEMENTATION_TESTS_CONTRACTS_DOCS_OPERATIONS_RELEASE_OR_OTHER}}` | `{{SCOPE_AND_OWNERS}}` | `{{CHECKS_AND_ENVIRONMENTS}}` | `{{SOURCE_OR_EVIDENCE}}` | `{{TRIGGER}}` |
+
+Include generated artefacts, registrations, migrations, fixtures, permissions,
+telemetry, documentation, support, compatibility combinations, rollout order,
+and rollback where a change can affect them. An unlisted effect discovered
+during work updates the authoritative matrix or is recorded as an explicit
+exception; it is not silently ignored.
+
 ## Required workflow
 
 1. Confirm identity, repository status, local changes, scope, authority, and stop conditions.
 2. Link work to an issue and restate the outcome, acceptance criteria, constraints, assumptions, and exclusions.
-3. Read product, design, architecture, security/data, testing, operations, and repository-ecosystem sources applicable to the change.
+3. Read product, design, architecture, security/data, testing, operations, repository-ecosystem, and change-impact sources applicable to the change.
 4. Inspect current implementation and history before editing; preserve unrelated work and source/generated boundaries.
 5. Propose the smallest coherent, reversible approach and record any material decision.
 6. Update implementation, tests, fixtures, documentation, observability, and recovery together where affected.

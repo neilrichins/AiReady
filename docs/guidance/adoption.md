@@ -6,6 +6,14 @@ Adopt concerns, not a directory structure. Begin with the project's existing rep
 
 If the current system cannot be trusted or reproduced, begin with the [legacy-project playbook](legacy-project-playbook.md) and [discovery baseline](../boilerplate/DISCOVERY_AND_BASELINE.md). Do not fill templates from assumptions.
 
+## Assessment mode and change authority
+
+A request to assess, audit, score, compare, or report does not authorise project
+changes. Complete read-only discovery, distinguish findings from proposals, and
+obtain the authority required by the project's controls before remediation.
+Creating a document or improving a score is not an outcome unless the control
+is current, effective, owned, and supported by evidence.
+
 ## Stage 1: Map what exists
 
 Complete the [adoption map](../boilerplate/ADOPTION_MAP.md). For each concern:
@@ -18,6 +26,13 @@ Complete the [adoption map](../boilerplate/ADOPTION_MAP.md). For each concern:
 Also record the reading order, precedence rule, and lifecycle state for sources
 that can direct AI-assisted work. Do not assume that the newest or most detailed
 record is authoritative.
+
+Classify the actual system and delivery units before selecting controls. Record
+whether each assessed item is an application, service, library, package,
+infrastructure, data/notebook, documentation/content, course, collection, or
+other project type; whether it is built, published, deployed, or operated; and
+whether units are independent, coordinated, embedded, conditional, or part of a
+larger multi-repository system. Adapt the terms rather than forcing a category.
 
 ## Stage 2: Establish AI authority
 

@@ -59,3 +59,16 @@ source could change safety, compatibility, authority, acceptance, or release.
 Review affected downstream concerns whenever an upstream fact changes. For example, a changed requirement triggers review of linked features, verification, risks, roadmap, release scope, and documentation. A changed test triggers review of every claim that relied on its evidence.
 
 Feedback also travels upstream. A production incident, support pattern, accessibility barrier, security finding, or user-research result may invalidate product assumptions, design decisions, requirements, risk ratings, or verification coverage.
+
+Repeated review comments, failed changes, incidents, support patterns, and
+manual corrections may identify missing guidance or a candidate convention.
+Preserve representative evidence and the assessed time window, check current
+authoritative decisions and conflicting rules, and require the appropriate
+owner to approve, reject, or defer the proposal. Repetition alone does not make
+feedback correct or authoritative.
+
+Review material AI-facing context against current source and effective
+behaviour, not only on a schedule. Changes to manifests, runtime versions,
+commands, repository structure, interfaces, CI, permissions, dependencies, or
+delivery boundaries may make instructions stale even when the instruction file
+did not change.
