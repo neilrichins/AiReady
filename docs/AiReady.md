@@ -11,6 +11,8 @@
 | Assessed commit | `{{FULL_COMMIT_SHA}}` |
 | Assessment date | `{{YYYY-MM-DD}}` |
 | Assessor | `{{NAME_OR_TEAM}}` |
+| AI probe tool, model, and configuration | `{{IDENTIFIER_VERSION_AND_CONFIGURATION_OR_NOT_RUN}}` |
+| Fresh-context isolation method | `{{NEW_SESSION_SEPARATE_AGENT_CLEARED_CONTEXT_OR_NOT_RUN}}` |
 | Accountable project/AI authority owner | `{{ACCOUNTABLE_OWNER}}` |
 | Technical owner | `{{ACCOUNTABLE_OWNER}}` |
 | Intended AI use | `{{READ_ONLY_DISCOVERY_HUMAN_APPLIED_REMEDIATION_ASSISTED_CODING_SUPERVISED_AUTOMATION_OR_OTHER}}` |
@@ -49,6 +51,7 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | Untrusted AI output is deterministically validated before it can become executable code, commands, queries, markup, URLs, configuration, or infrastructure | `{{STATUS}}` | `{{EVIDENCE}}` |
 | The repository has a defined source-of-truth and generated-file boundary | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Authoritative instructions define reading order, source precedence, active scope, non-goals, and escalation for material conflicts | `{{STATUS}}` | `{{EVIDENCE}}` |
+| A representative fresh-context probe can trace a bounded change from normal starting material to authoritative implementation, affected dependencies, and a safe verification path | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Applicable legal, regulatory, contractual, licensing, and accessibility obligations are known and owned | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Multi-repository changes have coordinated compatibility validation, release sequencing, partial-failure handling, and rollback | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
@@ -89,6 +92,7 @@ Area score: `{{X_OF_10}}`
 | Global, scoped, task-specific, and on-demand context has explicit activation, inheritance, ownership, and conflict rules where applicable | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Material instruction claims, paths, commands, versions, and conventions are checked against current authoritative source or runtime evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | A contributor can locate the minimum sufficient authoritative context for a bounded change, including cross-cutting sources, known ambiguity, and stop conditions, without relying on a prescribed repository layout | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Representative fresh-context AI probes demonstrate effective navigation, dependency discovery, ambiguity handling, and selection of focused verification for the intended change classes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -207,6 +211,79 @@ Area score: `{{X_OF_10}}`
 
 Area score: `{{X_OF_10}}`
 
+## Mechanical comprehensibility and agent efficiency ready check
+
+This check determines whether an unfamiliar artificial intelligence (AI) agent
+can understand and work within the assessed codebase efficiently enough for the
+proposed operating level. It assesses the development system around the agent,
+not the agent's confidence, writing speed, token volume, or ability to produce a
+plausible explanation.
+
+An approved AI agent should perform the probes. The accountable owner defines
+the representative change classes and a human reviewer verifies the evidence
+and accepts the resulting operating boundary. The project's usual AI may
+perform the baseline. For a high-risk system or a controlled-automation
+decision, independently repeat proportionate probes with a separate AI session,
+agent, or model when practicable.
+
+### Probe method
+
+1. Select two to five bounded, representative change classes for the intended
+   AI use. Include a cross-repository change when interconnected repositories
+   are in scope.
+2. Start each probe in a fresh context with only the normal entry material and
+   authorised repository access available to a newly assigned contributor. Do
+   not privately supply file locations or implementation answers that the
+   repository itself should make discoverable.
+3. Begin read-only. A sandboxed implementation or command may be included only
+   when its authority, containment, expected effects, and stop conditions were
+   approved in advance.
+4. Ask the agent to locate the authoritative context and implementation, trace
+   dependencies and change impact, identify ambiguity and generated-file
+   boundaries, and select the narrowest safe verification path.
+5. Preserve the discovery path, sources consulted, commands and exact results,
+   dead ends, contradictions, assumptions, elapsed feedback time, and
+   limitations in the discovery baseline.
+6. Have the human reviewer reproduce or inspect material evidence before using
+   a probe to support the readiness decision.
+
+| Probe/change class | Initial context supplied | Authoritative entry point and implementation found | Dependencies, repositories, and blast radius found | Focused verification and actionable result | Dead ends, conflicts, assumptions, or stops | Result and evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{REPRESENTATIVE_PROBE}}` | `{{STARTING_MATERIAL_AND_ACCESS}}` | `{{SOURCES_AND_DISCOVERY_PATH}}` | `{{IMPACT_AND_EVIDENCE}}` | `{{CHECK_RESULT_DURATION_AND_DIAGNOSTICS}}` | `{{FRICTION_OR_NONE}}` | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED_AND_EVIDENCE}}` |
+
+| Summary | Result |
+| --- | --- |
+| Change classes represented | `{{CLASSES_AND_JUSTIFICATION}}` |
+| Material change classes not assessed | `{{CLASSES_AND_REASON_OR_NONE}}` |
+| Overall mechanical-readiness result | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED}}` |
+| Principal comprehension or efficiency constraints | `{{FINDINGS_OR_NONE}}` |
+| Human reviewer and review date | `{{NAME_AND_DATE}}` |
+
+Use these result meanings:
+
+- **Effective:** the agent reached the correct authoritative sources, bounded
+  the impact, identified material uncertainty, and obtained an actionable
+  verification result with reproducible evidence.
+- **Friction:** the agent completed the probe safely, but unnecessary
+  ambiguity, duplication, navigation, context loading, change amplification,
+  or weak diagnostics materially reduced efficiency.
+- **Blocked:** the agent could not safely determine what owned the behaviour,
+  what else would be affected, or how the change could be verified.
+- **Not assessed:** no sufficient representative evidence was collected.
+
+A blocked result that prevents safe navigation, impact analysis, or
+verification is a hard blocker. A not-assessed change class cannot support
+`Supervised` or `Controlled automation` authority for that class. Friction must
+produce an owned remediation or an explicit, bounded risk decision. One
+successful probe supports only the demonstrated change class and system
+boundary; it does not prove that the whole codebase is mechanically ready.
+
+Do not impose universal targets for tokens, files consulted, elapsed time,
+repository size, dependency depth, or source layout. These are diagnostic
+signals only. Judge whether the context and effort were necessary, whether the
+result was correct and reproducible, and whether the feedback enabled a safe
+next decision.
+
 ## Result
 
 | Measure | Result |
@@ -273,6 +350,7 @@ Record commands and results without secrets, private prompts, personal data, or 
 | Manual/user-interface checks | `{{PASS_FAIL_NOT_RUN_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 | Deployment/recovery checks | `{{PASS_FAIL_NOT_RUN_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 | Cross-repository contract and compatibility checks | `{{PASS_FAIL_NOT_RUN_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{DATE}}` |
+| Mechanical comprehensibility and agent efficiency probes | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 
 ## Approval
 

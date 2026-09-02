@@ -24,6 +24,51 @@ algorithmic claim, while only effective-environment evidence can prove an
 effective-environment claim. Record substitutions, real boundaries, omitted
 levels, environment differences, and what the result cannot establish.
 
+## Mechanical comprehensibility and agent efficiency
+
+Assess whether an unfamiliar AI agent can mechanically navigate the codebase,
+bound a representative change, and reach actionable verification. Do not infer
+this capability from document presence, an AI-generated repository summary, or
+the confidence expressed by an agent.
+
+The approved AI agent performs two to five representative probes from fresh
+contexts using the starting material normally available to a newly assigned
+contributor. The accountable owner chooses change classes that represent the
+intended AI operating scope. A human reviewer verifies material sources,
+results, limitations, and the resulting authority decision. High-risk or
+controlled-automation decisions should use an independent repeat with a
+separate session, agent, or model when practicable.
+
+Each probe should establish whether the agent can:
+
+- locate authoritative instructions, context, implementation, and generated
+  boundaries without undisclosed coaching;
+- identify canonical concepts and distinguish intentional variants from
+  accidental duplication;
+- trace affected components, contracts, repositories, data, operations, and
+  recovery concerns;
+- recognise ambiguity, missing authority, and stop conditions;
+- select and safely run the narrowest applicable deterministic check; and
+- interpret the result well enough to distinguish a product failure from an
+  environment, configuration, data, or dependency failure.
+
+Record the initial context, discovery path, sources consulted, interventions,
+commands, results, elapsed feedback time, dead ends, assumptions, and
+limitations in the discovery baseline. A later rerun uses a fresh context so
+retained agent knowledge does not conceal continuing repository friction.
+
+The result is `EFFECTIVE`, `FRICTION`, `BLOCKED`, or `NOT ASSESSED`. A blocked
+result that prevents safe navigation, impact analysis, or verification is a
+hard blocker. An unassessed change class cannot support `Supervised` or
+`Controlled automation` authority for that class. Friction requires owned
+remediation or a bounded risk decision.
+
+Do not turn tokens consumed, files consulted, elapsed time, repository size, or
+dependency depth into universal pass thresholds. They are diagnostic signals.
+The governing questions are whether the context and effort were necessary,
+whether the result was correct and reproducible, and whether an accountable
+reviewer can safely act on it.
+
 ## Scoring
 
 Each of the ten areas is worth ten points. Controls receive 0, 1, 2, or `N/A`. Normalise an area with excluded controls to ten points:

@@ -6,7 +6,7 @@ This is the complete framework index. The directories organise AiReady itself; t
 
 | Current situation | Start with | Outcome |
 | --- | --- | --- |
-| Unfamiliar, undocumented, or legacy system | [Legacy-project playbook](guidance/legacy-project-playbook.md) and [discovery baseline](boilerplate/DISCOVERY_AND_BASELINE.md) | Evidence-labelled current-state map, bounded authority, risks, and remediation backlog |
+| Unfamiliar, undocumented, or legacy system | [Legacy-project playbook](guidance/legacy-project-playbook.md) and [discovery baseline](boilerplate/DISCOVERY_AND_BASELINE.md) | Evidence-labelled current-state map, fresh-context mechanical-readiness probes, bounded authority, risks, and remediation backlog |
 | Existing project adding AI-assisted development | [Adoption guide](guidance/adoption.md), [adoption map](boilerplate/ADOPTION_MAP.md), then [assessment](AiReady.md) | Existing controls reused, gaps owned, maximum AI operating level approved |
 | Planned feature or change | [AI task](boilerplate/AI_TASK.md), [feature record](boilerplate/FEATURE_RECORD.md), and [traceability](boilerplate/TRACEABILITY.md) | Bounded work with acceptance, design, implementation, verification, and review evidence |
 | Product or operation with material AI behaviour | [AI system evaluation](boilerplate/AI_SYSTEM_EVALUATION.md) and, when applicable, [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md) | Versioned evaluation contract, exact candidate, bounded results, drift controls, and accountable decision |

@@ -6,6 +6,10 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added a human-reviewed, fresh-context mechanical comprehensibility and agent
+  efficiency ready check with representative change probes, reproducible
+  discovery evidence, multi-repository coverage, bounded verdicts, and explicit
+  limits on efficiency metrics.
 - Added an optional Supply-chain Levels for Software Artifacts (SLSA) readiness
   pack that keeps Source and Build tracks separate and records exact versions,
   target levels, roles, attestations, trust, consumer verification,

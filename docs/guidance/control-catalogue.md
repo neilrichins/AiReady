@@ -7,6 +7,7 @@
 | Product and design intent | Research provenance, approved outcomes, complete journeys/states, evaluated design decisions | Current implementation or generated personas treated as requirements |
 | Repository context | Current AI-tool instruction source, scoped context, glossary, project map | Long generic instructions detached from actual commands |
 | Context precedence | Task-relevant reading order, lifecycle state, precedence rule, conflict owner | Agent follows the newest or most detailed record despite superseded intent |
+| Mechanical comprehensibility and agent efficiency | Representative fresh-context probes with recorded discovery paths, impact analysis, actionable verification, limitations, and human-reviewed evidence | Agent confidence, generated summaries, or coached navigation presented as proof that unfamiliar agents can work safely and efficiently |
 | Architecture | Data-flow and trust-boundary record, source ownership, decision records | Generated files or production data mistaken for source |
 | Architecture review | Exact lens/source version, stakeholder views, baseline/target/transition, trade-offs, findings, improvement owners | Framework name or checklist treated as proof of sound architecture or conformity |
 | Component boundaries | Stable ownership, forbidden responsibilities, compatibility range, discovery, failure behaviour, change authority | A routine change silently moves responsibility or assumes compatibility |

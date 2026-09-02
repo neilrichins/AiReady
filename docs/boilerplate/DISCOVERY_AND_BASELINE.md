@@ -8,6 +8,8 @@
 | Assessed repositories and commits | `{{REPOSITORIES_AND_FULL_COMMITS}}` |
 | Accountable owner | `{{OWNER}}` |
 | Assessors | `{{PEOPLE_AND_APPROVED_AI_TOOLS}}` |
+| AI probe tool, model, and configuration | `{{IDENTIFIER_VERSION_AND_CONFIGURATION_OR_NOT_RUN}}` |
+| Fresh-context isolation method | `{{NEW_SESSION_SEPARATE_AGENT_CLEARED_CONTEXT_OR_NOT_RUN}}` |
 | Assessment date | `{{DATE}}` |
 | Data classification | `{{CLASSIFICATION}}` |
 | Read/write/execute/network authority | `{{AUTHORITY}}` |
@@ -92,6 +94,46 @@ contracts, runtime behaviour, history, and accountable owner knowledge before
 classifying a defect or recommending consolidation. A high fan-in/fan-out
 component, repeated implementation, or long-running check may be justified;
 record the reason and its controls rather than assuming a remediation.
+
+## Mechanical comprehensibility and agent efficiency probes
+
+Use the [AiReady assessment probe method](../AiReady.md#mechanical-comprehensibility-and-agent-efficiency-ready-check)
+to test whether an unfamiliar AI agent can navigate and act safely from the
+project's normal starting material. Select two to five bounded change classes
+that represent the intended AI use. Begin read-only and use a fresh context for
+each probe. Include at least one cross-repository change when interconnected
+repositories are in scope.
+
+Do not repair documentation, reveal undiscovered implementation locations, or
+coach the agent through dead ends while collecting the baseline. Record those
+interventions as limitations if safety or assessment continuity requires them.
+
+| Probe/change class | Initial context and access supplied | Discovery path and sources consulted | Authoritative entry point and canonical implementation | Dependencies, repositories, and blast radius | Focused verification, result, duration, and diagnostics | Dead ends, conflicts, assumptions, or stop conditions | Verdict and evidence | Owner/action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{REPRESENTATIVE_PROBE}}` | `{{STARTING_MATERIAL_AND_ACCESS}}` | `{{ORDERED_PATH_AND_SOURCES}}` | `{{AUTHORITATIVE_SOURCE_OR_UNKNOWN}}` | `{{IMPACT_AND_EVIDENCE}}` | `{{CHECK_RESULT_DURATION_AND_DIAGNOSTICS}}` | `{{FRICTION_OR_NONE}}` | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED_AND_EVIDENCE}}` | `{{OWNER_AND_ACTION}}` |
+
+| Probe summary | Result |
+| --- | --- |
+| Intended AI change classes | `{{CLASSES}}` |
+| Represented change classes | `{{CLASSES_AND_JUSTIFICATION}}` |
+| Material change classes not assessed | `{{CLASSES_AND_REASON_OR_NONE}}` |
+| Overall mechanical-readiness result | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED}}` |
+| Principal comprehension or efficiency constraints | `{{FINDINGS_OR_NONE}}` |
+| Human reviewer and review date | `{{NAME_AND_DATE}}` |
+
+`EFFECTIVE` requires correct, reproducible navigation, impact analysis,
+uncertainty handling, and actionable verification. `FRICTION` means the probe
+completed safely but avoidable ambiguity, duplication, navigation, context
+loading, change amplification, or weak diagnostics materially impaired it.
+`BLOCKED` means the agent could not safely identify ownership, impact, or a
+verification path. `NOT ASSESSED` means the evidence is insufficient.
+
+Treat file counts, token use, elapsed time, dependency depth, and repository
+size as diagnostic signals, not universal targets. Assess whether the work was
+necessary and whether it led to a correct, bounded, reviewable result. A
+successful probe supports only the demonstrated change class and assessed
+boundary. Preserve an unassisted baseline and rerun relevant probes in a fresh
+context after remediation.
 
 ## Product intent versus observed behaviour
 

@@ -9,7 +9,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | Boilerplate | Purpose |
 | --- | --- |
 | [`ADOPTION_MAP.md`](ADOPTION_MAP.md) | Map concerns to existing project records and decide what to reuse, improve, merge, or create. |
-| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, current state, instruction currency, context locality, changeability, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
+| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, current state, instruction currency, context locality, fresh-context mechanical-readiness probes, changeability, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
 | [`PROJECT_README.md`](PROJECT_README.md) | Project landing-page boilerplate that links to existing authoritative records. |
 | [`PROJECT_DEFINITION.md`](PROJECT_DEFINITION.md) | Purpose, scope, ownership, outcomes, constraints, environments, and unknowns. |
 | [`REQUIREMENTS.md`](REQUIREMENTS.md) | Versioned, derived, testable requirements with distinct implementation, verification, validation, evidence, and change history. |

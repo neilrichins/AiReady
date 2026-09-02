@@ -44,6 +44,14 @@ Create a [discovery and baseline record](../boilerplate/DISCOVERY_AND_BASELINE.m
 
 Capture exact commit identifiers and tool versions so another assessor can reproduce the inventory.
 
+Before repairing the baseline, run the fresh-context mechanical
+comprehensibility and agent efficiency probes defined by the
+[AI coding-readiness assessment](../AiReady.md#mechanical-comprehensibility-and-agent-efficiency-ready-check).
+Use the normal project entry material, preserve the discovery path and any
+interventions, and record the results in the discovery and baseline record.
+Include a representative cross-repository probe when interconnected
+repositories are in scope.
+
 ## Phase 2: Establish the system boundary
 
 Build a current architecture hypothesis from source, configuration, history, deployment records, runtime evidence, and owner interviews. Record confidence and provenance for every material claim.
@@ -135,6 +143,11 @@ Human reviewers evaluate correctness, maintainability, user impact, safety, and 
 
 Complete the [AI coding-readiness assessment](../AiReady.md) after baseline and priority remediation. The decision states the maximum permitted AI operating level, repositories, data, actions, and review requirements.
 
+Rerun relevant mechanical-readiness probes in a fresh context after remediation
+so retained agent knowledge does not conceal unresolved navigation, dependency,
+or verification friction. A successful probe supports only its demonstrated
+change class and assessed system boundary.
+
 A project that is not ready for normal AI coding may still authorise narrowly bounded read-only discovery or human-applied remediation if its owner records the data boundary, permissions, containment, and review. That exception does not permit unsupervised code integration or release activity.
 
 ## Phase 9: Qualify a release
@@ -158,6 +171,7 @@ Legacy onboarding is complete only when:
 - the system boundary and authoritative sources are known or explicitly bounded as unknown;
 - observed behaviour is separated from approved intent;
 - build and verification status is reproducible or honestly blocked;
+- representative AI change classes have fresh-context mechanical-readiness evidence or are explicitly outside the authorised operating boundary;
 - owners and decision rights exist for every material concern;
 - AI data, permission, and execution boundaries are enforceable;
 - critical risks and recovery paths have owners and evidence;
