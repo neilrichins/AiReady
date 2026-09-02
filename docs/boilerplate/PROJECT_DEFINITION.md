@@ -56,7 +56,9 @@ Out of scope:
 | Security/privacy | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Accessibility | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Legal/contractual | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
-| Cost/capacity | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Performance/capacity | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Technology cost/value | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Sustainability/resource lifecycle | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Compatibility | `{{CONSTRAINT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 
 ## Environments

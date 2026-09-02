@@ -30,7 +30,29 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 - Accessibility/user impact: `{{BOUNDARY}}`.
 - Compatibility/migration: `{{BOUNDARY}}`.
 - External, destructive, production, communication, or cost-bearing actions: `{{AUTHORITY_OR_PROHIBITION}}`.
+- Permitted resource types, environments, quantities, duration, and budget: `{{LIMITS_OR_NONE}}`.
+- Usage alerts, stop thresholds, expiry, and cleanup owner: `{{CONTROLS_OR_NONE}}`.
 - Stop and escalate when: `{{CONDITIONS}}`.
+
+Permission to analyse, edit, test, or execute does not imply permission to
+purchase, provision, scale, retain, or delete a billable resource. State each
+authority separately.
+
+## Resource, consumption, and spending controls
+
+Complete this section when the task can consume metered services, create
+resources, change capacity, incur charges, or leave temporary assets behind.
+
+| Activity/resource/provider | Permitted environment/account | Quantity/runs/duration ceiling | Budget or usage ceiling | Alert and stop threshold | Expiry/cleanup procedure and owner | Approver/evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{SCOPE}}` | `{{LIMIT}}` | `{{LIMIT_AND_CURRENCY_OR_UNIT}}` | `{{THRESHOLD_AND_RESPONSE}}` | `{{PROCEDURE_AND_OWNER}}` | `{{OWNER_AND_EVIDENCE}}` |
+
+Use current authoritative price, quota, and account information when a monetary
+or consumption claim matters. Stop if a required limit, monitor, or cleanup
+owner is missing, or if actual consumption is materially different from the
+approved estimate. Link the optional [technology cost and value
+record](TECHNOLOGY_COST_AND_VALUE.md) when the change has material ongoing cost,
+allocation, commitment, value, or resource-efficiency effects.
 
 ## Required context
 
@@ -60,6 +82,7 @@ Governing decision records: `{{IDENTIFIERS_OR_NONE}}`.
 | Security/privacy/data | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
 | Quality/verification | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
 | Operations/reliability/support | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
+| Technology cost/value/resource efficiency | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
 | Release/communication | `{{YES_NO}}` | `{{INPUT_OR_DECISION}}` | `{{OWNER}}` | `{{STATUS}}` |
 
 `NOT APPLICABLE` requires a reason and owner. The AI agent cannot supply reserved approval or risk-acceptance decisions.
@@ -88,4 +111,5 @@ Evidence at one level does not establish a claim assigned to another level.
 - Verification result: `{{PASS_FAIL_PARTIAL_BLOCKED}}`.
 - Verification levels completed and not completed: `{{LEVELS_AND_LIMITATIONS}}`.
 - Known limitations/follow-up: `{{ITEMS_AND_OWNERS}}`.
+- Actual billable resources, usage/cost, expiry, and cleanup result: `{{RESULT_OR_NOT_APPLICABLE}}`.
 - Reviewer decision/date: `{{DECISION}}`.

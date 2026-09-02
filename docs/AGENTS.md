@@ -29,7 +29,8 @@ Maintain AiReady as a project-neutral, documentation-first framework for control
 - `boilerplate/DELIVERY_CHECKPOINT.md` owns optional evidence for bounded delivery states that do not imply release approval.
 - `boilerplate/RELEASE_PROCESS.md`, `RELEASE_CHECKLIST.md`, and `RELEASE_READINESS.md` own release governance and the working candidate decision.
 - `releases/` owns project-neutral immutable release-evidence examples.
-- `boilerplate/ARCHITECTURE.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `AI_SYSTEM_EVALUATION.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context. `AI_SYSTEM_EVALUATION.md` applies only when AI materially affects system behaviour or a development control.
+- `boilerplate/ARCHITECTURE.md`, `ARCHITECTURE_REVIEW.md`, `REPOSITORY_ECOSYSTEM.md`, `TESTING.md`, `AI_SYSTEM_EVALUATION.md`, `TECHNOLOGY_COST_AND_VALUE.md`, `OPERATIONS_AND_RECOVERY.md`, and `DECISION_RECORD.md` own technical and operational context. The review and cost/value records are optional. `AI_SYSTEM_EVALUATION.md` applies only when AI materially affects system behaviour or a development control.
+- `compliance/NIST_CSF_2_0_READINESS_CHECKLIST.md` owns the optional outcome-based National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) profile and improvement record; it does not establish NIST CSF conformity, certification, or a release decision.
 - `.github/` owns this repository's contribution and document-quality checks.
 
 ## Required workflow

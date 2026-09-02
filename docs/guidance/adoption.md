@@ -27,6 +27,11 @@ Also record the reading order, precedence rule, and lifecycle state for sources
 that can direct AI-assisted work. Do not assume that the newest or most detailed
 record is authoritative.
 
+Select optional external architecture, cybersecurity, technology-cost, or
+sustainability lenses only when the project's context makes them useful. Record
+the exact framework/source version and scope. Do not copy controlled content or
+treat a mapping as certification, conformity, or release approval.
+
 Classify the actual system and delivery units before selecting controls. Record
 whether each assessed item is an application, service, library, package,
 infrastructure, data/notebook, documentation/content, course, collection, or
@@ -36,7 +41,13 @@ larger multi-repository system. Adapt the terms rather than forcing a category.
 
 ## Stage 2: Establish AI authority
 
-Name the accountable owner, approved AI tools, intended use, prohibited actions, data classification, review authority, permission boundary, and escalation path. Use the [agent-instruction boilerplate](../boilerplate/AGENT_INSTRUCTIONS.md) only to fill gaps in the instruction mechanism supported by the project's AI tools.
+Name the accountable owner, approved AI tools, intended use, prohibited actions,
+data classification, review authority, permission boundary, and escalation
+path. Where work can create charges or resources, define permitted resource
+types and environments, quantity/run/duration and budget or usage ceilings,
+alerts, stop conditions, expiry, and cleanup ownership. Use the
+[agent-instruction boilerplate](../boilerplate/AGENT_INSTRUCTIONS.md) only to
+fill gaps in the instruction mechanism supported by the project's AI tools.
 
 Do not enable write-capable agents before authority and stop conditions exist.
 
@@ -74,9 +85,19 @@ failures, skips, reruns, and limitations.
 
 Continuous Integration (CI) should run the appropriate project-defined gate, but no language or CI platform is mandated.
 
+Treat reliability and recovery, performance and capacity, technology cost and
+delivered value, and sustainability and resource lifecycle as distinct
+applicability and evidence decisions. Run proportionate failure or recovery
+exercises when required by the risk model; a written plan is not a successful
+exercise.
+
 ## Stage 6: Bound authority and untrusted output
 
-Separate read-only analysis, source edits, external communication, deployment, migration, publishing, deletion, and cost-bearing operations. Give AI agents the least authority required for the approved use and require fresh human approval for material external effects.
+Separate read-only analysis, source edits, external communication, deployment,
+migration, publishing, purchasing, provisioning, scaling, deletion, and other
+cost-bearing operations. Give AI agents the least authority required for the
+approved use and require fresh human approval for material external effects.
+Permission to execute does not imply spending or resource-lifecycle authority.
 
 Treat generated code, commands, configuration, structured data, database queries, markup, URLs, dependency suggestions, and infrastructure changes as untrusted. Apply controls appropriate to the project's technology and risk.
 
@@ -85,6 +106,11 @@ Treat generated code, commands, configuration, structured data, database queries
 Adapt the release-process, checklist, readiness, and evidence boilerplate to the project's existing release mechanism. A readiness decision must name exact candidate artefacts and distinguish passing evidence from planned, failed, blocked, stale, skipped, or not-applicable checks.
 
 For stateful systems, verify backups, preflight checks, migrations, rollback, restore, and post-change checks. Written recovery steps without a tested restore are partial evidence.
+
+Where architecture or cost is material, link readiness to current review
+findings, owned improvement actions, explicit cross-quality trade-offs,
+approved budget and usage limits, observed cost/value evidence, and temporary
+resource cleanup. These records inform the release decision; they do not make it.
 
 ## Stage 8: Increase automation gradually
 

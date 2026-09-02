@@ -48,10 +48,12 @@ Out of scope:
 | `REQ-Q-001` | Accessibility | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
 | `REQ-Q-002` | Security/privacy | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
 | `REQ-Q-003` | Reliability/recovery | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-004` | Performance/capacity/cost | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-005` | Compatibility/migration | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-006` | Operations/support | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
-| `REQ-Q-007` | Legal/licensing | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-004` | Performance/capacity/resource efficiency | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-005` | Technology cost/delivered value | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-006` | Sustainability/resource lifecycle | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-007` | Compatibility/migration | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-008` | Operations/support | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
+| `REQ-Q-009` | Legal/licensing | `{{REQUIREMENT}}` | `{{PRIORITY}}` | `{{OWNER}}` | `{{METHOD_AND_EVIDENCE}}` | `{{STATUS}}` |
 
 ## Data and artificial intelligence boundaries
 

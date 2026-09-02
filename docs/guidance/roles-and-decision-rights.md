@@ -16,6 +16,7 @@ An AI agent may research, analyse, draft, implement, test, and assemble evidence
 | Security, privacy, and data | Threats, data use, access, regulatory/contractual controls, incident readiness | Threat assessment, data flow, control evidence, risk records | Accept security/privacy/data risk and approve sensitive access |
 | Quality assurance | Verification strategy, coverage, environments, defects, evidence confidence | Testing contract, verification matrix, defect records, test results | Determine whether evidence meets defined acceptance and disclose limitations |
 | Operations and reliability | Deployment, observability, capacity, backup, recovery, support, incident response | Runbooks, restore tests, service signals, environment evidence | Authorise operations and accept operational risk within delegated authority |
+| Technology cost, value, and sustainability | Cost allocation, budget and forecast, unit value, resource efficiency, commitments, lifecycle effects | Billing/usage evidence, forecasts, unit measures, optimisation results, resource inventory | Approve spending/resource boundaries and accept material cost, value, or sustainability trade-offs |
 | Release management | Candidate integrity, gate completion, approvals, execution, closure | Readiness record, checklist, artefact provenance, release evidence | Approve, reject, abort, or roll back the exact candidate |
 | Framework/process ownership | AI operating model, permissions, control effectiveness, improvement | Readiness assessment, adoption map, audit trail, retrospectives | Authorise AI use and expand or revoke its scope |
 
@@ -31,6 +32,7 @@ Projects should map these decisions to named owners and alternates in an existin
 | Accept security/privacy/data risk | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
 | Accept unresolved quality risk | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
 | Authorise AI access or expanded authority | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
+| Authorise purchasing, provisioning, scaling, retention, or billable usage | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
 | Approve release candidate | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
 | Execute deployment/migration | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
 | Abort or roll back release | `{{OWNER}}` | `{{ROLES}}` | `{{EVIDENCE}}` | `{{ALTERNATE}}` | `{{RULE}}` |
@@ -45,6 +47,7 @@ Projects should map these decisions to named owners and alternates in an existin
 | Quality | Release authority | Candidate-specific results, environment, coverage, defects, stale/skipped checks, evidence limitations |
 | Security/data | Release authority | Applicable controls, findings, residual risk, acceptance authority, expiry and contingency |
 | Operations | Release authority | Environment readiness, backup/recovery evidence, monitoring, support, execution and rollback plan |
+| Technology cost/value owner | Product/engineering/operations/release authority | Allocation, budget/forecast, unit value, usage anomalies, resource limits, sustainability effects, and cleanup status |
 | Release authority | Operators/support/stakeholders | Exact approved artefacts, sequence, conditions, stop triggers, communications, support and incident ownership |
 | Operations/support | Product/framework owners | Effective results, incidents, user feedback, operational signals, lessons and required control changes |
 

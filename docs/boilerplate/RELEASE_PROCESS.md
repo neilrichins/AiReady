@@ -29,6 +29,8 @@ useful.
 - Assign version/release identifier, owner, target window, intended outcome, and change-set identifier.
 - List included and explicitly excluded requirements, features, fixes, repositories, packages, migrations, and infrastructure changes.
 - Define immutable candidate artefacts and supported upgrade/compatibility paths.
+- Identify applicable architecture principles or external review lenses, material cross-quality trade-offs, and unresolved improvement actions.
+- Define separate reliability, performance/capacity, technology cost/value, and sustainability/resource-lifecycle acceptance boundaries where applicable.
 - When AI materially affects system behaviour, define the release bundle across code, models, prompts, retrieval, tools, permissions, parameters, policies, evaluation results, and provider-controlled state.
 - Create or reserve a versioned release-evidence record in the project's existing authoritative release system.
 
@@ -48,7 +50,8 @@ useful.
 ### 4. Verify the candidate
 
 - Run the complete automated gate and all release-scoped checks in the [verification plan](VERIFICATION_PLAN.md).
-- Complete required manual, security, privacy, accessibility, performance, compatibility, migration, recovery, operational, and documentation checks.
+- Complete required manual, security, privacy, accessibility, reliability and recovery, performance and capacity, technology cost and value, sustainability, compatibility, migration, operational, and documentation checks.
+- Run proportionate failure, recovery, or incident exercises required by the risk model and preserve actual outcomes and limitations.
 - Complete the applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md) against the exact candidate and approved evaluation-suite version.
 - Record actual evidence, failures, reruns, environment, assessor, date, and limitations.
 
@@ -56,18 +59,18 @@ useful.
 
 - Classify every failed, blocked, stale, or not-run check.
 - Resolve release blockers or obtain time-bounded accepted-risk approval from the correct authority.
-- Confirm backup, rollback, restore, monitoring, support, communication, and incident ownership, including AI behavioural baselines, safe stop, fallback, and coupled-bundle recovery where applicable.
+- Confirm backup, rollback, restore, monitoring, support, communication, incident ownership, approved resource/budget limits, and temporary-resource cleanup, including AI behavioural baselines, safe stop, fallback, and coupled-bundle recovery where applicable.
 - Approvers decide against the named candidate artefacts—not a moving branch.
 
 ### 6. Release under explicit authority
 
-- Reconfirm identity, environment, candidate digest/version, approvals, maintenance window, dependencies, and stop conditions.
+- Reconfirm identity, environment, candidate digest/version, approvals, maintenance window, dependencies, resource and spending limits, expiry/cleanup ownership, and stop conditions.
 - Follow the ordered checklist. Do not combine build, migration, deployment, publication, or destructive operations unless the project has deliberately designed and verified an atomic process.
 - For multiple repositories/components, maintain compatible intermediate states and stop on unexpected partial failure.
 
 ### 7. Verify and close
 
-- Verify effective deployed/distributed behaviour, versions, data, configuration, logs, monitoring, security boundaries, and user-visible outcomes.
+- Verify effective deployed/distributed behaviour, versions, data, configuration, logs, monitoring, security boundaries, user-visible and business outcomes, cost/usage signals, and resource cleanup.
 - Roll back or stop when a release criterion fails; do not rewrite the record to turn a failure into a pass.
 - Record the final decision, release identifiers, deviations, incidents, rollback status, known limitations, and follow-up owners.
 

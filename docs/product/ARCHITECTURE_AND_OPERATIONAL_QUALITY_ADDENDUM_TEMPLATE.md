@@ -10,6 +10,7 @@
 | Version/date | `{{VERSION_AND_DATE}}` |
 | Applies to | `{{SYSTEM_CAPABILITY_OR_CHANGE}}` |
 | Related architecture/requirements | `{{LINKS_OR_LOCATIONS}}` |
+| Architecture review/framework mappings | `{{LINKS_OR_NOT_APPLICABLE}}` |
 | Review trigger | `{{DATE_OR_EVENT}}` |
 
 ## Quality outcomes
@@ -26,6 +27,26 @@ Quality targets are requirements. They are not verified until evidence exists fo
 | --- | --- | --- | --- |
 | `{{PRINCIPLE}}` | `{{REQUIREMENT}}` | `{{RATIONALE}}` | `{{EVIDENCE}}` |
 
+## Stakeholder concerns and required views
+
+| Stakeholder/affected group | Concern or decision | Required outcome | Architecture view/evidence | Owner |
+| --- | --- | --- | --- | --- |
+| `{{STAKEHOLDER}}` | `{{CONCERN}}` | `{{OUTCOME}}` | `{{VIEW_OR_SOURCE}}` | `{{OWNER}}` |
+
+## Baseline, target, and transition
+
+| Dimension | Current baseline and evidence | Approved target and outcome | Gap/risk | Transition state/dependency | Owner |
+| --- | --- | --- | --- | --- | --- |
+| Business capability/service | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Information/data | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Application/component/repository | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Technology/infrastructure/operations | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+
+Keep observed baseline, approved target, implemented change, and verified
+effective state distinct. Use an optional [architecture review and improvement
+record](../boilerplate/ARCHITECTURE_REVIEW.md) for a point-in-time review or
+external framework mapping rather than duplicating the architecture source.
+
 ## Components, data, and trust
 
 | Component/service/repository | Responsibility | Owner | Inputs/outputs | Data class | Trust boundary | Contract/version |
@@ -40,9 +61,11 @@ Authoritative architecture and data-flow diagrams: `{{LINKS_OR_LOCATIONS}}`.
 | --- | --- | --- | --- | --- | --- |
 | Deployment authority | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Configuration/secrets | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
-| Observability/alerting | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| User/business health and observability | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Support/escalation | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Runbooks/automation | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Failure/security/recovery exercises | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Operational learning/improvement | `{{REQUIREMENT}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 
 ## Security, privacy, and data governance
 
@@ -65,19 +88,35 @@ legal conclusion, or universal product requirement.
 
 State which changes are reversible, which require forward recovery, and how data preservation is verified.
 
-## Performance, capacity, and cost
+## Performance and capacity
 
-| Workload/operation | Measure | Baseline | Required threshold | Capacity limit | Cost guardrail | Test evidence | Owner |
-| --- | --- | ---: | ---: | ---: | ---: | --- | --- |
-| `{{WORKLOAD}}` | `{{MEASURE}}` | `{{VALUE}}` | `{{VALUE}}` | `{{VALUE}}` | `{{VALUE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+| Workload/operation | Demand condition | Measure | Baseline | Required threshold | Capacity/quota limit | Scaling/degradation behaviour | Test evidence | Owner |
+| --- | --- | --- | ---: | ---: | ---: | --- | --- | --- |
+| `{{WORKLOAD}}` | `{{NORMAL_PEAK_DEGRADED_RECOVERY_GROWTH_OR_OTHER}}` | `{{MEASURE}}` | `{{VALUE}}` | `{{VALUE}}` | `{{VALUE}}` | `{{BEHAVIOUR}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 
 Specify normal, peak, degraded, recovery, and growth conditions where they materially differ.
 
+## Cost and delivered value
+
+| Workload/operation | Business/user outcome | Demand/unit | Baseline cost | Cost/value guardrail | Budget/anomaly response | Evidence | Owner |
+| --- | --- | --- | ---: | --- | --- | --- | --- |
+| `{{WORKLOAD}}` | `{{OUTCOME}}` | `{{UNIT_AND_VOLUME}}` | `{{VALUE}}` | `{{GUARDRAIL}}` | `{{CONTROL}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+
+Use the optional [technology cost and value
+record](../boilerplate/TECHNOLOGY_COST_AND_VALUE.md) when allocation, forecasting,
+unit economics, commitments, AI consumption, or optimisation outcomes require
+more detail. A lower technical cost is not an improvement if it degrades an
+approved user, security, reliability, accessibility, recovery, or business outcome.
+
 ## Sustainability and resource use
 
-| Impact source | Baseline or proxy | Required outcome/guardrail | Measurement method | Trade-off/decision | Owner |
-| --- | --- | --- | --- | --- | --- |
-| `{{COMPUTE_STORAGE_TRANSFER_HARDWARE_OR_OTHER}}` | `{{BASELINE}}` | `{{OUTCOME}}` | `{{METHOD}}` | `{{DECISION}}` | `{{OWNER}}` |
+| Impact source and lifecycle boundary | Useful unit | Baseline or proxy | Required outcome/guardrail | Measurement method/limitation | Idle/data/downstream/retirement effect | Trade-off/decision | Owner |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{COMPUTE_STORAGE_TRANSFER_DEVICE_HARDWARE_WATER_EMISSIONS_OR_OTHER}}` | `{{UNIT}}` | `{{BASELINE}}` | `{{OUTCOME}}` | `{{METHOD_AND_LIMITATION}}` | `{{EFFECT}}` | `{{DECISION}}` | `{{OWNER}}` |
+
+Use only applicable, supportable measures. Record provider and estimation
+boundaries, uncertainty, customer/device effects, data lifecycle, idle resource
+use, and decommissioning rather than presenting a narrow proxy as full impact.
 
 ## Compatibility, contracts, and migration
 
@@ -99,6 +138,15 @@ For interconnected repositories, identify coordinated commits, version constrain
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `{{ID}}` | `{{ITEM}}` | `{{TRIGGER}}` | `{{IMPACT}}` | `{{DETECTION}}` | `{{CONTROL}}` | `{{OWNER_AND_DATE}}` | `{{BLOCK_CONDITION_ALLOW}}` |
 
+### Cross-quality trade-offs
+
+| Decision/change | Outcome improved | Outcomes degraded or put at risk | Evidence and alternatives | Reversibility/point of no return | Acceptance owner/expiry | Required verification |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{BENEFIT}}` | `{{SECURITY_RELIABILITY_PERFORMANCE_COST_SUSTAINABILITY_ACCESSIBILITY_OPERATIONS_OR_OTHER}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` | `{{OWNER_AND_DATE}}` | `{{CHECKS}}` |
+
+A material trade-off requires an accountable decision. A favourable aggregate
+score or outcome must not conceal a failed required quality boundary.
+
 ## Verification and release evidence
 
 | Quality requirement | Candidate-specific check | Required environment | Pass criterion | Evidence retained | Post-release check |
@@ -112,3 +160,4 @@ For interconnected repositories, identify coordinated commits, version constrain
 | Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
 | Product owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
 | Security/privacy/operations owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |
+| Finance/sustainability/specialist owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` | `{{CONDITIONS_OR_NONE}}` |

@@ -25,6 +25,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | --- | --- |
 | [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Layered and task-bounded context, canonical patterns, objectives, invariants, authority, instruction currency, governed convention improvement, change impacts, stop conditions, and workflow for AI tools. |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, context locality, change-amplification hotspots, canonical concepts, contracts, failure behaviour, data flow, trust boundaries, source ownership, and AI boundaries. |
+| [`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) | Optional point-in-time architecture review using selected internal or external lenses, stakeholder views, baseline/target/transition states, cross-quality trade-offs, findings, and owned improvement actions. |
 | [`REPOSITORY_ECOSYSTEM.md`](REPOSITORY_ECOSYSTEM.md) | Repository topology, delivery units, reusable dependency baseline, interconnected components, contracts, compatibility, change-only review, coordination, and recovery. |
 | [`DECISION_RECORD.md`](DECISION_RECORD.md) | Significant architecture, product, governance, or operational decision. |
 | [`RISK_REGISTER.md`](RISK_REGISTER.md) | Active risks, verified controls, treatments, and time-bounded acceptance. |
@@ -51,6 +52,7 @@ the difference between readiness evidence and an authorised external decision.
 | [`AI_SYSTEM_EVALUATION.md`](AI_SYSTEM_EVALUATION.md) | Optional evaluation contract, suite, graders, results, drift, and decision record for material AI-system behaviour. |
 | [`VERIFICATION_PLAN.md`](VERIFICATION_PLAN.md) | What must be verified, how, where, by whom, and with what evidence. |
 | [`OPERATIONS_AND_RECOVERY.md`](OPERATIONS_AND_RECOVERY.md) | Authority, preflight, deployment, migration, rollback, restore, and effective verification. |
+| [`TECHNOLOGY_COST_AND_VALUE.md`](TECHNOLOGY_COST_AND_VALUE.md) | Optional authority, allocation, budget, forecast, anomaly, unit-value, resource-efficiency, commitment, optimisation, sustainability, and multi-repository record. |
 | [`RELEASE_PROCESS.md`](RELEASE_PROCESS.md) | Lifecycle from planned scope through immutable candidate, approval, release, and closure. |
 | [`RELEASE_CHECKLIST.md`](RELEASE_CHECKLIST.md) | Reusable conditions and checks for a release operation. |
 | [`RELEASE_READINESS.md`](RELEASE_READINESS.md) | Working evidence and decision for one exact release candidate. |

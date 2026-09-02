@@ -74,6 +74,8 @@ Reassess after:
 - a repository split, merge, new shared interface, or supported-version change;
 - a new model, agent, plugin, connector, or execution tool;
 - expanded filesystem, network, cloud, communication, or production authority;
+- a material provider, service, price, commitment, capacity, budget, resource-lifecycle, or sustainability change;
+- a selected external framework, profile, or source-version change;
 - a new sensitive-data class or legal obligation;
 - a build, test, deployment, migration, or recovery redesign;
 - a material security incident or control failure; or
@@ -88,10 +90,21 @@ AiReady does not establish security, privacy, legal compliance, software quality
 AiReady is designed to complement, not replace or attest conformity with:
 
 - the [National Institute of Standards and Technology Secure Software Development Framework](https://csrc.nist.gov/projects/ssdf) for secure software-development practices;
+- the [NIST Cybersecurity Framework 2.0](https://doi.org/10.6028/NIST.CSWP.29) for organisation-wide cybersecurity outcomes, profiles, and improvement;
 - the [Open Source Project Security Baseline](https://baseline.openssf.org/) and [OpenSSF Scorecard](https://www.scorecard.dev/) for open-source security controls and machine-checkable repository signals; and
+- the [Amazon Web Services Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html), [Microsoft Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework), and [Google Cloud Well-Architected Framework](https://docs.cloud.google.com/architecture/framework) for provider-specific or provider-informed architecture review;
+- [The Open Group Architecture Framework](https://www.opengroup.org/togaf) for enterprise-architecture method and governance when the organisation has selected it;
+- the [FinOps Framework](https://www.finops.org/framework/) for collaborative technology-value and cost-management practices; and
 - the adopting project's applicable product, design, accessibility, privacy, reliability, safety, quality, legal, contractual, and operational standards.
 
 Map overlapping controls to one authoritative source and retain the stronger applicable requirement. A passing external badge, score, or automated check remains evidence only for the controls and version it actually assessed.
+
+Record each selected source, version, retrieval date, scope, adaptations, and
+known omissions. Respect licence and attribution requirements; link to
+controlled or provider-native material rather than copying it without rights.
+A framework mapping or provider assessment is an input to accountable review,
+not proof of conformity, certification, complete architecture quality, or
+release readiness.
 
 ## Multi-repository systems
 

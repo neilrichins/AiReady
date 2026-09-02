@@ -12,7 +12,7 @@ Use the [adoption map](../boilerplate/ADOPTION_MAP.md) before creating new recor
 - [Brand and messaging brief](BRAND_AND_MESSAGING_TEMPLATE.md): identity, voice, messages, substantiation, information architecture, content strategy, and prohibited claims.
 - [Accessibility and inclusive-design addendum](ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md): product accessibility requirements, evidence boundaries, and test expectations.
 - [Optional accessibility checklists](../accessibility/README.md): W3C-based web, mobile, success-criterion, and jurisdiction verification records to use when applicable.
-- [Architecture and operational-quality addendum](ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md): security, reliability, performance, cost, sustainability, operations, compatibility, recovery, and responsibility boundaries.
+- [Architecture and operational-quality addendum](ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md): stakeholder views, current/target/transition architecture, cross-quality trade-offs, security, reliability, performance, cost/value, sustainability, operations, compatibility, recovery, and responsibility boundaries.
 
 ## Use rules
 

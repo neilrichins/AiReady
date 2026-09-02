@@ -85,8 +85,10 @@ and whether the approved bundle can be restored as a unit.
 | AI-system evaluation and behavioural assurance | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Product intent, design, content, accessibility, and inclusive use | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Security, privacy, and data | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
-| Performance, capacity, and cost | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
-| Reliability and recovery | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Reliability, continuity, recovery, and exercises | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Performance, capacity, and resource efficiency | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Technology cost, allocation, budget, and delivered value | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Sustainability and resource lifecycle | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Compatibility and migration | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Operations, monitoring, and support | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Documentation, licensing, and obligations | `{{PASS_FAIL_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{CONTEXT}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -148,6 +150,7 @@ Conditions: `{{CONDITIONS_OR_NONE}}`.
 | Technical/operations owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 | Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 | Specialist owner(s) | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
+| Finance/cost/value/sustainability owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{TIMESTAMP}}` | `{{SCOPE}}` |
 
 A materially changed candidate requires a new decision and updated evidence.
 
@@ -171,6 +174,8 @@ Final result: `{{RELEASED_FAILED_CANCELLED_ROLLED_BACK}}`.
 | Effective version/configuration | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Critical journeys/contracts | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Monitoring/error/health signals | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
+| Cost/usage, resource-efficiency, and sustainability signals | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
+| Temporary-resource expiry and cleanup | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Data/migration reconciliation | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 | Support/customer impact | `{{EXPECTED}}` | `{{ACTUAL}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION_OR_NONE}}` |
 

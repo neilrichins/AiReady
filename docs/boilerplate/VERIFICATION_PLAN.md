@@ -48,7 +48,10 @@ evidence from one level cannot be promoted into a claim assigned to another.
 | Security and authorisation | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Privacy and data handling | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Accessibility and assistive technology | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
-| Performance, capacity, and cost | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
+| Reliability, continuity, and recovery exercises | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
+| Performance, capacity, and resource efficiency | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
+| Technology cost, allocation, and delivered value | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
+| Sustainability and resource lifecycle | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Compatibility and upgrade | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Cross-repository contracts | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |
 | Deployment and effective configuration | `{{YES_NO}}` | `{{EVIDENCE}}` | `{{STATUS}}` | `{{OWNER}}` |

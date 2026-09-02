@@ -42,7 +42,8 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | --- | --- | --- |
 | An accountable human owner and review authority are named | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Approved controls prevent secrets, credentials, personal data, or restricted data from entering prompts or repository output improperly | `{{STATUS}}` | `{{EVIDENCE}}` |
-| AI cannot directly deploy, publish, delete, migrate, bill, message users, or mutate production without explicit authorisation and confirmation | `{{STATUS}}` | `{{EVIDENCE}}` |
+| AI cannot directly deploy, publish, delete, migrate, purchase, provision, scale, message users, or mutate production without explicit authorisation and confirmation | `{{STATUS}}` | `{{EVIDENCE}}` |
+| Any authorised billable or metered operation has explicit resource, environment, quantity/run/duration, budget or usage, alert/stop, expiry, and cleanup controls | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | The project has a reproducible build and test command | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Stateful changes have a tested backup, rollback, and recovery path | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Untrusted AI output is deterministically validated before it can become executable code, commands, queries, markup, URLs, configuration, or infrastructure | `{{STATUS}}` | `{{EVIDENCE}}` |
@@ -70,7 +71,8 @@ Use `N/A` only when the control genuinely cannot apply. Explain it and remove it
 | The intended AI use and prohibited uses are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Product, design, technical, quality, operations, risk, and release decision rights are assigned to accountable people | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Human owners, reviewers, escalation routes, and approval authority are named | `{{0_1_2}}` | `{{EVIDENCE}}` |
-| Agent permissions follow least privilege and distinguish read, write, external, and production actions | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Agent permissions follow least privilege and distinguish read, write, external, production, purchasing, provisioning, scaling, and deletion actions | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Billable or metered work has explicit resource, environment, quantity/run/duration, budget or usage, stop, expiry, and cleanup boundaries | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Stop conditions and actions requiring fresh approval are explicit | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
@@ -103,6 +105,8 @@ Area score: `{{X_OF_10}}`
 | Repository and delivery units are evidence-classified without confusing a shared dependency graph, independent collection, embedded component, or multi-repository system | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | High-blast-radius components and change-amplification relationships are identified with safe change boundaries, additional review, and verification requirements | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Canonical domain concepts, business operations, interfaces, validation boundaries, and failure patterns are distinguishable from intentional variants and accidental duplication | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Material stakeholder concerns and architectural views are represented, with current baseline, target state, and transition steps kept distinct | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Cross-quality trade-offs, decision reversibility, review findings, and improvement actions are explicit and owned where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -144,6 +148,8 @@ Area score: `{{X_OF_10}}`
 | Simulated, component, packaged, integrated, representative, physical/specialist, and effective-environment evidence are kept distinct where applicable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Material command records preserve exact execution scope, environment, exit result, failures, skips, reruns, and limitations | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Common change types have a focused, deterministic feedback loop with known prerequisites, expected duration, actionable diagnostics, and a defined trigger for the complete gate | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Applicable reliability, recovery, and incident assumptions are exercised safely and actual outcomes, limitations, and corrective actions are retained | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
+| Performance, capacity, resource efficiency, technology cost/value, and sustainability have separate applicability and evidence decisions | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`
 
@@ -174,7 +180,8 @@ Area score: `{{X_OF_10}}`
 | Control | Score | Evidence / limitation |
 | --- | ---: | --- |
 | Build, deploy, publish, migrate, delete, and other material operations are separate and explicit | `{{0_1_2}}` | `{{EVIDENCE}}` |
-| Destructive, cost-bearing, or external actions require scoped authority and confirmation | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Destructive, external, purchasing, provisioning, scaling, or other cost-bearing actions require scoped authority and confirmation | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Authorised billable resources have current budget/usage limits, stop thresholds, expiry, cleanup, actual-use evidence, and accountable ownership | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Migrations have dry-run/preflight, backup, idempotency, verification, and rollback controls | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Production verification checks rendered/effective behaviour rather than source alone | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Multi-repository releases define compatible intermediate states, sequencing, partial-failure handling, and coordinated rollback | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
@@ -193,6 +200,7 @@ Area score: `{{X_OF_10}}`
 | The assessment is reviewed after material architecture, tooling, data, dependency, or authority changes | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Repeated review feedback, failed changes, incidents, support patterns, and manual corrections can propose guidance improvements without bypassing owner approval or source precedence | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Assessment findings and projected improvements remain separate from authority to modify the project or claim readiness | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Optional architecture, cybersecurity, cost/value, and sustainability framework mappings record exact sources, versions, scope, gaps, limitations, and decision ownership without implying certification | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Comparable assessments record control-level improvements, regressions, changed evidence, and new or resolved blockers without treating an aggregate score as an automatic approval gate | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`

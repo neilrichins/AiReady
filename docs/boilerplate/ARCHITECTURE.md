@@ -19,7 +19,31 @@ In scope: `{{BOUNDARY}}`.
 
 Out of scope: `{{EXCLUSIONS_AND_EXTERNAL_RESPONSIBILITIES}}`.
 
-Constraints and quality priorities: `{{SECURITY_PRIVACY_ACCESSIBILITY_RELIABILITY_PERFORMANCE_COST_COMPATIBILITY_AND_OTHER}}`.
+Constraints and quality priorities: `{{SECURITY_PRIVACY_ACCESSIBILITY_RELIABILITY_PERFORMANCE_COST_VALUE_SUSTAINABILITY_COMPATIBILITY_AND_OTHER}}`.
+
+### Stakeholders, concerns, and required views
+
+| Stakeholder or affected group | Concern/decision | Required outcome | Architecture view/evidence | Owner | Gap/status |
+| --- | --- | --- | --- | --- | --- |
+| `{{STAKEHOLDER}}` | `{{CONCERN}}` | `{{OUTCOME}}` | `{{VIEW_OR_EVIDENCE}}` | `{{OWNER}}` | `{{STATUS}}` |
+
+Include users, affected non-users, product owners, operators, support,
+security/privacy/data, finance/procurement, sustainability, suppliers, and
+dependent-system owners where applicable. A single diagram need not serve every
+concern; each view must state its scope, currency, and limitations.
+
+### Current baseline, target, and transition
+
+| Architecture dimension | Current baseline/evidence | Approved target/outcome | Gap/risk | Transition/dependency | Owner |
+| --- | --- | --- | --- | --- | --- |
+| Business capability/service | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Information/data | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Application/component/repository | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+| Technology/infrastructure/operations | `{{BASELINE}}` | `{{TARGET}}` | `{{GAP}}` | `{{TRANSITION}}` | `{{OWNER}}` |
+
+Keep observed baseline, approved target, implemented state, and effective state
+distinct. Record compatible intermediate states, sequencing, reversibility,
+partial-failure response, and the point of no return.
 
 ## Context and deployment views
 
@@ -135,7 +159,19 @@ Link the authoritative threat model, data-protection assessment, security decisi
 - Output accepted from AI: `{{BOUNDARY}}`.
 - Deterministic validation: `{{CONTROLS}}`.
 - Executable or production boundary: `{{CONTROLS_AND_HUMAN_APPROVAL}}`.
+- Resource, usage, duration, and spending boundary: `{{LIMITS_ALERTS_STOP_EXPIRY_AND_CLEANUP}}`.
 - Model/tool failure and shutdown path: `{{FAILURE_RESPONSE}}`.
+
+## Cross-quality trade-offs
+
+| Decision/change | Intended benefit | Adverse or transferred effect | Evidence/assumption | Mitigation/acceptance | Owner/review trigger | Verification |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{BENEFIT}}` | `{{RELIABILITY_SECURITY_PERFORMANCE_COST_VALUE_SUSTAINABILITY_ACCESSIBILITY_OPERATIONS_OR_OTHER}}` | `{{BASIS}}` | `{{ACTION_OR_DECISION}}` | `{{OWNER_AND_TRIGGER}}` | `{{CHECKS}}` |
+
+Do not use improvement in one quality area to conceal degradation in another.
+Link material findings and improvement work to the optional [architecture
+review](ARCHITECTURE_REVIEW.md) and material cost/value effects to the optional
+[technology cost and value record](TECHNOLOGY_COST_AND_VALUE.md) when selected.
 
 ## Significant decisions and technical debt
 

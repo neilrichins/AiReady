@@ -91,10 +91,12 @@ Do not choose success measures that can improve by degrading accessibility, secu
 | Accessibility | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Security/privacy/data | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Architecture/compatibility | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
-| Performance/reliability/capacity | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Reliability/recovery | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Performance/capacity/resource efficiency | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Operations/recovery/support | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 | Legal/contractual/licensing | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
-| Cost/sustainability | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Technology cost/delivered value | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
+| Sustainability/resource lifecycle | `{{REQUIREMENT}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 
 ## Dependencies and assumptions
 

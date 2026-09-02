@@ -12,6 +12,7 @@ Linked issue/change set: `{{LINK}}`
 - Interfaces/schemas/packages affected: `{{LIST_OR_NONE}}`
 - Data or migration impact: `{{DESCRIBE_OR_NONE}}`
 - External or production effects: `{{DESCRIBE_OR_NONE}}`
+- Technology cost, budget, resource, or sustainability effects: `{{DESCRIBE_OR_NONE}}`
 - Required merge/release order: `{{ORDER_OR_NOT_APPLICABLE}}`
 - Applicable change-impact matrix/source: `{{LINK_LOCATION_OR_NOT_APPLICABLE_WITH_REASON}}`
 - High-blast-radius components or relationships: `{{LIST_OR_NONE_WITH_EVIDENCE}}`
@@ -54,6 +55,7 @@ Do not include private prompts, credentials, personal data, restricted source, o
   errors remain observable, and fallback behaviour does not hide an invalid or
   unknown state without an approved decision.
 - [ ] Destructive, external, production, and cost-bearing actions remain explicitly authorised.
+- [ ] Provisioning, scaling, purchasing, metered use, expiry, and cleanup remain within approved resource, duration, usage, and budget limits.
 
 ## Verification
 
@@ -61,6 +63,9 @@ Do not include private prompts, credentials, personal data, restricted source, o
 - [ ] Complete local quality gate: `{{COMMAND}}`
 - [ ] Required CI passed
 - [ ] Contract/integration combinations passed or are not applicable
+- [ ] Reliability and recovery exercises completed or recorded as not applicable with evidence
+- [ ] Performance, capacity, and resource-efficiency checks completed or recorded as limitations
+- [ ] Technology cost/value and sustainability effects verified or assigned to accountable owners
 - [ ] Manual/effective-environment checks completed or recorded as limitations
 - [ ] Documentation and decision records updated
 - [ ] Applicable change-impact and AI-instruction currency records updated
@@ -77,3 +82,4 @@ Evidence and unresolved limitations: `{{EVIDENCE}}`
 | Security, privacy, and data | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |
 | Quality and verification | `{{OWNER}}` | `{{DECISION}}` | `{{STATUS}}` |
 | Operations, support, and release | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |
+| Technology cost, value, and sustainability | `{{OWNER}}` | `{{DECISION_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{STATUS}}` |

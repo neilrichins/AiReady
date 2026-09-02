@@ -60,6 +60,7 @@ Record the project's actual authoritative locations; do not reorganise it to mat
 | Testing and verification evidence | `{{LINK_OR_LOCATION}}` |
 | Security and data handling | `{{LINK_OR_LOCATION}}` |
 | Operations, deployment, and recovery | `{{LINK_OR_LOCATION}}` |
+| Technology cost/value, resource efficiency, and sustainability | `{{LINK_OR_LOCATION_OR_NOT_APPLICABLE}}` |
 | Release process, readiness, and historical evidence | `{{LINK_OR_LOCATION}}` |
 | AI-agent instructions and authority | `{{LINK_OR_LOCATION}}` |
 | Roles, decision rights, and support/escalation | `{{LINK_OR_LOCATION}}` |

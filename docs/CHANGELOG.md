@@ -6,6 +6,9 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an optional architecture review and improvement record with selected framework/version, stakeholder views, baseline/target/transition states, cross-quality trade-offs, decision reversibility, findings, improvements, and bounded claims.
+- Added an optional technology cost and value record with authority limits, allocation, budgets, forecasts, anomalies, unit economics, resource efficiency, commitments, optimisation outcomes, sustainability, and multi-repository ownership.
+- Added an optional National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) 2.0 readiness pack with six-function outcome mapping, current and target profiles, implementation-tier separation, supply-chain coverage, exercises, gaps, and claims boundaries.
 - Added an optional AI-system evaluation record covering exact system identity, ground truth and rubrics, representative and adversarial cases, grader and human-review controls, staged evaluation, regression, drift, limitations, and accountable decisions.
 - Added an optional applicability-first compliance-readiness framework with obligation, control, evidence, audit, exception, multi-repository, and bounded-claim records.
 - Added optional readiness packs for ISO/IEC 27001, SOC 2, GDPR/privacy, secure software development, software supply chains, and AI governance without reproducing controlled standards or implying certification, assurance, or legal approval.
@@ -21,6 +24,7 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Expanded architecture, adoption, assessment, task, agent-instruction, testing, operations, decision, product, release, responsibility, and lifecycle records with architecture-review, controlled failure-exercise, technology-value, resource-authority, sustainability, and separate quality-gate controls.
 - Standardised the project and framework brand as `AiReady` across documentation and repository issue guidance.
 - Expanded the root README with practical guidance and reusable prompts for AI-assisted discovery, assessment, bounded implementation, verification, multi-repository scope, and human approval.
 - Added project-neutral controls for focused verification feedback loops, context locality, change-amplification hotspots, canonical concepts and implementations, explicit contract and failure behaviour, and control-level readiness comparisons without imposing structural metrics or aggregate-score release gates.

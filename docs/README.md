@@ -10,6 +10,8 @@ This is the complete framework index. The directories organise AiReady itself; t
 | Existing project adding AI-assisted development | [Adoption guide](guidance/adoption.md), [adoption map](boilerplate/ADOPTION_MAP.md), then [assessment](AiReady.md) | Existing controls reused, gaps owned, maximum AI operating level approved |
 | Planned feature or change | [AI task](boilerplate/AI_TASK.md), [feature record](boilerplate/FEATURE_RECORD.md), and [traceability](boilerplate/TRACEABILITY.md) | Bounded work with acceptance, design, implementation, verification, and review evidence |
 | Product or operation with material AI behaviour | [AI system evaluation](boilerplate/AI_SYSTEM_EVALUATION.md) and, when applicable, [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md) | Versioned evaluation contract, exact candidate, bounded results, drift controls, and accountable decision |
+| Material architecture change or external architecture review | [Architecture review](boilerplate/ARCHITECTURE_REVIEW.md) | Stakeholder views, baseline, target, transition, cross-quality trade-offs, findings, and owned improvements |
+| Material technology cost, usage, value, or resource-lifecycle concern | [Technology cost and value](boilerplate/TECHNOLOGY_COST_AND_VALUE.md) | Explicit authority, allocation, budget, forecast, unit value, optimisation, sustainability, and cleanup evidence |
 | Phase, milestone, or delivery boundary | [Delivery checkpoint](boilerplate/DELIVERY_CHECKPOINT.md) | Durable evidence of a bounded delivery state without implying release approval |
 | Release candidate | [Release process](boilerplate/RELEASE_PROCESS.md), [checklist](boilerplate/RELEASE_CHECKLIST.md), and [readiness](boilerplate/RELEASE_READINESS.md) | Exact candidate approved, rejected, or deferred from current evidence |
 | Completed, failed, cancelled, or rolled-back release | [Release evidence](releases/README.md) | Immutable decision, execution, effective result, and follow-up history |
@@ -25,7 +27,7 @@ This is the complete framework index. The directories organise AiReady itself; t
 
 ## Working boilerplate
 
-The [boilerplate catalogue](boilerplate/README.md) covers discovery, project definition, AI authority, architecture, interconnected repositories, requirements, features, roadmap, status, tasks, delivery checkpoints, decisions, change review, risk, security, testing, optional AI-system evaluation, verification, operations, recovery, and release readiness.
+The [boilerplate catalogue](boilerplate/README.md) covers discovery, project definition, AI authority, architecture and optional review, interconnected repositories, requirements, features, roadmap, status, tasks, delivery checkpoints, decisions, change review, risk, security, testing, optional AI-system evaluation, verification, technology cost/value, operations, recovery, and release readiness.
 
 Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefer the project's current authoritative system when it is effective.
 
@@ -57,6 +59,7 @@ Use the [adoption map](boilerplate/ADOPTION_MAP.md) before adding records. Prefe
 - [Compliance claims and approvals](compliance/COMPLIANCE_CLAIMS_AND_APPROVALS.md)
 - [ISO/IEC 27001 readiness](compliance/ISO_IEC_27001_READINESS_CHECKLIST.md)
 - [SOC 2 readiness](compliance/SOC_2_READINESS_CHECKLIST.md)
+- [National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) 2.0 readiness](compliance/NIST_CSF_2_0_READINESS_CHECKLIST.md)
 - [GDPR and privacy](compliance/GDPR_AND_PRIVACY_CHECKLIST.md)
 - [Secure software development](compliance/SECURE_SOFTWARE_DEVELOPMENT_CHECKLIST.md)
 - [Software supply chain](compliance/SOFTWARE_SUPPLY_CHAIN_CHECKLIST.md)

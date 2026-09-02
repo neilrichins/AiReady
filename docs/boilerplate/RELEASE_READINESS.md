@@ -69,7 +69,10 @@ candidate identity, approval validity, monitoring, and rollback.
 | Product intent, design, content, accessibility, and usability | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Website/mobile accessibility standard and jurisdiction obligations | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Selected compliance obligations, controls, evidence, exceptions, and claims | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
-| Performance, reliability, capacity, and cost | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Reliability, continuity, and recovery exercises | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Performance, capacity, and resource efficiency | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Technology cost, allocation, budget, and delivered value | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
+| Sustainability and resource lifecycle | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Compatibility, upgrade, and migration | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Multi-repository/component coordination | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
 | Backup, rollback, restore, and recovery | `{{APPLICABLE}}` | `{{STATUS}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{LIMITATION}}` |
@@ -98,6 +101,7 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 - Restore/rollback procedure: `{{LINK}}`.
 - Post-release user/system journeys: `{{CHECKS}}`.
 - Monitoring and observation period: `{{SIGNALS_AND_DURATION}}`.
+- Cost/usage anomaly, resource-efficiency, sustainability, expiry, and cleanup checks: `{{PLAN_OR_NOT_APPLICABLE}}`.
 - AI behavioural baseline, drift trigger, safe-stop/fallback, and bundle rollback: `{{PLAN_OR_NOT_APPLICABLE}}`.
 - Communication and support owner: `{{OWNER}}`.
 
@@ -116,6 +120,7 @@ Status values: `NOT_STARTED`, `IN_PROGRESS`, `PASS`, `FAIL`, `BLOCKED`, `STALE`,
 | Security/data owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Legal/compliance/assurance owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 | Operations/release owner | `{{NAME}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
+| Finance/cost/value/sustainability owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{IDENTIFIER}}` | `{{DATE}}` |
 
 ## Release result
 

@@ -18,6 +18,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Deferred scope and behavioural changes are documented.
 - [ ] The approved dependency baseline is current and the candidate's change-only dependency review is complete.
 - [ ] Cross-repository contracts, supported combinations, and release order are current.
+- [ ] Material architecture findings, cross-quality trade-offs, and improvement actions are resolved or have an authorised release decision.
 - [ ] User, operator, support, migration, and documentation effects are covered.
 
 ## Candidate integrity
@@ -43,7 +44,10 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Optional compliance packs were selected from an approved applicability decision rather than assumed for or excluded from the project.
 - [ ] Every release-affecting compliance obligation has a current authoritative source, owner, control, candidate-specific evidence, exception or uncertainty, and required approval.
 - [ ] Certification, assurance, legal, regulatory, privacy, security, AI, financial-crime, ethical-supply-chain, and procurement claims remain within the exact evidence and decision authority.
-- [ ] Performance, capacity, reliability, and cost checks passed where applicable.
+- [ ] Reliability, continuity, recovery, and applicable failure exercises passed.
+- [ ] Performance, capacity, and resource-efficiency checks passed where applicable.
+- [ ] Technology cost, allocation, budget, anomaly, and delivered-value checks passed where applicable.
+- [ ] Sustainability and resource-lifecycle checks passed where applicable.
 - [ ] Compatibility, installation, upgrade, migration, and idempotency checks passed.
 - [ ] Backup, rollback, restore, and disaster-recovery evidence is current.
 - [ ] Manual and effective-environment checks passed.
@@ -71,7 +75,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 
 - [ ] Preconditions remain true immediately before execution.
 - [ ] Commands/procedures are executed in the approved order by authorised operators.
-- [ ] Each irreversible, destructive, external, or cost-bearing step receives its required confirmation.
+- [ ] Each irreversible, destructive, external, provisioning, scaling, purchasing, or other cost-bearing step receives its required confirmation and remains within approved limits.
 - [ ] Actual timestamps, versions, results, deviations, and operator are recorded.
 - [ ] Stop conditions are applied without improvising around failed controls.
 
@@ -80,7 +84,7 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Effective version and configuration match the approved candidate.
 - [ ] Representative user/system journeys pass in the effective environment.
 - [ ] Data counts, integrity, migrations, and scheduled/background processing are correct.
-- [ ] Logs, alerts, metrics, performance, cost, and security signals are acceptable.
+- [ ] Logs, alerts, user and business outcomes, reliability, performance, capacity, cost/usage, resource-efficiency, sustainability, and security signals are acceptable.
 - [ ] Applicable AI behavioural signals remain within the approved baseline and no provider-side change or drift has invalidated the evidence.
 - [ ] Public/distributed artefacts, documentation, support routes, and release notes are correct.
 - [ ] Cross-repository/component versions form a supported combination.
@@ -90,5 +94,5 @@ Copy this checklist into the release issue or versioned release record. Replace 
 
 - [ ] Versioned release record contains final evidence and approvals.
 - [ ] Released feature statuses and changelog are updated.
-- [ ] Temporary access, flags, windows, credentials, and recovery artefacts are handled according to policy.
+- [ ] Temporary access, flags, windows, credentials, billable resources, test assets, and recovery artefacts are expired, removed, retained, or transferred according to policy with evidence.
 - [ ] Follow-up defects, risks, deferred checks, and lessons have owners and dates.

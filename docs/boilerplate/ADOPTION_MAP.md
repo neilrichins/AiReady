@@ -23,11 +23,13 @@ Suggested file names in AiReady are not required. Storage location, tooling, and
 | Roadmap and dependencies | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Phase, milestone, or delivery-checkpoint evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Architecture, trust boundaries, and source ownership | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Optional architecture review, stakeholder views, framework mapping, trade-offs, and improvement actions | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Multi-repository/component contracts and coordination | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Verification plan, coverage, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Evaluation of material AI-system behaviour and drift | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Risks and accepted risks | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Operations, migration, rollback, and recovery | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Technology cost, allocation, budget, unit value, resource efficiency, and sustainability | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Release process and checklist | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Current release readiness | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Historical release evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

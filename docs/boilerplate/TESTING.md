@@ -102,7 +102,11 @@ network access, external services, unavailable hardware, and excluded tests.
 | --- | --- | --- | --- | --- | --- | --- |
 | `{{ITEM}}` | `{{FAILURE}}` | `{{METHODS}}` | `{{CASES}}` | `{{CONTEXT}}` | `{{CRITERION}}` | `{{EVIDENCE}}` |
 
-Cover normal behaviour, alternate and recovery states, malformed and adversarial input, permissions, injection, concurrency, retries, idempotency, migration, rollback, compatibility, regression, observability, and support diagnostics where applicable.
+Cover normal behaviour, alternate and recovery states, malformed and adversarial
+input, permissions, injection, concurrency, retries, idempotency, migration,
+rollback, compatibility, regression, observability, representative load and
+scale, resource limits, controlled failure exercises, and support diagnostics
+where applicable.
 
 Coverage percentages may inform risk but do not prove meaningful assertions, critical-path coverage, or release readiness. Define any numeric threshold together with exclusions and rationale: `{{POLICY_OR_NOT_USED}}`.
 
@@ -114,7 +118,10 @@ Coverage percentages may inform risk but do not prove meaningful assertions, cri
 | Security and authorisation | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
 | Privacy and data integrity | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
 | Accessibility and usability | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
-| Performance, reliability, capacity, and cost | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
+| Reliability, continuity, and recovery | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
+| Performance, capacity, and resource efficiency | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
+| Technology cost, allocation, and delivered value | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
+| Sustainability and resource lifecycle | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
 | Compatibility, installation, and migration | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
 | Recovery, operations, and support | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
 | Licensing and supply chain | `{{RISK}}` | `{{METHOD}}` | `{{CONTEXT}}` | `{{TRIGGER}}` | `{{BOUNDARY}}` | `{{OWNER}}` |
@@ -126,6 +133,12 @@ Coverage percentages may inform risk but do not prove meaningful assertions, cri
 | `{{ITEM}}` | `{{PURPOSE}}` | `{{PROCESS}}` | `{{CLASSIFICATION}}` | `{{CONTROL}}` | `{{DIFFERENCE}}` | `{{OWNER}}` |
 
 Fixtures and snapshots must be deterministic, reviewed, minimised, and free of unauthorised sensitive data. Record clock, randomness, locale, network, external-service, feature-flag, and concurrency controls where relevant.
+
+For billable, capacity, or failure testing, record approved environments,
+resource types, quantity/run/duration and budget ceilings, stop thresholds,
+blast radius, expiry, and cleanup ownership. Do not infer provisioning or
+spending authority from permission to run tests. Compare representative-scale
+claims with the actual tested scale and preserve material differences.
 
 ## Cross-repository verification
 

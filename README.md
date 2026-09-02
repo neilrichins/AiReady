@@ -83,6 +83,8 @@ Authority and boundaries:
 - Permitted sources and actions: [READ-ONLY SOURCES AND CHECKS]
 - Prohibited sources and actions: [LIST]
 - Sensitive-data restrictions: [LIST]
+- Permitted billable resources/environments: [NONE OR EXACT SCOPE]
+- Quantity, run, duration, budget/usage, stop, expiry, and cleanup limits: [LIMITS]
 
 Begin read-only. Read the project instructions, then follow the AiReady
 legacy-project playbook, adoption map, discovery and baseline record, and
@@ -122,6 +124,8 @@ Implement only the approved AiReady remediation items [ITEM IDENTIFIERS] for
 You may change: [EXACT FILES, RECORDS, OR BOUNDED AREAS]
 You may run: [EXACT CHECKS OR PERMITTED COMMAND CLASSES]
 You must not: [EXCLUDED ACTIONS AND SYSTEMS]
+Resource and spending authority: [NONE OR EXACT RESOURCES, ENVIRONMENTS, LIMITS,
+STOP THRESHOLDS, EXPIRY, AND CLEANUP OWNER]
 Human owner and reviewer: [NAMES OR ROLES]
 
 Use existing authoritative records and locations where they are effective.
@@ -177,10 +181,10 @@ AiReady treats delivery as a set of accountable responsibilities rather than job
 | --- | --- | --- |
 | Product and service ownership | Evidence-based problem, users, outcomes, scope, priorities, and claims | [Product brief](docs/product/PRODUCT_BRIEF_TEMPLATE.md), [requirements](docs/product/PRODUCT_REQUIREMENTS_TEMPLATE.md), [roadmap](docs/boilerplate/ROADMAP.md) |
 | Research, experience, content, and design | Usable journeys, states, content, accessibility, design decisions, and evaluation | [Experience and design](docs/product/EXPERIENCE_AND_DESIGN_TEMPLATE.md), [accessibility](docs/product/ACCESSIBILITY_AND_INCLUSIVE_DESIGN_ADDENDUM_TEMPLATE.md), [brand and messaging](docs/product/BRAND_AND_MESSAGING_TEMPLATE.md) |
-| Engineering and architecture | Maintainable implementation, controlled boundaries, decisions, compatibility, and traceability | [Architecture](docs/boilerplate/ARCHITECTURE.md), [feature record](docs/boilerplate/FEATURE_RECORD.md), [decision record](docs/boilerplate/DECISION_RECORD.md) |
+| Engineering and architecture | Maintainable implementation, controlled boundaries, stakeholder views, trade-offs, decisions, compatibility, and traceability | [Architecture](docs/boilerplate/ARCHITECTURE.md), [optional architecture review](docs/boilerplate/ARCHITECTURE_REVIEW.md), [feature record](docs/boilerplate/FEATURE_RECORD.md), [decision record](docs/boilerplate/DECISION_RECORD.md) |
 | Security, privacy, compliance, and data | Known threats and obligations, least privilege, safe data use, verified controls, and bounded claims | [Security policy](docs/boilerplate/SECURITY_POLICY.md), [risk register](docs/boilerplate/RISK_REGISTER.md), [optional compliance records](docs/compliance/README.md), [readiness assessment](docs/AiReady.md) |
 | Quality assurance | Risk-based coverage, reproducible checks, manual evaluation, defects, and evidence | [Testing contract](docs/boilerplate/TESTING.md), [optional AI-system evaluation](docs/boilerplate/AI_SYSTEM_EVALUATION.md), [verification plan](docs/boilerplate/VERIFICATION_PLAN.md), [traceability](docs/boilerplate/TRACEABILITY.md) |
-| Operations and reliability | Deployability, observability, capacity, support, backup, recovery, and effective verification | [Operations and recovery](docs/boilerplate/OPERATIONS_AND_RECOVERY.md), [operational quality](docs/product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md) |
+| Operations, reliability, and technology value | Deployability, observability, failure exercises, capacity, cost/value, resource efficiency, sustainability, support, backup, recovery, and effective verification | [Operations and recovery](docs/boilerplate/OPERATIONS_AND_RECOVERY.md), [technology cost and value](docs/boilerplate/TECHNOLOGY_COST_AND_VALUE.md), [operational quality](docs/product/ARCHITECTURE_AND_OPERATIONAL_QUALITY_ADDENDUM_TEMPLATE.md) |
 | Release authority | Candidate integrity, gate decisions, residual-risk acceptance, execution, and closure | [Release checklist](docs/boilerplate/RELEASE_CHECKLIST.md), [release readiness](docs/boilerplate/RELEASE_READINESS.md), [release evidence](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md) |
 
 See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for the complete responsibility and approval model.
@@ -196,6 +200,8 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 - **Bounded context without prescribed layout:** identify the minimum sufficient context, canonical patterns, ambiguity, and high-impact relationships for a change without imposing universal directories, file sizes, or dependency-depth limits.
 - **Fast feedback without evidence substitution:** provide focused, deterministic checks with actionable diagnostics, then complete every required higher-level and effective-environment verification.
 - **Least authority:** separate reading, editing, executing, communicating, deploying, migrating, deleting, and spending.
+- **Architecture as an evidence-led lifecycle:** keep stakeholder concerns, current baseline, target state, transition work, cross-quality trade-offs, and improvement actions explicit.
+- **Value and resource stewardship:** assess reliability, performance/capacity, technology cost/value, and sustainability separately; bound billable work and verify cleanup.
 - **Untrusted AI output:** validate generated code, commands, queries, configuration, markup, URLs, dependencies, and claims before use.
 - **Govern material AI inputs:** control prompts, evaluations, tools, model versions, and configurations that affect behaviour with proportionate traceability, testing, data protection, review, and change management.
 - **Exact candidate identity:** evidence and approval bind to immutable commits and artefacts, not moving branches or intended builds.
@@ -212,10 +218,10 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | --- | --- |
 | [Assessment](docs/AiReady.md) | Determines the maximum permitted AI operating level from current control evidence and hard blockers. |
 | [Guidance](docs/README.md#guidance) | Explains adoption, legacy discovery, responsibilities, evidence, lifecycle, and assessment methodology. |
-| [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture, verification, optional AI-system evaluation, risk, operations, and readiness. |
+| [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture and optional review, verification, optional AI-system evaluation, technology cost/value, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
 | [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
-| [Compliance-readiness checklists](docs/compliance/README.md) | Optional applicability-first security, privacy, assurance, AI, financial-crime, supply-chain, and jurisdiction records without implying certification or legal approval. |
+| [Compliance-readiness checklists](docs/compliance/README.md) | Optional applicability-first security, National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), privacy, assurance, AI, financial-crime, supply-chain, and jurisdiction records without implying certification or legal approval. |
 | [Release evidence](docs/releases/README.md) | Records exact candidates, approvals, execution, effective results, failures, rollback, and closure. |
 
 Template names and locations are examples within this repository. An adopting project may use existing issues, wikis, documents, service-management systems, pipelines, or release platforms as its authoritative records.
@@ -231,7 +237,8 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - requirements, design decisions, changes, risks, tests, and releases are traceable;
 - manual and effective-environment evaluation covers what automation cannot;
 - multi-repository dependencies are verified as an effective system;
-- recovery and incident responses are tested to the required level; and
+- recovery and incident responses are tested to the required level;
+- material architecture findings, technology cost/value, resource limits, sustainability effects, and cross-quality trade-offs are owned and evidenced where applicable; and
 - accountable people approve current evidence and residual risk.
 
 The [methodology](docs/guidance/methodology.md) defines scoring and evidence rules. AiReady is not a security certification, accessibility-conformance claim, regulatory approval, or guarantee of software quality.

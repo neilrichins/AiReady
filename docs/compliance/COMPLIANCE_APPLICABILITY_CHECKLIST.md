@@ -49,7 +49,7 @@ Footprint evidence and known omissions: `{{LINKS_LIMITATIONS_AND_OWNER}}`.
 | Trigger | Finding | Potential source or pack | State | Evidence | Decision owner |
 | --- | --- | --- | --- | --- | --- |
 | Personal data or identifiable user/device data | `{{FINDING}}` | General Data Protection Regulation (GDPR)/privacy | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
-| Security certification or customer security requirement | `{{FINDING}}` | International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27001, System and Organization Controls 2 (SOC 2), contract, or other | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
+| Security certification, customer requirement, cybersecurity profile, or improvement objective | `{{FINDING}}` | International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27001, System and Organization Controls 2 (SOC 2), National Institute of Standards and Technology Cybersecurity Framework (NIST CSF), contract, or other | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Payment account data or systems that can affect its security | `{{FINDING}}` | Payment Card Industry Data Security Standard (PCI DSS) or payment-scheme requirements | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | AI system development, provision, deployment, distribution, or use | `{{FINDING}}` | AI governance, sector law, or contract | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
 | Essential, important, financial, public, health, safety, or regulated service | `{{FINDING}}` | Sector and jurisdiction pack | `{{STATE}}` | `{{EVIDENCE}}` | `{{OWNER}}` |
@@ -88,6 +88,7 @@ assessments are discovery aids. They are not authoritative applicability evidenc
 | --- | --- | --- | --- | --- | --- |
 | ISO/IEC 27001 readiness or certification | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | SOC 2 readiness or examination | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| NIST CSF 2.0 current/target profile and improvement | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | GDPR or other privacy/data protection | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Secure software development | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Software supply chain and licences | `{{STATE}}` | `{{SCOPE_AND_SOURCE}}` | `{{RECORDS}}` | `{{OWNER}}` | `{{TRIGGER}}` |

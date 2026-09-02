@@ -46,7 +46,9 @@ not make unknown or changed AI behaviour equivalent to a verified result.
 
 Blast radius: `{{USERS_SYSTEMS_DATA_AND_ENVIRONMENTS}}`.
 
-Security, privacy, accessibility, data, compatibility, and recovery impact: `{{ASSESSMENT_AND_EVIDENCE}}`.
+Security, privacy, accessibility, data, reliability, performance/capacity,
+technology cost/value, sustainability, compatibility, and recovery impact:
+`{{ASSESSMENT_AND_EVIDENCE}}`.
 
 ## Retained and deferred checks
 
@@ -85,6 +87,7 @@ Decision: `{{APPROVE_REJECT_DEFER}}` candidate `{{EXACT_IDENTIFIER}}`.
 | Release/technical owner | `{{NAME}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 | Quality/verification owner | `{{NAME}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 | Risk/specialist owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
+| Finance/cost/value/sustainability owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{DECISION}}` | `{{TIMESTAMP}}` | `{{CONDITIONS}}` |
 
 ## Execution and post-release result
 
@@ -94,6 +97,8 @@ Decision: `{{APPROVE_REJECT_DEFER}}` candidate `{{EXACT_IDENTIFIER}}`.
 | Effective version/configuration | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Critical journey/problem resolution | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Monitoring/error signals | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
+| Cost/usage, resource-efficiency, and sustainability signals | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
+| Temporary-resource expiry and cleanup | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | AI behavioural baseline/provider drift | `{{EXPECTED_OR_NOT_APPLICABLE}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 | Data and dependent components | `{{EXPECTED}}` | `{{RESULT}}` | `{{TIMESTAMP}}` | `{{EVIDENCE}}` | `{{OWNER}}` | `{{ACTION}}` |
 

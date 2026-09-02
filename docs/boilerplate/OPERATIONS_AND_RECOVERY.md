@@ -21,9 +21,23 @@
 | Migrate/change state | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
 | Disable/roll back | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
 | Restore/recover | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
-| Delete/retire | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
+| Delete/retire temporary or permanent resources | `{{COMMAND}}` | `{{ENVIRONMENT}}` | `{{OWNER}}` | `{{ROLE}}` | `{{CONTROL}}` | `{{EFFECT}}` |
 
-Separate read-only preflight, build, deployment, migration, publication, deletion, and recovery unless an intentionally atomic procedure has been reviewed and verified. AI agents receive only the authority explicitly recorded for the operation.
+Separate read-only preflight, build, deployment, migration, publication,
+provisioning, scaling, deletion, and recovery unless an intentionally atomic
+procedure has been reviewed and verified. AI agents receive only the authority
+explicitly recorded for the operation. Permission to edit or execute does not
+imply permission to purchase, provision, scale, retain, or delete resources.
+
+### Resource, consumption, and spending controls
+
+| Resource/action/provider | Permitted account/environment | Quantity/run/duration limit | Budget or usage ceiling | Alert and stop threshold | Expiry/cleanup procedure and owner | Approver/evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ITEM}}` | `{{SCOPE}}` | `{{LIMIT}}` | `{{LIMIT_AND_CURRENCY_OR_UNIT}}` | `{{THRESHOLD_AND_RESPONSE}}` | `{{PROCEDURE_AND_OWNER}}` | `{{OWNER_AND_EVIDENCE}}` |
+
+Use current authoritative quota, usage, price, and account information when it
+affects the decision. Link material ongoing effects to the optional [technology
+cost and value record](TECHNOLOGY_COST_AND_VALUE.md).
 
 ## Environment and dependency readiness
 
@@ -33,7 +47,7 @@ Separate read-only preflight, build, deployment, migration, publication, deletio
 
 ## Preflight
 
-1. Confirm operator identity, environment, account/tenant/region/channel, approved candidate, digest, authority, maintenance window, expected cost, and current effective version.
+1. Confirm operator identity, environment, account/tenant/region/channel, approved candidate, digest, authority, maintenance window, approved budget and usage limits, expiry and cleanup responsibility, and current effective version.
 2. Run `{{READ_ONLY_PREFLIGHT_COMMAND}}` and retain safe evidence.
 3. Confirm dependencies, compatible component versions, quotas, capacity, feature flags, certificates, integrations, monitoring, support, and incident routes.
 4. Record required backups, snapshots, exports, restore access, and recovery identifiers without exposing secrets.
@@ -42,11 +56,15 @@ Separate read-only preflight, build, deployment, migration, publication, deletio
 
 ## Observability and operational acceptance
 
-| Signal/service-level indicator | Expected baseline/threshold | Source | Alert/response | Owner | Evidence/retention |
+| Signal/service-level indicator | Expected baseline/threshold | Source | Alert/decision response | Owner | Evidence/retention |
 | --- | --- | --- | --- | --- | --- |
 | `{{SIGNAL}}` | `{{EXPECTED}}` | `{{SOURCE}}` | `{{RESPONSE}}` | `{{OWNER}}` | `{{EVIDENCE}}` |
 
-Include user-visible availability, correctness, latency, error rates, saturation, queues/background work, dependency health, security signals, data integrity, cost, and support volume where applicable. Verify that alerts reach an available owner and contain enough safe context to act.
+Include user-visible and business outcomes, availability, correctness, latency,
+error rates, saturation, queues/background work, dependency health, security
+signals, data integrity, cost and usage anomalies, and support volume where
+applicable. Verify that alerts reach an available owner and contain enough safe
+context to act.
 
 ### AI service operation when applicable
 
@@ -98,6 +116,24 @@ Last successful backup restore or recovery exercise: `{{DATE_SCOPE_RESULT_AND_EV
 
 Written recovery instructions without a successful exercise are partial evidence. Record untested assumptions, unavailable environments, data-loss boundaries, and manual dependencies.
 
+## Operational readiness and failure exercises
+
+Use proportionate tabletop reviews, simulations, controlled fault injection,
+restores, failovers, and incident rehearsals to test material assumptions.
+Never introduce a production fault without explicit authority, safeguards, an
+abort condition, and an accountable operator.
+
+| Exercise ID/scenario | Method and environment | Hypothesis and expected signals | Safeguards/blast radius/abort | Actual response and recovery | Result/limitations | Actions/owner |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{ID_AND_SCENARIO}}` | `{{TABLETOP_SIMULATION_CONTROLLED_TEST_OR_OTHER}}` | `{{EXPECTED_BEHAVIOUR}}` | `{{CONTROLS}}` | `{{OBSERVED_BEHAVIOUR}}` | `{{PASS_FAIL_PARTIAL_BLOCKED_AND_LIMITS}}` | `{{ACTIONS_AND_OWNER}}` |
+
+Select exercises from the real risk model. Consider dependency or provider
+failure, exhausted quota or capacity, degraded network, credential or key
+failure, security incident, corrupt or unavailable data, delayed background
+work, monitoring failure, and partial multi-repository deployment where
+applicable. Preserve unexpected results and link corrective actions; a planned
+exercise is not evidence that the recovery path works.
+
 ## Incident and support response
 
 | Severity/condition | Detection/reporting route | Incident authority | Initial response | Communication owner | Escalation target |
@@ -114,8 +150,8 @@ Preserve diagnostics and a timeline without exposing restricted data. Feed incid
 
 Reference the authoritative repository ecosystem record. For a standalone project, record `NOT APPLICABLE`, the owner, and evidence that external packages, infrastructure, schemas, configuration, and deployment repositories were considered.
 
-## Operational gaps and exercises
+## Operational gaps and improvement backlog
 
-| ID | Gap or exercise | Risk/required outcome | Owner | Due/frequency | Result/evidence | Release effect |
+| ID | Gap or improvement | Risk/required outcome | Owner | Due/frequency | Result/evidence | Release effect |
 | --- | --- | --- | --- | --- | --- | --- |
 | `{{ID}}` | `{{ITEM}}` | `{{RISK_OR_OUTCOME}}` | `{{OWNER}}` | `{{DATE}}` | `{{RESULT}}` | `{{BLOCK_CONDITION_ALLOW}}` |

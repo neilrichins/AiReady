@@ -27,7 +27,10 @@
 - Architecture/source ownership: `{{BOUNDARY}}`
 - Security/privacy/data: `{{BOUNDARY}}`
 - Accessibility/user experience: `{{BOUNDARY}}`
-- Performance/capacity/cost: `{{BOUNDARY}}`
+- Reliability/recovery: `{{BOUNDARY}}`
+- Performance/capacity/resource efficiency: `{{BOUNDARY}}`
+- Technology cost/delivered value: `{{BOUNDARY}}`
+- Sustainability/resource lifecycle: `{{BOUNDARY}}`
 - Compatibility/migration: `{{BOUNDARY}}`
 - Artificial intelligence (AI) use and validation: `{{BOUNDARY_OR_NOT_APPLICABLE}}`
 

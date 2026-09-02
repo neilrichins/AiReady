@@ -36,6 +36,7 @@ risk, audit, security, privacy, procurement, quality, and release systems.
 | --- | --- |
 | An information security management system, customer request, procurement requirement, or certification objective | [International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27001 readiness](ISO_IEC_27001_READINESS_CHECKLIST.md) |
 | A customer assurance request or service-organisation examination | [System and Organization Controls 2 (SOC 2) readiness](SOC_2_READINESS_CHECKLIST.md) |
+| The organisation wants an outcome-based cybersecurity current/target profile, governance view, or improvement plan | [National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) 2.0 readiness](NIST_CSF_2_0_READINESS_CHECKLIST.md) |
 | Personal data, tracking, profiling, international transfers, or data-subject rights | [European Union General Data Protection Regulation (GDPR) and privacy](GDPR_AND_PRIVACY_CHECKLIST.md) |
 | Software is designed, built, acquired, maintained, or released | [Secure software development](SECURE_SOFTWARE_DEVELOPMENT_CHECKLIST.md) |
 | Third-party components, build services, packages, containers, models, datasets, vendors, or open-source licences | [Software supply chain](SOFTWARE_SUPPLY_CHAIN_CHECKLIST.md) |
@@ -66,6 +67,7 @@ These records do not establish or imply:
 - legal compliance;
 - ISO/IEC certification;
 - a System and Organization Controls (SOC) audit opinion;
+- NIST CSF implementation, alignment, conformity, certification, or a particular implementation tier;
 - Payment Card Industry Data Security Standard validation;
 - regulatory approval, registration, filing, or authorisation;
 - absence of money laundering, sanctions exposure, forced labour, security
