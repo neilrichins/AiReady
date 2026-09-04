@@ -14,6 +14,11 @@ Use the readiness-question form for interpretation and the framework-improvement
 - Distinguish planned work, implementation, verification, release approval, and actual release results.
 - Update all linked templates when a shared status, control, evidence rule, or release gate changes.
 - Preserve evidence limitations and do not turn a target into a claim of achievement.
+- For third-party research or guidance, use an official source, identify its
+  publication type, preserve its scope and limitations, record material
+  counter-evidence, and meet attribution and licensing requirements.
+- Keep quotations brief and exact. Do not imply that a cited author,
+  institution, publisher, or framework endorses or validates AiReady.
 - Do not include private project examples, credentials, personal data, private prompts, customer information, or production identifiers.
 
 ## Review

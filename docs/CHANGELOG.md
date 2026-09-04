@@ -6,6 +6,13 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an annotated research and further-reading guide connecting
+  peer-reviewed evidence and established engineering references to bounded
+  AiReady premises, with counter-evidence, limitations, attribution, licensing,
+  maintenance, and non-endorsement controls.
+- Added a dedicated AI adoption guide containing reusable read-only assessment
+  and separately authorised remediation prompts, human decision boundaries,
+  multi-repository scope, and review requirements.
 - Added an explicit readiness hard blocker, scored control, discovery baseline,
   agent boundary, task evidence table, and adoption guidance requiring verified
   AI access to every current authoritative requirement applicable to its work,
@@ -41,6 +48,10 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Reworked the root README for progressive disclosure with a plain-language
+  introduction, five-step operating explanation, technical account of why
+  structured context and verification help AI-assisted coding, a bounded
+  third-party quotation, and links to detailed adoption and research guidance.
 - Added the mechanical comprehensibility and agent efficiency category to the
   readiness-question issue form and pinned documentation-workflow actions to
   reviewed immutable commits.

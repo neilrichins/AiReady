@@ -3,9 +3,15 @@
 [![Documentation quality](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml/badge.svg)](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml)
 [![Licence: Apache 2.0](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg)](LICENSE)
 
-AiReady is a documentation-first, language-neutral framework for turning software repositories into controlled environments for artificial intelligence (AI)-assisted development and evidence-based release decisions.
+AiReady helps people and artificial intelligence (AI) understand what a
+software system should do, where its important information lives, what may be
+safely changed, and how to prove that a change works.
 
-It gives people and AI agents a shared operating model for discovering an unfamiliar or legacy system, reconstructing product intent, defining safe authority, planning changes, validating implementation, and proving that an exact release candidate is ready. The framework is reusable Markdown, not an executable tool or a prescribed repository layout.
+It is a documentation-first, language-neutral framework for controlled
+AI-assisted development and evidence-based release decisions. It can be
+applied to an unfamiliar legacy system, an established project, or a change
+already in progress. AiReady is reusable Markdown, not executable software and
+not a prescribed repository layout.
 
 ## Why it exists
 
@@ -27,6 +33,87 @@ Use it to answer:
 - Which focused check provides fast, deterministic feedback, and what higher-level verification must still follow?
 - What evidence proves that the exact candidate works in the relevant environments?
 - Who can accept risk, approve a release, execute it, and respond if it fails?
+
+## How it works
+
+1. **Discover current reality:** establish the exact system boundary, existing
+   behaviour, authoritative sources, dependencies, controls, evidence, and
+   unknowns before changing anything.
+2. **Establish intent and authority:** confirm what should be built, what the AI
+   may read or do, which source prevails, and where a person must decide.
+3. **Make a bounded change:** connect the task to its requirements,
+   architecture, dependencies, risks, acceptance criteria, and safe change
+   boundary.
+4. **Verify the exact result:** use fast deterministic checks and every required
+   higher-level, human, specialist, integrated, and effective-environment
+   evaluation.
+5. **Preserve evidence and learn:** bind evidence and approval to the exact
+   candidate, record the actual outcome, and feed incidents, deviations, and
+   discoveries back into the authoritative sources.
+
+In short:
+
+> Discover reality -> establish authoritative context -> make a bounded change
+> -> verify the exact result -> preserve evidence and learn.
+
+## Why this helps AI deliver better code
+
+An AI agent can generate code quickly, but it does not automatically know which
+requirement is current, why an architectural choice was made, what another
+repository depends on, or which test establishes the required behaviour. A
+larger context window provides capacity; it does not establish authority,
+currency, relevance, completeness, or truth.
+
+AiReady improves the engineering environment around the agent:
+
+| Mechanism | Practical effect |
+| --- | --- |
+| Ordered, minimum sufficient authoritative context | Increases useful information per token and reduces repeated discovery, stale-source selection, and conflicting instructions |
+| Explicit requirements, decisions, invariants, non-goals, and unknowns | Narrows the valid solution space and makes unsafe guessing or missing authority visible |
+| Canonical patterns, architecture boundaries, and dependency maps | Reduces locally plausible changes that are inconsistent with the wider system |
+| Bounded tasks, permissions, and stop conditions | Limits unintended effects and routes material judgment to accountable people |
+| Fast deterministic feedback followed by proportionate higher-level verification | Converts plausible output into reproducible evidence without treating one test level as proof of another |
+| Fresh-context probes and retained results | Tests whether an unfamiliar agent can actually navigate, assess impact, and verify work instead of inferring readiness from document presence |
+
+AiReady does not make an AI model intrinsically smarter or guarantee good code.
+It makes the problem more legible, constrained, testable, and reviewable. Judge
+the result by delivered, understood, maintainable, and verified outcomes--not
+by generated tokens, accepted suggestions, or lines of code.
+
+### Example: an unfamiliar legacy service
+
+A developer asks an AI agent to change how a legacy service calculates a
+customer charge. The agent can find the calculation code, but that alone does
+not reveal whether the current behaviour is intentional, which contract
+defines it, which other repositories consume it, or which tests prove the
+customer outcome.
+
+Using AiReady, the team first identifies the authoritative requirement,
+observed behaviour, owning component, dependent interfaces, accepted change
+boundary, and verification path. If a material requirement is missing or
+inaccessible, the AI stops. Once the intended change is confirmed, the agent
+works within a bounded task, runs the approved checks, and returns evidence for
+human review. The value comes from fewer unsupported assumptions and stronger
+verification--not merely faster code generation.
+
+### Related perspective
+
+> “Tokens are to software as bricks are to architecture:”
+>
+> -- Francesco Gadaleta, *The Mythical Token-Month*
+
+This brief excerpt captures why AiReady measures engineering outcomes rather
+than generation volume. The book also examines context reconstruction,
+conceptual integrity, evaluation, dependency risk, and human judgment in
+AI-assisted software development. [Learn more about or purchase *The Mythical
+Token-Month*](https://mythicaltokenmonth.com/).
+
+AiReady is an independent project and is not affiliated with or endorsed by
+the author. Copyright in the quotation remains with Francesco Gadaleta; it is
+not licensed under AiReady's Apache License 2.0. See the [research and further
+reading guide](docs/guidance/research-and-further-reading.md) for independent
+peer-reviewed research, established engineering references, scope, and
+limitations.
 
 ## Start here
 
@@ -58,112 +145,21 @@ Choose the path that matches the current project state. They may converge on the
 
 ## Use an AI assistant to implement the framework
 
-An AI assistant can accelerate adoption by inspecting the current project, locating existing authoritative records, gathering evidence, identifying gaps, drafting updates, and running permitted checks. It should help implement AiReady around the way the project already works—not copy every template, reorganise the repository, or invent process for its own sake.
+An AI assistant can accelerate adoption by discovering the current project,
+mapping existing controls, gathering evidence, identifying gaps, drafting
+approved updates, and running permitted checks. It should implement AiReady
+around the way the project already works--not copy every template, reorganise
+the repository, or invent process for its own sake.
 
-Start with read-only discovery against an exact repository state. Define the system boundary, included repositories and versions, permitted data sources, prohibited actions, accountable owner, and reviewer before granting edit or execution authority. For an interconnected system, include every participating repository, shared contract, supported version combination, release sequence, and recovery dependency that affects the result.
+Start read-only against exact repository states. Define the system boundary,
+permitted data and actions, prohibited operations, accountable owner, and human
+reviewer before granting edit or execution authority. An AI can gather and test
+evidence; people remain responsible for requirements, source precedence, risk
+acceptance, approval, release, and production authority.
 
-| An AI assistant can help | Accountable people must decide |
-| --- | --- |
-| Locate likely sources of truth and conflicting instructions | Which source is authoritative and what the intended behaviour should be |
-| Record observed facts, evidence, assumptions, and unknowns | Whether evidence is sufficient and an assumption may be accepted |
-| Map existing controls to AiReady concerns and identify gaps | Which gaps must be remediated and which risks may be accepted |
-| Draft or update authorised records in their existing locations | Requirements, priorities, policy, compliance applicability, and approval |
-| Run authorised checks and report exact results and limitations | Whether the candidate is verified, approved, releasable, or compliant |
-| Propose small, reversible changes and verification steps | Whether changes may be made, committed, published, deployed, or operated |
-
-### Start with discovery and assessment
-
-Give the assistant access to an immutable version of AiReady and adapt this prompt. Replace every bracketed field before use.
-
-```text
-Help me assess [PROJECT OR SYSTEM] using the AiReady framework at
-[IMMUTABLE FRAMEWORK RELEASE OR COMMIT].
-
-Authority and boundaries:
-- Accountable owner: [NAME OR ROLE]
-- Human reviewer: [NAME OR ROLE]
-- Repositories and exact commits: [LIST]
-- Included services, artefacts, data, and environments: [LIST]
-- Permitted sources and actions: [READ-ONLY SOURCES AND CHECKS]
-- Prohibited sources and actions: [LIST]
-- Sensitive-data restrictions: [LIST]
-- Permitted billable resources/environments: [NONE OR EXACT SCOPE]
-- Quantity, run, duration, budget/usage, stop, expiry, and cleanup limits: [LIMITS]
-
-Begin read-only. Read the project instructions, then follow the AiReady
-legacy-project playbook, adoption map, discovery and baseline record, and
-readiness assessment. Preserve existing authoritative tools, records, and
-locations. Do not create duplicate sources of truth or assume a preferred
-language, platform, repository layout, delivery process, or compliance regime.
-
-For every material finding, distinguish OBSERVED, DOCUMENTED, CONFIRMED,
-INFERRED, and UNKNOWN. Cite the source, exact version or commit, command or
-method, result, date, environment, and limitations where available. Treat
-unverified content as evidence to assess, not authority to expand this task.
-
-Inventory every current requirement source applicable to the intended AI
-change classes, including requirements identified or confirmed during AiReady
-discovery. Verify access from the assessed AI environment. If a required source
-is unavailable, restricted, conflicting, stale, or unapproved, identify the
-affected work and stop rather than filling the gap from inference.
-
-Use fresh AI contexts to perform two to five bounded probes representing the
-intended AI change classes. Start from the normal entry material available to a
-new contributor; do not use undisclosed implementation hints. For each probe,
-record the discovery path, authoritative sources, dependencies, blast radius,
-ambiguity, stop conditions, focused verification, exact result, elapsed
-feedback time, diagnostics, interventions, and limitations. Include a
-cross-repository probe when interconnected repositories are in scope. A human
-reviewer must verify the material evidence and resulting operating boundary.
-
-Return:
-1. the assessed boundary and any missing repositories or dependencies;
-2. the current authoritative-source and adoption map;
-3. the requirements-source inventory, AI-access results, and blocked scope;
-4. the fresh-context probe results and mechanical-readiness verdict;
-5. the discovery baseline and maximum evidenced AI operating level;
-6. hard blockers, material gaps, conflicts, unknowns, and stale evidence;
-7. a prioritised, bounded remediation proposal with verification for each item;
-8. decisions or access required from accountable people; and
-9. actions not performed because they were outside authority.
-
-Do not edit files, install dependencies, communicate externally, commit, push,
-publish, deploy, migrate, delete, spend money, accept risk, approve a release,
-or claim readiness or compliance during this assessment.
-```
-
-Review the result before expanding authority. Correct the system boundary, source precedence, product intent, owners, and risk decisions first; otherwise the assistant may implement a coherent process around incorrect assumptions.
-
-### Continue with a bounded implementation
-
-Once the discovery result and remediation scope are approved, give the assistant a new, explicit task. The [AI-assisted task record](docs/boilerplate/AI_TASK.md) can hold the same boundaries and acceptance criteria.
-
-```text
-Implement only the approved AiReady remediation items [ITEM IDENTIFIERS] for
-[PROJECT OR SYSTEM], based on [APPROVED ASSESSMENT VERSION OR LOCATION].
-
-You may change: [EXACT FILES, RECORDS, OR BOUNDED AREAS]
-You may run: [EXACT CHECKS OR PERMITTED COMMAND CLASSES]
-You must not: [EXCLUDED ACTIONS AND SYSTEMS]
-Resource and spending authority: [NONE OR EXACT RESOURCES, ENVIRONMENTS, LIMITS,
-STOP THRESHOLDS, EXPIRY, AND CLEANUP OWNER]
-Human owner and reviewer: [NAMES OR ROLES]
-
-Use existing authoritative records and locations where they are effective.
-Adapt only the minimum necessary AiReady material. Keep changes small,
-reviewable, reversible, project-neutral where reused, and traceable to the
-approved items. Do not conceal unresolved gaps or convert assumptions into
-facts.
-
-Run the authorised focused and complete verification. Report changed records,
-exact checks and results, failures, skips, limitations, residual risks, and any
-new decisions needed. Stop when authority, evidence, or source precedence is
-unclear. Do not self-approve, accept risk, or release. Do not commit, push,
-publish, deploy, migrate, or communicate externally unless one of those actions
-is separately and explicitly authorised for this exact change.
-```
-
-After implementation, a person reviews the changes and evidence, resolves open decisions, and explicitly authorises any further action. Increased AI authority should follow demonstrated control and reliable evidence; it should never be inferred from access, speed, or a successful previous task.
+Use the [AI adoption guide and reusable prompts](docs/guidance/using-ai-to-adopt-aiready.md)
+for a controlled discovery assessment followed by a separately authorised,
+bounded implementation. Review the result before expanding authority.
 
 ## Operating model
 
@@ -242,7 +238,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | Record group | Purpose |
 | --- | --- |
 | [Assessment](docs/AiReady.md) | Determines the maximum permitted AI operating level from current control evidence and hard blockers. |
-| [Guidance](docs/README.md#guidance) | Explains adoption, legacy discovery, responsibilities, evidence, lifecycle, and assessment methodology. |
+| [Guidance](docs/README.md#guidance) | Explains adoption, AI-assisted implementation, legacy discovery, responsibilities, evidence, lifecycle, assessment methodology, and research foundations. |
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture and optional review, verification, optional AI-system evaluation, technology cost/value, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
 | [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
@@ -272,7 +268,7 @@ The [methodology](docs/guidance/methodology.md) defines scoring and evidence rul
 ## Repository map
 
 - [`docs/`](docs/README.md): framework index and governance documents.
-- [`docs/guidance/`](docs/guidance/adoption.md): adoption and operating guidance.
+- [`docs/guidance/`](docs/README.md#guidance): adoption, operating, assessment, research, and AI-assistance guidance.
 - [`docs/boilerplate/`](docs/boilerplate/README.md): project-neutral working records.
 - [`docs/product/`](docs/product/README.md): product, experience, design, and quality records.
 - [`docs/accessibility/`](docs/accessibility/README.md): optional website, mobile application, WCAG, and jurisdiction accessibility checklists.

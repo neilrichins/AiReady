@@ -20,11 +20,13 @@ This is the complete framework index. The directories organise AiReady itself; t
 ## Guidance
 
 - [Adoption guide](guidance/adoption.md)
+- [Using AI to adopt AiReady](guidance/using-ai-to-adopt-aiready.md)
 - [Legacy-project playbook](guidance/legacy-project-playbook.md)
 - [Roles and decision rights](guidance/roles-and-decision-rights.md)
 - [Document lifecycle](guidance/document-lifecycle.md)
 - [Assessment methodology](guidance/methodology.md)
 - [Control catalogue](guidance/control-catalogue.md)
+- [Research and further reading](guidance/research-and-further-reading.md)
 
 ## Working boilerplate
 

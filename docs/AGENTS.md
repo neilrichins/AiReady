@@ -21,6 +21,8 @@ Maintain AiReady as a project-neutral, documentation-first framework for control
 - `AiReady.md` owns AI coding-readiness assessment.
 - `guidance/legacy-project-playbook.md` and `boilerplate/DISCOVERY_AND_BASELINE.md` own safe legacy discovery and baseline rules.
 - `guidance/roles-and-decision-rights.md` owns cross-functional accountability and reserved human decisions.
+- `guidance/using-ai-to-adopt-aiready.md` owns reusable prompts and authority boundaries for AI-assisted assessment and remediation of an adopting project.
+- `guidance/research-and-further-reading.md` owns the annotated research and practitioner-source map, evidence limitations, and third-party citation boundaries.
 - `product/` owns project-neutral product-intent, experience, design, and quality-requirement examples.
 - `accessibility/` owns optional website, mobile application, WCAG result, and jurisdiction accessibility checklists and their claims boundaries.
 - `compliance/` owns optional applicability, obligation, control, audit-evidence, framework-readiness, sector, and compliance-claim records. It must not present readiness as certification, assurance, legal advice, regulatory approval, or a universal project requirement.
@@ -45,6 +47,9 @@ Maintain AiReady as a project-neutral, documentation-first framework for control
 6. Keep source precedence, reading order, delivery checkpoints, verification levels, and command-result evidence consistent across affected records.
 7. Review `git diff --check`, repository status, and the complete diff before pushing.
 8. Confirm that no source-project or private information is present.
+9. For third-party references, verify the official source, publication status,
+   claim scope, limitations, attribution, and licence before adding quotations
+   or derived material.
 
 ## Validation
 

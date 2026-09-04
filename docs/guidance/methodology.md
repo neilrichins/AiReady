@@ -155,6 +155,12 @@ A framework mapping or provider assessment is an input to accountable review,
 not proof of conformity, certification, complete architecture quality, or
 release readiness.
 
+The [research and further-reading guide](research-and-further-reading.md)
+records peer-reviewed studies and established engineering references that are
+consistent with selected AiReady premises. Their findings, counter-evidence,
+and limitations provide context; they do not evaluate AiReady or replace
+evidence from the adopting project's exact system.
+
 For SLSA, keep Source and Build track results separate and identify the exact
 track, level, version, scope, producer, platform, consumer policy, and evidence.
 For the Open Source Project Security Baseline, identify the exact version,

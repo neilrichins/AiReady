@@ -6,6 +6,10 @@ Adopt concerns, not a directory structure. Begin with the project's existing rep
 
 If the current system cannot be trusted or reproduced, begin with the [legacy-project playbook](legacy-project-playbook.md) and [discovery baseline](../boilerplate/DISCOVERY_AND_BASELINE.md). Do not fill templates from assumptions.
 
+An AI assistant may help apply this guide within explicit authority. Use the
+[AI adoption guide and reusable prompts](using-ai-to-adopt-aiready.md) to keep
+read-only assessment separate from approved remediation.
+
 ## Assessment mode and change authority
 
 A request to assess, audit, score, compare, or report does not authorise project
