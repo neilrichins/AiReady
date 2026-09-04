@@ -22,6 +22,23 @@ When sources conflict, apply this precedence: `{{PRECEDENCE_RULE}}`. Do not
 silently choose the newest, nearest, or most convenient document. Record the
 conflict and obtain the decision required by its impact.
 
+### Requirements access boundary
+
+The AI must be able to access every current authoritative requirement that can
+affect its authorised change. Include requirements identified or confirmed
+during AiReady discovery and requirements held outside the repository, such as
+approved product, design, security, privacy, accessibility, contractual,
+compliance, operational, recovery, and shared-system sources.
+
+| Requirement source/version | Applicable change classes, repositories, or components | Approved AI access path | Precedence and currency | Restricted, missing, conflicting, or unapproved content | Stop condition and owner |
+| --- | --- | --- | --- | --- | --- |
+| `{{SOURCE_AND_VERSION}}` | `{{SCOPE}}` | `{{ACCESS_METHOD_OR_UNAVAILABLE}}` | `{{RULE_AND_STATUS}}` | `{{GAP_OR_NONE}}` | `{{ACTION_AND_OWNER}}` |
+
+Do not infer permission from a human-accessible link or broaden access to pass
+this check. When the AI cannot access a necessary authoritative requirement or
+an approved sufficient representation, the affected work is outside its
+authority and must stop.
+
 ### Context layers and activation
 
 Use the project's existing instruction mechanisms. The entries below describe
@@ -99,6 +116,8 @@ for rejecting a recurring convention where that prevents it being proposed again
 - Maximum quantities, runs, duration, budget, or usage: `{{LIMITS_OR_NONE}}`
 - Cost/usage alert, stop threshold, expiry, and cleanup owner: `{{CONTROLS_OR_NONE}}`
 - Repository access: read `{{REPOSITORIES}}`; write `{{REPOSITORIES}}`; operate `{{REPOSITORIES_OR_NONE}}`.
+- Requirements accessible to the AI: `{{AUTHORITATIVE_SOURCES_VERSIONS_AND_ACCESS_METHODS}}`.
+- Requirements unavailable or restricted from the AI and affected work: `{{SOURCES_AND_BLOCKED_SCOPE_OR_NONE}}`.
 - Stop and escalate when: `{{AMBIGUITY_SECURITY_PRIVACY_DATA_LOSS_COST_OR_OTHER_CONDITIONS}}`
 
 Authority not explicitly granted is prohibited. Permission to edit, execute, or
@@ -186,7 +205,7 @@ exception; it is not silently ignored.
 
 1. Confirm identity, repository status, local changes, scope, authority, and stop conditions.
 2. Link work to an issue and restate the outcome, acceptance criteria, constraints, assumptions, and exclusions.
-3. Locate the minimum sufficient authoritative context, canonical patterns, high-impact relationships, and product, design, architecture, security/data, testing, operations, repository-ecosystem, and change-impact sources applicable to the change.
+3. Locate and confirm access to every current authoritative requirement applicable to the change, including requirements identified or confirmed during AiReady discovery, then locate the minimum sufficient architecture, security/data, testing, operations, repository-ecosystem, change-impact context, canonical patterns, and high-impact relationships.
 4. Inspect current implementation and history before editing; preserve unrelated work and source/generated boundaries.
 5. Search for an applicable canonical implementation or contract, then propose the smallest coherent, reversible approach and record any intentional variation or material decision.
 6. Update implementation, tests, fixtures, documentation, observability, and recovery together where affected.

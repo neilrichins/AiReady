@@ -67,6 +67,24 @@ change which instructions, tests, compatibility checks, and release controls app
 | Release history/process | `{{SOURCE_OR_MISSING}}` | `{{OWNER}}` | `{{STATUS}}` | `{{QUALITY}}` | `{{FINDING}}` | `{{ACTION}}` |
 | AI instructions/authority | `{{SOURCE_OR_MISSING}}` | `{{OWNER}}` | `{{STATUS}}` | `{{QUALITY}}` | `{{FINDING}}` | `{{ACTION}}` |
 
+## Requirements sources and AI access baseline
+
+Inventory every source of requirements that can affect the intended AI change
+classes, including requirements discovered, reconstructed, or confirmed during
+AiReady adoption. Do not treat observed behaviour or an AI inference as an
+approved requirement without accountable owner confirmation.
+
+| Requirement source and version | Requirement types and applicable scope | Authority, owner, currency, and precedence | Approved AI access method | Access tested from the assessed AI environment | Missing, restricted, conflicting, or unapproved content | Affected work and stop condition | Evidence label/source | Owner/action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `{{SOURCE_AND_VERSION}}` | `{{FUNCTIONAL_PRODUCT_DESIGN_QUALITY_SECURITY_PRIVACY_ACCESSIBILITY_LEGAL_CONTRACTUAL_COMPLIANCE_COMPATIBILITY_DATA_OPERATIONS_RECOVERY_RELEASE_OR_OTHER_AND_SCOPE}}` | `{{AUTHORITY_AND_STATUS}}` | `{{ACCESS_METHOD_OR_UNAVAILABLE}}` | `{{PASS_FAIL_NOT_RUN_AND_EVIDENCE}}` | `{{GAP_OR_NONE}}` | `{{BOUNDARY_AND_ACTION}}` | `{{LABEL_AND_SOURCE}}` | `{{OWNER_AND_ACTION}}` |
+
+A human-readable link is insufficient when the approved AI tool cannot access
+it. Do not broaden data or system access merely to complete the assessment. If
+an approved authoritative representation cannot safely provide the necessary
+requirement, exclude and block the affected AI work. For interconnected
+repositories, include shared and system-level requirement sources outside the
+repository being edited.
+
 ## AI instruction and context currency
 
 | Instruction source/scope | Material claim, command, path, or rule checked | Current authoritative evidence | Assessed commit/version/date | Result | Risk or work affected | Owner/action |

@@ -16,8 +16,10 @@ body:
         - Roles and decision rights
         - Ownership and authority
         - Repository context
+        - Mechanical comprehensibility and agent efficiency
         - Architecture and source ownership
         - Multi-repository coordination
+        - Requirements and AI access
         - Task traceability
         - Reproducibility
         - Tests and quality gates

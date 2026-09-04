@@ -9,7 +9,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | Boilerplate | Purpose |
 | --- | --- |
 | [`ADOPTION_MAP.md`](ADOPTION_MAP.md) | Map concerns to existing project records and decide what to reuse, improve, merge, or create. |
-| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, current state, instruction currency, context locality, fresh-context mechanical-readiness probes, changeability, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
+| [`DISCOVERY_AND_BASELINE.md`](DISCOVERY_AND_BASELINE.md) | Evidence-labelled system classification, requirements sources and AI access, current state, instruction currency, context locality, fresh-context mechanical-readiness probes, changeability, observed versus intended behaviour, reproducibility, risk, and authorised remediation boundary for an unfamiliar or legacy system. |
 | [`PROJECT_README.md`](PROJECT_README.md) | Project landing-page boilerplate that links to existing authoritative records. |
 | [`PROJECT_DEFINITION.md`](PROJECT_DEFINITION.md) | Purpose, scope, ownership, outcomes, constraints, environments, and unknowns. |
 | [`REQUIREMENTS.md`](REQUIREMENTS.md) | Versioned, derived, testable requirements with distinct implementation, verification, validation, evidence, and change history. |
@@ -23,7 +23,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 
 | Boilerplate | Purpose |
 | --- | --- |
-| [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Layered and task-bounded context, canonical patterns, objectives, invariants, authority, instruction currency, governed convention improvement, change impacts, stop conditions, and workflow for AI tools. |
+| [`AGENT_INSTRUCTIONS.md`](AGENT_INSTRUCTIONS.md) | Layered and task-bounded context, requirements access, canonical patterns, objectives, invariants, authority, instruction currency, governed convention improvement, change impacts, stop conditions, and workflow for AI tools. |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | Components, context locality, change-amplification hotspots, canonical concepts, contracts, failure behaviour, data flow, trust boundaries, source ownership, and AI boundaries. |
 | [`ARCHITECTURE_REVIEW.md`](ARCHITECTURE_REVIEW.md) | Optional point-in-time architecture review using selected internal or external lenses, stakeholder views, baseline/target/transition states, cross-quality trade-offs, findings, and owned improvement actions. |
 | [`REPOSITORY_ECOSYSTEM.md`](REPOSITORY_ECOSYSTEM.md) | Repository topology, delivery units, reusable dependency baseline, interconnected components, contracts, compatibility, change-only review, coordination, and recovery. |
@@ -31,7 +31,7 @@ Start with [`ADOPTION_MAP.md`](ADOPTION_MAP.md). It prevents duplicate documents
 | [`RISK_REGISTER.md`](RISK_REGISTER.md) | Active risks, verified controls, treatments, and time-bounded acceptance. |
 | [`SECURITY_POLICY.md`](SECURITY_POLICY.md) | Reporting, AI data boundaries, permissions, incidents, and supply chain. |
 | [`CONTRIBUTION_GUIDE.md`](CONTRIBUTION_GUIDE.md) | Contribution, quality, review, and documentation expectations. |
-| [`AI_TASK.md`](AI_TASK.md) | Bounded AI-assisted task definition independent of issue-tracker platform. |
+| [`AI_TASK.md`](AI_TASK.md) | Bounded AI-assisted task definition with applicable-requirement access evidence, independent of issue-tracker platform. |
 | [`CHANGE_REVIEW.md`](CHANGE_REVIEW.md) | Outcome, scope, change-impact and high-blast-radius coverage, canonical-pattern and contract review, risk, AI involvement, and verification. |
 
 ## Verification and release

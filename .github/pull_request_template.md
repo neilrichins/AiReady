@@ -18,6 +18,7 @@ Describe the problem solved, intended user or operational outcome, and linked is
 - [ ] Claims remain within the framework's certification and evidence boundaries.
 - [ ] Boilerplate does not prescribe an adopting project's directories, language, tools, or platform.
 - [ ] AI activity is not presented as a substitute for accountable human approval or risk acceptance.
+- [ ] Third-party GitHub Actions remain pinned to reviewed immutable commits with accurate version comments.
 
 ## Verification
 

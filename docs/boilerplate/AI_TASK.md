@@ -66,6 +66,16 @@ Source precedence when records conflict: `{{RULE_OR_LINK}}`.
 
 Governing decision records: `{{IDENTIFIERS_OR_NONE}}`.
 
+### Applicable requirements and AI access
+
+| Requirement/source version | Why applicable | Approved AI access path | Access and currency verified | Restriction, conflict, or unknown | Stop condition/owner |
+| --- | --- | --- | --- | --- | --- |
+| `{{REQUIREMENT_ID_SOURCE_AND_VERSION}}` | `{{SCOPE_OR_TRACE}}` | `{{ACCESS_METHOD_OR_UNAVAILABLE}}` | `{{PASS_FAIL_AND_EVIDENCE}}` | `{{GAP_OR_NONE}}` | `{{ACTION_AND_OWNER}}` |
+
+Include requirements identified or confirmed through AiReady discovery. Do not
+start affected implementation when the AI lacks a necessary authoritative
+requirement or an approved, sufficient representation of restricted content.
+
 ## Invariants and compatibility
 
 | Invariant, boundary, or contract | Required unchanged behaviour | Affected component/repository | Verification | Change authority |

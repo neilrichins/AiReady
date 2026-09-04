@@ -15,6 +15,7 @@ Suggested file names in AiReady are not required. Storage location, tooling, and
 | AI authority and agent instructions | `{{LINK_LOCATION_OR_MISSING}}` | `{{ADEQUATE_PARTIAL_MISSING_NOT_APPLICABLE}}` | `{{REUSE_IMPROVE_MERGE_CREATE_NOT_APPLICABLE}}` | `{{LINK_OR_LOCATION}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` |
 | Project purpose, scope, ownership, constraints | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Product evidence, users, outcomes, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Authoritative requirements sources, AI access, restrictions, and blocked scope | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Experience, design, content, accessibility, and evaluation | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Website/mobile accessibility standards, evaluation, jurisdiction, statements, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Optional compliance applicability, obligations, controls, audit evidence, framework packs, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

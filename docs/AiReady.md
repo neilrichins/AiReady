@@ -51,6 +51,7 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | Untrusted AI output is deterministically validated before it can become executable code, commands, queries, markup, URLs, configuration, or infrastructure | `{{STATUS}}` | `{{EVIDENCE}}` |
 | The repository has a defined source-of-truth and generated-file boundary | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Authoritative instructions define reading order, source precedence, active scope, non-goals, and escalation for material conflicts | `{{STATUS}}` | `{{EVIDENCE}}` |
+| Every current approved requirement applicable to authorised AI work, including requirements confirmed through AiReady discovery, is available through an approved authoritative source; requirements that are unavailable, restricted, or identified but not yet confirmed remain visible and block the affected work | `{{STATUS}}` | `{{EVIDENCE}}` |
 | A representative fresh-context probe can trace a bounded change from normal starting material to authoritative implementation, affected dependencies, and a safe verification path | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Applicable legal, regulatory, contractual, licensing, and accessibility obligations are known and owned | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Multi-repository changes have coordinated compatibility validation, release sequencing, partial-failure handling, and rollback | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
@@ -121,6 +122,7 @@ Area score: `{{X_OF_10}}`
 | Work begins with a problem, outcome, acceptance criteria, and constraints | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Approved product and design intent is separated from observed legacy behaviour, assumptions, defects, and unknowns | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Requirements use stable identities and versions, preserve source and derivation, and distinguish implementation, verification, validation, and release evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| The AI can access every current authoritative requirement applicable to the change, including requirements confirmed through AiReady discovery; newly identified but unconfirmed requirements and unavailable, restricted, conflicting, or stale sources constrain scope and trigger a stop | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Changes link to an issue or decision record and remain reviewable | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | A current change-impact source identifies related implementation, contracts, generated artefacts, tests, documentation, operations, support, release, and recovery work | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Pull requests require risk, verification, documentation, and limitation evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |
@@ -128,6 +130,35 @@ Area score: `{{X_OF_10}}`
 | Cross-repository work uses one change-set identifier, names every affected repository, and defines merge/release order | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
 Area score: `{{X_OF_10}}`
+
+#### Requirements access evidence
+
+Requirements may be held in repositories, product records, design systems,
+issue trackers, contract or policy stores, architecture decisions, operational
+runbooks, compliance records, or other approved systems. File presence or a
+human-accessible link does not prove that the approved AI tool can retrieve and
+use the requirement within its authorised data and access boundary.
+
+Include functional, product, experience, design, quality, security, privacy,
+accessibility, legal, contractual, compliance, compatibility, data,
+operational, recovery, and release requirements that can affect the authorised
+change classes. Include requirements discovered, reconstructed, or confirmed
+during AiReady adoption. A discovered requirement is not approved intent until
+the accountable owner confirms it; until then, preserve it as an explicit
+unknown or stop condition.
+
+| Requirement source and version | Requirement types and applicable scope | AI access path and permission | Authority, currency, and precedence verified | Restricted, missing, conflicting, or unapproved content | Result and evidence | Owner/action |
+| --- | --- | --- | --- | --- | --- | --- |
+| `{{SOURCE_AND_VERSION}}` | `{{TYPES_CHANGE_CLASSES_REPOSITORIES_AND_COMPONENTS}}` | `{{APPROVED_ACCESS_METHOD_OR_UNAVAILABLE}}` | `{{CHECK_AND_RESULT}}` | `{{GAP_OR_NONE}}` | `{{PASS_FAIL_AND_EVIDENCE}}` | `{{OWNER_AND_ACTION}}` |
+
+Requirements access result: `{{PASS_FAIL}}`.
+
+Do not grant broader access merely to pass this check. When a requirement
+cannot be exposed to an AI tool, provide an approved, authoritative and
+sufficiently detailed representation if the owner and data controls permit it.
+Otherwise exclude and block the affected work. For interconnected repositories,
+include system-level requirements, shared contracts, supported combinations,
+and requirements held outside the repository being edited.
 
 ### 5. Reproducible development environment — 10 points
 
@@ -351,6 +382,7 @@ Record commands and results without secrets, private prompts, personal data, or 
 | Deployment/recovery checks | `{{PASS_FAIL_NOT_RUN_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 | Cross-repository contract and compatibility checks | `{{PASS_FAIL_NOT_RUN_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 | Mechanical comprehensibility and agent efficiency probes | `{{EFFECTIVE_FRICTION_BLOCKED_NOT_ASSESSED}}` | `{{EVIDENCE}}` | `{{DATE}}` |
+| Applicable requirements access and coverage reconciliation | `{{PASS_FAIL_NOT_RUN}}` | `{{EVIDENCE}}` | `{{DATE}}` |
 
 ## Approval
 

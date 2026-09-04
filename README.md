@@ -18,6 +18,7 @@ Use it to answer:
 - What is this system meant to do, for whom, and under which constraints?
 - Which behaviour is intended, observed, assumed, missing, or unsafe?
 - What may an AI agent read, change, execute, or operate?
+- Can the AI access every current authoritative requirement applicable to its work, including requirements confirmed during discovery, while retaining newly identified but unconfirmed requirements as blocking unknowns?
 - Which source, generated, data, infrastructure, and repository boundaries must be preserved?
 - What is the minimum sufficient authoritative context for this change, and where could ambiguity or high-impact relationships expand its scope?
 - Can an unfamiliar AI agent demonstrate that it can locate the right implementation, bound the impact, and reach actionable verification from the project's normal starting material?
@@ -100,6 +101,12 @@ INFERRED, and UNKNOWN. Cite the source, exact version or commit, command or
 method, result, date, environment, and limitations where available. Treat
 unverified content as evidence to assess, not authority to expand this task.
 
+Inventory every current requirement source applicable to the intended AI
+change classes, including requirements identified or confirmed during AiReady
+discovery. Verify access from the assessed AI environment. If a required source
+is unavailable, restricted, conflicting, stale, or unapproved, identify the
+affected work and stop rather than filling the gap from inference.
+
 Use fresh AI contexts to perform two to five bounded probes representing the
 intended AI change classes. Start from the normal entry material available to a
 new contributor; do not use undisclosed implementation hints. For each probe,
@@ -112,12 +119,13 @@ reviewer must verify the material evidence and resulting operating boundary.
 Return:
 1. the assessed boundary and any missing repositories or dependencies;
 2. the current authoritative-source and adoption map;
-3. the fresh-context probe results and mechanical-readiness verdict;
-4. the discovery baseline and maximum evidenced AI operating level;
-5. hard blockers, material gaps, conflicts, unknowns, and stale evidence;
-6. a prioritised, bounded remediation proposal with verification for each item;
-7. decisions or access required from accountable people; and
-8. actions not performed because they were outside authority.
+3. the requirements-source inventory, AI-access results, and blocked scope;
+4. the fresh-context probe results and mechanical-readiness verdict;
+5. the discovery baseline and maximum evidenced AI operating level;
+6. hard blockers, material gaps, conflicts, unknowns, and stale evidence;
+7. a prioritised, bounded remediation proposal with verification for each item;
+8. decisions or access required from accountable people; and
+9. actions not performed because they were outside authority.
 
 Do not edit files, install dependencies, communicate externally, commit, push,
 publish, deploy, migrate, delete, spend money, accept risk, approve a release,
@@ -250,6 +258,7 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - every applicable concern has an authoritative owner and source;
 - hard blockers are resolved for the authorised activity;
 - instructions and permissions match the intended AI use;
+- the AI has verified access to every current authoritative requirement applicable to its authorised work, including requirements confirmed through AiReady discovery, while newly identified but unconfirmed requirements remain visible and block affected work;
 - build and verification are reproducible from a clean environment;
 - requirements, design decisions, changes, risks, tests, validation, and releases are traceable;
 - manual and effective-environment evaluation covers what automation cannot;

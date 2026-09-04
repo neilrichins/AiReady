@@ -6,6 +6,11 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an explicit readiness hard blocker, scored control, discovery baseline,
+  agent boundary, task evidence table, and adoption guidance requiring verified
+  AI access to every current authoritative requirement applicable to its work,
+  including requirements confirmed through AiReady discovery, while newly
+  identified but unconfirmed requirements remain visible and block affected work.
 - Added a human-reviewed, fresh-context mechanical comprehensibility and agent
   efficiency ready check with representative change probes, reproducible
   discovery evidence, multi-repository coverage, bounded verdicts, and explicit
@@ -36,6 +41,9 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Changed
 
+- Added the mechanical comprehensibility and agent efficiency category to the
+  readiness-question issue form and pinned documentation-workflow actions to
+  reviewed immutable commits.
 - Added an SSDF version 1.1 task cross-reference to the secure software
   development checklist without treating a mapping as conformity or control effectiveness.
 - Expanded software supply-chain, standard and hotfix release, readiness, and

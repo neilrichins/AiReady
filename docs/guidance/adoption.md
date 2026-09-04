@@ -57,6 +57,14 @@ Map accountable responsibilities and reserved human decisions using [roles and d
 
 Separate approved intent, observed current behaviour, owner-confirmed compatibility, defects, inferences, and unknowns. Record the problem, users, outcomes, requirements, journeys, states, content, accessibility, constraints, and acceptance evidence needed for the planned work. Preserve requirement sources, versions, parent or derived relationships, and supersession. Define verification against the specification separately from validation of the intended need.
 
+Confirm that the approved AI tool can access every current authoritative
+requirement applicable to its intended change classes, including requirements
+identified or confirmed during discovery and requirements stored outside the
+repository. Test access from the actual assessed AI environment. A
+human-accessible link is not sufficient evidence. Do not expose restricted
+content merely to pass the check; provide an approved authoritative
+representation or exclude and block the affected AI work.
+
 Do not infer a requirement solely because the existing implementation behaves that way. Do not treat a design, prototype, plan, or generated description as implemented behaviour.
 
 ## Stage 4: Separate delivery states
