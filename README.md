@@ -13,6 +13,31 @@ applied to an unfamiliar legacy system, an established project, or a change
 already in progress. AiReady is reusable Markdown, not executable software and
 not a prescribed repository layout.
 
+## Adopt the framework; do not build it
+
+To adopt AiReady is to apply its concerns to the way a project already works.
+The first outcome is a human-reviewed assessment: the system boundary,
+authoritative-source map, evidence, unknowns, readiness decision, hard
+blockers, score, and prioritised remediation backlog.
+
+Adoption does **not** mean creating an AiReady application, command-line tool,
+source-transformation engine, authorisation service, package, namespace, or
+mandatory directory. Do not introduce executable tooling merely because a
+request says to “implement,” “apply,” or “adopt” AiReady.
+
+Project-specific automation may be useful, but it is a separate engineering
+decision. It must address an evidenced project need, receive explicit approval,
+have its own identity and owner, and be tested and governed as project software.
+It must not be presented as AiReady itself or as a framework requirement. A
+technical gate may determine whether configured conditions passed; it cannot
+grant itself human authority, accept risk, approve a release, or permit a
+production action.
+
+Stop after the read-only assessment. Begin remediation only after an
+accountable person has reviewed the evidence and explicitly approved the exact
+items, files or systems, actions, verification, and limits for a new bounded
+task.
+
 ## Why it exists
 
 AI can inspect and change code quickly, but speed is not assurance. Reliable delivery also requires product intent, user and design context, architecture boundaries, reproducible environments, traceability, testing, security, operations, release authority, and durable evidence.
@@ -143,12 +168,12 @@ Choose the path that matches the current project state. They may converge on the
 4. Qualify the exact candidate through the [release process](docs/boilerplate/RELEASE_PROCESS.md) and [readiness record](docs/boilerplate/RELEASE_READINESS.md).
 5. Preserve the decision and actual result in an immutable [release evidence record](docs/releases/RELEASE_EVIDENCE_TEMPLATE.md).
 
-## Use an AI assistant to implement the framework
+## Use an AI assistant to adopt the framework
 
 An AI assistant can accelerate adoption by discovering the current project,
 mapping existing controls, gathering evidence, identifying gaps, drafting
-approved updates, and running permitted checks. It should implement AiReady
-around the way the project already works--not copy every template, reorganise
+approved updates, and running permitted checks. It should apply AiReady to the
+way the project already works--not copy every template, reorganise
 the repository, or invent process for its own sake.
 
 Start read-only against exact repository states. Define the system boundary,
@@ -238,7 +263,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 | Record group | Purpose |
 | --- | --- |
 | [Assessment](docs/AiReady.md) | Determines the maximum permitted AI operating level from current control evidence and hard blockers. |
-| [Guidance](docs/README.md#guidance) | Explains adoption, AI-assisted implementation, legacy discovery, responsibilities, evidence, lifecycle, assessment methodology, and research foundations. |
+| [Guidance](docs/README.md#guidance) | Explains adoption, AI-assisted assessment and remediation, legacy discovery, responsibilities, evidence, lifecycle, assessment methodology, and research foundations. |
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture and optional review, verification, optional AI-system evaluation, technology cost/value, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
 | [Accessibility checklists](docs/accessibility/README.md) | Optional W3C-based website, mobile application, WCAG result, and jurisdiction-selection records. |
@@ -252,6 +277,8 @@ Template names and locations are examples within this repository. An adopting pr
 A project is not AI-ready because it copied these files. It is ready for a stated operating level only when:
 
 - every applicable concern has an authoritative owner and source;
+- read-only assessment and remediation are separated by a recorded human
+  checkpoint with exact approved items and boundaries;
 - hard blockers are resolved for the authorised activity;
 - instructions and permissions match the intended AI use;
 - the AI has verified access to every current authoritative requirement applicable to its authorised work, including requirements confirmed through AiReady discovery, while newly identified but unconfirmed requirements remain visible and block affected work;
@@ -259,6 +286,8 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - requirements, design decisions, changes, risks, tests, validation, and releases are traceable;
 - manual and effective-environment evaluation covers what automation cannot;
 - multi-repository dependencies are verified as an effective system;
+- any project-specific automation has a separate identity, owner, lifecycle,
+  evidence, and technical gate that cannot substitute for human authority;
 - recovery and incident responses are tested to the required level;
 - material architecture findings, technology cost/value, resource limits, sustainability effects, and cross-quality trade-offs are owned and evidenced where applicable; and
 - accountable people approve current evidence and residual risk.

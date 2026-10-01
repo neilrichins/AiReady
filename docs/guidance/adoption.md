@@ -4,6 +4,12 @@
 
 Adopt concerns, not a directory structure. Begin with the project's existing repositories, documentation, work-management tools, quality controls, and release records. Do not move or duplicate effective material merely to match AiReady.
 
+Adoption means producing an evidence-based map, assessment, operating-level
+decision, and owned remediation backlog. It does not mean building an AiReady
+runtime, executable change pipeline, authorisation service, package, namespace,
+or mandatory directory. A request to implement AiReady does not by itself
+authorise executable project tooling.
+
 If the current system cannot be trusted or reproduced, begin with the [legacy-project playbook](legacy-project-playbook.md) and [discovery baseline](../boilerplate/DISCOVERY_AND_BASELINE.md). Do not fill templates from assumptions.
 
 An AI assistant may help apply this guide within explicit authority. Use the
@@ -17,6 +23,16 @@ changes. Complete read-only discovery, distinguish findings from proposals, and
 obtain the authority required by the project's controls before remediation.
 Creating a document or improving a score is not an outcome unless the control
 is current, effective, owned, and supported by evidence.
+
+End the assessment with a human review checkpoint. Remediation begins only in
+a new bounded task that names the approved finding or backlog item, exact
+change authority, verification, reviewer, and stop conditions.
+
+Project-specific automation remains project software. Give it a distinct
+identity and owner, justify it from an evidenced need, and assess its security,
+maintenance, testing, failure behaviour, and lifecycle proportionately. Do not
+represent it as AiReady itself, as a universal adoption requirement, or as a
+source of human authority.
 
 ## Stage 1: Map what exists
 

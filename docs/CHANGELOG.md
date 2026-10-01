@@ -6,6 +6,13 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added an explicit adoption contract, assessment-first acceptance package,
+  mandatory human checkpoint, and readiness controls preventing AiReady from
+  being misinterpreted as an executable runtime, prescribed directory, source
+  transformation engine, or self-authorising project tool.
+- Added task fields that preserve the assessment finding or decision granting
+  remediation authority and distinguish framework adoption from separately
+  approved project automation.
 - Added an annotated research and further-reading guide connecting
   peer-reviewed evidence and established engineering references to bounded
   AiReady premises, with counter-evidence, limitations, attribution, licensing,
@@ -52,6 +59,8 @@ All notable changes are documented here. The format follows Keep a Changelog, an
   introduction, five-step operating explanation, technical account of why
   structured context and verification help AI-assisted coding, a bounded
   third-party quotation, and links to detailed adoption and research guidance.
+- Replaced ambiguous references to implementing AiReady with assessment-first
+  adoption and separately approved remediation terminology.
 - Added the mechanical comprehensibility and agent efficiency category to the
   readiness-question issue form and pinned documentation-workflow actions to
   reviewed immutable commits.

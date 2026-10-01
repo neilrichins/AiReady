@@ -13,6 +13,7 @@ Suggested file names in AiReady are not required. Storage location, tooling, and
 | Discovery baseline and observed-versus-intended behaviour | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Authoritative reading order, source precedence, and document lifecycle state | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | AI authority and agent instructions | `{{LINK_LOCATION_OR_MISSING}}` | `{{ADEQUATE_PARTIAL_MISSING_NOT_APPLICABLE}}` | `{{REUSE_IMPROVE_MERGE_CREATE_NOT_APPLICABLE}}` | `{{LINK_OR_LOCATION}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` |
+| AiReady framework boundary and separate identity, ownership, authority, and lifecycle for any project-specific automation | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Project purpose, scope, ownership, constraints | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Product evidence, users, outcomes, and claims | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Authoritative requirements sources, AI access, restrictions, and blocked scope | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

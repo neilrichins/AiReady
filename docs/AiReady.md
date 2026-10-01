@@ -6,6 +6,7 @@
 
 | Field | Value |
 | --- | --- |
+| AiReady framework version or commit | `{{IMMUTABLE_VERSION_OR_FULL_COMMIT_SHA}}` |
 | Project | `{{PROJECT_NAME}}` |
 | Repository | `{{REPOSITORY_URL_OR_IDENTIFIER}}` |
 | Assessed commit | `{{FULL_COMMIT_SHA}}` |
@@ -43,6 +44,8 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | Blocker | Status | Evidence or remediation |
 | --- | --- | --- |
 | An accountable human owner and review authority are named | `{{STATUS}}` | `{{EVIDENCE}}` |
+| Project instructions distinguish human authority from technical readiness, policy, and execution gates; no AI, score, or project-specific tool can grant itself authority, accept risk, or approve its own output | `{{STATUS}}` | `{{EVIDENCE}}` |
+| Read-only assessment and project remediation are separated by a human checkpoint; any remediation names the approved finding, exact change boundary, permitted actions, verification, reviewer, and stop conditions | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Approved controls prevent secrets, credentials, personal data, or restricted data from entering prompts or repository output improperly | `{{STATUS}}` | `{{EVIDENCE}}` |
 | AI cannot directly deploy, publish, delete, migrate, purchase, provision, scale, message users, or mutate production without explicit authorisation and confirmation | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Any authorised billable or metered operation has explicit resource, environment, quantity/run/duration, budget or usage, alert/stop, expiry, and cleanup controls | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
@@ -75,6 +78,7 @@ Use `N/A` only when the control genuinely cannot apply. Explain it and remove it
 | The intended AI use and prohibited uses are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Product, design, technical, quality, operations, risk, and release decision rights are assigned to accountable people | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Human owners, reviewers, escalation routes, and approval authority are named | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Technical gates, AI recommendations, assessment scores, and project-specific automation are explicitly separated from human authority, risk acceptance, and approval | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Agent permissions follow least privilege and distinguish read, write, external, production, purchasing, provisioning, scaling, and deletion actions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Billable or metered work has explicit resource, environment, quantity/run/duration, budget or usage, stop, expiry, and cleanup boundaries | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Stop conditions and actions requiring fresh approval are explicit | `{{0_1_2}}` | `{{EVIDENCE}}` |
@@ -89,6 +93,7 @@ Area score: `{{X_OF_10}}`
 | Specialised parts of the project provide scoped context where global instructions are insufficient | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Terminology, business rules, and non-obvious constraints are documented | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Instructions identify authoritative sources and warn against stale/generated artefacts | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Instructions distinguish adopted frameworks from project-specific software and do not infer an executable implementation, mandatory layout, or self-authorising tool from a documentation framework | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Instructions define a task-relevant reading order, precedence rule, current delivery boundary, explicit non-goals, and governing decisions | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Global, scoped, task-specific, and on-demand context has explicit activation, inheritance, ownership, and conflict rules where applicable | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Material instruction claims, paths, commands, versions, and conventions are checked against current authoritative source or runtime evidence | `{{0_1_2}}` | `{{EVIDENCE}}` |

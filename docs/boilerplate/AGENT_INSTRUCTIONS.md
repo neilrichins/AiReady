@@ -4,6 +4,27 @@
 
 `{{STATE_THE_PROJECT_OBJECTIVE_AND_USER_OUTCOME}}`
 
+## Framework and project-tool boundary
+
+If this project uses AiReady, treat it as a documentation, assessment,
+governance, verification, and release-assurance framework. AiReady is not a
+runtime, command-line tool, source-transformation engine, authorisation service,
+package, namespace, or required directory structure.
+
+Do not create executable software merely because a task says to implement,
+apply, or adopt AiReady. Begin with read-only assessment and return the
+framework version, assessed project state, boundary, authoritative-source map,
+evidence, unknowns, blockers, score, operating-level decision, and proposed
+remediation. Wait for explicit approval of a new bounded remediation task
+before editing.
+
+Project-specific automation requires its own approved requirement, identity,
+owner, boundaries, tests, maintenance path, and change authority. Do not name
+or describe it as AiReady itself or imply that the framework requires it. A
+technical readiness, policy, or execution gate reports whether its configured
+conditions passed; it cannot grant human authority, accept risk, approve its
+own output, approve a release, or authorise production operations.
+
 ## Authoritative reading order
 
 Read only the context needed for the authorised task, in this order. Replace

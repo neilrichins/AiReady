@@ -5,6 +5,8 @@
 | Field | Value |
 | --- | --- |
 | Task/change-set identifier | `{{IDENTIFIER}}` |
+| Task class | `{{ASSESSMENT_REMEDIATION_FEATURE_RELEASE_PROJECT_AUTOMATION_OR_OTHER}}` |
+| Authority basis and approved finding/decision | `{{ASSESSMENT_FINDING_DECISION_OR_OTHER_SOURCE_AND_VERSION}}` |
 | Accountable owner | `{{OWNER}}` |
 | AI tool/model | `{{APPROVED_TOOL_OR_NONE}}` |
 | Repositories/components affected | `{{LIST}}` |
@@ -25,6 +27,7 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 
 - In scope: `{{SCOPE}}`.
 - Out of scope: `{{EXCLUSIONS}}`.
+- Framework/adoption boundary: `{{DOCUMENTATION_AND_GOVERNANCE_SCOPE_AND_ANY_SEPARATELY_APPROVED_PROJECT_AUTOMATION}}`.
 - Architecture/source ownership: `{{BOUNDARY}}`.
 - Security/privacy/data: `{{BOUNDARY}}`.
 - Accessibility/user impact: `{{BOUNDARY}}`.

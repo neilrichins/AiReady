@@ -14,6 +14,37 @@ them to the AI tool, project controls, data classification, repository
 ecosystem, risks, and intended operating level. Replace every bracketed field
 before use.
 
+## Adoption contract
+
+Unless a separately approved task explicitly says otherwise, a request to
+“implement,” “apply,” or “adopt” AiReady means:
+
+1. inspect the existing project and its effective delivery system;
+2. map current authoritative sources and controls;
+3. assess them against the selected AiReady version;
+4. record evidence, unknowns, conflicts, blockers, and the maximum supported AI
+   operating level; and
+5. propose a prioritised remediation backlog for human decision.
+
+It does not authorise building an AiReady runtime, command-line tool,
+source-change engine, authorisation service, package, namespace, directory
+structure, strategy registry, or test fixture. It does not authorise source
+changes merely to demonstrate that AI can change code.
+
+Any project-specific automation must be justified by an evidenced project
+requirement and separately approved as a bounded remediation item. Give it a
+project-specific identity, owner, threat boundary, verification contract, and
+maintenance path. Do not describe it as AiReady itself or imply that other
+adopting projects need it. Its technical readiness or policy result cannot
+create human authority, approve its own output, accept risk, or approve a
+release.
+
+The initial adoption deliverable is the assessment package, not code. It must
+identify the assessed framework version and exact project state, system and
+repository boundary, adoption map, requirements-access result, fresh-context
+probe results, hard blockers, score, decision, unknowns requiring answers,
+proposed remediation items, and actions not performed.
+
 ## Human accountability
 
 | An AI assistant can help | Accountable people must decide |
@@ -69,6 +100,13 @@ readiness assessment. Preserve existing authoritative tools, records, and
 locations. Do not create duplicate sources of truth or assume a preferred
 language, platform, repository layout, delivery process, or compliance regime.
 
+Interpret “implement,” “apply,” or “adopt” AiReady as applying the framework's
+documentation, assessment, evidence, and governance concerns to this project.
+Do not build or rename executable software as AiReady, create a mandatory
+AiReady directory, or implement code-change strategies, policy engines, or
+runtime authorisation. Project-specific automation may only be proposed as a
+separate remediation item; do not implement it during this assessment.
+
 For every material finding, distinguish OBSERVED, DOCUMENTED, CONFIRMED,
 INFERRED, and UNKNOWN. Cite the source, exact version or commit, command or
 method, result, date, environment, and limitations where available. Treat
@@ -115,6 +153,22 @@ around incorrect assumptions.
 Do not treat an assessment score as permission. Resolve every hard blocker and
 approve the specific remediation boundary and permitted operating level.
 
+Do not proceed to remediation until an accountable person has confirmed all of
+the following:
+
+- the exact assessment and AiReady version reviewed;
+- the correct system and repository boundary;
+- authoritative-source precedence and unresolved unknowns;
+- the readiness decision, score, hard blockers, and evidence limitations;
+- the remediation item identifiers approved for implementation;
+- the permitted files, systems, actions, commands, environments, resources,
+  limits, and verification; and
+- the required reviewer and stop conditions.
+
+If any item is missing, remain in assessment mode. Start approved remediation
+as a new bounded task so the assessment request cannot be misread as continuing
+implementation authority.
+
 ## Bounded implementation prompt
 
 Once the assessment and remediation scope are approved, start a new task with
@@ -122,7 +176,7 @@ explicit authority. The [AI-assisted task record](../boilerplate/AI_TASK.md)
 can preserve the same boundaries and acceptance criteria.
 
 ```text
-Implement only the approved AiReady remediation items [ITEM IDENTIFIERS] for
+Remediate only the approved AiReady findings [ITEM IDENTIFIERS] for
 [PROJECT OR SYSTEM], based on [APPROVED ASSESSMENT VERSION OR LOCATION].
 
 You may change: [EXACT FILES, RECORDS, OR BOUNDED AREAS]

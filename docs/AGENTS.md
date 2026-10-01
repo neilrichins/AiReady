@@ -50,6 +50,9 @@ Maintain AiReady as a project-neutral, documentation-first framework for control
 9. For third-party references, verify the official source, publication status,
    claim scope, limitations, attribution, and licence before adding quotations
    or derived material.
+10. Preserve the boundary between AiReady as a documentation framework and any
+    project-specific executable tooling; technical gates must not be described
+    as granting human authority.
 
 ## Validation
 
