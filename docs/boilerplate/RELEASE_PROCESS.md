@@ -73,7 +73,9 @@ useful.
 ### 5. Make the readiness decision
 
 - Classify every failed, blocked, stale, or not-run check.
-- Resolve release blockers or obtain time-bounded accepted-risk approval from the correct authority.
+- Resolve release blockers or obtain documented accepted-risk approval from the
+  correct authority, with a review trigger or a documented reason why no expiry
+  is appropriate.
 - Confirm backup, rollback, restore, monitoring, support, communication, incident ownership, approved resource/budget limits, and temporary-resource cleanup, including AI behavioural baselines, safe stop, fallback, and coupled-bundle recovery where applicable.
 - Approvers decide against the named candidate artefacts—not a moving branch.
 

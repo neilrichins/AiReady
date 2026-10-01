@@ -125,7 +125,7 @@ implemented and verified. Preserve rejected and deferred findings with reasons.
 
 - Material strengths and evidence: `{{SUMMARY}}`.
 - Critical findings/blockers: `{{ITEMS_OR_NONE}}`.
-- Accepted risks and expiry: `{{REFERENCES_OR_NONE}}`.
+- Accepted risks and expiry, review trigger, or no-expiry rationale: `{{REFERENCES_OR_NONE}}`.
 - Required transition or improvement work: `{{REFERENCES}}`.
 - Claims this review supports: `{{BOUNDED_CLAIMS}}`.
 - Claims this review does not support: `{{LIMITATIONS}}`.

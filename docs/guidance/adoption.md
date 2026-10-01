@@ -24,6 +24,35 @@ obtain the authority required by the project's controls before remediation.
 Creating a document or improving a score is not an outcome unless the control
 is current, effective, owned, and supported by evidence.
 
+AiReady sets no minimum score and does not decide whether development may
+continue. The Product Owner, or equivalent accountable product/service owner,
+may accept the current score, accept documented product risks, decline or defer
+any proposed improvement, and choose an operating model that is more or less
+restrictive than the evidence-supported recommendation. Preserve the actual
+score, failed controls, blockers, consequences, and owner decision. Do not
+relabel accepted risk as a passing control.
+
+An AiReady checklist item or recommendation becomes a project requirement only
+when the accountable owner or another governing authority adopts it as a gate.
+
+The Product Owner has final authority over product intent, priorities, scope,
+acceptance, and product-risk decisions. Consult specialist owners and record
+constraints outside that product authority rather than presenting an AiReady
+recommendation as mandatory.
+
+The Product Owner may accept poorly documented code, leave an AiReady practice
+unimplemented, or exclude a proposed requirement from authoritative product
+scope. Reflect the decision honestly in the documentation, implementation
+score, findings, and risk record. The assessor and AI agent advise; they do not
+substitute their judgement for the Product Owner's.
+
+For each finding, record `REMEDIATE`, `ACCEPT AND SKIP`, `DEFER`, `DECLINE`,
+`TRANSFER`, or `NOT APPLICABLE`, with the decision owner and rationale. A
+Product Owner may accept and skip any AiReady `FAIL` or `BLOCKED` item. Keep the
+result and consequences visible, and do not infer acceptance. An owner may
+accept risk only within their actual decision authority; acceptance records
+exposure but does not erase an obligation owned or imposed elsewhere.
+
 End the assessment with a human review checkpoint. Remediation begins only in
 a new bounded task that names the approved finding or backlog item, exact
 change authority, verification, reviewer, and stop conditions.

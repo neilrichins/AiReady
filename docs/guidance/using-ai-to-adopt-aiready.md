@@ -14,6 +14,26 @@ them to the AI tool, project controls, data classification, repository
 ecosystem, risks, and intended operating level. Replace every bracketed field
 before use.
 
+## Essential instruction for the AI assistant
+
+Apply these rules even when no other AiReady documentation fits in the current
+context window:
+
+<!-- aiready-essential-summary:start -->
+1. The score measures AiReady implementation and evidence only.
+2. A score or finding is a recommendation, not a product requirement, approval,
+   permission, or veto.
+3. The Product Owner has final say over product scope, requirements, acceptance,
+   and product risk.
+4. Do not invent, restore, or enforce a requirement the Product Owner excluded.
+5. The Product Owner may accept and skip any AiReady `FAIL` or `BLOCKED` item.
+   Record the decision and consequences; do not block the product.
+6. Do not change code or project records unless the authorised task permits it.
+<!-- aiready-essential-summary:end -->
+
+Canonical source: [AiReady interpretation contract](ai-interpretation-contract.md),
+version `1.0`. The canonical contract takes precedence if wording conflicts.
+
 ## Adoption contract
 
 Unless a separately approved task explicitly says otherwise, a request to
@@ -22,8 +42,8 @@ Unless a separately approved task explicitly says otherwise, a request to
 1. inspect the existing project and its effective delivery system;
 2. map current authoritative sources and controls;
 3. assess them against the selected AiReady version;
-4. record evidence, unknowns, conflicts, blockers, and the maximum supported AI
-   operating level; and
+4. record evidence, unknowns, conflicts, blockers, and the evidence-supported AI
+   operating recommendation; and
 5. propose a prioritised remediation backlog for human decision.
 
 It does not authorise building an AiReady runtime, command-line tool,
@@ -42,8 +62,9 @@ release.
 The initial adoption deliverable is the assessment package, not code. It must
 identify the assessed framework version and exact project state, system and
 repository boundary, adoption map, requirements-access result, fresh-context
-probe results, hard blockers, score, decision, unknowns requiring answers,
-proposed remediation items, and actions not performed.
+probe results, hard blockers, score, evidence-supported recommendation, Product
+Owner decision, unknowns requiring answers, proposed remediation items, and
+actions not performed.
 
 ## Human accountability
 
@@ -73,6 +94,33 @@ For an interconnected system, include every participating repository, shared
 contract, supported version combination, release sequence, and recovery
 dependency that can affect the result. Access to one repository does not imply
 authority over the effective system.
+
+## Choose a suitable model for the first pass
+
+The first pass over an unfamiliar project has the greatest risk of missed
+context, incorrect assumptions, and incomplete dependency discovery. Prefer the
+strongest suitable model available within approved data, access, security,
+budget, and time boundaries. This is guidance, not a requirement, and AiReady
+does not prescribe a vendor or model.
+
+If current official vendor guidance is accessible, compare the chosen model,
+tool, and configuration with the vendor's recommendation for coding, codebase
+analysis, or agentic software work. Record:
+
+- vendor, model, tool, version, configuration, and selection date;
+- the official source URL and access date;
+- the vendor's stated intended use or recommendation;
+- relevant context, reasoning, coding, tool-use, language, and repository
+  capabilities;
+- data, security, availability, cost, and latency constraints;
+- why the model is suitable for this assessment; and
+- limitations and any compensating human or independent AI review.
+
+If the guidance or source is unavailable, inaccessible, ambiguous, behind access
+the assessor does not have, or irrelevant to the intended work, record
+`SKIPPED` and the reason. Continue without penalty, do not guess, and do not use
+the skipped comparison as a blocker. Actual probe evidence remains more
+important than a vendor recommendation.
 
 ## Discovery and assessment prompt
 
@@ -150,8 +198,15 @@ correct the system boundary, source precedence, product intent, ownership, and
 risk decisions. Otherwise, the assistant may implement a coherent process
 around incorrect assumptions.
 
-Do not treat an assessment score as permission. Resolve every hard blocker and
-approve the specific remediation boundary and permitted operating level.
+Do not treat an assessment score as permission. Keep every hard blocker visible.
+Remediate only those findings the Product Owner or relevant decision authority
+selects. For every other finding, record the accepted risk or other disposition
+and the owner-selected operating model.
+
+The Product Owner may explicitly accept and skip remediation for any AiReady
+item reported as `FAIL` or `BLOCKED`. Preserve that result, the accepted risk,
+and the known consequences. Do not convert it to `PASS` or `NOT APPLICABLE`, and
+do not infer acceptance without the Product Owner's recorded decision.
 
 Do not proceed to remediation until an accountable person has confirmed all of
 the following:
@@ -159,7 +214,8 @@ the following:
 - the exact assessment and AiReady version reviewed;
 - the correct system and repository boundary;
 - authoritative-source precedence and unresolved unknowns;
-- the readiness decision, score, hard blockers, and evidence limitations;
+- the evidence-supported recommendation, Product Owner decision, score, hard
+  blockers, and evidence limitations;
 - the remediation item identifiers approved for implementation;
 - the permitted files, systems, actions, commands, environments, resources,
   limits, and verification; and

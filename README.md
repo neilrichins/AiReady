@@ -3,9 +3,11 @@
 [![Documentation quality](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml/badge.svg)](https://github.com/neilrichins/AiReady/actions/workflows/documentation.yml)
 [![Licence: Apache 2.0](https://img.shields.io/badge/Licence-Apache%202.0-blue.svg)](LICENSE)
 
-AiReady helps people and artificial intelligence (AI) understand what a
-software system should do, where its important information lives, what may be
-safely changed, and how to prove that a change works.
+AiReady improves coding through clearer documentation, traceability,
+verification, and decision records. It helps people and artificial intelligence
+(AI) understand what a software system should do, where its important
+information lives, what may be safely changed, and how to prove that a change
+works.
 
 It is a documentation-first, language-neutral framework for controlled
 AI-assisted development and evidence-based release decisions. It can be
@@ -13,12 +15,59 @@ applied to an unfamiliar legacy system, an established project, or a change
 already in progress. AiReady is reusable Markdown, not executable software and
 not a prescribed repository layout.
 
+## Essential interpretation for AI models
+
+Apply these rules even when the rest of AiReady does not fit in the available
+context window:
+
+<!-- aiready-essential-summary:start -->
+1. The score measures AiReady implementation and evidence only.
+2. A score or finding is a recommendation, not a product requirement, approval,
+   permission, or veto.
+3. The Product Owner has final say over product scope, requirements, acceptance,
+   and product risk.
+4. Do not invent, restore, or enforce a requirement the Product Owner excluded.
+5. The Product Owner may accept and skip any AiReady `FAIL` or `BLOCKED` item.
+   Record the decision and consequences; do not block the product.
+6. Do not change code or project records unless the authorised task permits it.
+<!-- aiready-essential-summary:end -->
+
+Canonical source: [AiReady interpretation contract](docs/guidance/ai-interpretation-contract.md),
+version `1.0`. The canonical contract takes precedence if wording conflicts.
+
 ## Adopt the framework; do not build it
 
 To adopt AiReady is to apply its concerns to the way a project already works.
 The first outcome is a human-reviewed assessment: the system boundary,
-authoritative-source map, evidence, unknowns, readiness decision, hard
-blockers, score, and prioritised remediation backlog.
+authoritative-source map, evidence, unknowns, readiness recommendation, Product
+Owner decision, hard blockers, score, and prioritised remediation backlog.
+
+The score measures how well the applicable AiReady practices are implemented
+and evidenced. It is not a product-quality score, a product requirement, or an
+approval decision.
+
+AiReady is an improvement and decision-support framework, not a development
+permission system. It sets no minimum score that a project must achieve. An
+accountable Product Owner, or equivalent product/service owner, may accept the
+current score, accept documented product risks, decline or defer any AiReady
+recommendation, and continue development under the project's existing authority
+and controls. AiReady preserves the evidence and consequences of that decision;
+it does not veto it.
+
+No AiReady checklist item, score threshold, or recommendation is mandatory
+merely because it appears in this framework. It becomes a project gate only
+when the accountable owner or another governing authority adopts it as one.
+
+The Product Owner has final say over the product: its intent, priorities, scope,
+acceptance, and product-risk decisions. Specialist owners retain decision rights
+for matters such as legal obligations, security, privacy, spending, operations,
+and release execution. Those constraints must be made visible to the Product
+Owner; they do not turn AiReady's recommendation into a product requirement.
+
+The Product Owner may accept poorly documented code, leave a suggested control
+unimplemented, or exclude a proposed requirement from product scope. AiReady
+records the resulting documentation gap, score, risk, and decision so that the
+trade-off remains visible; it does not reverse the Product Owner's choice.
 
 Adoption does **not** mean creating an AiReady application, command-line tool,
 source-transformation engine, authorisation service, package, namespace, or
@@ -253,6 +302,10 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
   pass an approved trust and verification policy.
 - **System-level verification:** interconnected repositories are ready only when supported combinations, contracts, sequencing, and partial-failure recovery are verified.
 - **Human accountability:** named people own requirements, exceptions, risk acceptance, release approval, and production authority.
+- **Owner decision, not framework veto:** AiReady reports evidence-supported
+  readiness and improvement opportunities; an accountable owner may accept
+  documented risk and choose a different operating decision without changing
+  the underlying score, failed controls, or evidence.
 - **Effective-environment proof:** source and pipeline success do not prove deployed, rendered, distributed, or user-observed behaviour.
 - **No evidence-level substitution:** simulated, component, packaged, integrated, representative, physical, specialist, and effective-environment results establish different claims.
 - **Learning closes the loop:** incidents, deviations, feedback, and stale evidence update requirements and controls.
@@ -262,7 +315,7 @@ See [roles and decision rights](docs/guidance/roles-and-decision-rights.md) for 
 
 | Record group | Purpose |
 | --- | --- |
-| [Assessment](docs/AiReady.md) | Determines the maximum permitted AI operating level from current control evidence and hard blockers. |
+| [Assessment](docs/AiReady.md) | Records the evidence-supported AI operating level, blockers, accepted risks, and accountable owner's operating decision. |
 | [Guidance](docs/README.md#guidance) | Explains adoption, AI-assisted assessment and remediation, legacy discovery, responsibilities, evidence, lifecycle, assessment methodology, and research foundations. |
 | [General boilerplate](docs/boilerplate/README.md) | Covers project definition, AI instructions, delivery, architecture and optional review, verification, optional AI-system evaluation, technology cost/value, risk, operations, and readiness. |
 | [Product documents](docs/product/README.md) | Covers product intent, requirements, design, accessibility, quality attributes, and evidence-bounded messaging. |
@@ -274,12 +327,15 @@ Template names and locations are examples within this repository. An adopting pr
 
 ## What completion means
 
-A project is not AI-ready because it copied these files. It is ready for a stated operating level only when:
+A project is not AI-ready because it copied these files. AiReady can recommend
+a stated operating level from current evidence when:
 
 - every applicable concern has an authoritative owner and source;
 - read-only assessment and remediation are separated by a recorded human
   checkpoint with exact approved items and boundaries;
-- hard blockers are resolved for the authorised activity;
+- hard blockers are resolved for the evidence-supported recommendation, or
+  remain visible with an accountable owner's documented risk acceptance and
+  separate operating decision;
 - instructions and permissions match the intended AI use;
 - the AI has verified access to every current authoritative requirement applicable to its authorised work, including requirements confirmed through AiReady discovery, while newly identified but unconfirmed requirements remain visible and block affected work;
 - build and verification are reproducible from a clean environment;
@@ -293,6 +349,11 @@ A project is not AI-ready because it copied these files. It is ready for a state
 - accountable people approve current evidence and residual risk.
 
 The [methodology](docs/guidance/methodology.md) defines scoring and evidence rules. AiReady is not a security certification, accessibility-conformance claim, regulatory approval, or guarantee of software quality.
+
+An owner decision to proceed does not alter the score, turn a failed control
+into a pass, prove a higher readiness level, or waive an obligation outside the
+owner's authority. It records who chose the risk and why so future developers,
+reviewers, and operators can act with the correct context.
 
 ## Repository map
 

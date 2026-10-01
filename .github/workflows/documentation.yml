@@ -19,6 +19,41 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff # v24.2.0
         with:
           globs: "**/*.md"
+      - name: Check AI interpretation summaries
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          extract_summary() {
+            awk '
+              /<!-- aiready-essential-summary:start -->/ { capture = 1; next }
+              /<!-- aiready-essential-summary:end -->/ { capture = 0 }
+              capture
+            ' "$1"
+          }
+
+          canonical="$(mktemp)"
+          current=""
+          trap 'rm -f "$canonical" "$current"' EXIT
+          extract_summary docs/guidance/ai-interpretation-contract.md > "$canonical"
+          test -s "$canonical"
+          contract_version="$(awk -F '`' '/\| Contract version \|/ { print $2 }' docs/guidance/ai-interpretation-contract.md)"
+          test -n "$contract_version"
+
+          for file in \
+            README.md \
+            docs/AiReady.md \
+            docs/boilerplate/AGENT_INSTRUCTIONS.md \
+            docs/guidance/using-ai-to-adopt-aiready.md
+          do
+            current="$(mktemp)"
+            extract_summary "$file" > "$current"
+            test -s "$current"
+            diff -u "$canonical" "$current"
+            grep -F 'ai-interpretation-contract.md' "$file"
+            grep -F "version \`$contract_version\`" "$file"
+            rm -f "$current"
+          done
       - name: Check internal links
         uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
         with:

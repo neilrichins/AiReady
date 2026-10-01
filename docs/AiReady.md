@@ -2,11 +2,32 @@
 
 > Adapt this assessment within the project's existing governance records. Replace every `{{PLACEHOLDER}}`, attach verifiable evidence, and record unresolved limitations. This assessment is a point-in-time engineering record, not a certification.
 
+## Essential interpretation for AI models
+
+Apply these rules even when no other AiReady documentation fits in the current
+context window:
+
+<!-- aiready-essential-summary:start -->
+1. The score measures AiReady implementation and evidence only.
+2. A score or finding is a recommendation, not a product requirement, approval,
+   permission, or veto.
+3. The Product Owner has final say over product scope, requirements, acceptance,
+   and product risk.
+4. Do not invent, restore, or enforce a requirement the Product Owner excluded.
+5. The Product Owner may accept and skip any AiReady `FAIL` or `BLOCKED` item.
+   Record the decision and consequences; do not block the product.
+6. Do not change code or project records unless the authorised task permits it.
+<!-- aiready-essential-summary:end -->
+
+Canonical source: [AiReady interpretation contract](guidance/ai-interpretation-contract.md),
+version `1.0`. The canonical contract takes precedence if wording conflicts.
+
 ## Assessment identity
 
 | Field | Value |
 | --- | --- |
 | AiReady framework version or commit | `{{IMMUTABLE_VERSION_OR_FULL_COMMIT_SHA}}` |
+| AiReady interpretation-contract version | `{{VERSION}}` |
 | Project | `{{PROJECT_NAME}}` |
 | Repository | `{{REPOSITORY_URL_OR_IDENTIFIER}}` |
 | Assessed commit | `{{FULL_COMMIT_SHA}}` |
@@ -24,22 +45,77 @@
 | Previous comparable assessment | `{{ASSESSMENT_IDENTIFIER_OR_NONE}}` |
 | Next review | `{{YYYY-MM-DD_OR_RELEASE_TRIGGER}}` |
 
-## Decision
+## Advisory AI model-selection record
 
-Choose exactly one:
+This section is guidance only. It is not scored and cannot create a hard
+blocker. Prefer a strong model for the reasoning- and context-intensive first
+pass when one is available within approved constraints. AiReady does not
+prescribe a vendor or model.
+
+| Field | Result |
+| --- | --- |
+| Selected vendor, model, tool, version, and configuration | `{{DETAILS}}` |
+| Selection date | `{{YYYY-MM-DD}}` |
+| Intended assessment use | `{{USE}}` |
+| Official vendor guidance comparison | `{{COMPLETED_SKIPPED}}` |
+| Official source and access date | `{{URL_AND_DATE_OR_NOT_AVAILABLE}}` |
+| Vendor recommendation or stated intended use | `{{SUMMARY_OR_NOT_AVAILABLE}}` |
+| Relevant coding, reasoning, context, tool-use, language, and repository capabilities | `{{EVIDENCE_OR_UNKNOWN}}` |
+| Data, security, availability, cost, and time constraints | `{{CONSTRAINTS}}` |
+| Selection rationale | `{{RATIONALE}}` |
+| Known limitations and compensating review | `{{LIMITATIONS_AND_REVIEW}}` |
+| Skip reason | `{{NOT_APPLICABLE_OR_GUIDANCE_UNAVAILABLE_INACCESSIBLE_AMBIGUOUS_IRRELEVANT_OTHER}}` |
+
+If official guidance cannot be accessed or does not answer the question, mark
+the comparison `SKIPPED`, record why, and continue without penalty. Do not guess
+what the vendor recommends. Evaluate the selected model through the actual
+fresh-context probes and human review.
+
+## Evidence-supported readiness
+
+Choose exactly one from the assessed evidence:
 
 - [ ] **Not ready for AI coding** — only explicitly authorised read-only discovery or human-applied remediation suggestions may proceed.
 - [ ] **Assisted only** — AI may propose changes, but a human must inspect and apply them.
 - [ ] **Supervised** — AI may edit an isolated branch or worktree; every change requires human review.
 - [ ] **Controlled automation** — AI may complete bounded tasks and open pull requests; protected operations remain human-controlled.
 
-Decision owner: `{{NAME_OR_TEAM}}`
+Assessment owner: `{{NAME_OR_TEAM}}`
 
-Decision rationale: `{{EVIDENCE_BASED_RATIONALE}}`
+Assessment rationale: `{{EVIDENCE_BASED_RATIONALE}}`
+
+## Product Owner decision
+
+Choose exactly one. AiReady does not require the owner to accept its
+evidence-supported operating level or remediate any finding.
+
+- [ ] **Adopt the evidence-supported level.**
+- [ ] **Choose a more restrictive level.**
+- [ ] **Accept documented risk and authorise a broader operating model.**
+- [ ] **Continue development without adopting an AI operating recommendation.**
+
+Owner-selected operating model: `{{OPERATING_MODEL_OR_NOT_APPLICABLE}}`
+
+Accepted-risk and exception records: `{{IDENTIFIERS_OR_NONE}}`
+
+Product Owner or equivalent accountable product/service owner: `{{NAME_OR_TEAM}}`
+
+Decision rationale: `{{RATIONALE_AND_KNOWN_CONSEQUENCES}}`
+
+The Product Owner may accept documentation or control gaps and may remove a
+proposed requirement from the authoritative product scope. Record that decision
+and its consequences. Do not treat an assessor's or AI agent's preference as a
+product requirement.
 
 ## Hard blockers
 
-Any `FAIL` result is an unresolved blocker and overrides the numerical score. Mark each control `PASS`, `FAIL`, or `NOT APPLICABLE`, and justify every `NOT APPLICABLE` result.
+Any `FAIL` result is an unresolved blocker for the evidence-supported AiReady
+recommendation and takes precedence over the numerical score. Mark each control
+`PASS`, `FAIL`, or `NOT APPLICABLE`, and justify every `NOT APPLICABLE` result.
+When an owner accepts a blocker, retain `FAIL` and link its accepted-risk
+record. The Product Owner may skip its remediation and continue development;
+do not change the evidence result to improve the score or mark it `NOT
+APPLICABLE`.
 
 | Blocker | Status | Evidence or remediation |
 | --- | --- | --- |
@@ -59,7 +135,7 @@ Any `FAIL` result is an unresolved blocker and overrides the numerical score. Ma
 | Applicable legal, regulatory, contractual, licensing, and accessibility obligations are known and owned | `{{STATUS}}` | `{{EVIDENCE}}` |
 | Multi-repository changes have coordinated compatibility validation, release sequencing, partial-failure handling, and rollback | `{{STATUS}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 
-Unresolved blocker count: `{{NUMBER}}`
+Recorded hard-blocker count, including accepted and skipped items: `{{NUMBER}}`
 
 ## Scoring instructions
 
@@ -281,7 +357,7 @@ agent, or model when practicable.
    dead ends, contradictions, assumptions, elapsed feedback time, and
    limitations in the discovery baseline.
 6. Have the human reviewer reproduce or inspect material evidence before using
-   a probe to support the readiness decision.
+   a probe to support the evidence-based recommendation.
 
 | Probe/change class | Initial context supplied | Authoritative entry point and implementation found | Dependencies, repositories, and blast radius found | Focused verification and actionable result | Dead ends, conflicts, assumptions, or stops | Result and evidence |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -326,16 +402,27 @@ next decision.
 | --- | --- |
 | Earned points | `{{NUMBER}}` |
 | Applicable points | `{{NUMBER}}` |
-| Normalised score | `{{NUMBER_OF_100}}` |
-| Unresolved hard blockers | `{{NUMBER}}` |
-| Readiness level | `{{NOT_READY_ASSISTED_ONLY_SUPERVISED_CONTROLLED_AUTOMATION}}` |
+| AiReady implementation score | `{{NUMBER_OF_100}}` |
+| Recorded hard blockers, including accepted and skipped items | `{{NUMBER}}` |
+| Evidence-supported readiness level | `{{NOT_READY_ASSISTED_ONLY_SUPERVISED_CONTROLLED_AUTOMATION}}` |
+| Owner-selected operating model | `{{OPERATING_MODEL_OR_NOT_APPLICABLE}}` |
+| Accepted-risk and exception records | `{{IDENTIFIERS_OR_NONE}}` |
 
 Interpretation:
 
 - **0–39:** Not ready.
 - **40–59:** Assisted only.
 - **60–79:** Supervised.
-- **80–100:** Eligible for controlled automation only when there are no unresolved hard blockers and the authorised scope is explicit.
+- **80–100:** AiReady can recommend controlled automation only when there are no unresolved hard blockers and the authorised scope is explicit.
+
+There is no minimum acceptable AiReady score. The accountable owner may accept
+the recorded score and risks, decline every improvement, and continue
+development. The evidence-supported level remains unchanged unless the controls
+and evidence change.
+
+The score measures implementation and evidence for applicable AiReady
+practices. It does not measure product value, determine product scope, create a
+product requirement, or replace Product Owner approval.
 
 ## Comparison with the previous assessment
 
@@ -358,21 +445,23 @@ this assessment as the new baseline.
 | Evidence invalidated, stale, or no longer comparable | `{{DETAILS_OR_NONE}}` |
 
 An aggregate-score increase does not cure a hard blocker, prove that a
-particular risk was reduced, or authorise broader AI use. An aggregate-score
-decrease is a review signal, not an automatic release failure, unless an
-accountable owner has approved a specific evidence-based control as a gate.
+particular risk was reduced, or itself authorise broader AI use. An accountable
+owner may separately authorise broader use by accepting documented risk. An
+aggregate-score decrease is a review signal, not an automatic release failure,
+unless an accountable owner has approved a specific evidence-based control as
+a gate.
 
-## Required remediation
+## Findings and owner disposition
 
-| Priority | Action | Owner | Due | Evidence required |
-| --- | --- | --- | --- | --- |
-| `{{P0_P1_P2}}` | `{{ACTION}}` | `{{OWNER}}` | `{{DATE}}` | `{{EVIDENCE}}` |
+| Priority | Finding or proposed action | Owner disposition | Decision owner | Due or review trigger | Evidence or accepted-risk record |
+| --- | --- | --- | --- | --- | --- |
+| `{{P0_P1_P2}}` | `{{FINDING_OR_ACTION}}` | `{{REMEDIATE_ACCEPT_AND_SKIP_DEFER_DECLINE_TRANSFER_NOT_APPLICABLE}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` | `{{EVIDENCE_OR_RISK_ID}}` |
 
 ## Accepted risks and limitations
 
-| Risk or limitation | Impact | Owner | Expiry/review trigger | Rationale |
-| --- | --- | --- | --- | --- |
-| `{{RISK}}` | `{{IMPACT}}` | `{{OWNER}}` | `{{DATE_OR_TRIGGER}}` | `{{RATIONALE}}` |
+| Risk or limitation | Impact and known consequences | Owner | Scope | Expiry/review trigger | Rationale, alternatives, and contingency |
+| --- | --- | --- | --- | --- | --- |
+| `{{RISK}}` | `{{IMPACT}}` | `{{OWNER}}` | `{{AFFECTED_WORK_AND_OPERATING_MODEL}}` | `{{DATE_TRIGGER_OR_NONE_WITH_RATIONALE}}` | `{{RATIONALE_ALTERNATIVES_AND_RESPONSE}}` |
 
 ## Evidence record
 
@@ -393,9 +482,9 @@ Record commands and results without secrets, private prompts, personal data, or 
 
 | Role | Name | Decision | Date |
 | --- | --- | --- | --- |
-| Project/AI authority owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
-| Product/design owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |
-| Technical owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
-| Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT}}` | `{{DATE}}` |
-| Security/data owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |
-| Release/operations owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_NOT_APPLICABLE}}` | `{{DATE}}` |
+| Project/AI authority owner | `{{NAME}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER}}` | `{{DATE}}` |
+| Product/design owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER_NOT_APPLICABLE}}` | `{{DATE}}` |
+| Technical owner | `{{NAME}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER}}` | `{{DATE}}` |
+| Quality/verification owner | `{{NAME}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER}}` | `{{DATE}}` |
+| Security/data owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER_NOT_APPLICABLE}}` | `{{DATE}}` |
+| Release/operations owner | `{{NAME_OR_NOT_APPLICABLE}}` | `{{APPROVE_REJECT_ACCEPT_RISK_DEFER_NOT_APPLICABLE}}` | `{{DATE}}` |

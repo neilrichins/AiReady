@@ -6,6 +6,25 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added explicit Product Owner sovereignty and accepted-risk rules: AiReady
+  sets no minimum score, does not veto development, preserves accepted failures
+  and blockers, and supports remediate, accept, defer, decline, transfer, and
+  not-applicable dispositions without misrepresenting evidence.
+- Clarified that the 0–100 score measures implementation and evidence for
+  applicable AiReady practices, not product quality, product requirements, or
+  Product Owner approval.
+- Added a compact interpretation rule to the primary AI entry points so models
+  with limited context or reasoning do not mistake recommendations for product
+  authority.
+- Added a canonical, versioned AI interpretation contract with linked embedded
+  summaries and an automated consistency check to prevent documentation drift.
+- Added optional first-pass model-selection guidance that compares the chosen
+  model with accessible official vendor coding recommendations while allowing
+  the comparison to be skipped without penalty when guidance is unavailable,
+  inaccessible, ambiguous, or irrelevant.
+- Clarified that the Product Owner may explicitly accept and skip any AiReady
+  `FAIL` or `BLOCKED` item while the original result, risk, and consequences
+  remain visible.
 - Added an explicit adoption contract, assessment-first acceptance package,
   mandatory human checkpoint, and readiness controls preventing AiReady from
   being misinterpreted as an executable runtime, prescribed directory, source

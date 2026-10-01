@@ -7,7 +7,7 @@ This is the complete framework index. The directories organise AiReady itself; t
 | Current situation | Start with | Outcome |
 | --- | --- | --- |
 | Unfamiliar, undocumented, or legacy system | [Legacy-project playbook](guidance/legacy-project-playbook.md) and [discovery baseline](boilerplate/DISCOVERY_AND_BASELINE.md) | Evidence-labelled current-state map, fresh-context mechanical-readiness probes, bounded authority, risks, and remediation backlog |
-| Existing project adding AI-assisted development | [Adoption guide](guidance/adoption.md), [adoption map](boilerplate/ADOPTION_MAP.md), then [assessment](AiReady.md) | Existing controls reused, gaps owned, maximum AI operating level approved |
+| Existing project adding AI-assisted development | [Adoption guide](guidance/adoption.md), [adoption map](boilerplate/ADOPTION_MAP.md), then [assessment](AiReady.md) | Existing controls reused, implementation score and evidence-based recommendation recorded, and Product Owner decision documented |
 | Planned feature or change | [AI task](boilerplate/AI_TASK.md), [feature record](boilerplate/FEATURE_RECORD.md), and [traceability](boilerplate/TRACEABILITY.md) | Bounded work with acceptance, design, implementation, verification, and review evidence |
 | Product or operation with material AI behaviour | [AI system evaluation](boilerplate/AI_SYSTEM_EVALUATION.md) and, when applicable, [AI governance](compliance/AI_GOVERNANCE_CHECKLIST.md) | Versioned evaluation contract, exact candidate, bounded results, drift controls, and accountable decision |
 | Material architecture change or external architecture review | [Architecture review](boilerplate/ARCHITECTURE_REVIEW.md) | Stakeholder views, baseline, target, transition, cross-quality trade-offs, findings, and owned improvements |
@@ -19,6 +19,7 @@ This is the complete framework index. The directories organise AiReady itself; t
 
 ## Guidance
 
+- [AiReady interpretation contract](guidance/ai-interpretation-contract.md)
 - [Adoption guide](guidance/adoption.md)
 - [Using AI to adopt AiReady](guidance/using-ai-to-adopt-aiready.md)
 - [Legacy-project playbook](guidance/legacy-project-playbook.md)

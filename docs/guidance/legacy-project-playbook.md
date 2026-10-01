@@ -141,7 +141,7 @@ Human reviewers evaluate correctness, maintainability, user impact, safety, and 
 
 ## Phase 8: Assess and authorise
 
-Complete the [AI coding-readiness assessment](../AiReady.md) after baseline and priority remediation. The decision states the maximum permitted AI operating level, repositories, data, actions, and review requirements.
+Complete the [AI coding-readiness assessment](../AiReady.md) after baseline and priority remediation. Record the evidence-supported AI operating level separately from the accountable owner's decision about repositories, data, actions, review requirements, and accepted risk.
 
 Rerun relevant mechanical-readiness probes in a fresh context after remediation
 so retained agent knowledge does not conceal unresolved navigation, dependency,
@@ -158,7 +158,8 @@ For the first release under the framework:
 - qualify every included feature and relevant legacy behaviour;
 - run automated, manual, integration, accessibility, security, performance, migration, recovery, and effective-environment checks as applicable;
 - verify supported combinations across repositories and components;
-- record unknowns and time-bounded accepted risks;
+- record unknowns and accepted risks, including a review trigger or a documented
+  reason why no expiry is appropriate;
 - obtain named approval for the exact candidate; and
 - preserve execution and post-release results in the release evidence record.
 
@@ -176,4 +177,5 @@ Legacy onboarding is complete only when:
 - AI data, permission, and execution boundaries are enforceable;
 - critical risks and recovery paths have owners and evidence;
 - remediation work is prioritised and traceable; and
-- the readiness decision states exactly what the AI agent may and may not do.
+- the Product Owner's recorded decision and applicable specialist authorities
+  state exactly what the AI agent may and may not do.

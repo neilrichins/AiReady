@@ -6,6 +6,26 @@
 
 ## Framework and project-tool boundary
 
+### Essential AiReady interpretation
+
+Apply these rules even when no other AiReady documentation fits in the current
+context window:
+
+<!-- aiready-essential-summary:start -->
+1. The score measures AiReady implementation and evidence only.
+2. A score or finding is a recommendation, not a product requirement, approval,
+   permission, or veto.
+3. The Product Owner has final say over product scope, requirements, acceptance,
+   and product risk.
+4. Do not invent, restore, or enforce a requirement the Product Owner excluded.
+5. The Product Owner may accept and skip any AiReady `FAIL` or `BLOCKED` item.
+   Record the decision and consequences; do not block the product.
+6. Do not change code or project records unless the authorised task permits it.
+<!-- aiready-essential-summary:end -->
+
+Canonical source: [AiReady interpretation contract](../guidance/ai-interpretation-contract.md),
+version `1.0`. The canonical contract takes precedence if wording conflicts.
+
 If this project uses AiReady, treat it as a documentation, assessment,
 governance, verification, and release-assurance framework. AiReady is not a
 runtime, command-line tool, source-transformation engine, authorisation service,
@@ -14,9 +34,9 @@ package, namespace, or required directory structure.
 Do not create executable software merely because a task says to implement,
 apply, or adopt AiReady. Begin with read-only assessment and return the
 framework version, assessed project state, boundary, authoritative-source map,
-evidence, unknowns, blockers, score, operating-level decision, and proposed
-remediation. Wait for explicit approval of a new bounded remediation task
-before editing.
+evidence, unknowns, blockers, score, evidence-supported recommendation, Product
+Owner decision, and proposed remediation. Wait for explicit approval of a new
+bounded remediation task before editing.
 
 Project-specific automation requires its own approved requirement, identity,
 owner, boundaries, tests, maintenance path, and change authority. Do not name
@@ -24,6 +44,13 @@ or describe it as AiReady itself or imply that the framework requires it. A
 technical readiness, policy, or execution gate reports whether its configured
 conditions passed; it cannot grant human authority, accept risk, approve its
 own output, approve a release, or authorise production operations.
+
+For a first-pass AiReady assessment, prefer a strong model suited to codebase
+analysis and reasoning within approved constraints. When current official
+vendor guidance is accessible, compare the selected model and configuration
+with that guidance and cite it. If it is unavailable, inaccessible, ambiguous,
+or irrelevant, record `SKIPPED` and continue without guessing. Model selection
+is advisory and does not change the AiReady score or Product Owner authority.
 
 ## Authoritative reading order
 

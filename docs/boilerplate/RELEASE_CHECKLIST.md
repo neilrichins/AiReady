@@ -77,9 +77,12 @@ Copy this checklist into the release issue or versioned release record. Replace 
 
 ## Risk and readiness decision
 
-- [ ] Zero unresolved release blockers remain.
+- [ ] Release blockers are resolved or explicitly accepted by an accountable
+  owner within their decision authority.
 - [ ] Open high/critical risks are resolved or authorised by the correct risk owner.
-- [ ] Accepted risks have rationale, alternatives, contingency, owner, and expiry.
+- [ ] Accepted risks have rationale, known consequences, alternatives,
+  contingency, owner, and an expiry, review trigger, or documented no-expiry
+  rationale.
 - [ ] Release readiness record names the exact approved candidate.
 - [ ] Technical, security/data, product, and operations approvals are recorded as applicable.
 - [ ] Required legal, compliance, privacy, audit, certification, financial-crime, procurement, or governing-body decisions are recorded where an applicable obligation requires them.

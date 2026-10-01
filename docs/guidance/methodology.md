@@ -4,6 +4,17 @@
 
 AiReady assesses whether a repository provides enough context, deterministic controls, authority boundaries, and evidence for controlled artificial intelligence (AI)-assisted coding. It evaluates the development system around an AI agent, not the intelligence or reliability of a particular model.
 
+AiReady informs improvement and accountable decisions. It does not grant or
+withhold permission to continue developing a project, and it sets no mandatory
+minimum score. No framework item is a project requirement solely because
+AiReady includes it; it becomes a gate only when the Product Owner, equivalent
+accountable product/service owner, or another governing authority adopts it as
+one.
+
+The assessment measures implementation and evidence for applicable AiReady
+practices. It does not assess whether the Product Owner chose the right product,
+create product requirements, or approve the product.
+
 For an unfamiliar or legacy system, complete discovery and baseline work before scoring controls as effective. Use the evidence labels and safety boundary in the [legacy-project playbook](legacy-project-playbook.md); do not award points from inference or unverified documentation.
 
 ## Evidence hierarchy
@@ -69,6 +80,30 @@ The governing questions are whether the context and effort were necessary,
 whether the result was correct and reproducible, and whether an accountable
 reviewer can safely act on it.
 
+## Advisory model selection for assessment
+
+The initial assessment of an unfamiliar or legacy system is reasoning- and
+context-intensive. As a guideline, prefer the strongest suitable AI model
+available within the project's approved access, data, security, cost, and time
+boundaries. “Strongest suitable” does not automatically mean newest, largest,
+or most expensive. Consider repository-scale code analysis, reasoning quality,
+context capacity, tool use, supported languages, multi-repository work, and the
+ability to return inspectable evidence.
+
+When current official vendor guidance is accessible, compare the selected
+model, tool, and configuration with the vendor's published recommendations for
+coding, codebase analysis, or agentic software work. Record the official source,
+access date, recommendation, comparison, selection rationale, and known
+limitations. Do not treat marketing claims as proof of performance; use the
+fresh-context probes and human review to evaluate the actual result.
+
+This comparison is advisory and does not affect the AiReady score or create a
+hard blocker. If official guidance is unavailable, inaccessible, ambiguous,
+requires access the assessor does not have, or does not cover the intended use,
+record `SKIPPED` and the reason. Continue the assessment without guessing or
+substituting unofficial advice. The Product Owner or other authorised owner may
+choose any permitted model and accept the resulting limitations.
+
 ## Scoring
 
 Each of the ten areas is worth ten points. Controls receive 0, 1, 2, or `N/A`. Normalise an area with excluded controls to ten points:
@@ -78,6 +113,11 @@ area score = earned control points / applicable control points * 10
 ```
 
 Round only the final score to the nearest whole number. Preserve the underlying calculation in the assessment.
+
+The resulting 0–100 score reports how well applicable AiReady controls are
+implemented and evidenced within the assessed boundary. A low score may reflect
+documentation or control gaps the Product Owner has knowingly accepted. It is
+not a product requirement, product-value judgement, approval, or veto.
 
 ### Comparison and readiness trends
 
@@ -94,22 +134,61 @@ or release gate without a separately approved, evidence-based control and named
 decision owner. Automated measurements and static-analysis results may support
 a control assessment only within their demonstrated scope.
 
+The score supports the framework's evidence-based AI coding recommendation.
+The Product Owner, or equivalent accountable product/service owner, may accept
+that score, accept poorly documented code, exclude a proposed product
+requirement, decline or defer any remediation, or authorise a different product
+decision through documented risk acceptance. The decision does not change the
+score or evidence.
+
 ## Hard blockers
 
-Hard blockers represent conditions where numerical averaging is unsafe. For example, excellent documentation cannot compensate for an AI agent holding unrestricted production credentials. An assessment with any unresolved blocker cannot approve controlled automation.
+Hard blockers represent conditions where numerical averaging is unsafe. For
+example, excellent documentation cannot compensate for an AI agent holding
+unrestricted production credentials. An assessment with any unresolved blocker
+cannot provide an unqualified AiReady recommendation for controlled automation.
+
+An accountable owner may nevertheless accept any blocker or other risk within
+their decision authority and authorise continued development or a stated AI
+operating model. Record the owner, scope, rationale, known consequences,
+alternatives, evidence, contingency, and review trigger. The blocker remains
+`FAIL`; risk acceptance does not convert it to `PASS` or `NOT APPLICABLE`. The
+Product Owner may skip the associated remediation and continue development.
+The AI agent must not infer this decision.
 
 ## Readiness levels
 
-| Level | Numerical range | Maximum permitted operating model |
+| Level | Numerical range | Maximum evidence-supported operating model |
 | --- | ---: | --- |
 | Not ready | 0–39 | Limit AI to explicitly authorised read-only discovery or human-applied blocker remediation. |
 | Assisted only | 40–59 | AI proposes; a human inspects and applies. |
 | Supervised | 60–79 | AI may edit an isolated branch or worktree; humans review every change. |
-| Controlled automation | 80–100 | AI may complete bounded tasks and open pull requests, subject to zero blockers and explicit authority. |
+| Controlled automation | 80–100 | AiReady may recommend bounded tasks and pull requests when there are zero unresolved blockers and explicit authority. |
 
-The score selects an upper bound, not an automatic entitlement. Owners may impose a more restrictive level.
+The score establishes the highest operating model AiReady can recommend from
+the recorded evidence. It is not an automatic entitlement or prohibition.
+Owners may choose a more restrictive model or explicitly accept documented risk
+and authorise a broader one.
 
-`Not ready` does not prohibit an owner from authorising narrowly bounded, read-only AI discovery or human-applied remediation suggestions under explicit data, execution, and review controls. It prohibits treating the project as ready for normal AI coding, autonomous integration, or release activity.
+`Not ready` describes the evidence, not whether development may continue. An
+owner may continue human development, authorise narrowly bounded AI use, accept
+the current limitations, or decline every proposed improvement. AiReady must
+retain the score, failures, blockers, accepted risks, and decision without
+presenting the owner-selected operating model as evidence-supported readiness.
+
+## Owner decision and risk acceptance
+
+For each finding, the accountable owner may choose `REMEDIATE`,
+`ACCEPT AND SKIP`, `DEFER`, `DECLINE`, `TRANSFER`, or `NOT APPLICABLE`. Record
+the decision and rationale. `NOT APPLICABLE` describes scope and needs
+supporting evidence; `ACCEPT AND SKIP` records a risk decision, leaves the
+control's evidence result unchanged, and removes remediation from the owner's
+selected work.
+
+AiReady does not override project governance. Risk acceptance must be made by
+someone with decision authority over the affected outcome. It does not erase or
+waive a legal, regulatory, contractual, licensing, security, accessibility, or
+other obligation; it records the decision to proceed with the known exposure.
 
 ## Reassessment triggers
 

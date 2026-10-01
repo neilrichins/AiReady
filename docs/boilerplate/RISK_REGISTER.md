@@ -16,11 +16,14 @@ Inherent score: likelihood × impact before controls. Residual score: likelihood
 
 ## Accepted risks
 
-Accepted risk is a time-bounded decision, not a closed defect.
+Accepted risk is a documented owner decision, not a closed defect or a passing
+control. Record a review trigger where one is useful. An owner may choose no
+expiry; record that choice, its rationale, and the events that would require
+reconsideration.
 
-| ID | Residual risk | Reason acceptance is justified | Alternatives considered | Approver | Accepted date | Expiry/review trigger | Contingency |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `RISK-001` | `{{RISK}}` | `{{RATIONALE}}` | `{{ALTERNATIVES}}` | `{{AUTHORISED_APPROVER}}` | `{{DATE}}` | `{{DATE_OR_TRIGGER}}` | `{{RESPONSE}}` |
+| ID | Residual risk and known consequences | Related AiReady finding, blocker, or score effect | Reason accepted | Alternatives considered | Approver and authority | Accepted date | Expiry/review trigger or no-expiry rationale | Contingency |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `RISK-001` | `{{RISK_AND_IMPACT}}` | `{{REFERENCE_AND_UNCHANGED_RESULT}}` | `{{RATIONALE}}` | `{{ALTERNATIVES}}` | `{{AUTHORISED_APPROVER_AND_SCOPE}}` | `{{DATE}}` | `{{DATE_TRIGGER_OR_NONE_WITH_RATIONALE}}` | `{{RESPONSE}}` |
 
 ## Closed risks
 
