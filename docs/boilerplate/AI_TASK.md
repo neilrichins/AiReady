@@ -32,6 +32,8 @@ Required outcome: `{{OBSERVABLE_USER_OR_OPERATIONAL_OUTCOME}}`
 - Security/privacy/data: `{{BOUNDARY}}`.
 - Accessibility/user impact: `{{BOUNDARY}}`.
 - Compatibility/migration: `{{BOUNDARY}}`.
+- Governed AI context: `{{AUTHORITATIVE_RECORD_OR_NOT_APPLICABLE}}`.
+- Controlled AI action/write-back: `{{AUTHORITATIVE_RECORD_OR_NOT_APPLICABLE}}`.
 - External, destructive, production, communication, or cost-bearing actions: `{{AUTHORITY_OR_PROHIBITION}}`.
 - Permitted resource types, environments, quantities, duration, and budget: `{{LIMITS_OR_NONE}}`.
 - Usage alerts, stop thresholds, expiry, and cleanup owner: `{{CONTROLS_OR_NONE}}`.

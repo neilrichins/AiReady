@@ -29,6 +29,13 @@ Copy this checklist into the release issue or versioned release record. Replace 
 - [ ] Clean, reproducible build completed using the documented locked toolchain and dependencies.
 - [ ] Candidate artefacts are immutable and match the recorded source/configuration.
 - [ ] When AI materially affects system behaviour, the exact model, prompt, retrieval, tool, permission, parameter, policy, evaluation, and provider-controlled elements are identified as one approved release bundle or as explicit rollback units.
+- [ ] Where governed AI context is selected, source, transformation, semantic,
+  quality, freshness, lineage, access, delivery, and stale/failure evidence is
+  current for the exact candidate.
+- [ ] Where controlled AI actions are selected, fresh-state, conflict,
+  deterministic-policy, approval, bounded execution, verification,
+  reconciliation, audit, and recovery controls are verified for the exact
+  candidate.
 - [ ] Dependency, licence, provenance, and Software Bill of Materials checks completed where applicable.
 - [ ] Each required attestation, signature, manifest, provenance statement, and
   Software Bill of Materials is bound to the exact candidate artefact digest.

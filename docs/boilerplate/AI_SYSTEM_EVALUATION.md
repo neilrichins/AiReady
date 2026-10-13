@@ -57,6 +57,12 @@ oversight, security, accessibility, operations, and release records. Use the
 [AI governance checklist](../compliance/AI_GOVERNANCE_CHECKLIST.md) when its
 applicability conditions are met.
 
+When retrieved, synchronised, operational, or cross-system context materially
+affects behaviour, link the existing authoritative control or optional
+[governed AI context record](GOVERNED_AI_CONTEXT.md). When AI can propose or
+perform consequential external actions, link the existing action-control
+process or optional [controlled AI action record](CONTROLLED_AI_ACTION.md).
+
 ## Exact system under evaluation
 
 | Element | Required identity/configuration | Actual candidate | Mutable outside project control | Evidence |
@@ -65,8 +71,9 @@ applicability conditions are met.
 | Model/provider | `{{MODEL_VERSION_OR_CONTROLLED_ALIAS}}` | `{{IDENTIFIER}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 | System instructions/prompts/templates | `{{VERSIONS}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 | Inference parameters/thresholds | `{{REQUIRED_CONFIGURATION}}` | `{{ACTUAL}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
-| Retrieval corpus/index | `{{DATA_INDEX_AND_VERSION}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
+| Retrieval corpus/index/context contract | `{{DATA_INDEX_VERSION_PROVENANCE_FRESHNESS_SEMANTICS_AND_POLICY}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 | Tools/integrations/permissions | `{{DEFINITIONS_AND_AUTHORITY}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
+| External action/write-back contract | `{{ACTION_TARGET_FRESH_STATE_VALIDATION_APPROVAL_EXECUTION_VERIFICATION_AND_RECOVERY_OR_NOT_APPLICABLE}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 | Policies/guardrails/fallbacks | `{{VERSIONS_AND_CONFIGURATION}}` | `{{IDENTIFIERS}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 | Runtime/environment | `{{LOCATION_CONFIGURATION_AND_DEPENDENCIES}}` | `{{ACTUAL}}` | `{{DETAILS}}` | `{{EVIDENCE}}` |
 

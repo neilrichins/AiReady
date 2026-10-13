@@ -47,6 +47,11 @@ evaluation-suite result, provider-controlled elements, and rollback boundary:
 applicable
 [AI system evaluation](../boilerplate/AI_SYSTEM_EVALUATION.md). Urgency does
 not make unknown or changed AI behaviour equivalent to a verified result.
+Where governed context or controlled actions are material, link the applicable
+[governed AI context](../boilerplate/GOVERNED_AI_CONTEXT.md) and [controlled AI
+action](../boilerplate/CONTROLLED_AI_ACTION.md) records or their authoritative
+equivalents. Urgency does not permit stale context, changed state, or an unknown
+write outcome to be treated as successful.
 
 ## Impact and risk assessment
 

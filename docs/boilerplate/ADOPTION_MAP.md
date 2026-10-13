@@ -27,6 +27,8 @@ Suggested file names in AiReady are not required. Storage location, tooling, and
 | Phase, milestone, or delivery-checkpoint evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Architecture, trust boundaries, and source ownership | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Optional architecture review, stakeholder views, framework mapping, trade-offs, and improvement actions | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Optional governed AI context, including sources, semantics, quality, freshness, lineage, access, delivery, and failure behaviour | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
+| Optional controlled AI actions, including fresh-state checks, approval, bounded execution, reconciliation, audit, and recovery | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Multi-repository/component contracts and coordination | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Verification plan, coverage, and evidence | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |
 | Source/build integrity, provenance, attestations, signing, and consumer-verification policy | `{{SOURCE}}` | `{{STATUS}}` | `{{ACTION}}` | `{{SOURCE}}` | `{{OWNER}}` | `{{TRIGGER}}` |

@@ -70,13 +70,18 @@ context to act.
 
 Complete this section when model, prompt, retrieval, tool, policy, or
 provider-controlled behaviour materially affects the operated service. Link the
-applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md).
+applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md). Where relevant,
+also link the project's existing equivalent of the optional [governed AI
+context](GOVERNED_AI_CONTEXT.md) or [controlled AI action](CONTROLLED_AI_ACTION.md)
+record.
 
 | Concern | Required state/control | Verification | Stop/fallback/rollback trigger | Owner |
 | --- | --- | --- | --- | --- |
 | Exact AI release-bundle identity | `{{CODE_MODEL_PROMPT_DATA_TOOL_POLICY_AND_CONFIGURATION_IDENTIFIERS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 | Behavioural baseline and tolerances | `{{APPROVED_QUALITY_AND_SEVERE_FAILURE_LIMITS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 | Provider/model change detection | `{{VERSION_ALIAS_NOTICE_PROBE_OR_COMPARISON_CONTROL}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Governed context availability, freshness, semantic quality, and stale-state handling | `{{CONTROL_OR_NOT_APPLICABLE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
+| Controlled action fresh-state check, bounded execution, verification, and reconciliation | `{{CONTROL_OR_NOT_APPLICABLE}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 | Shadow/canary/limited rollout | `{{PLAN_OR_NOT_APPLICABLE_WITH_REASON}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 | Safe stop, fallback, and degraded mode | `{{CONTROL_AND_USER_SYSTEM_EFFECT}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |
 | Whole-bundle rollback or forward recovery | `{{ATOMIC_BOUNDARY_SEQUENCE_AND_LIMITS}}` | `{{METHOD_AND_EVIDENCE}}` | `{{TRIGGER}}` | `{{OWNER}}` |

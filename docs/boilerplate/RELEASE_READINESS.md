@@ -47,8 +47,9 @@ the candidate-specific [AI system evaluation](AI_SYSTEM_EVALUATION.md).
 | Bundle identifier | `{{IMMUTABLE_OR_CONTROLLED_IDENTIFIER}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Models/providers | `{{IDENTIFIERS_ALIASES_AND_CONFIGURATION}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Instructions/prompts/templates | `{{IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
-| Retrieval data/indexes | `{{IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Retrieval data/indexes and governed-context contract | `{{IDENTIFIERS_SOURCE_TRANSFORM_SEMANTIC_QUALITY_FRESHNESS_LINEAGE_ACCESS_AND_DELIVERY}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Tools/integrations/permissions | `{{IDENTIFIERS_AND_AUTHORITY}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Controlled external actions/write-back | `{{ACTION_TARGET_STATE_POLICY_APPROVAL_EXECUTION_VERIFICATION_RECONCILIATION_AND_RECOVERY_IDENTIFIERS_OR_NOT_APPLICABLE}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Parameters/thresholds/policies/guardrails | `{{IDENTIFIERS_AND_VALUES}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Evaluation suite and result | `{{SUITE_AND_RESULT_IDENTIFIERS}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 

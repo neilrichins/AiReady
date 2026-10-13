@@ -100,6 +100,15 @@ fill gaps in the instruction mechanism supported by the project's AI tools.
 
 Do not enable write-capable agents before authority and stop conditions exist.
 
+When AI materially depends on retrieved, synchronised, operational, or
+cross-system information, map the concern to an existing authoritative control
+or the optional [governed AI context record](../boilerplate/GOVERNED_AI_CONTEXT.md).
+When AI can propose or perform consequential external or operational changes,
+map the concern to an existing action-control process or the optional
+[controlled AI action record](../boilerplate/CONTROLLED_AI_ACTION.md). Neither
+record requires a particular platform, protocol, data copy, or direct AI write
+access.
+
 Map accountable responsibilities and reserved human decisions using [roles and decision rights](roles-and-decision-rights.md). An AI agent may perform authorised activities but cannot approve its own work, accept risk, or grant itself authority.
 
 ## Stage 3: Confirm product and design intent
@@ -162,6 +171,12 @@ approved use and require fresh human approval for material external effects.
 Permission to execute does not imply spending or resource-lifecycle authority.
 
 Treat generated code, commands, configuration, structured data, database queries, markup, URLs, dependency suggestions, and infrastructure changes as untrusted. Apply controls appropriate to the project's technology and risk.
+
+For AI-influenced actions against mutable state, re-read the authoritative
+state immediately before consequential execution, detect conflicts, revalidate
+preconditions and authority, execute within idempotency and affected-scope
+limits, then verify and reconcile the effective result. Apply this only where
+the action and risk make it relevant; record `NOT APPLICABLE` otherwise.
 
 ## Stage 7: Make release readiness evidence-based
 

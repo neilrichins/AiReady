@@ -6,6 +6,12 @@ All notable changes are documented here. The format follows Keep a Changelog, an
 
 ### Added
 
+- Added optional governed-AI-context and controlled-AI-action boilerplates for
+  projects that need source, semantic, quality, freshness, lineage, access,
+  stale-state, fresh-precondition, approval, idempotency, reconciliation, audit,
+  and recovery evidence without prescribing a platform or direct AI write path.
+- Added `NOT APPLICABLE`-capable assessment controls for material AI context and
+  AI-influenced actions against mutable external or operational state.
 - Added explicit Product Owner sovereignty and accepted-risk rules: AiReady
   sets no minimum score, does not veto development, preserves accepted failures
   and blockers, and supports remediate, accept, defer, decline, transfer, and

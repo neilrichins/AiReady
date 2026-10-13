@@ -289,6 +289,7 @@ Area score: `{{X_OF_10}}`
 | AI output is treated as untrusted input and deterministically validated before use | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Closed schemas, allowlists, escaping, parameterisation, and sandboxing protect executable boundaries | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Prompt inputs and retrieved context follow data-classification and minimum-necessary rules | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Where AI materially depends on retrieved, synchronised, operational, or cross-system context, authoritative sources, transformations, semantics, identity, quality, freshness, lineage, access, effective delivery, and stale/failure behaviour are verified | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Generated claims, code, dependencies, licences, and citations have an appropriate verification process | `{{0_1_2}}` | `{{EVIDENCE}}` |
 
 Area score: `{{X_OF_10}}`
@@ -299,6 +300,7 @@ Area score: `{{X_OF_10}}`
 | --- | ---: | --- |
 | Build, deploy, publish, migrate, delete, and other material operations are separate and explicit | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Destructive, external, purchasing, provisioning, scaling, or other cost-bearing actions require scoped authority and confirmation | `{{0_1_2}}` | `{{EVIDENCE}}` |
+| Where AI influences actions against mutable external or operational state, the action path re-reads authoritative state, detects conflicts, revalidates deterministic rules and approval, bounds idempotent execution, verifies and reconciles the result, and retains recovery evidence | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Authorised billable resources have current budget/usage limits, stop thresholds, expiry, cleanup, actual-use evidence, and accountable ownership | `{{0_1_2_NA}}` | `{{EVIDENCE_OR_NOT_APPLICABLE}}` |
 | Migrations have dry-run/preflight, backup, idempotency, verification, and rollback controls | `{{0_1_2}}` | `{{EVIDENCE}}` |
 | Production verification checks rendered/effective behaviour rather than source alone | `{{0_1_2}}` | `{{EVIDENCE}}` |

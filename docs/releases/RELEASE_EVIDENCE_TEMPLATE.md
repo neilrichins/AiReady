@@ -77,8 +77,9 @@ the candidate-specific
 | Bundle identifier | `{{IDENTIFIER}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Models/providers | `{{IDENTIFIERS_ALIASES_AND_CONFIGURATION}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Instructions/prompts/templates | `{{IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
-| Retrieval data/indexes | `{{IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Retrieval data/indexes and governed-context contract | `{{IDENTIFIERS_SOURCE_TRANSFORM_SEMANTIC_QUALITY_FRESHNESS_LINEAGE_ACCESS_AND_DELIVERY}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Tools/integrations/permissions | `{{IDENTIFIERS_AND_AUTHORITY}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
+| Controlled external actions/write-back | `{{ACTION_TARGET_STATE_POLICY_APPROVAL_EXECUTION_VERIFICATION_RECONCILIATION_AND_RECOVERY_IDENTIFIERS_OR_NOT_APPLICABLE}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Parameters/thresholds/policies/guardrails | `{{IDENTIFIERS_AND_VALUES}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 | Evaluation suite and result | `{{SUITE_AND_RESULT_IDENTIFIERS}}` | `{{ACTUAL}}` | `{{EVIDENCE}}` | `{{BOUNDARY}}` |
 

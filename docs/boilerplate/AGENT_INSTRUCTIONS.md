@@ -166,6 +166,8 @@ for rejecting a recurring convention where that prevents it being proposed again
 - Repository access: read `{{REPOSITORIES}}`; write `{{REPOSITORIES}}`; operate `{{REPOSITORIES_OR_NONE}}`.
 - Requirements accessible to the AI: `{{AUTHORITATIVE_SOURCES_VERSIONS_AND_ACCESS_METHODS}}`.
 - Requirements unavailable or restricted from the AI and affected work: `{{SOURCES_AND_BLOCKED_SCOPE_OR_NONE}}`.
+- Governed AI context source/contract: `{{AUTHORITATIVE_SOURCE_OR_NOT_APPLICABLE}}`.
+- Controlled AI action/write-back contract: `{{AUTHORITATIVE_SOURCE_OR_NOT_APPLICABLE}}`.
 - Stop and escalate when: `{{AMBIGUITY_SECURITY_PRIVACY_DATA_LOSS_COST_OR_OTHER_CONDITIONS}}`
 
 Authority not explicitly granted is prohibited. Permission to edit, execute, or
@@ -260,7 +262,7 @@ exception; it is not silently ignored.
 7. Run the mapped focused feedback loop while working, preserve actionable first failures, then run `{{COMPLETE_QUALITY_COMMAND}}` from the defined environment.
 8. Complete required manual, specialist, integration, and effective-environment checks or record them as unresolved.
 9. Review the complete diff, candidate identifiers, generated artefacts, evidence, limitations, security/privacy exposure, actual resource usage, and temporary-resource cleanup.
-10. Do not perform external or production actions without explicit authority and immediate confirmation.
+10. Do not perform external or production actions without explicit authority and immediate confirmation. Re-read authoritative state immediately before a consequential action, stop on a material conflict, and verify and reconcile the effective result.
 11. For interconnected repositories, confirm every affected repository, contract, supported combination, sequence, and partial-failure response.
 12. Hand off exact changes, results, failures, limitations, follow-up owners, and actions not performed.
 

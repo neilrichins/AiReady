@@ -155,12 +155,19 @@ Link the authoritative threat model, data-protection assessment, security decisi
 ## Artificial intelligence boundaries
 
 - Context available to AI: `{{BOUNDARY}}`.
+- Context provenance, semantics, quality, freshness, and stale-state behaviour: `{{CONTROLS_OR_NOT_APPLICABLE}}`.
 - Prohibited context/data: `{{BOUNDARY}}`.
 - Output accepted from AI: `{{BOUNDARY}}`.
 - Deterministic validation: `{{CONTROLS}}`.
 - Executable or production boundary: `{{CONTROLS_AND_HUMAN_APPROVAL}}`.
+- Fresh-state, conflict, idempotency, verification, reconciliation, and recovery controls for AI-influenced external actions: `{{CONTROLS_OR_NOT_APPLICABLE}}`.
 - Resource, usage, duration, and spending boundary: `{{LIMITS_ALERTS_STOP_EXPIRY_AND_CLEANUP}}`.
 - Model/tool failure and shutdown path: `{{FAILURE_RESPONSE}}`.
+
+When these concerns are material, reuse the project's existing controls or
+adapt the optional [governed AI context](GOVERNED_AI_CONTEXT.md) and [controlled
+AI action](CONTROLLED_AI_ACTION.md) records. Neither record prescribes a data
+platform, interface protocol, workflow engine, or direct AI write access.
 
 ## Cross-quality trade-offs
 

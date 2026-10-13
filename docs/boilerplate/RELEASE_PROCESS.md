@@ -61,6 +61,10 @@ useful.
 - Complete required manual, security, privacy, accessibility, reliability and recovery, performance and capacity, technology cost and value, sustainability, compatibility, migration, operational, and documentation checks.
 - Run proportionate failure, recovery, or incident exercises required by the risk model and preserve actual outcomes and limitations.
 - Complete the applicable [AI system evaluation](AI_SYSTEM_EVALUATION.md) against the exact candidate and approved evaluation-suite version.
+- Where selected, verify the effective governed-context and controlled-action
+  contracts against the exact candidate using the optional [governed AI
+  context](GOVERNED_AI_CONTEXT.md) and [controlled AI
+  action](CONTROLLED_AI_ACTION.md) records or their authoritative equivalents.
 - Where supply-chain attestations are selected, verify the subject digest,
   source revision, builder or issuer identity, signature or authenticity,
   trusted root, schema, asserted properties, freshness, and consumer policy.
